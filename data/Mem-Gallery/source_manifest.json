@@ -1,0 +1,108 @@
+{
+  "repo": "Ethan-Bei/Mem-Gallery",
+  "revision": "af912daba984e896e253016b7c7e334ef92c2a6f",
+  "official_code_revision": "a93959e1e978a6a7d77798ae92c2ffe41c538c62",
+  "download_scope": "20 dialogue JSON files; original image binaries not downloaded or required for caption-only observation",
+  "files": [
+    {
+      "path": "data/Mem-Gallery/data/dialog/AI_Robotics_Automation_Future_Tech.json",
+      "sha256": "fb51fad8a80b3610d90eaced0bf01bb2250a7f486a8dc67e8e9eee88a4e55b8e",
+      "bytes": 144270
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Academic_Animal_Pet_Research_Life.json",
+      "sha256": "9289425b20c81b25a217ad1a76009c88ddf02a784881b719f8b7e5b25911b948",
+      "bytes": 126829
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Architecture_Art_Culture_Exhibition_Technology.json",
+      "sha256": "1d1c336cb1412ef866d3d6b7efddeb5dadc1f6ef1fd2678b79239722ae285bd4",
+      "bytes": 126837
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Astronomy_Physics_Scientific_Experiments_Cosmology.json",
+      "sha256": "38e1820504b88845f001c2820fdb53e0db8d0a4b9dc59083e5e60f376b864b97",
+      "bytes": 129858
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Baking_Dessert_Daily_Life_Skill.json",
+      "sha256": "7b0169375ef20cfa9ddf67433ca78139f82ce30449e7813bb748ea29610ea859",
+      "bytes": 174316
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Dog_Behavior_Research_Academic_Life.json",
+      "sha256": "d825f7e3798514144230bb9edc9c8811604c92f8ad16584ad24d1fc18029898b",
+      "bytes": 111586
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Education_Career_Research_Lifestyle.json",
+      "sha256": "6e8c712397dc41ae0da623250c36250f5b71a85a4f86199159d729337136cc8b",
+      "bytes": 158497
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Entrepreneurship_Blockchain_Economics_Logistics_Nature.json",
+      "sha256": "c869195883d786b12c1ec984ca12a2b061c0aea2b5feb7f1d19cc0070392bf5b",
+      "bytes": 112504
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Fashion_Personal_Care_Lifestyle_Shopping.json",
+      "sha256": "7c4d3a48758429280a9e0b55fce2ae1af1f1d7e05b27800240f15e2a45a2751a",
+      "bytes": 118233
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Global_Travel_Cultural_Sightseeing.json",
+      "sha256": "775871b984df79969ac9e50d0497642d49eaa203ab09937127d6358dc7a17037",
+      "bytes": 141316
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Global_Travel_Sustainable_Fashion_Design.json",
+      "sha256": "e8c5e8c36d559a25172204af98a1a012db580115061f5b1609e9d4b7b850b5d8",
+      "bytes": 123225
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Home_Health_Lifestyle_Product.json",
+      "sha256": "bcc786c056738d5163ad0a132ba67caae2df82303ac7b99065471721484caf1b",
+      "bytes": 116061
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Home_Repair_Maintenance_Cleaning.json",
+      "sha256": "6c10293e51b5a9fa567eb8fd56bd9af52429b19a9aa945abd26f5cea6ed9f91c",
+      "bytes": 159484
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Landscape_Travel_Architecture_Nature.json",
+      "sha256": "883d8fc1ea325fa7abf3bad5213e2f192323c71dc4209b6b24dfd0edcc66615a",
+      "bytes": 149165
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Music_Dance_Theater_Performance_Learning.json",
+      "sha256": "c536c4091c463a7cb0a71db9628f1fbf744389b049b74945b505b6f73f91569f",
+      "bytes": 139963
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Nature_Economics_Programming_Student_Life.json",
+      "sha256": "3978b59ff7beeb1d64c50c8393127b70504130139cd90c198c2bb9e1533dc6b0",
+      "bytes": 171659
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Parenting_Commuting_Hobbies_Travel_Gear.json",
+      "sha256": "88824a01e9a25ef49a7af63436651ec323910a81f3139be3796d398d101a892e",
+      "bytes": 153037
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Python_Botany_AI_Student_Life.json",
+      "sha256": "d5bd84226e1dd48ade2d37683f91ed3a55d7f230d89bb6414ef68782b5103a7b",
+      "bytes": 244759
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Real_Estate_Home_Decor_DIY_Lifestyle.json",
+      "sha256": "ace411b22e74f80f9e25e5bf12279133b9895e2f38c9347581ae45541b740fcd",
+      "bytes": 134665
+    },
+    {
+      "path": "data/Mem-Gallery/data/dialog/Technology_Ethics_Future_Society.json",
+      "sha256": "11d931289ddd6bd9bd59a5564ccf6494d4ef59a10cdc5f320fbcf4a863c27fa2",
+      "bytes": 130336
+    }
+  ]
+}

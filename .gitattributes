@@ -1,0 +1,6 @@
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+# Preserve the bytes and provenance hashes of frozen input/caption data.
+*.json -text
+*.jsonl -text

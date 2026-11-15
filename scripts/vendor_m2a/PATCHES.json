@@ -1,0 +1,200 @@
+{
+  "upstream_revision": "edd8c3b75bae8b2c9c1a0ac8ed67e38c2c2723f8",
+  "patches": [
+    {
+      "file": "agent/agents/chat_agent.py",
+      "reason": "Use the core tool decorator without importing optional prebuilt agent dependencies.",
+      "occurrences": 1,
+      "old": "from langchain.tools import tool",
+      "new": "from langchain_core.tools import tool"
+    },
+    {
+      "file": "agent/agents/chat_agent.py",
+      "reason": "Use the LangGraph terminal sentinel; tkinter.END is a nonterminal string.",
+      "occurrences": 1,
+      "old": "from tkinter import END",
+      "new": "from langgraph.graph import END"
+    },
+    {
+      "file": "agent/agents/chat_agent.py",
+      "reason": "A reserved LangGraph END sentinel must not be added as a node.",
+      "occurrences": 1,
+      "old": "        workflow.add_node(END, lambda x: x)\n",
+      "new": ""
+    },
+    {
+      "file": "agent/agents/chat_agent.py",
+      "reason": "Fix query tool-budget off-by-one.",
+      "occurrences": 1,
+      "old": "if state.query_iteration == self.config.max_query_iteration:",
+      "new": "if state.query_iteration > self.config.max_query_iteration:"
+    },
+    {
+      "file": "agent/agents/chat_agent.py",
+      "reason": "Fix update tool-budget off-by-one.",
+      "occurrences": 2,
+      "old": "if state.update_iteration == self.config.max_update_iteration:",
+      "new": "if state.update_iteration > self.config.max_update_iteration:"
+    },
+    {
+      "file": "agent/agents/chat_agent.py",
+      "reason": "Honor the configured chat context budget.",
+      "occurrences": 2,
+      "old": "max_tokens=8000,",
+      "new": "max_tokens=self.config.max_chat_context,"
+    },
+    {
+      "file": "agent/agents/chat_agent.py",
+      "reason": "Do not reopen data URIs as local paths or mutate cached image blocks.",
+      "occurrences": 1,
+      "old": "                x['url'] = encode_image_to_base64(image_path)",
+      "new": "                x = dict(x)\n                x['url'] = (image_path if image_path.startswith(('data:', 'http')) else encode_image_to_base64(image_path))"
+    },
+    {
+      "file": "agent/agents/memory_manager.py",
+      "reason": "Use the core tool decorator without importing optional prebuilt agent dependencies.",
+      "occurrences": 1,
+      "old": "from langchain.tools import tool",
+      "new": "from langchain_core.tools import tool"
+    },
+    {
+      "file": "agent/agents/memory_manager.py",
+      "reason": "Use the LangGraph terminal sentinel; tkinter.END is a nonterminal string.",
+      "occurrences": 1,
+      "old": "from tkinter import END",
+      "new": "from langgraph.graph import END"
+    },
+    {
+      "file": "agent/agents/memory_manager.py",
+      "reason": "A reserved LangGraph END sentinel must not be added as a node.",
+      "occurrences": 1,
+      "old": "        workflow.add_node(END, lambda x: x)\n",
+      "new": ""
+    },
+    {
+      "file": "agent/agents/memory_manager.py",
+      "reason": "Allow graph transitions for the explicit 15-tool-call budget.",
+      "occurrences": 2,
+      "old": "\"configurable\": {\"thread_id\": \"1\"}",
+      "new": "\"configurable\": {\"thread_id\": \"1\"}, \"recursion_limit\": 100"
+    },
+    {
+      "file": "agent/agents/memory_manager.py",
+      "reason": "Honor the configured memory-manager tool-call limit.",
+      "occurrences": 1,
+      "old": "        self.config = config\n",
+      "new": "        self.config = config\n        self.max_iteration = config.max_iteration\n"
+    },
+    {
+      "file": "agent/agents/memory_manager.py",
+      "reason": "Stop binding tools after the tool budget rather than leaving an open-ended loop.",
+      "occurrences": 2,
+      "old": "        response = self.llm.bind_tools([",
+      "new": "        if state.iteration_count >= self.max_iteration:\n            response = self.llm.invoke(messages)\n            messages.append(response)\n            content = (self.image_manager.format_msg_to_content(response.content)\n                       if state.operation == \"query\" else response.content)\n            return Command(update={\"messages\": messages, \"response\": content}, goto=END)\n        response = self.llm.bind_tools(["
+    },
+    {
+      "file": "agent/agents/memory_manager.py",
+      "reason": "Allow exactly the configured number of tool calls.",
+      "occurrences": 1,
+      "old": "if state.iteration_count == self.max_iteration:",
+      "new": "if state.iteration_count > self.max_iteration:"
+    },
+    {
+      "file": "agent/agents/memory_manager.py",
+      "reason": "Route failed tool calls back to the current operation.",
+      "occurrences": 1,
+      "old": "    def _exec_tool(\n        self, \n        state: MemoryManagerState\n    ) -> Command[Literal['handle_query', 'handle_update']]:\n        last_message: AIMessage = state.messages[-1]\n        \n        if not hasattr(last_message, 'tool_calls') or not last_message.tool_calls:\n            return state\n\n        for tool_call in last_message.tool_calls:\n            state.iteration_count += 1\n            if state.iteration_count > self.max_iteration:\n                print(\"MAX_ITERATION_REACHED\")\n                state.messages.append(ToolMessage(\n                    content=\"Tool call failed: Tool call count limit exceeded!\",\n                    tool_call_id=tool_call[\"id\"]\n                ))\n                return state\n            \n            try:\n                query_image = tool_call[\"args\"].get(\"query_image\")\n                if query_image == 'N/A':\n                    query_image = None\n                query_image = self.image_manager.image_token_to_image(query_image)\n            except Exception as e:\n                state.messages.append(ToolMessage(\n                    content=f\"Tool error: {e}\",\n                    tool_call_id=tool_call[\"id\"]\n                ))\n                return state\n                \n            # self.tools_cls.tool_call_id = tool_call[\"id\"]\n            try:\n                tool_result = self.tools[tool_call[\"name\"]].invoke(input=tool_call[\"args\"])\n            except Exception as e:\n                tool_result = f\"Tool error: Please check your input and try again. ({str(e)})\"\n            \n            # memory_result = self._prepair_tool_result(memory_result)\n            \n            state.messages.append(\n                ToolMessage(content=tool_result, tool_call_id=tool_call['id'])\n            )\n        \n        update = {\n            \"messages\": state.messages,\n            \"iteration_count\": state.iteration_count\n        }\n        if state.operation == 'query':\n            return Command(\n                update=update,\n                goto=\"handle_query\"\n            )\n        return Command(update=update,goto=\"handle_update\")\n    \n",
+      "new": "    def _exec_tool(\n        self, \n        state: MemoryManagerState\n    ) -> Command[Literal['handle_query', 'handle_update']]:\n        last_message: AIMessage = state.messages[-1]\n        \n        if not hasattr(last_message, 'tool_calls') or not last_message.tool_calls:\n            return Command(update={\"messages\": state.messages, \"iteration_count\": state.iteration_count}, goto=\"handle_query\" if state.operation == \"query\" else \"handle_update\")\n\n        for tool_call in last_message.tool_calls:\n            state.iteration_count += 1\n            if state.iteration_count > self.max_iteration:\n                print(\"MAX_ITERATION_REACHED\")\n                state.messages.append(ToolMessage(\n                    content=\"Tool call failed: Tool call count limit exceeded!\",\n                    tool_call_id=tool_call[\"id\"]\n                ))\n                return Command(update={\"messages\": state.messages, \"iteration_count\": state.iteration_count}, goto=\"handle_query\" if state.operation == \"query\" else \"handle_update\")\n            \n            try:\n                query_image = tool_call[\"args\"].get(\"query_image\")\n                if query_image == 'N/A':\n                    query_image = None\n                query_image = self.image_manager.image_token_to_image(query_image)\n            except Exception as e:\n                state.messages.append(ToolMessage(\n                    content=f\"Tool error: {e}\",\n                    tool_call_id=tool_call[\"id\"]\n                ))\n                return Command(update={\"messages\": state.messages, \"iteration_count\": state.iteration_count}, goto=\"handle_query\" if state.operation == \"query\" else \"handle_update\")\n                \n            # self.tools_cls.tool_call_id = tool_call[\"id\"]\n            try:\n                tool_result = self.tools[tool_call[\"name\"]].invoke(input=tool_call[\"args\"])\n            except Exception as e:\n                tool_result = f\"Tool error: Please check your input and try again. ({str(e)})\"\n            \n            # memory_result = self._prepair_tool_result(memory_result)\n            \n            state.messages.append(\n                ToolMessage(content=tool_result, tool_call_id=tool_call['id'])\n            )\n        \n        update = {\n            \"messages\": state.messages,\n            \"iteration_count\": state.iteration_count\n        }\n        if state.operation == 'query':\n            return Command(\n                update=update,\n                goto=\"handle_query\"\n            )\n        return Command(update=update,goto=\"handle_update\")\n    \n"
+    },
+    {
+      "file": "agent/embeddings/text.py",
+      "reason": "LangChain 1.x moved the Embeddings interface.",
+      "occurrences": 1,
+      "old": "from langchain.embeddings.base import Embeddings",
+      "new": "from langchain_core.embeddings import Embeddings"
+    },
+    {
+      "file": "agent/stores/image_manager.py",
+      "reason": "Keep canonical local paths in the image-token registry; encode only the outgoing block.",
+      "occurrences": 1,
+      "old": "        if not img_path_or_url.startswith(\"http\"):\n            img_path_or_url = encode_image_to_base64(img_path_or_url)\n\n        return self.format_to_msg_content(image=img_path_or_url, in_content=False)",
+      "new": "        content = self.format_to_msg_content(image=img_path_or_url, in_content=False)\n        for block in content:\n            if block[\"type\"] == \"image\" and not block[\"url\"].startswith((\"http\", \"data:\")):\n                block[\"url\"] = encode_image_to_base64(block[\"url\"])\n        return content"
+    },
+    {
+      "file": "agent/stores/semantic.py",
+      "reason": "Milvus requires a vector field even for the metadata collection; this constant is never searched.",
+      "occurrences": 1,
+      "old": "        db.create_collection(\n            collection_name=\"memory\",",
+      "new": "        memory_schema.add_field(field_name=\"storage_vector\", datatype=DataType.FLOAT_VECTOR, dim=2)\n        db.create_collection(\n            collection_name=\"memory\","
+    },
+    {
+      "file": "agent/stores/semantic.py",
+      "reason": "Populate the unused metadata collection vector.",
+      "occurrences": 1,
+      "old": "            \"text\": memory.text,",
+      "new": "            \"storage_vector\": [0.0, 0.0],\n            \"text\": memory.text,"
+    },
+    {
+      "file": "agent/stores/semantic.py",
+      "reason": "Preserve generated text and evidence without truncating the upstream 1000-byte fields.",
+      "occurrences": 4,
+      "old": "max_length=1000",
+      "new": "max_length=65535"
+    },
+    {
+      "file": "agent/stores/semantic.py",
+      "reason": "Support absolute MemEye image paths.",
+      "occurrences": 1,
+      "old": "max_length=100)",
+      "new": "max_length=4096)"
+    },
+    {
+      "file": "agent/stores/semantic.py",
+      "reason": "Milvus BM25-function indexes require the BM25 metric.",
+      "occurrences": 1,
+      "old": "            metric_type=\"IP\",\n            params={\"inverted_index_algo\"",
+      "new": "            metric_type=\"BM25\",\n            params={\"inverted_index_algo\""
+    },
+    {
+      "file": "agent/stores/semantic.py",
+      "reason": "Apply BGE query instructions only to queries, not stored documents.",
+      "occurrences": 1,
+      "old": "text_vec = self._embed_text(text_content)",
+      "new": "text_vec = self.text_embedder.embed_documents([text_content])[0]"
+    },
+    {
+      "file": "agent/stores/semantic.py",
+      "reason": "Return success to the delete_memory tool after a successful deletion.",
+      "occurrences": 1,
+      "old": "        self.db.delete(\"image_embs\", [int(memory_id)])",
+      "new": "        self.db.delete(\"image_embs\", [int(memory_id)])\n        return True"
+    }
+  ],
+  "runtime_sha256": {
+    ".gitignore": "6aecff44681cb5e52552d73adfbd29b5315e56fb2b7546228a741f8429b89389",
+    "LICENSE": "ffbbff87a1ca9741813fea2ec510fe121d223088a3ee5e89db195e00dbc2e46f",
+    "README.md": "c7b6cb659e16110be24a23b35a812f024b70c9e4480d64ff985038ebbda0ba77",
+    "agent/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agent/agents/__init__.py": "560f7792882ec5ab5186b21a8ba03423d19a5bc34b49fc288c94a314b10ea78b",
+    "agent/agents/chat_agent.py": "a668609dc18cb710dfb53fbd26144664223cffb9ae063f302313f39b1c03292a",
+    "agent/agents/memory_manager.py": "14b054b42e72229ee4e9ee1bcad21790b5439cde1802918b6815b01b7afb8d7f",
+    "agent/config.py": "97df5e54b0ac7d9337c8d5c9244050c2c792d0af2d7de342edb346c6a405be4f",
+    "agent/embeddings/__init__.py": "6281530816cc55d26fd8439d61674ef9935c5213d13b293c7f93bdbfec6f970f",
+    "agent/embeddings/multimodal.py": "a05615c7afb4da1580b83f2d6e042f6d1c3b1a6b117196186c9d2869b1c26ea2",
+    "agent/embeddings/text.py": "934b67a71778f651d79248ce5e3a56d768312596cdd7c4a699cb0407decd1610",
+    "agent/m2a.py": "dd1d7ffa03533fd3f69e39188d06a2b0f6155ec26ce6f93835dd9e7f93d13948",
+    "agent/stores/__init__.py": "b44f1c495a8b10068c412b551f9034fb2046c45f5df2ba16d3c0c29ed8f16193",
+    "agent/stores/image_manager.py": "960426d700e732335e31d22bb2247b3d894a573d62b9d2a5606558a05d0a2843",
+    "agent/stores/raw.py": "cec2d9074fbe951d9f9502f41f7733a3bd357190be6e1ff5c4115664eb046e38",
+    "agent/stores/semantic.py": "b94d881f7aeff8881cefdaf7804fdbe00a4f23d4f47a30dbdc2fb70bccacd756",
+    "agent/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "agent/utils/message.py": "80abcfa1130624f3cae7e2d9d6d241bda94e5d73e0d6405b4b0b187c13b39d84",
+    "config.toml": "0a52fe6973bed5d1ca7c6b8f1ef854ebc3e1f6d024d117f973e2057be73992c0",
+    "data/yollava_generate_and_merge.py": "3a3445743dfdbe3e3e73bd523139f8569c8b662658794fc9794ba8c3c141934a",
+    "eval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "eval/evaluator.py": "ba15e68bb137ee9111bd114b1629fb3f836b265e198637feccae0e911b37fb38",
+    "eval/llm_judge.py": "e8fe56d41a62a522ac36fd3e9d1febf6a0591c7929808e464b118388cb123f60",
+    "eval_wrapper.py": "11c8be707aa8f94abcaf1e5490a3e0342542431bd95308627e0039caa36be970",
+    "pyproject.toml": "5d83fe191490c0150be0113989981baa25c3e9430f934ef4071d45bbb60372c4"
+  }
+}

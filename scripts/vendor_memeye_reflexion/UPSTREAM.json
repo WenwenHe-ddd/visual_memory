@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/MinghoKwok/MemEye",
+  "commit": "0358e70d714980980dfd8c87903384db474f0b16",
+  "files": {
+    "reflexion_method.py": "b68b17a13e56e658492dbf819c34c019a61d6ad8da79900f38f8d6457cca6545",
+    "AGENTS.md": "198fd280deff63018d393d1597984c4d0991f9fb9ee115cc0f1b0b31717dff85",
+    "runner_reference.py": "414c25f8279a9b913e2e168a0f6e5b34d0e9a3ffa7277578fdc769d488ce099f",
+    "THIRD_PARTY_LICENSES.md": "d2f55b2d4af3fc986336a1cd64e3bbd5fa4db61829dd2d42a34d77eee929f079",
+    "LICENSE": "2f6ee0c3c5abd51708c6f26455c13d5e24464e8d15dee8c5afb1e107dda876eb",
+    "reflexion.yaml": "c1171f09b7961c77ef6871c7141529999d2238ec315d75b24e88932e8b071932",
+    "memengine/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "memengine/operation/__init__.py": "7b6759a132183e108e5ab1b8145a5fc87a30ccbb3ff1dc6f9be3c5b6ffd88109",
+    "memengine/operation/Recall.py": "255b6da6cecfbe6b648d8dde99b70c60eb33ba54bd0880e641d2d6621b572f1f",
+    "memengine/operation/Store.py": "9d9db6ed1c610b9bc585dfa2974c91eb29982d24af155b8bdbec85d49555ab3d",
+    "memengine/operation/Optimize.py": "608e000703e09282e5b20e3ac1aceb9bcfaf5571f9616b1a39c03c25cf657e10",
+    "memengine/memory/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "memengine/memory/RFMemory.py": "614c726330f48e7d943d710b01e52a2d2091c1bf428c673ae86c9b524b30043c",
+    "memengine/memory/BaseMemory.py": "b1c8024bc277d709c4d603d19b27dcaf793f7e742107e898147fd94c706077c7",
+    "memengine/config/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "memengine/config/Config.py": "969df7351a4471d3b9a72a7e7e962699ecbd139685d6a0e69edfea7be512520c",
+    "memengine/utils/Display.py": "e6f0ad3607bb3b8a29ba19fb01133ddcef0637424009d206ccff49ffb0a87398",
+    "memengine/utils/__init__.py": "b1334a3fc74ea71397fec8f2a02953a6a9a429f4cf106db879a221528c6f8206",
+    "memengine/utils/Storage.py": "ec300711b3f38668171e08b58a9a744d12ae3bdbfaa83a2503569ba213710537",
+    "memengine/function/__init__.py": "5a7be2a86dea0ced763bb54729023824574b015fde67a6023520da67f9c17434",
+    "memengine/function/Truncation.py": "adec13700b6815fd24b36044c792490308b2197023f913da428c78b9e4b3e252",
+    "memengine/function/LLM.py": "fbd67be1760a4ed047f0014a7a6b2619c50e5859ab14b48995c77c5644914cd5",
+    "memengine/function/Reflector.py": "39945ee0e6753d3e2facf4daad84f84560ac1da04445d7cfdefa7a655fa643f6",
+    "memengine/function/Utilization.py": "b2aed7a60d3e2a6b0b2bf60f7071c33f2e945c21f3da00e6b89edd320f2a7dc8"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/aiming-lab/SimpleMem",
+  "commit": "db80b6a7c591e0ea730a058e9f5fc4eb06572299",
+  "mode": "text",
+  "version": "0.3.0",
+  "git_blob_hashes": {
+    "simplemem/config.py": "9d20dcedb0bd283a8a7346453e83d032354ce1cc",
+    "simplemem/__init__.py": "dad0cd9dda57660c75ed8106b5188c364e5cd2fc",
+    "simplemem/core/__init__.py": "cb2379d5ece409e6e0bfd77fbe42146c4da220ff",
+    "simplemem/core/answer_generator.py": "6ba885ea2e53c76f5d99d0ee375300a5ea501a15",
+    "simplemem/core/config_default.py": "edeab55379b5e437cfa043bf2ae588a8abab226b",
+    "simplemem/core/database/__init__.py": "fa10871a8bacc3ff4345b2f1e25be95d954d65e8",
+    "simplemem/core/database/vector_store.py": "789e68cb6dad0aad8035a7fef0d1c60e3e361ef8",
+    "simplemem/core/database/vector_store_backend.py": "fc6a11d0b2fe2d01563c97ba892a239a8b10db68",
+    "simplemem/core/hybrid_retriever.py": "a92e51fa31805d6c867cb6d2370db8f063262ee1",
+    "simplemem/core/memory_builder.py": "ab2f5413669493c80543966dd5b9288faf2e9896",
+    "simplemem/core/models/__init__.py": "a7b2e52c29ba99e1970b46d64bf36e809e991b22",
+    "simplemem/core/models/memory_entry.py": "bb34a99df20fadcc0a57b3de3a59bb7544ce6e43",
+    "simplemem/core/settings.py": "f1ece2f33ddc6e6168da09a5d3a79b2de78e9133",
+    "simplemem/core/utils/__init__.py": "d6bb613657dfdc7d24f9ee8f7983df0e50fb2b95",
+    "simplemem/core/utils/embedding.py": "9463e09537f127ae02fa66406514541573b1d65f",
+    "simplemem/core/utils/llm_client.py": "274d29756bb3491e9079cf83072c4e46be27e15d",
+    "simplemem/router.py": "b49ba1f5ed662472eb81c31a26e4eb00907f9d20",
+    "simplemem/text/__init__.py": "fbd55ebead4955f20906dd97d30d0aa77db6ad74",
+    "simplemem/text/system.py": "452ddb57bc6fdda38e0e65a0a59df2112888fa52"
+  }
+}

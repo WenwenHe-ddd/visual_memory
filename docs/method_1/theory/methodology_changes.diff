@@ -1,0 +1,85 @@
+--- 3_methodology (1).tex
++++ 3_methodology_with_lemma.tex
+@@ -65,11 +65,12 @@
+ 
+ For each memory $m_i$, we extract its normalized visual embedding $\mathbf{v}_i=\operatorname{norm}(E_v(I_i))$ and obtain its compact visual coordinates $\mathbf{z}_i=\mathbf{U}^{\top}\mathbf{v}_i$, where $E_v$ denotes the visual encoder.
+ The coordinates are computed through direct projection without subtracting the calibration mean, maintaining a consistent reference space across memories.
+-For each semantic cluster $\mathcal{C}_k$, we construct a visual anchor by aggregating its member embeddings:
++When a semantic cluster $\mathcal{C}_k$ is formed from available full visual embeddings, its visual anchor is initialized as:
+ \begin{equation}
+     \mathbf{a}_k = \frac{1}{|\mathcal{C}_k|}
+     \sum_{i\in\mathcal{C}_k}\mathbf{v}_i.
+ \end{equation}
++Thereafter, $\mathbf{a}_k$ denotes the maintained visual anchor, updated from the retained statistics as described below.
+ The resulting two-level memory structure maintains a full-dimensional visual anchor for each cluster and compact visual coordinates for individual memories, alongside their textual content. As new memories arrive, visual anchors are updated using retained visual statistics without revisiting historical images.
+ 
+ 
+@@ -95,12 +96,13 @@
+ When multiple existing clusters are merged, their visual sums can be directly aggregated.
+ For example, merging clusters $\mathcal{C}_p$ and $\mathcal{C}_q$ yields
+ $\mathbf{S}'=\mathbf{S}_p+\mathbf{S}_q$.
+-This operation preserves the complete aggregated visual information without approximation.
++This operation exactly preserves the stored visual aggregate without introducing additional approximation.
+ 
+ \textit{Case \ding{184}: Cluster Splitting and Reassignment.}
+ When only a subset of memories is transferred from an existing cluster, their full visual embeddings are no longer available.
+ We approximate the visual embedding of each historical memory $m_i\in\mathcal{C}_k$ as:
+ \begin{equation}
++\label{eq:vamo-leaf-reconstruction}
+     \hat{\mathbf{v}}_i =
+     \mathbf{U}\mathbf{z}_i +
+     \frac{\mathbf{R}_k}{|\mathcal{C}_k|}.
+@@ -108,9 +110,53 @@
+ Here, the first term reconstructs the retained visual components, while the second distributes the cluster-level residual equally among its members.
+ This enables approximate visual reconstruction during cluster splitting and member reassignment.
+ 
++% BEGIN VAMO RECONSTRUCTION LEMMA
++% Insert after Case ③ (Cluster Splitting and Reassignment), immediately
++% before the paragraph titled "Unified Anchor Updating".
++% Requires amsmath, amssymb, and a lemma environment in the main preamble.
++\begin{lemma}[Anchor-consistent visual reconstruction]
++\label{lem:vamo-anchor-reconstruction}
++Let $n_k=|\mathcal{C}_k|>0$ and
++$\mathbf{a}_k=\mathbf{S}_k/n_k$.
++Suppose $\mathbf{U}^{\top}\mathbf{U}=\mathbf{I}_2$ and
++$\mathbf{U}^{\top}\mathbf{S}_k
++=\sum_{i\in\mathcal{C}_k}\mathbf{z}_i$.
++Then the reconstruction in
++Eq.~\eqref{eq:vamo-leaf-reconstruction} is the unique solution to
++\begin{equation}
++\label{eq:vamo-constrained-reconstruction}
++    \min_{\mathbf{x}\in\mathbb{R}^{D}}
++    \|\mathbf{x}-\mathbf{a}_k\|_2^2
++    \quad\text{subject to}\quad
++    \mathbf{U}^{\top}\mathbf{x}=\mathbf{z}_i,
++\end{equation}
++and can be written as
++\begin{equation}
++\label{eq:vamo-anchor-correction}
++    \hat{\mathbf{v}}_i
++    =\mathbf{a}_k+
++    \mathbf{U}(\mathbf{z}_i-\mathbf{U}^{\top}\mathbf{a}_k).
++\end{equation}
++Moreover, it preserves the stored cluster aggregate:
++$\sum_{i\in\mathcal{C}_k}\hat{\mathbf{v}}_i=\mathbf{S}_k$.
++\end{lemma}
++
++Lemma~\ref{lem:vamo-anchor-reconstruction} characterizes reconstruction
++as the smallest change to the visual anchor that matches the memory's
++retained coordinates.
++Equivalently, it projects the original $\mathbf{v}_i$ orthogonally
++onto the affine space
++$\mathbf{a}_k+\operatorname{range}(\mathbf{U})$.
++The projection-consistency condition is preserved by our dynamic updates.
++The proof and the associated least-squares interpretation of the shared
++residual are provided in Appendix~\ref{app:vamo-reconstruction}.
++
++% END VAMO RECONSTRUCTION LEMMA
++
+ \textit{Unified Anchor Updating.}
+ Given an updated cluster $\mathcal{C}'_k$, its visual sum is computed by aggregating historical contributions from previous clusters and newly arrived memories:
+ \begin{equation}
++\label{eq:vamo-unified-update}
+ \begin{aligned}
+ \mathbf{S}'_k =
+ \sum_{j=1}^{K}

@@ -1,0 +1,204 @@
+{
+  "study": "Mem-Gallery natural observation of caption competition",
+  "status": "complete",
+  "dataset": {
+    "repo": "Ethan-Bei/Mem-Gallery",
+    "revision": "af912daba984e896e253016b7c7e334ef92c2a6f",
+    "official_code_revision": "a93959e1e978a6a7d77798ae92c2ffe41c538c62",
+    "download_scope": "20 dialogue JSON files; original image binaries not downloaded or required for caption-only observation",
+    "files": [
+      {
+        "path": "data/Mem-Gallery/data/dialog/AI_Robotics_Automation_Future_Tech.json",
+        "sha256": "fb51fad8a80b3610d90eaced0bf01bb2250a7f486a8dc67e8e9eee88a4e55b8e",
+        "bytes": 144270
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Academic_Animal_Pet_Research_Life.json",
+        "sha256": "9289425b20c81b25a217ad1a76009c88ddf02a784881b719f8b7e5b25911b948",
+        "bytes": 126829
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Architecture_Art_Culture_Exhibition_Technology.json",
+        "sha256": "1d1c336cb1412ef866d3d6b7efddeb5dadc1f6ef1fd2678b79239722ae285bd4",
+        "bytes": 126837
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Astronomy_Physics_Scientific_Experiments_Cosmology.json",
+        "sha256": "38e1820504b88845f001c2820fdb53e0db8d0a4b9dc59083e5e60f376b864b97",
+        "bytes": 129858
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Baking_Dessert_Daily_Life_Skill.json",
+        "sha256": "7b0169375ef20cfa9ddf67433ca78139f82ce30449e7813bb748ea29610ea859",
+        "bytes": 174316
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Dog_Behavior_Research_Academic_Life.json",
+        "sha256": "d825f7e3798514144230bb9edc9c8811604c92f8ad16584ad24d1fc18029898b",
+        "bytes": 111586
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Education_Career_Research_Lifestyle.json",
+        "sha256": "6e8c712397dc41ae0da623250c36250f5b71a85a4f86199159d729337136cc8b",
+        "bytes": 158497
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Entrepreneurship_Blockchain_Economics_Logistics_Nature.json",
+        "sha256": "c869195883d786b12c1ec984ca12a2b061c0aea2b5feb7f1d19cc0070392bf5b",
+        "bytes": 112504
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Fashion_Personal_Care_Lifestyle_Shopping.json",
+        "sha256": "7c4d3a48758429280a9e0b55fce2ae1af1f1d7e05b27800240f15e2a45a2751a",
+        "bytes": 118233
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Global_Travel_Cultural_Sightseeing.json",
+        "sha256": "775871b984df79969ac9e50d0497642d49eaa203ab09937127d6358dc7a17037",
+        "bytes": 141316
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Global_Travel_Sustainable_Fashion_Design.json",
+        "sha256": "e8c5e8c36d559a25172204af98a1a012db580115061f5b1609e9d4b7b850b5d8",
+        "bytes": 123225
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Home_Health_Lifestyle_Product.json",
+        "sha256": "bcc786c056738d5163ad0a132ba67caae2df82303ac7b99065471721484caf1b",
+        "bytes": 116061
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Home_Repair_Maintenance_Cleaning.json",
+        "sha256": "6c10293e51b5a9fa567eb8fd56bd9af52429b19a9aa945abd26f5cea6ed9f91c",
+        "bytes": 159484
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Landscape_Travel_Architecture_Nature.json",
+        "sha256": "883d8fc1ea325fa7abf3bad5213e2f192323c71dc4209b6b24dfd0edcc66615a",
+        "bytes": 149165
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Music_Dance_Theater_Performance_Learning.json",
+        "sha256": "c536c4091c463a7cb0a71db9628f1fbf744389b049b74945b505b6f73f91569f",
+        "bytes": 139963
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Nature_Economics_Programming_Student_Life.json",
+        "sha256": "3978b59ff7beeb1d64c50c8393127b70504130139cd90c198c2bb9e1533dc6b0",
+        "bytes": 171659
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Parenting_Commuting_Hobbies_Travel_Gear.json",
+        "sha256": "88824a01e9a25ef49a7af63436651ec323910a81f3139be3796d398d101a892e",
+        "bytes": 153037
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Python_Botany_AI_Student_Life.json",
+        "sha256": "d5bd84226e1dd48ade2d37683f91ed3a55d7f230d89bb6414ef68782b5103a7b",
+        "bytes": 244759
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Real_Estate_Home_Decor_DIY_Lifestyle.json",
+        "sha256": "ace411b22e74f80f9e25e5bf12279133b9895e2f38c9347581ae45541b740fcd",
+        "bytes": 134665
+      },
+      {
+        "path": "data/Mem-Gallery/data/dialog/Technology_Ethics_Future_Society.json",
+        "sha256": "11d931289ddd6bd9bd59a5564ccf6494d4ef59a10cdc5f320fbcf4a863c27fa2",
+        "bytes": 130336
+      }
+    ]
+  },
+  "source_manifest_sha256": "e41d9c5d626a98588f6c0ab6a240e7da87ecae9d5a347944b7f1dd89e7c0fdb8",
+  "script_sha256": "fef1cf3a210883eb900707e08cb932685c7e603be69761a7fc5f1e9a3ac728a5",
+  "retriever": "BAAI/bge-small-en-v1.5",
+  "retriever_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "model_path": "/storage/hewenwen/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "seed": 42,
+  "device": "cpu",
+  "query_policy": "question + official literal separator + cached Qwen question-image caption",
+  "caption_policy": "Cached Qwen captions for BOTH history and question images; original fields preserved",
+  "memory_unit": "one image-bearing round; concatenate full captions in source order",
+  "index_content": "captions only, without dialogue/date/ID/answer/clue",
+  "scope": "complete same-scenario image-bearing history, retaining original rounds",
+  "primary_cohort": "image-bearing questions with nonempty clues all present in image memory",
+  "supplementary_cohort": "all visual clue targets, explicitly excluding nonvisual clues from denominator",
+  "outcome": "each annotated visual target independently succeeds if original query rank <= 5",
+  "competitors": "first five in full query ranking after excluding ALL clues of the question",
+  "statistic": "mean caption cosine from target to five competitors; then target-equal group means",
+  "ties": "round query scores to 6 decimals; stable source order; record boundary ambiguity",
+  "missing_competitors": "retain retrieval outcome, exclude similarity if fewer than five nonkeys",
+  "interpretation": "descriptive association, not causation or answer accuracy; not official NaiveRAG reproduction",
+  "official_difference": "official textual memory includes dialogue text; this ports our caption-only observation",
+  "counts": {
+    "sessions": 240,
+    "rounds": 3962,
+    "scenarios": 20,
+    "questions": 1711,
+    "image_memory_rounds": 1003
+  },
+  "caption_label": "Qwen3-VL-8B-Instruct captions",
+  "caption_dir": "/storage/hewenwen/VisualMemory/data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1",
+  "caption_input_hashes": {
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/protocol.json": "31aa120fbd7bd80065f39b57c182d6777b2f29a2c2e3801e4f715d9a358c0ebc",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/independent_audit.json": "04b0ea8b604bcad8325264b0e75e79bc452590b71eb7ccc03649f6cd71b4d78d",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/AI_Robotics_Automation_Future_Tech.json": "808409ce44d37bdd3db341fd0236a38d5c5c223fca71b74090d646cb46309ab1",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Academic_Animal_Pet_Research_Life.json": "056abf863a49e5ed813027133116b8ddcbf9ee5fc2382550a761d1cd571958a2",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Architecture_Art_Culture_Exhibition_Technology.json": "5749b663f481810e6544517450189bf77c16f4f39c38650737ca7c21ac6b75d6",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Astronomy_Physics_Scientific_Experiments_Cosmology.json": "5dad6a1daaf51e77159e4ffd5952d2af1259e574dffd95cbf87990f23e0f8204",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Baking_Dessert_Daily_Life_Skill.json": "0d7364c0a00b0d5d6b96cfd23dc2a84bcd7067e0e01adce9ae3b3602ab0e7ed4",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Dog_Behavior_Research_Academic_Life.json": "f6a557d1dc6e4934c3e1e4185b630dd00b219018c4127ed1aa3b8a4b147c44b7",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Education_Career_Research_Lifestyle.json": "eaf6cb618a53281871fdc42ea72a02cf302b4a1376c64cdeeba0c05a818b0d73",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Entrepreneurship_Blockchain_Economics_Logistics_Nature.json": "81fdad6e5abdbdb7f4d281f220043572af6066be131d3f8ceced1b1b29efcb0c",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Fashion_Personal_Care_Lifestyle_Shopping.json": "c37d2879851ae5299ddb085915cfc53baf13154de997b201336d3030c384aa19",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Global_Travel_Cultural_Sightseeing.json": "8b07de55131d3c94b61b30d86a7b2a7966373be496d37247ed0eacb55a71903f",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Global_Travel_Sustainable_Fashion_Design.json": "ef2717a9eb0354af5d3634d13bd262ad1e03e286e0a6a03dea3c153f7e78168a",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Home_Health_Lifestyle_Product.json": "8a70f2ebc44c5d9be0b94e514c5a7d60a63e9f2aa56d6e464fd08035df86b858",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Home_Repair_Maintenance_Cleaning.json": "380ad37b658a681c74abd00dbe7eeeefe71d935114fda945755f86b988b3f7d4",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Landscape_Travel_Architecture_Nature.json": "0693e72ae3898e6a839bd6c5c4addf290c6993d4b7d49a2276ce99d283aa9b92",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Music_Dance_Theater_Performance_Learning.json": "d7c46e35a47fde8106e9aee09e2c7c50409e2222be281d010fd6987075e240e6",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Nature_Economics_Programming_Student_Life.json": "2135f8bbbb99ee7a465538ffdeba678cde6d49f84a6045a548c332191f79194c",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Parenting_Commuting_Hobbies_Travel_Gear.json": "67d82c85959366cf989f6207fe71941b26688681d945757c9d31793eab3b7cdf",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Python_Botany_AI_Student_Life.json": "1561e9251ed073a9fd385d06026a9ed06d6ef64644c181d2f9ba655357f61b64",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Real_Estate_Home_Decor_DIY_Lifestyle.json": "2d9c6391fe6d48e880c1823b7a95fb3e671b745950031b2c614efde6cea680c0",
+    "data/Mem-Gallery/captions/qwen3-vl-8b-instruct_20261018_v1/dialog_with_qwen_caption/Technology_Ethics_Future_Society.json": "9e1160c5d0dcab7ab279bc307ac7e7abfd759c10ff9fefc886003ff58ccb7385"
+  },
+  "environment": {
+    "torch": "2.13.0+cu130",
+    "numpy": "2.5.2",
+    "sentence_transformers": "5.7.0"
+  },
+  "audit": {
+    "unique_sample_ids": true,
+    "primary_questions": 456,
+    "image_questions": 487,
+    "image_questions_with_caption": 487,
+    "nonvisual_clues_excluded": 1196,
+    "no_clue_questions": 184,
+    "primary_boundary_ambiguous_targets": 0,
+    "primary_nonkey_boundary_tie_questions": 0,
+    "truncated_inputs": 0,
+    "max_memory_tokens": 191,
+    "max_query_tokens": 205,
+    "model_max_seq_length": 512,
+    "qwen_generation_calls": 0,
+    "answer_generation_calls": 0,
+    "per_scenario_positive_gap": 3,
+    "per_scenario_negative_gap": 12,
+    "per_scenario_comparable": 15
+  },
+  "model_file_hashes": {
+    "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+    "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "model.safetensors": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad",
+    "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "config_sentence_transformers.json": "940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56",
+    "config.json": "094f8e891b932f2000c92cfc663bac4c62069f5d8af5b5278c4306aef3084750",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "tokenizer_config.json": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3",
+    "README.md": "ddb964361a55c6e5dfca6361615854b260c9c960205d04c7520151aaa1d75837",
+    "1_Pooling/config.json": "d1caf60c96f5fba2157c0c26b76d80818fad6cf0b8eb5e73ec372ff9818eba5c"
+  }
+}

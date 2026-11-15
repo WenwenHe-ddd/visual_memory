@@ -1,0 +1,2089 @@
+{
+  "dataset_name": "Visual Assistant",
+  "task_name": "Outdoor Navigation Route Memory Assistant",
+  "character_profile": {
+    "primary_user": "Yui Sakamoto",
+    "role": "Courier building a visual reference library for repeat curbside handoffs across outdoor urban routes",
+    "setting": "Yui stores route snapshots and asks the assistant to remember them for later visual recall."
+  },
+  "multi_session_dialogues": [
+    {
+      "session_id": "OUTDOOR_S1",
+      "date": "2025-03-22",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S1:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S1:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S1_R2.jpg"
+          ],
+          "image_caption": [
+            "A multi-lane city street lined with sidewalks, guardrails, poles, traffic lights, and mid-rise to high-rise buildings has several cars stopped ahead beneath blue directional road signs."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S1:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S1_R3.jpg"
+          ],
+          "image_caption": [
+            "A multi-lane city street with a crosswalk holds several cars at a signal, bordered by sidewalks, poles, overhead wires, and mid- to high-rise buildings."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S1:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S1_R4.jpg"
+          ],
+          "image_caption": [
+            "A three-lane city street with several cars, sidewalks with trees and hedges, a median barrier on the right, overhead blue direction signs, and mid-rise to high-rise buildings on both sides."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S1:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S1_R5.jpg"
+          ],
+          "image_caption": [
+            "A multi-lane city street with several cars, fenced sidewalks with pedestrians and leafless trees on the left, traffic lights ahead, and mid-rise to high-rise buildings lining both sides."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S1:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    },
+    {
+      "session_id": "OUTDOOR_S2",
+      "date": "2025-03-26",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S2:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S2:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S2_R2.jpg"
+          ],
+          "image_caption": [
+            "A two-lane road passes under a wide elevated roadway, with several cars and a small white truck, sidewalks with railings and shrubs on both sides, and apartment buildings and traffic lights in the background."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S2:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S2_R3.jpg"
+          ],
+          "image_caption": [
+            "A two-lane city road passes under a large elevated roadway, with a small white truck and several cars ahead, sidewalks with railings and shrubs on both sides, and traffic lights and sign poles near the intersection."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S2:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S2_R4.jpg"
+          ],
+          "image_caption": [
+            "A multi-lane city road passes under a wide overpass, with several cars and a small white truck, sidewalks with railings and shrubs on the left, and buildings, poles, and traffic lights in the background."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S2:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S2_R5.jpg"
+          ],
+          "image_caption": [
+            "A multi-lane street passes under a large overpass toward a signalized intersection with crosswalks, with a white box truck, a black taxi, and a gray van ahead, plus railings, a narrow divider, cyclists, and apartment buildings on the left."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S2:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    },
+    {
+      "session_id": "OUTDOOR_S3",
+      "date": "2025-03-30",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S3:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S3:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S3_R2.jpg"
+          ],
+          "image_caption": [
+            "A two-lane city street lined with mid-rise apartment and commercial buildings has several cars ahead, sidewalks with hedges and lamp posts, overhead traffic lights, utility poles, and a fenced green strip on the right."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S3:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S3_R3.jpg"
+          ],
+          "image_caption": [
+            "A two-lane city street lined with mid-rise buildings has several cars under green traffic lights, with sidewalks, poles, a crosswalk, and a fenced grassy area on the right."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S3:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S3_R4.jpg"
+          ],
+          "image_caption": [
+            "A two-lane city street curves slightly left between sidewalks with shrubs and bare trees, with several cars under green traffic lights and mid-rise apartment and shop buildings lined with utility poles and overhead wires."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S3:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S3_R5.jpg"
+          ],
+          "image_caption": [
+            "A zebra crosswalk spans a two-lane city street lined with mid-rise buildings, sidewalks, utility poles and overhead wires, with several cars, a small three-wheeled scooter, green traffic lights, and a low green roadside railing visible."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S3:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    },
+    {
+      "session_id": "OUTDOOR_S4",
+      "date": "2025-03-31",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S4:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S4:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S4_R2.jpg"
+          ],
+          "image_caption": [
+            "A narrow paved city street with one lane in each direction is lined by sidewalks, storefronts and mid-rise buildings, with a box truck and a black car ahead, pedestrians, small trees, bicycles, and green traffic lights over a crosswalk."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S4:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S4_R3.jpg"
+          ],
+          "image_caption": [
+            "A box truck is centered at a cobblestone intersection with zebra crosswalks, sidewalks with black bollards, overhead traffic lights and utility wires, and mid-rise shop buildings on both sides."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S4:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S4_R4.jpg"
+          ],
+          "image_caption": [
+            "A narrow paved city street with a box truck in the center is lined by sidewalks with black bollards, small trees, and storefront buildings on both sides."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S4:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S4_R5.jpg"
+          ],
+          "image_caption": [
+            "A narrow paved city street between mid-rise buildings has a box truck ahead with cars beside it, and a wide sidewalk on the right lined with bollards, trees, signs, and a few bicycles near the building entrances."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S4:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    },
+    {
+      "session_id": "OUTDOOR_S5",
+      "date": "2025-03-31",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S5:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S5:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S5_R2.jpg"
+          ],
+          "image_caption": [
+            "A multi-lane city street at night runs between tall office buildings, with lane arrows, a line of flexible bollards, parked and moving cars, sidewalks with railings and streetlights, and a pedestrian overpass beneath red traffic lights."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S5:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S5_R3.jpg"
+          ],
+          "image_caption": [
+            "A multi-lane city street at night runs between tall buildings, with a crosswalk, guardrails, traffic lights, a pedestrian overpass with stairs on the right, and several cars ahead including one in the center lane."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S5:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S5_R4.jpg"
+          ],
+          "image_caption": [
+            "A straight multi-lane city street at night passes beneath a pedestrian overpass with stairs on the left, with a few cars ahead, lane arrows and guardrails, and office buildings and sidewalks lining both sides."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S5:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S5_R5.jpg"
+          ],
+          "image_caption": [
+            "A multi-lane city street at night curves slightly between tall office buildings, with several cars ahead, sidewalks with railings and trees on both sides, and green traffic lights in the distance."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S5:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    },
+    {
+      "session_id": "OUTDOOR_S6",
+      "date": "2025-03-26",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S6:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S6:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S6_R2.jpg"
+          ],
+          "image_caption": [
+            "A straight city street at night has one lane in each direction with several cars, a parked white van on the left, sidewalks beside multi-story buildings, streetlights, utility poles, and green traffic lights ahead."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S6:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S6_R3.jpg"
+          ],
+          "image_caption": [
+            "A lit urban street at night has two marked lanes with several cars, two bicyclists, sidewalks on both sides, traffic lights ahead, utility poles, and mid-rise buildings lining the road."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S6:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S6_R4.jpg"
+          ],
+          "image_caption": [
+            "A city street at night leads to a signalized intersection with crosswalks, several cars, a bicycle rider in the lane, sidewalks with pedestrians, poles, and mid-rise buildings with lit storefronts."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S6:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S6_R5.jpg"
+          ],
+          "image_caption": [
+            "A wide city intersection at night has zebra crosswalks, several cars, two bicyclists in the roadway, a green traffic light, streetlights, and multi-story storefront buildings along the sidewalks."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S6:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    },
+    {
+      "session_id": "OUTDOOR_S7",
+      "date": "2025-04-24",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S7:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S7:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S7_R2.jpg"
+          ],
+          "image_caption": [
+            "A straight multi-lane city street lined with trees and large buildings has several cars and vans, a marked crosswalk ahead, sidewalks on both sides, and overhead traffic lights."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S7:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S7_R3.jpg"
+          ],
+          "image_caption": [
+            "A tree-lined urban street with two marked lanes contains several cars and a white van near a crosswalk and traffic lights, flanked by sidewalks and modern buildings."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S7:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S7_R4.jpg"
+          ],
+          "image_caption": [
+            "A straight multi-lane city street with several cars and vans, a crosswalk and green traffic lights ahead, and tree-lined sidewalks bordered by mid-rise buildings."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S7:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S7_R5.jpg"
+          ],
+          "image_caption": [
+            "A wide multi-lane street with zebra crosswalks, several cars and a van, green traffic lights, tree-lined sidewalks, and buildings including one covered in scaffolding extends ahead."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S7:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    },
+    {
+      "session_id": "OUTDOOR_S8",
+      "date": "2025-04-29",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S8:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S8:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S8_R2.jpg"
+          ],
+          "image_caption": [
+            "A two-lane city street at night leads to a signalized intersection with crosswalks, two dark taxis ahead, sidewalks with guardrails and utility poles, and mid-rise buildings on both sides."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S8:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S8_R3.jpg"
+          ],
+          "image_caption": [
+            "A city street intersection at night has a zebra crosswalk, several cars, sidewalks with pedestrians, white guardrails, utility poles and traffic lights, and tall buildings on both sides."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S8:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S8_R4.jpg"
+          ],
+          "image_caption": [
+            "A lit urban intersection at night has zebra crosswalks, traffic lights, several cars, pedestrians near the corner, and mid-rise buildings with signs, poles, and overhead wires along both streets."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S8:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S8_R5.jpg"
+          ],
+          "image_caption": [
+            "A lit city street at night is lined with mid-rise buildings, sidewalks with railings and pedestrians, parked and moving cars including a black taxi in the foreground, streetlamps, and red traffic lights ahead."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S8:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    },
+    {
+      "session_id": "OUTDOOR_S9",
+      "date": "2025-05-13",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S9:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S9:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S9_R2.jpg"
+          ],
+          "image_caption": [
+            "A two-way street intersects at a wide zebra crosswalk with sidewalks, bollards, trees, a fenced grassy area on the left, a van and parked cars ahead, bicycles on the right, and large port cranes in the background."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S9:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S9_R3.jpg"
+          ],
+          "image_caption": [
+            "A two-lane road at a crosswalk is bordered by sidewalks, bollards, trees, a fenced grassy area on the left, a white van and parked cars ahead, and large red port cranes in the background."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S9:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S9_R4.jpg"
+          ],
+          "image_caption": [
+            "A two-way road meets a side street at zebra crosswalks, with sidewalks, streetlights, a fenced grassy area on the left, several parked or stopped vehicles ahead, bicycles on the right, and large red port cranes visible beyond the trees."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S9:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S9_R5.jpg"
+          ],
+          "image_caption": [
+            "A paved road curves left between sidewalks with bollard barriers, trees and bushes, a fenced grassy field on the right, streetlamps, and tall glass office buildings in the background."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S9:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    },
+    {
+      "session_id": "OUTDOOR_S10",
+      "date": "2025-05-16",
+      "dialogues": [
+        {
+          "round": "OUTDOOR_S10:R1",
+          "user": "I'm saving another route now.",
+          "assistant": "Okay, I'm ready."
+        },
+        {
+          "round": "OUTDOOR_S10:R2",
+          "user": "Here's checkpoint 1 on this route.",
+          "assistant": "Got it, that's checkpoint 1.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S10_R2.jpg"
+          ],
+          "image_caption": [
+            "A gently curving two-lane street with several cars and box trucks, bordered by sidewalks with railings and trees, a fenced rail line and large apartment building on the left, and tall residential towers and streetlamps on the right."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S10:R3",
+          "user": "Here's checkpoint 2 on this route.",
+          "assistant": "Got it, that's checkpoint 2.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S10_R3.jpg"
+          ],
+          "image_caption": [
+            "A gently curving two-way street lined with trees has several parked vans and trucks along the left curb, a small white car in the right lane, fenced railway tracks and a large apartment block on the left, and a sidewalk with railings and tall buildings on the right."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S10:R4",
+          "user": "Here's checkpoint 3 on this route.",
+          "assistant": "Got it, that's checkpoint 3.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S10_R4.jpg"
+          ],
+          "image_caption": [
+            "A gently curving city street lined with trees and tall apartment buildings has a row of cars and trucks along the left side, blue lane markings on the road, and a fenced sidewalk with a pedestrian on the right."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S10:R5",
+          "user": "Here's checkpoint 4 on this route.",
+          "assistant": "Got it, that's checkpoint 4.",
+          "input_image": [
+            "Outdoor_Navigation_Route_Memory_Assistant/S10_R5.jpg"
+          ],
+          "image_caption": [
+            "A straight two-way city street with a center line has parked vans and trucks along the left curb, blue road markings, black railings beside a tree-lined sidewalk on the right, and tall apartment buildings in the background."
+          ]
+        },
+        {
+          "round": "OUTDOOR_S10:R6",
+          "user": "Please keep this route in my notes.",
+          "assistant": "I'll keep it in your notes."
+        }
+      ]
+    }
+  ],
+  "human-annotated QAs": [
+    {
+      "question_id": "Q1",
+      "question": "When comparing the truck route under the elevated road with the narrow storefront truck route, which later scene detail belongs to the elevated-road route?",
+      "options": [
+        {
+          "A": "Lane arrows and multiple vehicles fan out near the intersection.",
+          "B": "The LIFE box truck stays centered between storefronts and sidewalk bollards.",
+          "C": "A green fence leads into a curve beside glass towers.",
+          "D": "Pedestrians fill a night crosswalk beside dark taxis and storefront lights.",
+          "answer": "A"
+        },
+        {
+          "A": "A green fence leads into a curve beside glass towers.",
+          "B": "Lane arrows and multiple vehicles fan out near the intersection.",
+          "C": "Pedestrians fill a night crosswalk beside dark taxis and storefront lights.",
+          "D": "The LIFE box truck stays centered between storefronts and sidewalk bollards.",
+          "answer": "B"
+        },
+        {
+          "A": "Pedestrians fill a night crosswalk beside dark taxis and storefront lights.",
+          "B": "The LIFE box truck stays centered between storefronts and sidewalk bollards.",
+          "C": "Lane arrows and multiple vehicles fan out near the intersection.",
+          "D": "A green fence leads into a curve beside glass towers.",
+          "answer": "C"
+        },
+        {
+          "A": "The LIFE box truck stays centered between storefronts and sidewalk bollards.",
+          "B": "A green fence leads into a curve beside glass towers.",
+          "C": "Pedestrians fill a night crosswalk beside dark taxis and storefront lights.",
+          "D": "Lane arrows and multiple vehicles fan out near the intersection.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S2",
+        "OUTDOOR_S4"
+      ],
+      "clue": [
+        "OUTDOOR_S2:R4",
+        "OUTDOOR_S2:R5",
+        "OUTDOOR_S4:R4",
+        "OUTDOOR_S4:R5"
+      ],
+      "answer": "D",
+      "explanation": "S2 ends with lane arrows and several vehicles spreading near the intersection under the elevated road, while S4 stays narrow behind the LIFE truck.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "question": "In the sunny sequence with red port cranes beyond a green fence, what route change is shown after the zebra-crossing views?",
+      "options": [
+        {
+          "A": "The route bends into a quieter road beside glass towers, with blue markings on the pavement.",
+          "B": "It works past parked trucks along the left curb on a blue-marked road.",
+          "C": "It stays in a night street behind dark taxis while pedestrians remain near the crossing.",
+          "D": "It continues straight behind a white box truck through a narrow shop-lined block.",
+          "answer": "A"
+        },
+        {
+          "A": "It stays in a night street behind dark taxis while pedestrians remain near the crossing.",
+          "B": "The route bends into a quieter road beside glass towers, with blue markings on the pavement.",
+          "C": "It continues straight behind a white box truck through a narrow shop-lined block.",
+          "D": "It works past parked trucks along the left curb on a blue-marked road.",
+          "answer": "B"
+        },
+        {
+          "A": "It continues straight behind a white box truck through a narrow shop-lined block.",
+          "B": "It works past parked trucks along the left curb on a blue-marked road.",
+          "C": "The route bends into a quieter road beside glass towers, with blue markings on the pavement.",
+          "D": "It stays in a night street behind dark taxis while pedestrians remain near the crossing.",
+          "answer": "C"
+        },
+        {
+          "A": "It works past parked trucks along the left curb on a blue-marked road.",
+          "B": "It stays in a night street behind dark taxis while pedestrians remain near the crossing.",
+          "C": "It continues straight behind a white box truck through a narrow shop-lined block.",
+          "D": "The route bends into a quieter road beside glass towers, with blue markings on the pavement.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S9"
+      ],
+      "clue": [
+        "OUTDOOR_S9:R2",
+        "OUTDOOR_S9:R3",
+        "OUTDOOR_S9:R4",
+        "OUTDOOR_S9:R5"
+      ],
+      "answer": "D",
+      "explanation": "The correct evidence is only S9:R2-R5: the crosswalk clears and the route then bends into the glass-building stretch. S8 and S10 crossing/bottleneck frames are not supporting evidence for this item.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q5",
+      "question": "In the night route that starts behind cars at a red light, what structure does the car pass under a little later?",
+      "options": [
+        {
+          "A": "A pedestrian overpass with stairs spans the road.",
+          "B": "A red port crane rises beyond a green fence.",
+          "C": "A wide expressway overpass covers the whole road.",
+          "D": "A dark construction-covered building appears beside a daytime crosswalk.",
+          "answer": "A"
+        },
+        {
+          "A": "A wide expressway overpass covers the whole road.",
+          "B": "A pedestrian overpass with stairs spans the road.",
+          "C": "A dark construction-covered building appears beside a daytime crosswalk.",
+          "D": "A red port crane rises beyond a green fence.",
+          "answer": "B"
+        },
+        {
+          "A": "A dark construction-covered building appears beside a daytime crosswalk.",
+          "B": "A red port crane rises beyond a green fence.",
+          "C": "A pedestrian overpass with stairs spans the road.",
+          "D": "A wide expressway overpass covers the whole road.",
+          "answer": "C"
+        },
+        {
+          "A": "A red port crane rises beyond a green fence.",
+          "B": "A wide expressway overpass covers the whole road.",
+          "C": "A dark construction-covered building appears beside a daytime crosswalk.",
+          "D": "A pedestrian overpass with stairs spans the road.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S5"
+      ],
+      "clue": [
+        "OUTDOOR_S5:R2",
+        "OUTDOOR_S5:R3",
+        "OUTDOOR_S5:R4"
+      ],
+      "answer": "D",
+      "explanation": "S5:R2 starts behind cars at a red light, and S5:R3-R4 then show the route passing beneath a pedestrian overpass with stairs.",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q6",
+      "question": "In the daytime route that begins behind the boxy light-blue compact car, what landmark sits beside the final wide crosswalk?",
+      "options": [
+        {
+          "A": "A building wrapped in dark construction mesh.",
+          "B": "Red harbor cranes beyond a green fence.",
+          "C": "A pedestrian overpass crossing above the lane.",
+          "D": "A white box truck with a LIFE logo centered ahead.",
+          "answer": "A"
+        },
+        {
+          "A": "A pedestrian overpass crossing above the lane.",
+          "B": "A building wrapped in dark construction mesh.",
+          "C": "A white box truck with a LIFE logo centered ahead.",
+          "D": "Red harbor cranes beyond a green fence.",
+          "answer": "B"
+        },
+        {
+          "A": "A white box truck with a LIFE logo centered ahead.",
+          "B": "Red harbor cranes beyond a green fence.",
+          "C": "A building wrapped in dark construction mesh.",
+          "D": "A pedestrian overpass crossing above the lane.",
+          "answer": "C"
+        },
+        {
+          "A": "Red harbor cranes beyond a green fence.",
+          "B": "A pedestrian overpass crossing above the lane.",
+          "C": "A white box truck with a LIFE logo centered ahead.",
+          "D": "A building wrapped in dark construction mesh.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S7"
+      ],
+      "clue": [
+        "OUTDOOR_S7:R2",
+        "OUTDOOR_S7:R4",
+        "OUTDOOR_S7:R5"
+      ],
+      "answer": "D",
+      "explanation": "S7:R2 identifies the route by the boxy light-blue compact car; S7:R5 ends at a wide crosswalk beside a building wrapped in dark construction mesh.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q7",
+      "question": "When comparing the opening frames of the two daytime building-lined routes, which cue belongs to the broader boulevard rather than the route with a boxy light-blue compact car?",
+      "options": [
+        {
+          "A": "A gray vehicle sits close on the right while blue direction signs hang ahead.",
+          "B": "A dark construction-covered building appears beside a wide final crosswalk.",
+          "C": "A row of parked trucks lines the left curb on a road with blue pavement markings.",
+          "D": "A dark taxi waits at a night crosswalk with pedestrians nearby.",
+          "answer": "A"
+        },
+        {
+          "A": "A row of parked trucks lines the left curb on a road with blue pavement markings.",
+          "B": "A gray vehicle sits close on the right while blue direction signs hang ahead.",
+          "C": "A dark taxi waits at a night crosswalk with pedestrians nearby.",
+          "D": "A dark construction-covered building appears beside a wide final crosswalk.",
+          "answer": "B"
+        },
+        {
+          "A": "A dark taxi waits at a night crosswalk with pedestrians nearby.",
+          "B": "A dark construction-covered building appears beside a wide final crosswalk.",
+          "C": "A gray vehicle sits close on the right while blue direction signs hang ahead.",
+          "D": "A row of parked trucks lines the left curb on a road with blue pavement markings.",
+          "answer": "C"
+        },
+        {
+          "A": "A dark construction-covered building appears beside a wide final crosswalk.",
+          "B": "A row of parked trucks lines the left curb on a road with blue pavement markings.",
+          "C": "A dark taxi waits at a night crosswalk with pedestrians nearby.",
+          "D": "A gray vehicle sits close on the right while blue direction signs hang ahead.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S1",
+        "OUTDOOR_S7"
+      ],
+      "clue": [
+        "OUTDOOR_S1:R2",
+        "OUTDOOR_S1:R3",
+        "OUTDOOR_S1:R4",
+        "OUTDOOR_S7:R2",
+        "OUTDOOR_S7:R3"
+      ],
+      "answer": "D",
+      "explanation": "S1 has the gray vehicle and overhead blue signs; S7 has the boxy light-blue compact car and a more tree-lined street.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q9",
+      "question": "Near the end of the two truck-follow sequences, how does the shop-lined block differ from the route under the elevated road?",
+      "options": [
+        {
+          "A": "It keeps the LIFE box truck centered between storefronts and sidewalk bollards.",
+          "B": "It opens under a broad overpass with a black taxi and gray van ahead.",
+          "C": "It turns into a glass-tower road with blue paint on the pavement.",
+          "D": "It works past a left-side line of parked trucks on a blue-marked road.",
+          "answer": "A"
+        },
+        {
+          "A": "It turns into a glass-tower road with blue paint on the pavement.",
+          "B": "It keeps the LIFE box truck centered between storefronts and sidewalk bollards.",
+          "C": "It works past a left-side line of parked trucks on a blue-marked road.",
+          "D": "It opens under a broad overpass with a black taxi and gray van ahead.",
+          "answer": "B"
+        },
+        {
+          "A": "It works past a left-side line of parked trucks on a blue-marked road.",
+          "B": "It opens under a broad overpass with a black taxi and gray van ahead.",
+          "C": "It keeps the LIFE box truck centered between storefronts and sidewalk bollards.",
+          "D": "It turns into a glass-tower road with blue paint on the pavement.",
+          "answer": "C"
+        },
+        {
+          "A": "It opens under a broad overpass with a black taxi and gray van ahead.",
+          "B": "It turns into a glass-tower road with blue paint on the pavement.",
+          "C": "It works past a left-side line of parked trucks on a blue-marked road.",
+          "D": "It keeps the LIFE box truck centered between storefronts and sidewalk bollards.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S2",
+        "OUTDOOR_S4"
+      ],
+      "clue": [
+        "OUTDOOR_S2:R5",
+        "OUTDOOR_S4:R4",
+        "OUTDOOR_S4:R5"
+      ],
+      "answer": "D",
+      "explanation": "S4 remains the narrow storefront route behind the LIFE truck, while S2 ends under the elevated roadway with several vehicles fanning out.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q10",
+      "question": "Which later crossing cue belongs to the narrow daytime shopfront route with overhead wires rather than the night route with bicyclists?",
+      "options": [
+        {
+          "A": "A small three-wheeled delivery vehicle appears near a white SUV at the zebra crossing.",
+          "B": "Bicyclists ride through a night intersection under storefront lights.",
+          "C": "A pedestrian bridge with stairs spans a night road with white lane posts.",
+          "D": "A black taxi sits near a night crosswalk.",
+          "answer": "A"
+        },
+        {
+          "A": "A pedestrian bridge with stairs spans a night road with white lane posts.",
+          "B": "A small three-wheeled delivery vehicle appears near a white SUV at the zebra crossing.",
+          "C": "A black taxi sits near a night crosswalk.",
+          "D": "Bicyclists ride through a night intersection under storefront lights.",
+          "answer": "B"
+        },
+        {
+          "A": "A black taxi sits near a night crosswalk.",
+          "B": "Bicyclists ride through a night intersection under storefront lights.",
+          "C": "A small three-wheeled delivery vehicle appears near a white SUV at the zebra crossing.",
+          "D": "A pedestrian bridge with stairs spans a night road with white lane posts.",
+          "answer": "C"
+        },
+        {
+          "A": "Bicyclists ride through a night intersection under storefront lights.",
+          "B": "A pedestrian bridge with stairs spans a night road with white lane posts.",
+          "C": "A black taxi sits near a night crosswalk.",
+          "D": "A small three-wheeled delivery vehicle appears near a white SUV at the zebra crossing.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S3",
+        "OUTDOOR_S6"
+      ],
+      "clue": [
+        "OUTDOOR_S3:R4",
+        "OUTDOOR_S3:R5",
+        "OUTDOOR_S6:R4",
+        "OUTDOOR_S6:R5"
+      ],
+      "answer": "D",
+      "explanation": "S3 is anchored by the narrow daytime street with shopfronts, overhead wires, and a final zebra crossing. In S3:R5, a small three-wheeled vehicle appears near the white SUV; S6 is the night route where bicyclists move through the intersection.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q11",
+      "question": "In the green-light night route that later involves bicyclists, what parked object marks the left edge at the opening?",
+      "options": [
+        {
+          "A": "A boxy white compact car is parked close along the left side.",
+          "B": "A gray vehicle is close on the right side of a broad boulevard.",
+          "C": "A white box truck fills the center under an elevated road.",
+          "D": "A row of bollards borders a green-fenced field.",
+          "answer": "A"
+        },
+        {
+          "A": "A white box truck fills the center under an elevated road.",
+          "B": "A boxy white compact car is parked close along the left side.",
+          "C": "A row of bollards borders a green-fenced field.",
+          "D": "A gray vehicle is close on the right side of a broad boulevard.",
+          "answer": "B"
+        },
+        {
+          "A": "A row of bollards borders a green-fenced field.",
+          "B": "A gray vehicle is close on the right side of a broad boulevard.",
+          "C": "A boxy white compact car is parked close along the left side.",
+          "D": "A white box truck fills the center under an elevated road.",
+          "answer": "C"
+        },
+        {
+          "A": "A gray vehicle is close on the right side of a broad boulevard.",
+          "B": "A white box truck fills the center under an elevated road.",
+          "C": "A row of bollards borders a green-fenced field.",
+          "D": "A boxy white compact car is parked close along the left side.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S6"
+      ],
+      "clue": [
+        "OUTDOOR_S6:R2",
+        "OUTDOOR_S6:R3"
+      ],
+      "answer": "D",
+      "explanation": "S6 begins with a boxy white compact car on the left before the later frames introduce bicyclists near the intersection.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q12",
+      "question": "Between the two night-crossing sequences, which cue identifies the busier street-level crossing rather than the smoother overhead-walkway route?",
+      "options": [
+        {
+          "A": "Pedestrians are still in the zebra crossing among taxis and storefront lights.",
+          "B": "A pedestrian overpass spans the road with stairs beside it.",
+          "C": "A small delivery tricycle crosses in daylight near a white SUV.",
+          "D": "A row of parked trucks blocks the left curb on a blue-marked road.",
+          "answer": "A"
+        },
+        {
+          "A": "A small delivery tricycle crosses in daylight near a white SUV.",
+          "B": "Pedestrians are still in the zebra crossing among taxis and storefront lights.",
+          "C": "A row of parked trucks blocks the left curb on a blue-marked road.",
+          "D": "A pedestrian overpass spans the road with stairs beside it.",
+          "answer": "B"
+        },
+        {
+          "A": "A row of parked trucks blocks the left curb on a blue-marked road.",
+          "B": "A pedestrian overpass spans the road with stairs beside it.",
+          "C": "Pedestrians are still in the zebra crossing among taxis and storefront lights.",
+          "D": "A small delivery tricycle crosses in daylight near a white SUV.",
+          "answer": "C"
+        },
+        {
+          "A": "A pedestrian overpass spans the road with stairs beside it.",
+          "B": "A small delivery tricycle crosses in daylight near a white SUV.",
+          "C": "A row of parked trucks blocks the left curb on a blue-marked road.",
+          "D": "Pedestrians are still in the zebra crossing among taxis and storefront lights.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S5",
+        "OUTDOOR_S8"
+      ],
+      "clue": [
+        "OUTDOOR_S5:R3",
+        "OUTDOOR_S5:R4",
+        "OUTDOOR_S8:R3",
+        "OUTDOOR_S8:R4"
+      ],
+      "answer": "D",
+      "explanation": "S8 shows the busy street-level night crossing, while S5 is the smoother night route marked by the pedestrian overpass.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q13",
+      "question": "In the daytime sequence where an older pedestrian crosses the wide zebra crossing, what structure is visible beyond the open field?",
+      "options": [
+        {
+          "A": "Red harbor cranes rise in the distance.",
+          "B": "A pedestrian overpass spans the road.",
+          "C": "A dark construction-covered building sits beside the crossing.",
+          "D": "A tall pink curved sculpture stands by the sidewalk.",
+          "answer": "A"
+        },
+        {
+          "A": "A dark construction-covered building sits beside the crossing.",
+          "B": "Red harbor cranes rise in the distance.",
+          "C": "A tall pink curved sculpture stands by the sidewalk.",
+          "D": "A pedestrian overpass spans the road.",
+          "answer": "B"
+        },
+        {
+          "A": "A tall pink curved sculpture stands by the sidewalk.",
+          "B": "A pedestrian overpass spans the road.",
+          "C": "Red harbor cranes rise in the distance.",
+          "D": "A dark construction-covered building sits beside the crossing.",
+          "answer": "C"
+        },
+        {
+          "A": "A pedestrian overpass spans the road.",
+          "B": "A tall pink curved sculpture stands by the sidewalk.",
+          "C": "A dark construction-covered building sits beside the crossing.",
+          "D": "Red harbor cranes rise in the distance.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S9"
+      ],
+      "clue": [
+        "OUTDOOR_S9:R2",
+        "OUTDOOR_S9:R3",
+        "OUTDOOR_S9:R4"
+      ],
+      "answer": "D",
+      "explanation": "S9:R2-R4 show the daytime crossing with an older pedestrian and red harbor cranes visible beyond the open field.",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q14",
+      "question": "In the sunny route identified by the row of parked trucks and vans, what road-surface detail is visible as the car passes that row?",
+      "options": [
+        {
+          "A": "Blue painted arrows and patches appear on the pavement.",
+          "B": "Pedestrians finish crossing a zebra crossing in front of red harbor cranes.",
+          "C": "A white LIFE box truck turns away from storefronts.",
+          "D": "A pedestrian bridge overhead gives way to a broad empty night lane.",
+          "answer": "A"
+        },
+        {
+          "A": "A white LIFE box truck turns away from storefronts.",
+          "B": "Blue painted arrows and patches appear on the pavement.",
+          "C": "A pedestrian bridge overhead gives way to a broad empty night lane.",
+          "D": "Pedestrians finish crossing a zebra crossing in front of red harbor cranes.",
+          "answer": "B"
+        },
+        {
+          "A": "A pedestrian bridge overhead gives way to a broad empty night lane.",
+          "B": "Pedestrians finish crossing a zebra crossing in front of red harbor cranes.",
+          "C": "Blue painted arrows and patches appear on the pavement.",
+          "D": "A white LIFE box truck turns away from storefronts.",
+          "answer": "C"
+        },
+        {
+          "A": "Pedestrians finish crossing a zebra crossing in front of red harbor cranes.",
+          "B": "A white LIFE box truck turns away from storefronts.",
+          "C": "A pedestrian bridge overhead gives way to a broad empty night lane.",
+          "D": "Blue painted arrows and patches appear on the pavement.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S10"
+      ],
+      "clue": [
+        "OUTDOOR_S10:R2",
+        "OUTDOOR_S10:R3",
+        "OUTDOOR_S10:R4"
+      ],
+      "answer": "D",
+      "explanation": "S10 is identified by the row of parked trucks and vans; S10:R4 shows blue painted arrows and patches on the pavement as the car passes that row.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q15",
+      "question": "At the start of the route that later reaches the wide crosswalk beside a dark construction-covered building, which vehicle pairing is visible?",
+      "options": [
+        {
+          "A": "A white SUV is ahead while a boxy light-blue compact car sits along the left side.",
+          "B": "A white SUV is ahead with a gray vehicle close on the right.",
+          "C": "A white box truck is centered under a broad elevated roadway.",
+          "D": "A black taxi is ahead at a night crosswalk.",
+          "answer": "A"
+        },
+        {
+          "A": "A white box truck is centered under a broad elevated roadway.",
+          "B": "A white SUV is ahead while a boxy light-blue compact car sits along the left side.",
+          "C": "A black taxi is ahead at a night crosswalk.",
+          "D": "A white SUV is ahead with a gray vehicle close on the right.",
+          "answer": "B"
+        },
+        {
+          "A": "A black taxi is ahead at a night crosswalk.",
+          "B": "A white SUV is ahead with a gray vehicle close on the right.",
+          "C": "A white SUV is ahead while a boxy light-blue compact car sits along the left side.",
+          "D": "A white box truck is centered under a broad elevated roadway.",
+          "answer": "C"
+        },
+        {
+          "A": "A white SUV is ahead with a gray vehicle close on the right.",
+          "B": "A white box truck is centered under a broad elevated roadway.",
+          "C": "A black taxi is ahead at a night crosswalk.",
+          "D": "A white SUV is ahead while a boxy light-blue compact car sits along the left side.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S7"
+      ],
+      "clue": [
+        "OUTDOOR_S7:R2",
+        "OUTDOOR_S7:R3",
+        "OUTDOOR_S7:R5"
+      ],
+      "answer": "D",
+      "explanation": "The S7 route later reaches the wide crosswalk beside the dark construction-covered building, and its opening frames show the white SUV ahead with the boxy light-blue compact car on the left.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q18",
+      "question": "For the two sunny routes that can be confused, which pairing correctly matches the red-harbor-crane route and the parked-truck route?",
+      "options": [
+        {
+          "A": "Red-harbor-crane route: bends left into a quieter road with blue pavement patches; parked-truck route: later shows a tall pink curved roadside sculpture.",
+          "B": "Red-harbor-crane route: follows a LIFE truck; parked-truck route: passes under a pedestrian bridge.",
+          "C": "Red-harbor-crane route: stays behind dark taxis; parked-truck route: waits for pedestrians at night.",
+          "D": "Red-harbor-crane route: has bicyclists under green night lights; parked-truck route: has a delivery tricycle crossing.",
+          "answer": "A"
+        },
+        {
+          "A": "Red-harbor-crane route: stays behind dark taxis; parked-truck route: waits for pedestrians at night.",
+          "B": "Red-harbor-crane route: bends left into a quieter road with blue pavement patches; parked-truck route: later shows a tall pink curved roadside sculpture.",
+          "C": "Red-harbor-crane route: has bicyclists under green night lights; parked-truck route: has a delivery tricycle crossing.",
+          "D": "Red-harbor-crane route: follows a LIFE truck; parked-truck route: passes under a pedestrian bridge.",
+          "answer": "B"
+        },
+        {
+          "A": "Red-harbor-crane route: has bicyclists under green night lights; parked-truck route: has a delivery tricycle crossing.",
+          "B": "Red-harbor-crane route: follows a LIFE truck; parked-truck route: passes under a pedestrian bridge.",
+          "C": "Red-harbor-crane route: bends left into a quieter road with blue pavement patches; parked-truck route: later shows a tall pink curved roadside sculpture.",
+          "D": "Red-harbor-crane route: stays behind dark taxis; parked-truck route: waits for pedestrians at night.",
+          "answer": "C"
+        },
+        {
+          "A": "Red-harbor-crane route: follows a LIFE truck; parked-truck route: passes under a pedestrian bridge.",
+          "B": "Red-harbor-crane route: stays behind dark taxis; parked-truck route: waits for pedestrians at night.",
+          "C": "Red-harbor-crane route: has bicyclists under green night lights; parked-truck route: has a delivery tricycle crossing.",
+          "D": "Red-harbor-crane route: bends left into a quieter road with blue pavement patches; parked-truck route: later shows a tall pink curved roadside sculpture.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S9",
+        "OUTDOOR_S10"
+      ],
+      "clue": [
+        "OUTDOOR_S9:R2",
+        "OUTDOOR_S9:R3",
+        "OUTDOOR_S9:R4",
+        "OUTDOOR_S9:R5",
+        "OUTDOOR_S10:R2",
+        "OUTDOOR_S10:R3",
+        "OUTDOOR_S10:R4",
+        "OUTDOOR_S10:R5"
+      ],
+      "answer": "D",
+      "explanation": "S9 is the route with red harbor cranes beyond the open field and later bends left into a quieter road with blue pavement patches. S10 is the parked-truck route and later shows the tall pink curved roadside sculpture.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "question": "In the daytime route with blue overhead direction signs ahead, what is closest on the right side in the opening frames?",
+      "options": [
+        {
+          "A": "A gray vehicle is close on the right.",
+          "B": "A boxy light-blue compact car is close on the left.",
+          "C": "A black taxi is close on the right.",
+          "D": "A white box truck is close in the center lane.",
+          "answer": "A"
+        },
+        {
+          "A": "A black taxi is close on the right.",
+          "B": "A gray vehicle is close on the right.",
+          "C": "A white box truck is close in the center lane.",
+          "D": "A boxy light-blue compact car is close on the left.",
+          "answer": "B"
+        },
+        {
+          "A": "A white box truck is close in the center lane.",
+          "B": "A boxy light-blue compact car is close on the left.",
+          "C": "A gray vehicle is close on the right.",
+          "D": "A black taxi is close on the right.",
+          "answer": "C"
+        },
+        {
+          "A": "A boxy light-blue compact car is close on the left.",
+          "B": "A black taxi is close on the right.",
+          "C": "A white box truck is close in the center lane.",
+          "D": "A gray vehicle is close on the right.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S1"
+      ],
+      "clue": [
+        "OUTDOOR_S1:R2",
+        "OUTDOOR_S1:R3"
+      ],
+      "answer": "D",
+      "explanation": "S1:R2-R3 show the daytime route with blue direction signs ahead and a gray vehicle close on the right side.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q23",
+      "question": "In the route that starts with a boxy light-blue compact car along the left side, what traffic-control feature dominates the final saved view?",
+      "options": [
+        {
+          "A": "A wide zebra crossing with green traffic lights ahead.",
+          "B": "A pedestrian overpass with stairs above the road.",
+          "C": "Red harbor cranes behind a green fence.",
+          "D": "A narrow storefront block with a LIFE truck centered ahead.",
+          "answer": "A"
+        },
+        {
+          "A": "Red harbor cranes behind a green fence.",
+          "B": "A wide zebra crossing with green traffic lights ahead.",
+          "C": "A narrow storefront block with a LIFE truck centered ahead.",
+          "D": "A pedestrian overpass with stairs above the road.",
+          "answer": "B"
+        },
+        {
+          "A": "A narrow storefront block with a LIFE truck centered ahead.",
+          "B": "A pedestrian overpass with stairs above the road.",
+          "C": "A wide zebra crossing with green traffic lights ahead.",
+          "D": "Red harbor cranes behind a green fence.",
+          "answer": "C"
+        },
+        {
+          "A": "A pedestrian overpass with stairs above the road.",
+          "B": "Red harbor cranes behind a green fence.",
+          "C": "A narrow storefront block with a LIFE truck centered ahead.",
+          "D": "A wide zebra crossing with green traffic lights ahead.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S7"
+      ],
+      "clue": [
+        "OUTDOOR_S7:R2",
+        "OUTDOOR_S7:R3",
+        "OUTDOOR_S7:R4",
+        "OUTDOOR_S7:R5"
+      ],
+      "answer": "D",
+      "explanation": "S7 starts with the boxy light-blue compact car along the left side and ends at a wide zebra crossing under green lights.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q25",
+      "question": "In the night route at the red-awning corner, what interrupts the car's path before the view opens down the block?",
+      "options": [
+        {
+          "A": "A small group of pedestrians steps across the lane.",
+          "B": "A bicyclist rides ahead under a green traffic light.",
+          "C": "A white box truck moves under an overpass.",
+          "D": "A delivery tricycle enters a daytime crossing.",
+          "answer": "A"
+        },
+        {
+          "A": "A delivery tricycle enters a daytime crossing.",
+          "B": "A small group of pedestrians steps across the lane.",
+          "C": "A white box truck moves under an overpass.",
+          "D": "A bicyclist rides ahead under a green traffic light.",
+          "answer": "B"
+        },
+        {
+          "A": "A white box truck moves under an overpass.",
+          "B": "A bicyclist rides ahead under a green traffic light.",
+          "C": "A small group of pedestrians steps across the lane.",
+          "D": "A delivery tricycle enters a daytime crossing.",
+          "answer": "C"
+        },
+        {
+          "A": "A bicyclist rides ahead under a green traffic light.",
+          "B": "A delivery tricycle enters a daytime crossing.",
+          "C": "A white box truck moves under an overpass.",
+          "D": "A small group of pedestrians steps across the lane.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S8"
+      ],
+      "clue": [
+        "OUTDOOR_S8:R2",
+        "OUTDOOR_S8:R3",
+        "OUTDOOR_S8:R4"
+      ],
+      "answer": "D",
+      "explanation": "S8 is identified by the red-awning street corner; S8:R3-R4 show a small group of pedestrians stepping across the lane before the later view opens down the block.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q26",
+      "question": "After the sunny route gets past the parked trucks and vans, what road detail remains visible?",
+      "options": [
+        {
+          "A": "Blue lane markings remain visible on the road.",
+          "B": "Yellow bus-lane text fills the road surface.",
+          "C": "A long zebra crossing fills the entire foreground.",
+          "D": "Orange lane posts divide the road.",
+          "answer": "A"
+        },
+        {
+          "A": "A long zebra crossing fills the entire foreground.",
+          "B": "Blue lane markings remain visible on the road.",
+          "C": "Orange lane posts divide the road.",
+          "D": "Yellow bus-lane text fills the road surface.",
+          "answer": "B"
+        },
+        {
+          "A": "Orange lane posts divide the road.",
+          "B": "Yellow bus-lane text fills the road surface.",
+          "C": "Blue lane markings remain visible on the road.",
+          "D": "A long zebra crossing fills the entire foreground.",
+          "answer": "C"
+        },
+        {
+          "A": "Yellow bus-lane text fills the road surface.",
+          "B": "A long zebra crossing fills the entire foreground.",
+          "C": "Orange lane posts divide the road.",
+          "D": "Blue lane markings remain visible on the road.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S10"
+      ],
+      "clue": [
+        "OUTDOOR_S10:R4",
+        "OUTDOOR_S10:R5"
+      ],
+      "answer": "D",
+      "explanation": "S10:R4-R5 show the route after it gets past the parked trucks and vans, and the blue road markings remain visible.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q27",
+      "question": "In the narrow storefront route with black sidewalk bollards, what marking is on the rear of the box truck ahead?",
+      "options": [
+        {
+          "A": "The word LIFE with a blue triangular logo.",
+          "B": "A red circular delivery logo.",
+          "C": "A green route number beside a crane icon.",
+          "D": "No readable marking is visible on the truck.",
+          "answer": "A"
+        },
+        {
+          "A": "A green route number beside a crane icon.",
+          "B": "The word LIFE with a blue triangular logo.",
+          "C": "No readable marking is visible on the truck.",
+          "D": "A red circular delivery logo.",
+          "answer": "B"
+        },
+        {
+          "A": "No readable marking is visible on the truck.",
+          "B": "A red circular delivery logo.",
+          "C": "The word LIFE with a blue triangular logo.",
+          "D": "A green route number beside a crane icon.",
+          "answer": "C"
+        },
+        {
+          "A": "A red circular delivery logo.",
+          "B": "A green route number beside a crane icon.",
+          "C": "No readable marking is visible on the truck.",
+          "D": "The word LIFE with a blue triangular logo.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S4"
+      ],
+      "clue": [
+        "OUTDOOR_S4:R3",
+        "OUTDOOR_S4:R4",
+        "OUTDOOR_S4:R5"
+      ],
+      "answer": "D",
+      "explanation": "S4:R3-R5 identify the narrow storefront route with black sidewalk bollards, and the box truck ahead shows a LIFE marking with a blue triangular logo.",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q29",
+      "question": "At the final zebra crossing on the narrow daytime route with shopfronts and overhead wires, where is the small delivery tricycle relative to the white SUV?",
+      "options": [
+        {
+          "A": "To the right and slightly behind the white SUV.",
+          "B": "Directly in front of the white SUV.",
+          "C": "Directly behind the white SUV in the same lane.",
+          "D": "Parked on the sidewalk, away from the SUV.",
+          "answer": "A"
+        },
+        {
+          "A": "Directly behind the white SUV in the same lane.",
+          "B": "To the right and slightly behind the white SUV.",
+          "C": "Parked on the sidewalk, away from the SUV.",
+          "D": "Directly in front of the white SUV.",
+          "answer": "B"
+        },
+        {
+          "A": "Parked on the sidewalk, away from the SUV.",
+          "B": "Directly in front of the white SUV.",
+          "C": "To the right and slightly behind the white SUV.",
+          "D": "Directly behind the white SUV in the same lane.",
+          "answer": "C"
+        },
+        {
+          "A": "Directly in front of the white SUV.",
+          "B": "Directly behind the white SUV in the same lane.",
+          "C": "Parked on the sidewalk, away from the SUV.",
+          "D": "To the right and slightly behind the white SUV.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S3"
+      ],
+      "clue": [
+        "OUTDOOR_S3:R4",
+        "OUTDOOR_S3:R5"
+      ],
+      "answer": "D",
+      "explanation": "S3 is anchored by the narrow daytime street with shopfronts and overhead wires. In S3:R5, the tricycle is in the adjacent right-side area, slightly behind the white SUV rather than crossing in front of it.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q30",
+      "question": "When comparing the route that starts with a boxy light-blue compact car to the route with large blue direction signs overhead, which later cue belongs to the boxy light-blue car route?",
+      "options": [
+        {
+          "A": "It reaches a wide zebra crossing beside a dark construction-covered building.",
+          "B": "It stays under a broad overpass behind a white box truck.",
+          "C": "It bends left into a quieter road after the red harbor cranes.",
+          "D": "It moves around parked trucks on a road with blue pavement markings.",
+          "answer": "A"
+        },
+        {
+          "A": "It bends left into a quieter road after the red harbor cranes.",
+          "B": "It reaches a wide zebra crossing beside a dark construction-covered building.",
+          "C": "It moves around parked trucks on a road with blue pavement markings.",
+          "D": "It stays under a broad overpass behind a white box truck.",
+          "answer": "B"
+        },
+        {
+          "A": "It moves around parked trucks on a road with blue pavement markings.",
+          "B": "It stays under a broad overpass behind a white box truck.",
+          "C": "It reaches a wide zebra crossing beside a dark construction-covered building.",
+          "D": "It bends left into a quieter road after the red harbor cranes.",
+          "answer": "C"
+        },
+        {
+          "A": "It stays under a broad overpass behind a white box truck.",
+          "B": "It bends left into a quieter road after the red harbor cranes.",
+          "C": "It moves around parked trucks on a road with blue pavement markings.",
+          "D": "It reaches a wide zebra crossing beside a dark construction-covered building.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S1",
+        "OUTDOOR_S7"
+      ],
+      "clue": [
+        "OUTDOOR_S1:R2",
+        "OUTDOOR_S1:R4",
+        "OUTDOOR_S7:R2",
+        "OUTDOOR_S7:R4",
+        "OUTDOOR_S7:R5"
+      ],
+      "answer": "D",
+      "explanation": "S7 starts with the boxy light-blue compact car and later shows the wide final crosswalk beside the dark construction-covered building; S1 is the route with large blue direction signs overhead.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q31",
+      "question": "After the daytime route passes the crosswalk with an older pedestrian, what road marking appears in the curving view?",
+      "options": [
+        {
+          "A": "Blue painted patches appear on the pavement.",
+          "B": "White lane arrows spread under an elevated road.",
+          "C": "Orange divider posts continue down the center.",
+          "D": "A wide zebra crossing fills the foreground.",
+          "answer": "A"
+        },
+        {
+          "A": "Orange divider posts continue down the center.",
+          "B": "Blue painted patches appear on the pavement.",
+          "C": "A wide zebra crossing fills the foreground.",
+          "D": "White lane arrows spread under an elevated road.",
+          "answer": "B"
+        },
+        {
+          "A": "A wide zebra crossing fills the foreground.",
+          "B": "White lane arrows spread under an elevated road.",
+          "C": "Blue painted patches appear on the pavement.",
+          "D": "Orange divider posts continue down the center.",
+          "answer": "C"
+        },
+        {
+          "A": "White lane arrows spread under an elevated road.",
+          "B": "Orange divider posts continue down the center.",
+          "C": "A wide zebra crossing fills the foreground.",
+          "D": "Blue painted patches appear on the pavement.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S9"
+      ],
+      "clue": [
+        "OUTDOOR_S9:R4",
+        "OUTDOOR_S9:R5"
+      ],
+      "answer": "D",
+      "explanation": "S9:R4 anchors the route at the crosswalk with an older pedestrian; in the later curving S9:R5 view, blue painted patches appear on the pavement.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q32",
+      "question": "After the sunny route works past the row of parked trucks and vans, what tall roadside feature appears as the lane opens?",
+      "options": [
+        {
+          "A": "A tall pink curved sculpture appears beside the sidewalk.",
+          "B": "A pedestrian overpass with stairs spans the road.",
+          "C": "A red port crane rises beyond a green fence.",
+          "D": "A LIFE logo stays centered on a box truck.",
+          "answer": "A"
+        },
+        {
+          "A": "A red port crane rises beyond a green fence.",
+          "B": "A tall pink curved sculpture appears beside the sidewalk.",
+          "C": "A LIFE logo stays centered on a box truck.",
+          "D": "A pedestrian overpass with stairs spans the road.",
+          "answer": "B"
+        },
+        {
+          "A": "A LIFE logo stays centered on a box truck.",
+          "B": "A pedestrian overpass with stairs spans the road.",
+          "C": "A tall pink curved sculpture appears beside the sidewalk.",
+          "D": "A red port crane rises beyond a green fence.",
+          "answer": "C"
+        },
+        {
+          "A": "A pedestrian overpass with stairs spans the road.",
+          "B": "A red port crane rises beyond a green fence.",
+          "C": "A LIFE logo stays centered on a box truck.",
+          "D": "A tall pink curved sculpture appears beside the sidewalk.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S10"
+      ],
+      "clue": [
+        "OUTDOOR_S10:R2",
+        "OUTDOOR_S10:R3",
+        "OUTDOOR_S10:R4",
+        "OUTDOOR_S10:R5"
+      ],
+      "answer": "D",
+      "explanation": "S10:R2-R5 show the sunny route moving past parked trucks and vans; as the lane opens, a tall pink curved sculpture appears near the roadside.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q34",
+      "question": "In the narrow daytime route with shopfronts and overhead wires, a small delivery tricycle is near the final crosswalk. What color is the overhead traffic light?",
+      "options": [
+        {
+          "A": "Green.",
+          "B": "Red.",
+          "C": "Yellow.",
+          "D": "No traffic light is visible.",
+          "answer": "A"
+        },
+        {
+          "A": "Yellow.",
+          "B": "Green.",
+          "C": "No traffic light is visible.",
+          "D": "Red.",
+          "answer": "B"
+        },
+        {
+          "A": "No traffic light is visible.",
+          "B": "Red.",
+          "C": "Green.",
+          "D": "Yellow.",
+          "answer": "C"
+        },
+        {
+          "A": "Red.",
+          "B": "Yellow.",
+          "C": "No traffic light is visible.",
+          "D": "Green.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S3"
+      ],
+      "clue": [
+        "OUTDOOR_S3:R4",
+        "OUTDOOR_S3:R5"
+      ],
+      "answer": "D",
+      "explanation": "S3:R4-R5 identify the narrow daytime route with shopfronts and overhead wires; in S3:R5, the overhead traffic light above the crossing is green.",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q35",
+      "question": "In the night route where pedestrians cross at a shopfront corner, which vehicle is closest on the right in the final saved view?",
+      "options": [
+        {
+          "A": "A black taxi or dark car.",
+          "B": "A white box truck.",
+          "C": "A boxy light-blue compact car.",
+          "D": "A small delivery tricycle.",
+          "answer": "A"
+        },
+        {
+          "A": "A boxy light-blue compact car.",
+          "B": "A black taxi or dark car.",
+          "C": "A small delivery tricycle.",
+          "D": "A white box truck.",
+          "answer": "B"
+        },
+        {
+          "A": "A small delivery tricycle.",
+          "B": "A white box truck.",
+          "C": "A black taxi or dark car.",
+          "D": "A boxy light-blue compact car.",
+          "answer": "C"
+        },
+        {
+          "A": "A white box truck.",
+          "B": "A boxy light-blue compact car.",
+          "C": "A small delivery tricycle.",
+          "D": "A black taxi or dark car.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S8"
+      ],
+      "clue": [
+        "OUTDOOR_S8:R3",
+        "OUTDOOR_S8:R4",
+        "OUTDOOR_S8:R5"
+      ],
+      "answer": "D",
+      "explanation": "S8 is identified by pedestrians crossing at a shopfront corner; in the final saved view, the closest right-side vehicle is a black taxi or dark car.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q37",
+      "question": "At the final under-elevated-road view, which vehicle cluster is visible ahead near the intersection?",
+      "options": [
+        {
+          "A": "A white box truck, a black taxi, and a gray van.",
+          "B": "A white SUV, a boxy light-blue compact car, and a dark construction-covered building.",
+          "C": "A black taxi, pedestrians, and storefront lights at night.",
+          "D": "A delivery tricycle, a white SUV, and green port cranes.",
+          "answer": "A"
+        },
+        {
+          "A": "A black taxi, pedestrians, and storefront lights at night.",
+          "B": "A white box truck, a black taxi, and a gray van.",
+          "C": "A delivery tricycle, a white SUV, and green port cranes.",
+          "D": "A white SUV, a boxy light-blue compact car, and a dark construction-covered building.",
+          "answer": "B"
+        },
+        {
+          "A": "A delivery tricycle, a white SUV, and green port cranes.",
+          "B": "A white SUV, a boxy light-blue compact car, and a dark construction-covered building.",
+          "C": "A white box truck, a black taxi, and a gray van.",
+          "D": "A black taxi, pedestrians, and storefront lights at night.",
+          "answer": "C"
+        },
+        {
+          "A": "A white SUV, a boxy light-blue compact car, and a dark construction-covered building.",
+          "B": "A black taxi, pedestrians, and storefront lights at night.",
+          "C": "A delivery tricycle, a white SUV, and green port cranes.",
+          "D": "A white box truck, a black taxi, and a gray van.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S2"
+      ],
+      "clue": [
+        "OUTDOOR_S2:R4",
+        "OUTDOOR_S2:R5"
+      ],
+      "answer": "D",
+      "explanation": "S2:R5 shows the white box truck, black taxi, and gray van under the elevated road.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q39",
+      "question": "Which late-stage view continues the daytime route that earlier passed red port cranes beyond a green fenced open field?",
+      "options": [
+        {
+          "A": "It bends left into a quieter road with blue painted patches on the pavement.",
+          "B": "A white SUV and a small delivery tricycle at a daytime crossing.",
+          "C": "Bicyclists cross a night intersection under green lights.",
+          "D": "A sunny blue-marked road with parked trucks along the left.",
+          "answer": "A"
+        },
+        {
+          "A": "Bicyclists cross a night intersection under green lights.",
+          "B": "It bends left into a quieter road with blue painted patches on the pavement.",
+          "C": "A sunny blue-marked road with parked trucks along the left.",
+          "D": "A white SUV and a small delivery tricycle at a daytime crossing.",
+          "answer": "B"
+        },
+        {
+          "A": "A sunny blue-marked road with parked trucks along the left.",
+          "B": "A white SUV and a small delivery tricycle at a daytime crossing.",
+          "C": "It bends left into a quieter road with blue painted patches on the pavement.",
+          "D": "Bicyclists cross a night intersection under green lights.",
+          "answer": "C"
+        },
+        {
+          "A": "A white SUV and a small delivery tricycle at a daytime crossing.",
+          "B": "Bicyclists cross a night intersection under green lights.",
+          "C": "A sunny blue-marked road with parked trucks along the left.",
+          "D": "It bends left into a quieter road with blue painted patches on the pavement.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S3",
+        "OUTDOOR_S6",
+        "OUTDOOR_S9",
+        "OUTDOOR_S10"
+      ],
+      "clue": [
+        "OUTDOOR_S3:R5",
+        "OUTDOOR_S6:R5",
+        "OUTDOOR_S9:R4",
+        "OUTDOOR_S9:R5",
+        "OUTDOOR_S10:R4"
+      ],
+      "answer": "D",
+      "explanation": "S9 is the route with red port cranes beyond the green fenced open field; its later view bends left into a quieter road with blue painted pavement patches. The other choices belong to S3, S6, or S10.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "question": "In the night sequence that starts beside a boxy white compact car on the left and later reaches a green-light intersection, what complication appears near the intersection?",
+      "options": [
+        {
+          "A": "Bicyclists move through or across the lane.",
+          "B": "Pedestrians cross in front of dark taxis.",
+          "C": "A delivery tricycle crosses in front of a white SUV.",
+          "D": "Parked trucks narrow the left curb.",
+          "answer": "A"
+        },
+        {
+          "A": "A delivery tricycle crosses in front of a white SUV.",
+          "B": "Bicyclists move through or across the lane.",
+          "C": "Parked trucks narrow the left curb.",
+          "D": "Pedestrians cross in front of dark taxis.",
+          "answer": "B"
+        },
+        {
+          "A": "Parked trucks narrow the left curb.",
+          "B": "Pedestrians cross in front of dark taxis.",
+          "C": "Bicyclists move through or across the lane.",
+          "D": "A delivery tricycle crosses in front of a white SUV.",
+          "answer": "C"
+        },
+        {
+          "A": "Pedestrians cross in front of dark taxis.",
+          "B": "A delivery tricycle crosses in front of a white SUV.",
+          "C": "Parked trucks narrow the left curb.",
+          "D": "Bicyclists move through or across the lane.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S6"
+      ],
+      "clue": [
+        "OUTDOOR_S6:R2",
+        "OUTDOOR_S6:R3",
+        "OUTDOOR_S6:R4",
+        "OUTDOOR_S6:R5"
+      ],
+      "answer": "D",
+      "explanation": "S6 is anchored by the boxy white compact car on the left at the start, then the later frames show bicyclists moving through the lane and intersection area.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q28",
+      "question": "In the night sequence with white lane posts and a pedestrian bridge overhead, what comes after the frame taken beneath the bridge?",
+      "options": [
+        {
+          "A": "It opens into a broader multi-lane night road with green lights farther ahead.",
+          "B": "It turns into a daytime glass-tower curve beside a green fence.",
+          "C": "It stays in a narrow shop-lined block behind the LIFE truck.",
+          "D": "It works past parked trucks along the left curb on a blue-marked road.",
+          "answer": "A"
+        },
+        {
+          "A": "It stays in a narrow shop-lined block behind the LIFE truck.",
+          "B": "It opens into a broader multi-lane night road with green lights farther ahead.",
+          "C": "It works past parked trucks along the left curb on a blue-marked road.",
+          "D": "It turns into a daytime glass-tower curve beside a green fence.",
+          "answer": "B"
+        },
+        {
+          "A": "It works past parked trucks along the left curb on a blue-marked road.",
+          "B": "It turns into a daytime glass-tower curve beside a green fence.",
+          "C": "It opens into a broader multi-lane night road with green lights farther ahead.",
+          "D": "It stays in a narrow shop-lined block behind the LIFE truck.",
+          "answer": "C"
+        },
+        {
+          "A": "It turns into a daytime glass-tower curve beside a green fence.",
+          "B": "It stays in a narrow shop-lined block behind the LIFE truck.",
+          "C": "It works past parked trucks along the left curb on a blue-marked road.",
+          "D": "It opens into a broader multi-lane night road with green lights farther ahead.",
+          "answer": "D"
+        }
+      ],
+      "session_id": [
+        "OUTDOOR_S5"
+      ],
+      "clue": [
+        "OUTDOOR_S5:R4",
+        "OUTDOOR_S5:R5"
+      ],
+      "answer": "D",
+      "explanation": "S5:R4 is beneath the pedestrian bridge, and S5:R5 opens into a broader night road with green lights in the distance. This distinguishes it from the other night routes, which use bicyclist or street-level-crossing cues.",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    }
+  ]
+}

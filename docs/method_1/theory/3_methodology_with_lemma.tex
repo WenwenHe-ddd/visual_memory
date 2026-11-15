@@ -1,0 +1,238 @@
+\section{Preliminaries}
+\label{sec:preliminaries}
+
+\noindent\textbf{Multimodal Observations.}
+Consider a multimodal agent that continuously interacts
+with its environment and accumulates a sequence of
+observations $\mathcal{H}=\{o_1,o_2,\ldots,o_T\}$.
+Each observation $o_t=(x_t^{v},x_t^{t})$ consists of
+visual information $x_t^{v}$ and associated textual
+information $x_t^{t}$, capturing the multimodal context
+of past interactions.
+
+\noindent\textbf{Memory Construction.}
+To support long-term interactions, the agent maintains
+a persistent memory bank
+$\mathcal{M}=\{m_1,m_2,\ldots,m_N\}$,
+constructed from historical observations through
+a memory construction function $\mathcal{C}$:
+\begin{equation}
+    \mathcal{M} = \mathcal{C}(\mathcal{H}).
+\end{equation}
+Each memory unit $m_i$ represents a stored experience
+that can be accessed to support future interactions.
+
+\noindent\textbf{Memory Retrieval and Response Generation.}
+Given a user query $q$, the agent retrieves a subset
+of relevant memories $\mathcal{M}_q$ from the memory bank
+and generates a response conditioned on the retrieved
+information:
+\begin{equation}
+    \mathcal{M}_q = \mathcal{R}(q,\mathcal{M}),
+    \qquad
+    \hat{y} = \mathcal{G}(q,\mathcal{M}_q),
+\end{equation}
+where $\mathcal{R}$ denotes the memory retrieval function,
+$\mathcal{G}$ denotes the response generation function,
+and $\hat{y}$ is the generated response.
+The goal is to construct informative multimodal memories
+and retrieve the appropriate evidence for accurate
+query answering.
+
+
+\section{Methodology}
+\label{sec:method}
+
+
+\subsection{Visual-Anchored Memory Organization}
+\label{sec:vamo}
+
+To reduce the storage overhead of multimodal memory while retaining fine-grained visual information, we propose \textbf{Visual-Anchored Memory Organization (VAMO)}. Rather than storing original images or relying solely on textual captions, VAMO organizes memories into semantic clusters and preserves their visual characteristics through compact representations.
+
+
+\noindent \textbf{Semantic Memory Organization.}
+Given a memory collection $\mathcal{M}=\{m_i\}_{i=1}^{N}$, each memory $m_i=(I_i,c_i,d_i)$ consists of an image $I_i$, its caption $c_i$, and the associated dialogue $d_i$.
+We first extract normalized caption embeddings $\mathbf{t}_i=\operatorname{norm}(E_t(c_i))$, where $E_t$ denotes the text encoder.
+To organize semantically related memories, we apply hierarchical agglomerative clustering with Euclidean Ward linkage to these embeddings.
+The optimal number of clusters is determined by maximizing the silhouette coefficient, which evaluates intra-cluster cohesion and inter-cluster separation.
+The resulting clusters are denoted as $\{\mathcal{C}_k\}_{k=1}^{K}$, where $K$ is the number of clusters.
+As new memories arrive, we re-evaluate the clustering over all accumulated memories, allowing existing clusters to split, merge, or reorganize.
+
+\noindent \textbf{Visual-Anchored Representation.}
+To preserve visual information with minimal storage overhead, we construct a shared low-dimensional visual space using \pca{} (\pcaabbrv{})~\cite{PCA_RSTA16}.
+Specifically, we collect calibration images from independent domains without overlap with the target domain and extract their normalized visual embeddings.
+The first two principal components of the centered covariance matrix form a fixed projection basis $\mathbf{U}\in\mathbb{R}^{D\times 2}$, satisfying $\mathbf{U}^{\top}\mathbf{U}=\mathbf{I}_2$.
+
+For each memory $m_i$, we extract its normalized visual embedding $\mathbf{v}_i=\operatorname{norm}(E_v(I_i))$ and obtain its compact visual coordinates $\mathbf{z}_i=\mathbf{U}^{\top}\mathbf{v}_i$, where $E_v$ denotes the visual encoder.
+The coordinates are computed through direct projection without subtracting the calibration mean, maintaining a consistent reference space across memories.
+When a semantic cluster $\mathcal{C}_k$ is formed from available full visual embeddings, its visual anchor is initialized as:
+\begin{equation}
+    \mathbf{a}_k = \frac{1}{|\mathcal{C}_k|}
+    \sum_{i\in\mathcal{C}_k}\mathbf{v}_i.
+\end{equation}
+Thereafter, $\mathbf{a}_k$ denotes the maintained visual anchor, updated from the retained statistics as described below.
+The resulting two-level memory structure maintains a full-dimensional visual anchor for each cluster and compact visual coordinates for individual memories, alongside their textual content. As new memories arrive, visual anchors are updated using retained visual statistics without revisiting historical images.
+
+
+
+
+
+\noindent \textbf{Dynamic Visual Anchor Updating.}
+To maintain full-dimensional visual anchors without revisiting historical images, we retain the visual sum $\mathbf{S}_k=|\mathcal{C}_k|\mathbf{a}_k$ and its residual:
+\begin{equation}
+    \mathbf{R}_k =
+    \mathbf{S}_k -
+    \mathbf{U}\sum_{i\in\mathcal{C}_k}\mathbf{z}_i.
+\end{equation}
+The residual preserves aggregated visual information outside the retained two-dimensional subspace.
+Based on these statistics, visual anchors are updated according to different memory transitions.
+
+\textit{Case \ding{182}: New Memory Insertion.}
+For a newly arriving memory $m_i$, its full visual embedding $\mathbf{v}_i$ is directly incorporated into the corresponding cluster.
+The visual sum is updated by adding $\mathbf{v}_i$, followed by updating the visual anchor through averaging.
+% The full embedding is subsequently discarded after updating the retained visual statistics.
+
+\textit{Case \ding{183}: Cluster Merging.}
+When multiple existing clusters are merged, their visual sums can be directly aggregated.
+For example, merging clusters $\mathcal{C}_p$ and $\mathcal{C}_q$ yields
+$\mathbf{S}'=\mathbf{S}_p+\mathbf{S}_q$.
+This operation exactly preserves the stored visual aggregate without introducing additional approximation.
+
+\textit{Case \ding{184}: Cluster Splitting and Reassignment.}
+When only a subset of memories is transferred from an existing cluster, their full visual embeddings are no longer available.
+We approximate the visual embedding of each historical memory $m_i\in\mathcal{C}_k$ as:
+\begin{equation}
+\label{eq:vamo-leaf-reconstruction}
+    \hat{\mathbf{v}}_i =
+    \mathbf{U}\mathbf{z}_i +
+    \frac{\mathbf{R}_k}{|\mathcal{C}_k|}.
+\end{equation}
+Here, the first term reconstructs the retained visual components, while the second distributes the cluster-level residual equally among its members.
+This enables approximate visual reconstruction during cluster splitting and member reassignment.
+
+% BEGIN VAMO RECONSTRUCTION LEMMA
+% Insert after Case ③ (Cluster Splitting and Reassignment), immediately
+% before the paragraph titled "Unified Anchor Updating".
+% Requires amsmath, amssymb, and a lemma environment in the main preamble.
+\begin{lemma}[Anchor-consistent visual reconstruction]
+\label{lem:vamo-anchor-reconstruction}
+Let $n_k=|\mathcal{C}_k|>0$ and
+$\mathbf{a}_k=\mathbf{S}_k/n_k$.
+Suppose $\mathbf{U}^{\top}\mathbf{U}=\mathbf{I}_2$ and
+$\mathbf{U}^{\top}\mathbf{S}_k
+=\sum_{i\in\mathcal{C}_k}\mathbf{z}_i$.
+Then the reconstruction in
+Eq.~\eqref{eq:vamo-leaf-reconstruction} is the unique solution to
+\begin{equation}
+\label{eq:vamo-constrained-reconstruction}
+    \min_{\mathbf{x}\in\mathbb{R}^{D}}
+    \|\mathbf{x}-\mathbf{a}_k\|_2^2
+    \quad\text{subject to}\quad
+    \mathbf{U}^{\top}\mathbf{x}=\mathbf{z}_i,
+\end{equation}
+and can be written as
+\begin{equation}
+\label{eq:vamo-anchor-correction}
+    \hat{\mathbf{v}}_i
+    =\mathbf{a}_k+
+    \mathbf{U}(\mathbf{z}_i-\mathbf{U}^{\top}\mathbf{a}_k).
+\end{equation}
+Moreover, it preserves the stored cluster aggregate:
+$\sum_{i\in\mathcal{C}_k}\hat{\mathbf{v}}_i=\mathbf{S}_k$.
+\end{lemma}
+
+Lemma~\ref{lem:vamo-anchor-reconstruction} characterizes reconstruction
+as the smallest change to the visual anchor that matches the memory's
+retained coordinates.
+Equivalently, it projects the original $\mathbf{v}_i$ orthogonally
+onto the affine space
+$\mathbf{a}_k+\operatorname{range}(\mathbf{U})$.
+The projection-consistency condition is preserved by our dynamic updates.
+The proof and the associated least-squares interpretation of the shared
+residual are provided in Appendix~\ref{app:vamo-reconstruction}.
+
+% END VAMO RECONSTRUCTION LEMMA
+
+\textit{Unified Anchor Updating.}
+Given an updated cluster $\mathcal{C}'_k$, its visual sum is computed by aggregating historical contributions from previous clusters and newly arrived memories:
+\begin{equation}
+\label{eq:vamo-unified-update}
+\begin{aligned}
+\mathbf{S}'_k =
+\sum_{j=1}^{K}
+\Bigg[
+&\mathbf{U}
+\sum_{i\in\mathcal{C}_j\cap\mathcal{C}'_k}
+\mathbf{z}_i \\
+&+
+\frac{|\mathcal{C}_j\cap\mathcal{C}'_k|}
+{|\mathcal{C}_j|}
+\mathbf{R}_j
+\Bigg]
++
+\sum_{i\in\mathcal{C}'_k\cap\mathcal{N}}
+\mathbf{v}_i,
+\end{aligned}
+\end{equation}
+where $\mathcal{N}$ denotes newly arrived memory indices.
+The updated visual anchor is obtained as
+$\mathbf{a}'_k=\mathbf{S}'_k/|\mathcal{C}'_k|$.
+This formulation unifies exact updates for complete cluster transfers and approximate updates for partial member reassignment.
+
+
+
+\subsection{Salient Multi-Path Retrieval}
+\label{sec:smpr}
+
+Building upon the visual-anchored memory structure established by VAMO, we propose \textbf{Salient Multi-Path Retrieval (SMPR)} to capture distinctive characteristics among semantically similar memories.
+SMPR combines visual-guided query expansion with group-wise score refinement to retrieve salient memories across multiple retrieval paths.
+
+\noindent \textbf{Visual-Guided Multi-Path Retrieval.}
+Given a user query $q$ and a set of candidate answer statements $\{h_j\}_{j=1}^{J}$, we leverage the visual anchors $\{\mathbf{a}_k\}_{k=1}^{K}$ to guide query expansion.
+Specifically, each visual anchor selects the candidate statement with the highest similarity in the shared vision-language embedding space:
+\begin{equation}
+    j_k^* = \arg\max_j
+    \operatorname{sim}\left(
+    \mathbf{a}_k, E_v^t(h_j)
+    \right),
+\end{equation}
+where $E_v^t$ denotes the text encoder paired with the visual encoder $E_v$, and $\operatorname{sim}(\cdot,\cdot)$ denotes cosine similarity.
+
+The selected statement is appended to the original query to construct a cluster-specific query $q_k=q\oplus h_{j_k^*}$, where $\oplus$ denotes text concatenation.
+Each semantic cluster $\mathcal{C}_k$ thus forms an independent retrieval path, enabling visual information to guide the retrieval of its associated memories.
+
+\noindent \textbf{Salience-Aware Score Refinement.}
+For each cluster $\mathcal{C}_k$, we encode its memory texts and the expanded query into normalized embeddings $\mathbf{x}_i$ and $\mathbf{q}_k$, respectively, using the text encoder $E_t$.
+The initial relevance score is computed as $r_i=\mathbf{x}_i^\top\mathbf{q}_k$, where $i\in\mathcal{C}_k$.
+
+
+To emphasize distinctive semantic characteristics, we estimate the centered covariance matrix $\boldsymbol{\Sigma}_k$ of the memory embeddings within each cluster.
+We then apply ridge-regularized inverse covariance weighting to refine the matching scores:
+We then apply ridge-regularized inverse covariance weighting to obtain:
+\begin{equation}
+    w_i =
+    \mathbf{x}_i^\top
+    \lambda(\boldsymbol{\Sigma}_k+\lambda\mathbf{I})^{-1}
+    \mathbf{q}_k,
+\end{equation}
+
+where $\lambda>0$ is a regularization parameter.
+This transformation suppresses dominant high-variance directions within each cluster, reducing their influence on memory matching.
+We further standardize the adjusted scores within each cluster and introduce a bounded correction to the original relevance scores:
+\begin{equation}
+    s_i = r_i +
+    \alpha \sigma_{r,k}
+    \tanh\left(
+    \frac{w_i-\mu_{w,k}}{\sigma_{w,k}}
+    \right),
+\end{equation}
+where $\mu_{w,k}$ and $\sigma_{w,k}$ denote the mean and standard deviation of the adjusted scores, $\sigma_{r,k}$ is the standard deviation of the original relevance scores, and $\alpha$ controls the correction strength.
+The bounded correction emphasizes relative score differences while retaining the original relevance scores.
+
+\noindent \textbf{Global Memory Retrieval.}
+Finally, we merge the refined scores from all retrieval paths and select the global Top-$L$ memories for response generation.
+Together, VAMO and SMPR enable storage-efficient multimodal memory organization and salience-aware retrieval.
+
+
+
+

@@ -1,0 +1,39 @@
+% Insert after Case ③ (Cluster Splitting and Reassignment), immediately
+% before the paragraph titled "Unified Anchor Updating".
+% Requires amsmath, amssymb, and a lemma environment in the main preamble.
+\begin{lemma}[Anchor-consistent visual reconstruction]
+\label{lem:vamo-anchor-reconstruction}
+Let $n_k=|\mathcal{C}_k|>0$ and
+$\mathbf{a}_k=\mathbf{S}_k/n_k$.
+Suppose $\mathbf{U}^{\top}\mathbf{U}=\mathbf{I}_2$ and
+$\mathbf{U}^{\top}\mathbf{S}_k
+=\sum_{i\in\mathcal{C}_k}\mathbf{z}_i$.
+Then the reconstruction in
+Eq.~\eqref{eq:vamo-leaf-reconstruction} is the unique solution to
+\begin{equation}
+\label{eq:vamo-constrained-reconstruction}
+    \min_{\mathbf{x}\in\mathbb{R}^{D}}
+    \|\mathbf{x}-\mathbf{a}_k\|_2^2
+    \quad\text{subject to}\quad
+    \mathbf{U}^{\top}\mathbf{x}=\mathbf{z}_i,
+\end{equation}
+and can be written as
+\begin{equation}
+\label{eq:vamo-anchor-correction}
+    \hat{\mathbf{v}}_i
+    =\mathbf{a}_k+
+    \mathbf{U}(\mathbf{z}_i-\mathbf{U}^{\top}\mathbf{a}_k).
+\end{equation}
+Moreover, it preserves the stored cluster aggregate:
+$\sum_{i\in\mathcal{C}_k}\hat{\mathbf{v}}_i=\mathbf{S}_k$.
+\end{lemma}
+
+Lemma~\ref{lem:vamo-anchor-reconstruction} characterizes reconstruction
+as the smallest change to the visual anchor that matches the memory's
+retained coordinates.
+Equivalently, it projects the original $\mathbf{v}_i$ orthogonally
+onto the affine space
+$\mathbf{a}_k+\operatorname{range}(\mathbf{U})$.
+The projection-consistency condition is preserved by our dynamic updates.
+The proof and the associated least-squares interpretation of the shared
+residual are provided in Appendix~\ref{app:vamo-reconstruction}.

@@ -1,0 +1,2179 @@
+{
+  "dataset_name": "Personal_Health_Dashboard_Assistant",
+  "task_name": "Personal_Health_Dashboard_Assistant",
+  "character_profile": {
+    "persona_summary": "A practical, health-conscious professional using a personal health dashboard assistant to remember screenshots, meals, and clinician follow-up over time. She uses the assistant to track day-to-day patterns without turning the task into diagnosis.",
+    "traits": [
+      "organized",
+      "consistent with tracking",
+      "not medically technical",
+      "often compares current choices with earlier screenshots",
+      "borderline glucose management",
+      "long-running follow-up context"
+    ],
+    "conversation_style": "Short uploads, natural follow-up questions, and explicit requests to remember visual evidence for later."
+  },
+  "multi_session_dialogues": [
+    {
+      "session_id": "HEALTH_S1",
+      "date": "2025-04-01",
+      "dialogues": [
+        {
+          "round": "HEALTH_S1:R1",
+          "user": "Please keep track of what I upload across these sessions.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S1:R2",
+          "user": "Here's the first item from today.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D1_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard showing stable glucose trends, strong time-in-range, and moderate progress on movement and late eating goals."
+          ]
+        },
+        {
+          "round": "HEALTH_S1:R3",
+          "user": "Here's another screen from today.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D1_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard summarizes time in range, variability, trends, and activity-related metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S1:R4",
+          "user": "This is my baseline week. I mostly want to watch the pattern.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S1:R5",
+          "user": "Here's another item from today.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D1_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A patient views a follow-up nutrition message from their doctor in the Northline Health Portal."
+          ]
+        },
+        {
+          "round": "HEALTH_S1:R6",
+          "user": "Here's the evening dashboard card view.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D1_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Daily Glucose Dashboard showing stable glucose trends, high time in range, and key metrics for meals, movement, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S1:R7",
+          "user": "Today's note felt more specific than the earlier guidance.",
+          "assistant": "Got it, I'll keep it with today's context."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S2",
+      "date": "2025-04-03",
+      "dialogues": [
+        {
+          "round": "HEALTH_S2:R1",
+          "user": "Keep the visual record precise while I start logging meals.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S2:R2",
+          "user": "I'm logging breakfast.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A bowl of creamy yogurt topped with fresh blueberries, raspberries, banana slices, and crunchy granola."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R3",
+          "user": "I'm logging lunch.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Grilled chicken rice bowl with fresh cucumber, arugula, and a creamy dipping sauce."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R4",
+          "user": "I also took a short walk after lunch, so I want to remember that with the dashboard.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S2:R5",
+          "user": "Here's the post-lunch dashboard card.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard summarizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R6",
+          "user": "And here's the evening trend.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R7",
+          "user": "This is the activity summary.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing Maya Patel’s glucose trends, time in range, and lifestyle metrics for April 3, 2025."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R8",
+          "user": "Still early, but I want to remember which meals felt steadier.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S3",
+      "date": "2025-04-05",
+      "dialogues": [
+        {
+          "round": "HEALTH_S3:R1",
+          "user": "Please keep the record image-grounded.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S3:R2",
+          "user": "Here's the message inbox.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A health portal message from a doctor advises the patient to keep pairing carbs with protein or fiber and notes the guidance has been reviewed with dashboard data."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R3",
+          "user": "I'm opening the message detail.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A health portal message shows a doctor advising a patient to keep pairing carbohydrates with protein or fiber and noting the guidance has been reviewed with dashboard data."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R4",
+          "user": "Dr. Elena Ramirez sent guidance I want to keep with these screens.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S3:R5",
+          "user": "Here's the related trend screen.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R6",
+          "user": "This was that breakfast.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A fresh yogurt bowl topped with blueberries, orange slices, banana, and crunchy granola."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R7",
+          "user": "Here's the nightly summary.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard summarizes time in range, variability, and activity-related metrics with a stable glucose trend line."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R8",
+          "user": "I want to remember this note with the screenshots.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S4",
+      "date": "2025-04-08",
+      "dialogues": [
+        {
+          "round": "HEALTH_S4:R1",
+          "user": "Workout day today. Keep the snack and timing with the dashboard.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S4:R2",
+          "user": "Here's the pre-workout dashboard.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R3",
+          "user": "And the post-workout dashboard.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Daily glucose dashboard showing stable trends, 80% time in range, and key metrics for meals, activity, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R4",
+          "user": "This is the movement card.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, meal variability, evening drift, and related health metrics."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R5",
+          "user": "I'm not sure whether the snack helped or whether I'm overreading one day.",
+          "assistant": "Got it."
+        },
+        {
+          "round": "HEALTH_S4:R6",
+          "user": "I'm logging the pre-workout snack.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A simple packed snack of a banana, crackers, and a peanut butter packet rests on a gray lunch bag."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R7",
+          "user": "Here's the end-of-day trend.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard summarizes time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R8",
+          "user": "Please keep this open for later.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S5",
+      "date": "2025-04-10",
+      "dialogues": [
+        {
+          "round": "HEALTH_S5:R1",
+          "user": "I want to compare these lunches with the earlier screens.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S5:R2",
+          "user": "Here's the first lunch option.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A fresh sandwich with a side salad of mixed greens and cherry tomatoes sits ready to eat on a white plate."
+          ]
+        },
+        {
+          "round": "HEALTH_S5:R3",
+          "user": "Here's the second lunch option.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Fresh veggie wrap with a side of crisp cucumber slices on a simple white plate."
+          ]
+        },
+        {
+          "round": "HEALTH_S5:R4",
+          "user": "Here's the comparison card.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S5:R5",
+          "user": "I mainly want to remember which one looked calmer later.",
+          "assistant": "Got it."
+        },
+        {
+          "round": "HEALTH_S5:R6",
+          "user": "And the follow-up trend.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S5:R7",
+          "user": "This is the recap dashboard.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S6",
+      "date": "2025-04-12",
+      "dialogues": [
+        {
+          "round": "HEALTH_S6:R1",
+          "user": "There's a new note today. Please keep it with the earlier one.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S6:R2",
+          "user": "This is the updated message.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A health portal message shows a doctor advising a patient on managing small carb snacks around workouts."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R3",
+          "user": "The note feels a little different, so I want to be careful with it.",
+          "assistant": "Okay, I've got this too."
+        },
+        {
+          "round": "HEALTH_S6:R4",
+          "user": "Here's the supporting trend.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily dashboard visualizing glucose trends, time in range, and recovery metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R5",
+          "user": "This is the daily card grid.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard showing stable glucose trends with 90% time in range and key metrics for meals, activity, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R6",
+          "user": "This was the snack from that day.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A peeled banana beside a cup of creamy yogurt on a light countertop."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R7",
+          "user": "And here's the later-night trend.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "Daily glucose dashboard showing stable trends, strong time-in-range, and key metrics for meals, movement, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R8",
+          "user": "Please keep this with today's screens.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S7",
+      "date": "2025-04-15",
+      "dialogues": [
+        {
+          "round": "HEALTH_S7:R1",
+          "user": "Weekly comparison time. These screens are easy to confuse.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S7:R2",
+          "user": "Here's the weekly overview.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizing time in range, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R3",
+          "user": "Here's the comparison trend plot.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing Maya Patel’s glucose trends, time in range, and lifestyle metrics for April 15, 2025."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R4",
+          "user": "This is the ring summary.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R5",
+          "user": "This weekend breakfast felt closer to what I've been trying to do.",
+          "assistant": "Got it."
+        },
+        {
+          "round": "HEALTH_S7:R6",
+          "user": "Here's the weekend breakfast.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A hearty breakfast plate with sunny-side-up eggs, toast, fresh fruit, and a cup of coffee."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R7",
+          "user": "Here's the weekend dashboard.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, meal variability, evening drift, and activity metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R8",
+          "user": "And the weekly scorecard.",
+          "assistant": "Okay, I'll keep that in mind.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R9",
+          "user": "I mostly want to remember which weekly screen had which layout.",
+          "assistant": "Got it, I've got this one too."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S8",
+      "date": "2025-04-17",
+      "dialogues": [
+        {
+          "round": "HEALTH_S8:R1",
+          "user": "Busy day. I thought this snack might fit, but I'm not fully sure.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S8:R2",
+          "user": "This is what I grabbed that day.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "Granola bar and fruit cup make a simple, quick snack."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R3",
+          "user": "Here's the same-day dashboard.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R4",
+          "user": "I was being a little looser today because of the earlier note.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S8:R5",
+          "user": "Here's the current trend screen.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and key response windows for personalized health monitoring."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R6",
+          "user": "This is the summary card.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A digital daily glucose dashboard visualizes time in range, variability, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R7",
+          "user": "And here's the nightly recap.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard shows stable blood sugar trends with 90% time in range and key metrics for meals, activity, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R8",
+          "user": "Please keep this separate from the longer-term note.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S9",
+      "date": "2025-04-19",
+      "dialogues": [
+        {
+          "round": "HEALTH_S9:R1",
+          "user": "The later screens make yesterday look a little different.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S9:R2",
+          "user": "Here's the later dashboard.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, variability, trends, and activity-related metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R3",
+          "user": "And the comparison trend after that.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R4",
+          "user": "Yesterday's read may have been a little loose once I compare it with the later screens.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S9:R5",
+          "user": "This was the breakfast that went with it.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A bowl of creamy yogurt topped with fresh strawberries, blueberries, and banana slices sits beside a silver spoon."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R6",
+          "user": "This is the summary card from that day.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle impacts throughout the day."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R7",
+          "user": "Here's the evening glucose screen.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R8",
+          "user": "Please keep this with yesterday, but not as the same takeaway.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S10",
+      "date": "2025-04-22",
+      "dialogues": [
+        {
+          "round": "HEALTH_S10:R1",
+          "user": "I had to make another real-world decision today. Please keep these options with the earlier notes.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S10:R2",
+          "user": "This is one snack option.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A packaged nut and rice snack bar sits beside a bottle of iced tea on a countertop."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R3",
+          "user": "This is the dinner option.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A simple, hearty dinner of grilled chicken breast with mashed potatoes and steamed broccoli."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R4",
+          "user": "I'm trying to remember which option fits better with the earlier context.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S10:R5",
+          "user": "Here's the dashboard after the snack.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, variability, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R6",
+          "user": "Here's the dashboard after dinner.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard summarizes Maya Patel’s blood sugar trends, time in range, and lifestyle metrics for April 22, 2025."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R7",
+          "user": "This is the choice comparison card.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R8",
+          "user": "Please keep this with the earlier notes and screens.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S11",
+      "date": "2025-04-24",
+      "dialogues": [
+        {
+          "round": "HEALTH_S11:R1",
+          "user": "There's another follow-up today. Please keep it with the recent notes.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S11:R2",
+          "user": "Here's the follow-up message inbox.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A patient views a follow-up nutrition message from their doctor in the Northline Health Portal."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R3",
+          "user": "I'm opening the follow-up note.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A patient views a follow-up nutrition message from their doctor in the Northline Health Portal."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R4",
+          "user": "There's another follow-up note, and I want to remember it with the earlier one.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S11:R5",
+          "user": "Here's the follow-up dashboard.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard summarizes time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R6",
+          "user": "This is the compact summary screen.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle responses for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R7",
+          "user": "I'm logging the latest snack.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A bowl of creamy yogurt topped with fresh berries sits ready to eat on the countertop."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R8",
+          "user": "Please keep this with the follow-up note.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S12",
+      "date": "2025-04-28",
+      "dialogues": [
+        {
+          "round": "HEALTH_S12:R1",
+          "user": "This is the month wrap-up. Please keep it with the newer notes and screens.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S12:R2",
+          "user": "Here's the month summary dashboard.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R3",
+          "user": "This is the multi-day comparison trend.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Daily Glucose Dashboard showing stable glucose trends, high time-in-range, and key metrics for meals, activity, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R4",
+          "user": "Here's the metric panel grid.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R5",
+          "user": "I want the final summary to reflect what still seems current.",
+          "assistant": "Got it."
+        },
+        {
+          "round": "HEALTH_S12:R6",
+          "user": "This is the callback lunch.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A balanced plate of grilled chicken, brown rice, broccoli, and sliced carrots."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R7",
+          "user": "Here's the final overview screen.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R8",
+          "user": "This is the timeline summary.",
+          "assistant": "Okay, I'll keep that in mind.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R9",
+          "user": "And the final ring/card screen.",
+          "assistant": "Got it, I've got this one too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, meal variability, activity, and overall blood sugar trends."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R10",
+          "user": "This should help tie things together.",
+          "assistant": "That makes sense. I'll keep it tied together."
+        }
+      ]
+    }
+  ],
+  "human-annotated QAs": [
+    {
+      "question_id": "Q1",
+      "question": "Which screen places Focus Window in the lower middle card instead of Trend Recovery when compared to the updated-note screen?",
+      "answer": "The provisional busy-day trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5"
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "question": "Which trend shows a clearer rebound hump around the middle before dropping again when comparing the provisional busy-day trend with the later reinterpretation trend?",
+      "answer": "The provisional busy-day trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S8",
+        "HEALTH_S9"
+      ],
+      "clue": [
+        "HEALTH_S8:R5",
+        "HEALTH_S9:R3"
+      ],
+      "latest_clue_round": "HEALTH_S8:R5",
+      "stale_clue_rounds": [
+        "HEALTH_S9:R3"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which dashboard among the baseline overview, the updated-note dashboard, and the provisional trend screen has Session Match as the lower-left card label?",
+      "answer": "The updated-note dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5"
+      ]
+    },
+    {
+      "question_id": "Q10",
+      "question": "Which screen has a separate KPI card placed on a second row when comparing the baseline overview, the updated-note dashboard, and the provisional busy-day trend?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5"
+      ]
+    },
+    {
+      "question_id": "Q11",
+      "question": "Which dashboard stacks an extra KPI on a second line instead of keeping four cards across the top row, the baseline overview or the updated-note dashboard?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4"
+      ]
+    },
+    {
+      "question_id": "Q12",
+      "question": "Which screen has the lowest Evening Drift among the baseline overview, baseline trend, baseline evening card view, and first guidance-anchor dashboard?",
+      "answer": "The first guidance-anchor dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S3"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S1:R3",
+        "HEALTH_S1:R6",
+        "HEALTH_S3:R5"
+      ]
+    },
+    {
+      "question_id": "Q13",
+      "question": "Among the weekly overview, weekly comparison trend, weekend dashboard, and weekly scorecard screens, which one shows the lowest Meal Variability?",
+      "answer": "The weekly comparison trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7"
+      ],
+      "clue": [
+        "HEALTH_S7:R2",
+        "HEALTH_S7:R3",
+        "HEALTH_S7:R7",
+        "HEALTH_S7:R8"
+      ]
+    },
+    {
+      "question_id": "Q15",
+      "question": "Which among the weekly overview, weekly comparison trend, weekend dashboard, and weekly scorecard has the highest Evening Drift?",
+      "answer": "The weekly comparison trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7"
+      ],
+      "clue": [
+        "HEALTH_S7:R2",
+        "HEALTH_S7:R3",
+        "HEALTH_S7:R7",
+        "HEALTH_S7:R8"
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "question": "Which raises both Meal Variability and Evening Drift relative to the other between the D5 comparison card and the D5 follow-up trend?",
+      "answer": "Neither does",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S5"
+      ],
+      "clue": [
+        "HEALTH_S5:R4",
+        "HEALTH_S5:R6"
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "question": "Which version among the baseline evening card view, the first guidance-anchor dashboard, and the final ring/card screen exhibits the lowest Evening Drift?",
+      "answer": "The final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S3",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R6",
+        "HEALTH_S3:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q18",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, and the final ring/card screen has four KPI cards arranged across two rows instead of one?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "question": "On April 22, which screen, if any, shows both the highest Time In Range and the lowest Meal Variability when comparing the after-snack dashboard, after-dinner dashboard, and choice-comparison card?",
+      "answer": "None of the three",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S10"
+      ],
+      "clue": [
+        "HEALTH_S10:R5",
+        "HEALTH_S10:R6",
+        "HEALTH_S10:R7"
+      ]
+    },
+    {
+      "question_id": "Q21",
+      "question": "Among the screens in the April 22 trio, which one has the lowest Evening Drift despite not having the highest Time In Range?",
+      "answer": "The after-dinner dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S10"
+      ],
+      "clue": [
+        "HEALTH_S10:R5",
+        "HEALTH_S10:R6",
+        "HEALTH_S10:R7"
+      ]
+    },
+    {
+      "question_id": "Q23",
+      "question": "Among the first guidance-anchor dashboard, the D5 compact recap, and the bedtime subtle summary, which screen has the lowest Evening Drift when considering only those with Meal Variability of at most 11 points?",
+      "answer": "The first guidance-anchor dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S3",
+        "HEALTH_S5",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S3:R5",
+        "HEALTH_S5:R7",
+        "HEALTH_S11:R6"
+      ]
+    },
+    {
+      "question_id": "Q24",
+      "question": "Among the reinterpretation dashboard, the bedtime subtle summary, and the metric panel grid, which screen has the lowest Evening Drift while maintaining at least 80% Time In Range?",
+      "answer": "The bedtime subtle summary",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S9",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S9:R2",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q27",
+      "question": "Between the April 22 choice-comparison card and the final ring/card screen, which one has the lower Evening Drift?",
+      "answer": "The final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S10",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S10:R7",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q28",
+      "question": "Which card has the lowest Evening Drift while tying for the lowest Meal Variability among the updated-note daily card grid, the reinterpretation summary card, and the bedtime subtle summary?",
+      "answer": "The reinterpretation summary card",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S9",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S6:R5",
+        "HEALTH_S9:R6",
+        "HEALTH_S11:R6"
+      ]
+    },
+    {
+      "question_id": "Q29",
+      "question": "Which screen has the lowest lower-right ring percentage among the baseline overview, the updated-note dashboard, and the final ring/card screen?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q30",
+      "question": "Which dashboard has the lower Time In Range while also keeping Meal Variability under 20 points: the D8 same-day overview or the D9 reinterpretation dashboard?",
+      "answer": "The D8 same-day overview",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S8",
+        "HEALTH_S9"
+      ],
+      "clue": [
+        "HEALTH_S8:R3",
+        "HEALTH_S9:R2"
+      ]
+    },
+    {
+      "question_id": "Q31",
+      "question": "Among the weekly comparison trend, the D9 comparison trend, and the final multi-day comparison trend, which one has the lowest Evening Drift and finishes higher than it starts?",
+      "answer": "The final multi-day comparison trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R3",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q32",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, the provisional threshold-band trend, and the final ring/card screen includes Recovery Notes as a KPI card?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q33",
+      "question": "Which screen among the post-lunch metric card, evening trend screen, first guidance-anchor dashboard, and D5 compact recap has the lowest Evening Drift while maintaining Meal Variability at 12 points or below?",
+      "answer": "The first guidance-anchor dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S2",
+        "HEALTH_S3",
+        "HEALTH_S5"
+      ],
+      "clue": [
+        "HEALTH_S2:R5",
+        "HEALTH_S2:R6",
+        "HEALTH_S3:R5",
+        "HEALTH_S5:R7"
+      ]
+    },
+    {
+      "question_id": "Q34",
+      "question": "On the workout day, which dashboard reduces Meal Variability the most compared to the pre-exercise dashboard without being the lowest-drift screen of that day?",
+      "answer": "The end-of-day trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S4"
+      ],
+      "clue": [
+        "HEALTH_S4:R2",
+        "HEALTH_S4:R3",
+        "HEALTH_S4:R4",
+        "HEALTH_S4:R7"
+      ]
+    },
+    {
+      "question_id": "Q35",
+      "question": "Between the weekly scorecard and the metric panel grid, which one keeps Evening Drift under 2 hours with lower Meal Variability?",
+      "answer": "Neither stays under 2 hours",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R8",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q36",
+      "question": "Which screen shows both the highest Meal Variability and the lowest Evening Drift when comparing the weekly comparison trend, the D9 comparison trend, and the final multi-day comparison trend?",
+      "answer": "The final multi-day comparison trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R3",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q37",
+      "question": "Which screen has the lowest Evening Drift overall among the D5 comparison card, the reinterpretation dashboard, the bedtime subtle summary, and the metric panel grid?",
+      "answer": "The D5 comparison card",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S5",
+        "HEALTH_S9",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S5:R4",
+        "HEALTH_S9:R2",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q38",
+      "question": "Which screen maintains Time In Range at least 89% while minimizing Meal Variability when comparing the D5 comparison card, the after-snack dashboard, and the April 22 choice-comparison card?",
+      "answer": "The after-snack dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S5",
+        "HEALTH_S10"
+      ],
+      "clue": [
+        "HEALTH_S5:R4",
+        "HEALTH_S10:R5",
+        "HEALTH_S10:R7"
+      ]
+    },
+    {
+      "question_id": "Q39",
+      "question": "Which screen has the lowest Evening Drift among the baseline trend screen, the workout-day end-of-day trend, the D5 compact recap, and the bedtime subtle summary, within the subset that keeps Meal Variability under 20 points?",
+      "answer": "The workout-day end-of-day trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S4",
+        "HEALTH_S5",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S1:R3",
+        "HEALTH_S4:R7",
+        "HEALTH_S5:R7",
+        "HEALTH_S11:R6"
+      ]
+    },
+    {
+      "question_id": "Q40",
+      "question": "Which screen among the updated-note supporting trend, the provisional threshold-band trend, the later D9 comparison trend, and the month-wrap comparison trend has a nonstandard lower-middle panel label and an Evening Drift above 3 hours?",
+      "answer": "The updated-note supporting trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q41",
+      "question": "Among the baseline trend screen, the updated-note supporting trend, the D9 comparison trend, and the month-wrap comparison trend, which chart exhibits the highest Evening Drift while still finishing lower than it starts?",
+      "answer": "The baseline trend screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R3",
+        "HEALTH_S6:R4",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q42",
+      "question": "Among the baseline trend screen, the first guidance-anchor dashboard, the weekly comparison trend, and the month-wrap comparison trend, which chart shows the greatest drop from start to finish while maintaining Evening Drift above 4 hours?",
+      "answer": "The baseline trend screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S3",
+        "HEALTH_S7",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R3",
+        "HEALTH_S3:R5",
+        "HEALTH_S7:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q43",
+      "question": "Which screen among the updated-note supporting trend, the provisional threshold-band trend, the month-wrap comparison trend, and the timeline summary has a nonstandard lower-middle panel label and a chart that ends higher than it starts?",
+      "answer": "The updated-note supporting trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R3",
+        "HEALTH_S12:R8"
+      ]
+    },
+    {
+      "question_id": "Q44",
+      "question": "Which chart finishes lower than it starts while also keeping Evening Drift above 4 hours when comparing the weekly ring summary, the D8 nightly recap, the D9 comparison trend, and the final overview screen?",
+      "answer": "The weekly ring summary",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S8",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R4",
+        "HEALTH_S8:R7",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R7"
+      ]
+    },
+    {
+      "question_id": "Q45",
+      "question": "Which screen among the updated-note supporting trend, the provisional threshold-band trend, and the final ring/card screen has a nonstandard middle panel and a lower-right ring above 50%?",
+      "answer": "The updated-note supporting trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q46",
+      "question": "Which pair of screens share the same 47% lower-right ring despite having different overall layouts and different middle-panel labels?",
+      "answer": "The baseline overview and the provisional threshold-band trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S8"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S8:R5"
+      ]
+    },
+    {
+      "question_id": "Q47",
+      "question": "Which later screen beats both the D9 summary and the D11 compact summary on Meal Variability and Evening Drift?",
+      "answer": "The D12 final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S9",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S9:R6",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R9"
+      ],
+      "latest_clue_round": "HEALTH_S11:R6",
+      "stale_clue_rounds": [
+        "HEALTH_S9:R6",
+        "HEALTH_S12:R9"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q48",
+      "question": "Which screen has the lowest Evening Drift while also staying below 80% Time In Range among the reinterpretation dashboard, the bedtime subtle summary, the metric panel grid, and the after-dinner dashboard?",
+      "answer": "The after-dinner dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S9",
+        "HEALTH_S10",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S9:R2",
+        "HEALTH_S10:R6",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q49",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, and the final ring/card screen has four KPI cards arranged across two rows and a lower-right ring under 50%?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q50",
+      "question": "Which screen among the updated-note dashboard, the provisional threshold-band trend, the final ring/card screen, and the bedtime subtle summary has both a nonstandard lower-middle panel label and the highest Evening Drift in that set?",
+      "answer": "The updated-note dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q51",
+      "question": "After the D11 follow-up arrives, which earlier D6 screen shares the same Time In Range as the D11 follow-up dashboard?",
+      "answer": "The updated-note supporting trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S6:R5",
+        "HEALTH_S6:R7",
+        "HEALTH_S11:R5"
+      ],
+      "latest_clue_round": "HEALTH_S6:R4",
+      "stale_clue_rounds": [
+        "HEALTH_S6:R5",
+        "HEALTH_S6:R7",
+        "HEALTH_S11:R5"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q52",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, the provisional threshold-band trend, and the final ring/card screen has a lower-left panel that is not Morning Response?",
+      "answer": "The updated-note dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q53",
+      "question": "Which screen among the weekly ring summary, the D8 same-day overview, the follow-up dashboard, and the metric panel grid maintains Meal Variability under 20 points while also having the highest Evening Drift?",
+      "answer": "The weekly ring summary",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S8",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R4",
+        "HEALTH_S8:R3",
+        "HEALTH_S11:R5",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q54",
+      "question": "Which screen among the first guidance-anchor dashboard, the follow-up dashboard, the timeline summary, and the final ring/card screen has the lowest Evening Drift among those that end above where they start?",
+      "answer": "The final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S3",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S3:R5",
+        "HEALTH_S11:R5",
+        "HEALTH_S12:R8",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q56",
+      "question": "Which screen combines the highest Time In Range with Evening Drift still above 4 hours among the weekly comparison trend, the provisional summary card, the bedtime subtle summary, and the month summary dashboard?",
+      "answer": "The provisional summary card",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S8",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R3",
+        "HEALTH_S8:R6",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R2"
+      ]
+    },
+    {
+      "question_id": "Q57",
+      "question": "Which screen among the post-lunch metric card, the D5 compact recap, the April 22 choice-comparison card, and the metric panel grid maintains Meal Variability at 12 points or below and, within that subset, has the lower Time In Range while tying for the highest Evening Drift?",
+      "answer": "The D5 compact recap",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S2",
+        "HEALTH_S5",
+        "HEALTH_S10",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S2:R5",
+        "HEALTH_S5:R7",
+        "HEALTH_S10:R7",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q58",
+      "question": "Which candidate's KPI row includes Recovery Notes instead of Activity Match or a standard three-card set among the baseline overview, the updated-note dashboard, and the final ring/card screen?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q59",
+      "question": "Which later screen improves on both the D9 summary and the D11 follow-up dashboard in Meal Variability while also having the lowest Evening Drift among the later candidates?",
+      "answer": "The D12 final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S9",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S9:R6",
+        "HEALTH_S11:R5",
+        "HEALTH_S12:R4",
+        "HEALTH_S12:R8",
+        "HEALTH_S12:R9"
+      ],
+      "latest_clue_round": "HEALTH_S12:R4",
+      "stale_clue_rounds": [
+        "HEALTH_S9:R6",
+        "HEALTH_S11:R5",
+        "HEALTH_S12:R8",
+        "HEALTH_S12:R9"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q60",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, the provisional threshold-band trend, and the final ring/card screen shares 81% Time In Range with another candidate and is the only one whose lower-middle panel is Trend Recovery?",
+      "answer": "The updated-note dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q61",
+      "question": "What is the focus of the most recent guidance from Dr. Ramirez in the doctor portal messages Maya received during the month?",
+      "answer": "Continue pairing carbs with protein or fiber",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S3",
+        "HEALTH_S6",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S3:R2",
+        "HEALTH_S3:R3",
+        "HEALTH_S6:R2",
+        "HEALTH_S11:R2",
+        "HEALTH_S11:R3"
+      ],
+      "latest_clue_round": "HEALTH_S11:R3",
+      "stale_clue_rounds": [
+        "HEALTH_S3:R2",
+        "HEALTH_S3:R3",
+        "HEALTH_S6:R2",
+        "HEALTH_S11:R2"
+      ],
+      "visual_state_probe_include": true,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q62",
+      "question": "What type of snack does Maya show in her most recent upload after her snack choices evolved by month-end?",
+      "answer": "Yogurt with fresh berries",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S4",
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S4:R6",
+        "HEALTH_S6:R6",
+        "HEALTH_S8:R2",
+        "HEALTH_S11:R7"
+      ],
+      "latest_clue_round": "HEALTH_S11:R7",
+      "stale_clue_rounds": [
+        "HEALTH_S4:R6",
+        "HEALTH_S6:R6",
+        "HEALTH_S8:R2"
+      ],
+      "visual_state_probe_include": true,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q63",
+      "question": "What type of content did Maya upload during the very first session (D1)?",
+      "answer": "Dashboard screenshots and a portal message",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S1:R3",
+        "HEALTH_S1:R5"
+      ]
+    }
+  ]
+}

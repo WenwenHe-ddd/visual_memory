@@ -1,0 +1,294 @@
+% Include after \appendix in the main paper.
+% Requires amsmath, amssymb, amsthm, and a proposition environment.
+% Cross-references resolve when the revised methodology is also included.
+\section{Analysis of Visual-Anchor Reconstruction}
+\label{app:vamo-reconstruction}
+
+\paragraph{Notation.}
+Fix an orthonormal basis
+$\mathbf{U}\in\mathbb{R}^{D\times 2}$ and define the complementary
+orthogonal projectors
+\begin{equation*}
+    \mathbf{P}=\mathbf{U}\mathbf{U}^{\top},
+    \qquad
+    \mathbf{P}_{\perp}=\mathbf{I}_{D}-\mathbf{P}.
+\end{equation*}
+For a nonempty cluster $\mathcal{C}_k$, let
+$n_k=|\mathcal{C}_k|$,
+$\mathbf{a}_k=\mathbf{S}_k/n_k$, and
+$\mathbf{z}_i=\mathbf{U}^{\top}\mathbf{v}_i$.
+Here $\mathbf{a}_k$ denotes the maintained visual anchor.
+When the exact arithmetic mean of the original member embeddings is
+needed for analysis, we denote it separately by
+$\bar{\mathbf{v}}_k
+=n_k^{-1}\sum_{i\in\mathcal{C}_k}\mathbf{v}_i$.
+The following arguments apply to any fixed orthonormal basis.
+
+\subsection{Proof of Lemma~\ref{lem:vamo-anchor-reconstruction}}
+\label{app:vamo-projection-proof}
+
+\begin{proof}
+The assumed projection consistency gives
+\begin{equation*}
+\begin{aligned}
+    \mathbf{R}_k
+    &=\mathbf{S}_k-
+      \mathbf{U}\sum_{i\in\mathcal{C}_k}\mathbf{z}_i\\
+    &=\mathbf{S}_k-\mathbf{U}\mathbf{U}^{\top}\mathbf{S}_k
+      =\mathbf{P}_{\perp}\mathbf{S}_k.
+\end{aligned}
+\end{equation*}
+Consequently,
+\begin{equation*}
+\begin{aligned}
+    \hat{\mathbf{v}}_i
+    &=\mathbf{U}\mathbf{z}_i+\mathbf{R}_k/n_k\\
+    &=\mathbf{U}\mathbf{z}_i+\mathbf{P}_{\perp}\mathbf{a}_k\\
+    &=\mathbf{a}_k+
+      \mathbf{U}(\mathbf{z}_i-\mathbf{U}^{\top}\mathbf{a}_k).
+\end{aligned}
+\end{equation*}
+Every feasible vector in
+Eq.~\eqref{eq:vamo-constrained-reconstruction} admits the unique
+decomposition
+$\mathbf{x}=\mathbf{U}\mathbf{z}_i+\mathbf{r}$,
+where $\mathbf{U}^{\top}\mathbf{r}=\mathbf{0}$.
+Since the retained and complementary subspaces are orthogonal,
+\begin{equation*}
+\begin{aligned}
+    \|\mathbf{x}-\mathbf{a}_k\|_2^2
+    ={}&
+    \|\mathbf{z}_i-\mathbf{U}^{\top}\mathbf{a}_k\|_2^2\\
+    &+\|\mathbf{r}-\mathbf{P}_{\perp}\mathbf{a}_k\|_2^2.
+\end{aligned}
+\end{equation*}
+The first term is fixed by the constraint, whereas the second term
+has the unique minimum at
+$\mathbf{r}=\mathbf{P}_{\perp}\mathbf{a}_k$.
+This proves the claimed unique minimizer.
+
+To verify the geometric interpretation, set
+$\mathcal{A}_k
+=\mathbf{a}_k+\operatorname{range}(\mathbf{U})$.
+Using $\mathbf{z}_i=\mathbf{U}^{\top}\mathbf{v}_i$, we obtain
+\begin{equation*}
+    \hat{\mathbf{v}}_i
+    =\mathbf{a}_k+\mathbf{P}(\mathbf{v}_i-\mathbf{a}_k)
+    \in\mathcal{A}_k.
+\end{equation*}
+Its error
+$\mathbf{v}_i-\hat{\mathbf{v}}_i
+=\mathbf{P}_{\perp}(\mathbf{v}_i-\mathbf{a}_k)$
+is orthogonal to $\operatorname{range}(\mathbf{U})$.
+Thus $\hat{\mathbf{v}}_i$ is the Euclidean orthogonal projection
+of $\mathbf{v}_i$ onto $\mathcal{A}_k$.
+
+Finally, summing the reconstructed vectors yields
+\begin{equation*}
+\begin{aligned}
+    \sum_{i\in\mathcal{C}_k}\hat{\mathbf{v}}_i
+    &=\mathbf{U}\sum_{i\in\mathcal{C}_k}\mathbf{z}_i
+      +\mathbf{R}_k\\
+    &=\mathbf{S}_k,
+\end{aligned}
+\end{equation*}
+which establishes aggregate consistency.
+\end{proof}
+
+The reconstruction supplies an individual correction in the retained
+subspace while inheriting the anchor's complementary component.
+These reconstructed vectors are aggregated directly, without
+per-memory normalization.
+
+\subsection{Consistency under Dynamic Updates}
+\label{app:vamo-update-consistency}
+
+\begin{proposition}[Projection consistency and aggregate conservation]
+\label{prop:vamo-update-consistency}
+Suppose the old clusters partition the historical memories and satisfy
+$\mathbf{U}^{\top}\mathbf{S}_j
+=\sum_{i\in\mathcal{C}_j}\mathbf{z}_i$.
+Let the updated clusters partition all historical and newly arrived
+memories, with newly arrived indices $\mathcal{N}$ disjoint from the
+historical indices.
+The update in Eq.~\eqref{eq:vamo-unified-update} then satisfies
+\begin{equation*}
+    \mathbf{U}^{\top}\mathbf{S}'_k
+    =\sum_{i\in\mathcal{C}'_k}\mathbf{z}_i
+\end{equation*}
+for every updated cluster, and
+\begin{equation*}
+    \sum_k\mathbf{S}'_k
+    =\sum_j\mathbf{S}_j+\sum_{i\in\mathcal{N}}\mathbf{v}_i.
+\end{equation*}
+\end{proposition}
+
+\begin{proof}
+Projection consistency implies
+$\mathbf{U}^{\top}\mathbf{R}_j=\mathbf{0}$ for every old cluster.
+Applying $\mathbf{U}^{\top}$ to the unified update therefore gives
+\begin{equation*}
+\begin{aligned}
+    \mathbf{U}^{\top}\mathbf{S}'_k
+    ={}&
+    \sum_j\sum_{i\in\mathcal{C}_j\cap\mathcal{C}'_k}\mathbf{z}_i\\
+    &+\sum_{i\in\mathcal{C}'_k\cap\mathcal{N}}
+      \mathbf{U}^{\top}\mathbf{v}_i
+    =\sum_{i\in\mathcal{C}'_k}\mathbf{z}_i.
+\end{aligned}
+\end{equation*}
+For aggregate conservation, each old member appears in exactly one
+updated cluster, so
+$\sum_k|\mathcal{C}_j\cap\mathcal{C}'_k|/n_j=1$.
+Summing the unified update over all updated clusters yields
+\begin{equation*}
+\begin{aligned}
+    \sum_k\mathbf{S}'_k
+    ={}&
+    \sum_j\left(
+      \mathbf{U}\sum_{i\in\mathcal{C}_j}\mathbf{z}_i
+      +\mathbf{R}_j\right)
+      +\sum_{i\in\mathcal{N}}\mathbf{v}_i\\
+    ={}&\sum_j\mathbf{S}_j+\sum_{i\in\mathcal{N}}\mathbf{v}_i.
+\end{aligned}
+\end{equation*}
+Initialization from available full embeddings satisfies projection
+consistency directly.
+The first identity therefore establishes the condition of
+Lemma~\ref{lem:vamo-anchor-reconstruction} inductively after every update.
+\end{proof}
+
+These identities concern the maintained statistics and hold through
+successive partial reassignments.
+A complete transfer or merge preserves the existing stored aggregate
+without introducing additional reconstruction error.
+
+\subsection{Least-Squares Interpretation of the Shared Residual}
+\label{app:vamo-shared-residual}
+
+\begin{proposition}[Optimal shared complementary component]
+\label{prop:vamo-shared-residual}
+Consider reconstructions of the form
+$\mathbf{U}\mathbf{z}_i+\mathbf{r}$, where the same complementary
+component $\mathbf{r}$ is shared by all members of $\mathcal{C}_k$
+and $\mathbf{U}^{\top}\mathbf{r}=\mathbf{0}$.
+Define
+\begin{equation*}
+    L_k(\mathbf{r})
+    =\sum_{i\in\mathcal{C}_k}
+      \|\mathbf{v}_i-(\mathbf{U}\mathbf{z}_i+\mathbf{r})\|_2^2.
+\end{equation*}
+Then
+\begin{equation*}
+\begin{aligned}
+    L_k(\mathbf{r})
+    ={}&
+    \sum_{i\in\mathcal{C}_k}
+      \|\mathbf{P}_{\perp}
+      (\mathbf{v}_i-\bar{\mathbf{v}}_k)\|_2^2\\
+    &+n_k\|\mathbf{r}
+      -\mathbf{P}_{\perp}\bar{\mathbf{v}}_k\|_2^2.
+\end{aligned}
+\end{equation*}
+The unique minimizing shared component is
+$\mathbf{r}^{*}_k=\mathbf{P}_{\perp}\bar{\mathbf{v}}_k$.
+In particular, when $\mathbf{a}_k=\bar{\mathbf{v}}_k$, the maintained
+component $\mathbf{R}_k/n_k$ attains this minimum.
+\end{proposition}
+
+\begin{proof}
+Since $\mathbf{U}\mathbf{z}_i=\mathbf{P}\mathbf{v}_i$,
+each reconstruction error can be decomposed as
+\begin{equation*}
+\begin{aligned}
+    \mathbf{v}_i-(\mathbf{U}\mathbf{z}_i+\mathbf{r})
+    ={}&\mathbf{P}_{\perp}(\mathbf{v}_i-\bar{\mathbf{v}}_k)\\
+    &+\mathbf{P}_{\perp}\bar{\mathbf{v}}_k-\mathbf{r}.
+\end{aligned}
+\end{equation*}
+Expand the squared norm and sum over the cluster.
+The cross term vanishes because
+$\sum_{i\in\mathcal{C}_k}
+\mathbf{P}_{\perp}(\mathbf{v}_i-\bar{\mathbf{v}}_k)=\mathbf{0}$.
+This proves the shared-residual error decomposition stated above.
+Because $n_k>0$ and
+$\mathbf{P}_{\perp}\bar{\mathbf{v}}_k$ is feasible, the second term
+has a unique zero, proving optimality and uniqueness.
+When $\mathbf{a}_k=\bar{\mathbf{v}}_k$,
+the identity $\mathbf{R}_k=\mathbf{P}_{\perp}\mathbf{S}_k$ gives
+$\mathbf{R}_k/n_k=\mathbf{r}^{*}_k$.
+\end{proof}
+
+More generally, using the maintained anchor gives the exact
+error decomposition
+\begin{equation*}
+\begin{aligned}
+    \sum_{i\in\mathcal{C}_k}
+      \|\mathbf{v}_i-\hat{\mathbf{v}}_i\|_2^2
+    ={}&
+    \sum_{i\in\mathcal{C}_k}
+      \|\mathbf{P}_{\perp}
+      (\mathbf{v}_i-\bar{\mathbf{v}}_k)\|_2^2\\
+    &+n_k\|\mathbf{P}_{\perp}
+      (\mathbf{a}_k-\bar{\mathbf{v}}_k)\|_2^2.
+\end{aligned}
+\end{equation*}
+This separates the within-cluster variation outside the retained
+subspace from the error in the maintained complementary anchor.
+The constrained minimum in
+Lemma~\ref{lem:vamo-anchor-reconstruction} holds for the maintained
+anchor in either case.
+
+\subsection{Cluster-Level Compensation for a Shared Subspace}
+\label{app:vamo-cluster-compensation}
+
+The following consequence quantifies how a cluster-specific anchor
+compensates for visual variation omitted by the shared basis.
+For any fixed global reference $\mathbf{a}_0$, define
+\begin{equation*}
+\begin{aligned}
+    \hat{\mathbf{v}}_i^{\,\mathrm{global}}
+      &=\mathbf{P}\mathbf{v}_i+\mathbf{P}_{\perp}\mathbf{a}_0,\\
+    \hat{\mathbf{v}}_i^{\,\mathrm{cluster}}
+      &=\mathbf{P}\mathbf{v}_i+
+        \mathbf{P}_{\perp}\bar{\mathbf{v}}_k,
+        \qquad i\in\mathcal{C}_k.
+\end{aligned}
+\end{equation*}
+Let $E_{\mathrm{global}}$ and $E_{\mathrm{cluster}}$ be their
+respective sums of squared reconstruction errors over all memories.
+Then
+\begin{equation*}
+\begin{aligned}
+    E_{\mathrm{global}}
+    ={}&E_{\mathrm{cluster}}\\
+    &+\sum_k n_k
+      \|\mathbf{P}_{\perp}(\bar{\mathbf{v}}_k-\mathbf{a}_0)\|_2^2.
+\end{aligned}
+\end{equation*}
+Indeed, apply
+the shared-residual error decomposition to each cluster
+with $\mathbf{r}=\mathbf{P}_{\perp}\mathbf{a}_0$, and sum.
+Thus cluster-specific means remove the error component caused by
+replacing each cluster mean with a shared global reference, for any
+fixed orthonormal basis.
+When $\mathbf{a}_0$ is the global mean, the removed term is precisely
+the between-cluster variation in the complementary subspace.
+
+For the actual maintained anchors, write
+$E_{\mathrm{maintained}}
+=\sum_k\sum_{i\in\mathcal{C}_k}
+\|\mathbf{v}_i-\hat{\mathbf{v}}_i\|_2^2$.
+The maintained-anchor error decomposition above gives
+\begin{equation*}
+\begin{aligned}
+    E_{\mathrm{global}}-E_{\mathrm{maintained}}
+    ={}&
+    \sum_k n_k
+      \|\mathbf{P}_{\perp}(\bar{\mathbf{v}}_k-\mathbf{a}_0)\|_2^2\\
+    &-\sum_k n_k
+      \|\mathbf{P}_{\perp}(\mathbf{a}_k-\bar{\mathbf{v}}_k)\|_2^2.
+\end{aligned}
+\end{equation*}
+This identity relates the compensation provided by cluster-level
+visual information to the accuracy of the maintained anchors.

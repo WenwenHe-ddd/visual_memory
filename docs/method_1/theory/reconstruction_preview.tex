@@ -1,0 +1,58 @@
+% Standalone preview of the inserted lemma and its appendix.
+% Compile twice from this directory with:
+%   pdflatex reconstruction_preview.tex
+% The article class here is only a preview; use the conference class
+% and existing theorem numbering in the actual manuscript.
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\title{Visual-Anchor Reconstruction: Lemma and Proofs}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Method Excerpt}
+Let $\mathbf{U}\in\mathbb{R}^{D\times2}$ have orthonormal columns.
+For each historical memory, retain
+$\mathbf{z}_i=\mathbf{U}^{\top}\mathbf{v}_i$.
+For cluster $\mathcal{C}_k$, retain its visual sum $\mathbf{S}_k$,
+anchor $\mathbf{a}_k=\mathbf{S}_k/|\mathcal{C}_k|$, and the derived
+residual
+\begin{equation}
+    \mathbf{R}_k=\mathbf{S}_k-
+    \mathbf{U}\sum_{i\in\mathcal{C}_k}\mathbf{z}_i.
+\end{equation}
+The reconstruction for partial member reassignment is
+\begin{equation}
+\label{eq:vamo-leaf-reconstruction}
+    \hat{\mathbf{v}}_i
+    =\mathbf{U}\mathbf{z}_i+
+     \frac{\mathbf{R}_k}{|\mathcal{C}_k|}.
+\end{equation}
+
+\input{vamo_reconstruction_lemma.tex}
+
+For updated clusters $\mathcal{C}'_k$ and newly arrived indices
+$\mathcal{N}$, the unified update is
+\begin{equation}
+\label{eq:vamo-unified-update}
+\begin{aligned}
+\mathbf{S}'_k
+=\sum_j\Bigg[
+&\mathbf{U}
+ \sum_{i\in\mathcal{C}_j\cap\mathcal{C}'_k}\mathbf{z}_i\\
+&+\frac{|\mathcal{C}_j\cap\mathcal{C}'_k|}
+ {|\mathcal{C}_j|}\mathbf{R}_j
+\Bigg]
++\sum_{i\in\mathcal{C}'_k\cap\mathcal{N}}\mathbf{v}_i.
+\end{aligned}
+\end{equation}
+
+\appendix
+\input{appendix_vamo_reconstruction.tex}
+\end{document}

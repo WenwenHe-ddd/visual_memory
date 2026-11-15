@@ -1,0 +1,2094 @@
+{
+  "dataset_name": "Visual Assistant",
+  "task_name": "Multi-Scene Visual Case Archive Assistant",
+  "character_profile": {
+    "primary_user": "Lena Park",
+    "role": "A person documenting scene changes, object movement, and visually confusable items across multiple everyday and work-related environments over time.",
+    "setting": "A multi-location visual archive spanning indoor spaces such as an office suite, apartment rooms, exhibit and restoration areas, laboratory workspaces, and backstage theater zones."
+  },
+  "multi_session_dialogues": [
+    {
+      "session_id": "SCENE_S1",
+      "date": "2025-05-01",
+      "dialogues": [
+        {
+          "round": "SCENE_S1:R1",
+          "user": "Please help me keep careful track of this office scene. Some important details are small and easy to miss.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S1:R2",
+          "user": "Here is the first wide image of the workstation.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S1-IMG1.png"
+          ],
+          "image_caption": [
+            "A tidy home office desk with a laptop, coffee mug, notebook, and monitor ready for work."
+          ]
+        },
+        {
+          "round": "SCENE_S1:R3",
+          "user": "Good. Please pay extra attention to the tiny items and the damaged paper details.",
+          "assistant": "Understood. I'll keep the small objects and paper defects distinct in memory."
+        },
+        {
+          "round": "SCENE_S1:R4",
+          "user": "Here is a closer image of the front right part of the desk.",
+          "assistant": "Got it. I'll use this crop to refine the object level details without assuming anything beyond what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S1-IMG2.png"
+          ],
+          "image_caption": [
+            "A tidy wooden desk holds a notebook, coffee mug, sticky notes, USB drive, and computer mouse ready for work."
+          ]
+        },
+        {
+          "round": "SCENE_S1:R5",
+          "user": "Now here is the workstation from later the same afternoon.",
+          "assistant": "Got it. I'll compare this against the earlier desk state and avoid merging similar items.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S1-IMG3.png"
+          ],
+          "image_caption": [
+            "A tidy home office desk with a laptop, coffee mug, and monitor ready for work."
+          ]
+        },
+        {
+          "round": "SCENE_S1:R6",
+          "user": "Please keep tracking changes conservatively. Missing does not automatically mean lost.",
+          "assistant": "Understood. I'll track only visibility and movement, not infer causality."
+        },
+        {
+          "round": "SCENE_S1:R7",
+          "user": "Here is another crop focused on the monitor stand area.",
+          "assistant": "Got it. I'll use this for local comparison and preserve the stack order and nearby small objects.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S1-IMG4.png"
+          ],
+          "image_caption": [
+            "A tidy wooden desk with a monitor, sticky notes, and a tray of paper clips."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S2",
+      "date": "2025-05-03",
+      "dialogues": [
+        {
+          "round": "SCENE_S2:R1",
+          "user": "Please continue tracking the scene carefully. I'm moving to nearby areas now.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S2:R2",
+          "user": "Here is the doorway area.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S2-IMG1.png"
+          ],
+          "image_caption": [
+            "A black backpack, umbrella, and box of books sit neatly by the door, ready to grab on the way out."
+          ]
+        },
+        {
+          "round": "SCENE_S2:R3",
+          "user": "Now the meeting room next door.",
+          "assistant": "Got it. I'll keep visually similar items separate unless the evidence supports identity.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S2-IMG2.png"
+          ],
+          "image_caption": [
+            "A tidy office desk holds notebooks, papers, a wallet, and a coffee mug ready for work."
+          ]
+        },
+        {
+          "round": "SCENE_S2:R4",
+          "user": "And here is the storage cabinet.",
+          "assistant": "Got it. I'll use this image to trace possible reappearances without collapsing similar objects together.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S2-IMG3.png"
+          ],
+          "image_caption": [
+            "A neatly organized metal shelf holds a gray storage box, folded plastic-wrapped linens, and small office items."
+          ]
+        },
+        {
+          "round": "SCENE_S2:R5",
+          "user": "Please keep in mind that some things may be visually similar but not actually the same object.",
+          "assistant": "Understood. I'll distinguish items by shape, damage pattern, attachment state, and local context."
+        },
+        {
+          "round": "SCENE_S2:R6",
+          "user": "Here is a closer image of the middle shelf.",
+          "assistant": "Got it. I'll use this close up to anchor the identity of the small items more precisely.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S2-IMG4.png"
+          ],
+          "image_caption": [
+            "A red USB flash drive lies on a gray shelf beside a storage box and a roll of yellow labels."
+          ]
+        },
+        {
+          "round": "SCENE_S2:R7",
+          "user": "Finally, here is a wider view of the hallway outside the office.",
+          "assistant": "Got it. I'll treat this as additional context and avoid generalizing too broadly from repeated materials or colors.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S2-IMG5.png"
+          ],
+          "image_caption": [
+            "A janitor’s cart stocked with cleaning supplies stands ready in a hallway."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S3",
+      "date": "2025-05-05",
+      "dialogues": [
+        {
+          "round": "SCENE_S3:R1",
+          "user": "Please continue tracking the scene carefully.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S3:R2",
+          "user": "Fair. Here is another close up of the main desk from later on.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S3-IMG1.png"
+          ],
+          "image_caption": [
+            "A wooden desk holds a coffee mug, laptop edge, keyring, sticky notes, and a small plastic bag."
+          ]
+        },
+        {
+          "round": "SCENE_S3:R3",
+          "user": "Now here is the doorway area again.",
+          "assistant": "Got it. I'll compare this against the earlier doorway view and preserve uncertainty where identity is not guaranteed.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S3-IMG2.png"
+          ],
+          "image_caption": [
+            "A neatly packed backpack, umbrella, and box of books sit ready by the door."
+          ]
+        },
+        {
+          "round": "SCENE_S3:R4",
+          "user": "And one more cabinet image.",
+          "assistant": "Got it. I'll use it to track the smaller moved objects and their positions precisely.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S3-IMG3.png"
+          ],
+          "image_caption": [
+            "A gray shelf holds a storage box, a roll of yellow labels, a red USB flash drive, and a metal hook."
+          ]
+        },
+        {
+          "round": "SCENE_S3:R5",
+          "user": "I'm going to ask vaguer questions later, so please keep the small distinguishing details in mind.",
+          "assistant": "Understood. I'll retain the small distinguishing distinctions and avoid resolving look alikes too aggressively."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S4",
+      "date": "2025-05-08",
+      "dialogues": [
+        {
+          "round": "SCENE_S4:R1",
+          "user": "Please keep careful track of what is visible and where things are across the images.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S4:R2",
+          "user": "Here is the first image from the living room.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S4-IMG1.png"
+          ],
+          "image_caption": [
+            "A tidy living room with a wooden coffee table holding a remote, wallet, and face mask near the front door."
+          ]
+        },
+        {
+          "round": "SCENE_S4:R3",
+          "user": "Please continue tracking the scene carefully.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S4:R4",
+          "user": "Here is the kitchen counter image taken the same evening.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S4-IMG2.png"
+          ],
+          "image_caption": [
+            "A blue coffee mug, smartphone with charging cable, and a bowl of apples sit on a tidy kitchen countertop."
+          ]
+        },
+        {
+          "round": "SCENE_S4:R5",
+          "user": "Please continue tracking the scene carefully.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S4:R6",
+          "user": "Now a later living room image from the next morning.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S4-IMG3.png"
+          ],
+          "image_caption": [
+            "A tidy living room features a wooden coffee table with a remote control, surrounded by gray furniture and soft lighting."
+          ]
+        },
+        {
+          "round": "SCENE_S4:R7",
+          "user": "Here is the kitchen from the next morning too.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S4-IMG4.png"
+          ],
+          "image_caption": [
+            "A blue coffee mug sits on a kitchen countertop beside a sink, with fruit, tea, and a pill bottle in the background."
+          ]
+        },
+        {
+          "round": "SCENE_S4:R8",
+          "user": "We'll verify the details later using the image notes.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S5",
+      "date": "2025-05-10",
+      "dialogues": [
+        {
+          "round": "SCENE_S5:R1",
+          "user": "Please continue tracking the scene carefully.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S5:R2",
+          "user": "Here is the bedroom desk.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S5-IMG1.png"
+          ],
+          "image_caption": [
+            "A minimalist workspace with a laptop, coffee mug, earphones, and wallet on a wooden desk by a window."
+          ]
+        },
+        {
+          "round": "SCENE_S5:R3",
+          "user": "Please continue tracking the scene carefully.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S5:R4",
+          "user": "Now the hallway closet.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S5-IMG2.png"
+          ],
+          "image_caption": [
+            "Neatly organized wooden shelves hold folded clothes, a blanket, a charging cable, and small personal items."
+          ]
+        },
+        {
+          "round": "SCENE_S5:R5",
+          "user": "Okay, please keep the notes conservative and grounded in the images.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S5:R6",
+          "user": "Here is a closer image of the closet middle shelf.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S5-IMG3.png"
+          ],
+          "image_caption": [
+            "A folded plaid scarf and a green card sit neatly on a wooden shelf."
+          ]
+        },
+        {
+          "round": "SCENE_S5:R7",
+          "user": "Now a later kitchen image from the afternoon.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S5-IMG4.png"
+          ],
+          "image_caption": [
+            "A clean kitchen countertop with a faint circular stain sits beside a sink, a bowl of apples, and a box of tea."
+          ]
+        },
+        {
+          "round": "SCENE_S5:R8",
+          "user": "We'll verify the details later using the image notes.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S6",
+      "date": "2025-05-22",
+      "dialogues": [
+        {
+          "round": "SCENE_S6:R1",
+          "user": "Please continue tracking the scene carefully.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S6:R2",
+          "user": "Fair. Here is an entryway close up from that evening.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S6-IMG1.png"
+          ],
+          "image_caption": [
+            "A tidy entryway bench neatly stores shoes and a bag beneath a cushioned seat."
+          ]
+        },
+        {
+          "round": "SCENE_S6:R3",
+          "user": "Now a later living room image from the same evening.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S6-IMG2.png"
+          ],
+          "image_caption": [
+            "A cozy living room features a wooden coffee table with a remote control and coaster in front of a gray sofa."
+          ]
+        },
+        {
+          "round": "SCENE_S6:R4",
+          "user": "Later I may refer back to some items indirectly, so keep my notes precise.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S6:R5",
+          "user": "Okay, please keep the notes conservative and grounded in the images.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S6:R6",
+          "user": "Here is a final bedroom image.",
+          "assistant": "Got it. I'll use this image for later comparison and keep the notes grounded in what is visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S6-IMG3.png"
+          ],
+          "image_caption": [
+            "A tidy home workspace with a laptop, coffee mug, and essentials neatly arranged on a wooden desk."
+          ]
+        },
+        {
+          "round": "SCENE_S6:R7",
+          "user": "I'll ask follow up questions later that require comparing several images.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S6:R8",
+          "user": "I'll ask follow up questions later that require comparing several images.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        },
+        {
+          "round": "SCENE_S6:R9",
+          "user": "We'll verify the details later using the image notes.",
+          "assistant": "Understood. I'll rely on the images and keep the notes conservative."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S7",
+      "date": "2025-06-20",
+      "dialogues": [
+        {
+          "round": "SCENE_S7:R1",
+          "user": "I need you to help me document a sequence of gallery images. Please pay attention to the small details, because I'll check later whether you can keep them straight.",
+          "assistant": "Understood. I'll track object placement, labels, and small distinguishing features across the images."
+        },
+        {
+          "round": "SCENE_S7:R2",
+          "user": "This is the first image from the fossil room.",
+          "assistant": "Got it. I see a central fossil slab with several small supporting items arranged around it, including a label card and a few portable objects.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S7-IMG1.png"
+          ],
+          "image_caption": [
+            "A trilobite fossil is displayed in a museum case alongside a brass compass and a blue shell-shaped object."
+          ]
+        },
+        {
+          "round": "SCENE_S7:R3",
+          "user": "Good. Don't flatten the small objects together. Some of them are going to be easy to confuse later.",
+          "assistant": "Understood. I'll keep the small display items distinct rather than collapsing them into generic categories."
+        },
+        {
+          "round": "SCENE_S7:R4",
+          "user": "Now here is a closer crop from the lower front area.",
+          "assistant": "Got it. The close up confirms that the front label has a distinctive damaged corner, and one of the small blue items is positioned behind it on the right.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S7-IMG2.png"
+          ],
+          "image_caption": [
+            "An empty, torn museum label sits in front of a trilobite fossil and a blue shell display."
+          ]
+        },
+        {
+          "round": "SCENE_S7:R5",
+          "user": "Here is another fossil room image taken later that afternoon.",
+          "assistant": "Got it. The fossil room layout is mostly unchanged, but one of the small metal objects that had been on the left is no longer visible.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S7-IMG3.png"
+          ],
+          "image_caption": [
+            "A trilobite fossil is displayed in a museum case alongside a blue shell and an empty label."
+          ]
+        },
+        {
+          "round": "SCENE_S7:R6",
+          "user": "I'm not going to say which one in plain language later, so keep the distinctive cues in mind.",
+          "assistant": "Got it. I'll remember the distinguishing visual features rather than just the object category."
+        },
+        {
+          "round": "SCENE_S7:R7",
+          "user": "Here is a side angle image of the same room.",
+          "assistant": "Got it. The side view confirms the pouch and right side tag placement, and the same left side absence remains.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S7-IMG4.png"
+          ],
+          "image_caption": [
+            "A trilobite fossil and shell are displayed in a museum case with a blank label and catalog number."
+          ]
+        },
+        {
+          "round": "SCENE_S7:R8",
+          "user": "Quick check: the front paper marker had a unique defect, right?",
+          "assistant": "Yes. The front label card had a distinctive physical defect that makes it visually identifiable."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S8",
+      "date": "2025-06-22",
+      "dialogues": [
+        {
+          "round": "SCENE_S8:R1",
+          "user": "Now I'm moving to the maritime gallery and then the restoration workspace. Some things there may overlap visually with what you already saw.",
+          "assistant": "Understood. I'll compare carefully and avoid assuming identity based only on superficial similarity."
+        },
+        {
+          "round": "SCENE_S8:R2",
+          "user": "First, the maritime gallery case.",
+          "assistant": "Got it. This case contains several objects that resemble earlier ones in broad type and color, but their forms and placements differ.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S8-IMG1.png"
+          ],
+          "image_caption": [
+            "A small museum display case features a vintage brass gauge, a blue fish figurine, and other curios arranged on dark velvet."
+          ]
+        },
+        {
+          "round": "SCENE_S8:R3",
+          "user": "Exactly. I care about the differences, not just the overlaps.",
+          "assistant": "Understood. I'm tracking the shape, damage pattern, material cues, and exact relative positions."
+        },
+        {
+          "round": "SCENE_S8:R4",
+          "user": "Now the restoration table.",
+          "assistant": "Got it. The restoration table contains a small brass object, a narrow silver tool, a red handled item, a small vial, and a cream card. Some of these may correspond to earlier missing objects, while others may be new.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S8-IMG2.png"
+          ],
+          "image_caption": [
+            "A vintage compass, seal stamp, tweezers, and a small jar of sand are neatly arranged on a stone work surface."
+          ]
+        },
+        {
+          "round": "SCENE_S8:R5",
+          "user": "I deliberately didn’t restate the exact cues there. You'll need to use the image details later.",
+          "assistant": "Understood. I'll rely on the visual details rather than just the conversational wording."
+        },
+        {
+          "round": "SCENE_S8:R6",
+          "user": "Here is a closer image from the right side of that table.",
+          "assistant": "Got it. The right side close up confirms the silver tool’s elongated form, the red handled object beside it, and the intact corner label card.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S8-IMG3.png"
+          ],
+          "image_caption": [
+            "Vintage desk tools—a compass, metal stylus, and wax seal stamp—are arranged beside a blank label on a stone surface."
+          ]
+        },
+        {
+          "round": "SCENE_S8:R7",
+          "user": "Now a storage prep room image.",
+          "assistant": "Got it. This room adds more visually similar objects, including a short silver tool, a red elongated item, a small vial, and another green pouch like item.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S8-IMG4.png"
+          ],
+          "image_caption": [
+            "A small collection of vintage desk items, including a red wax stick, glass jar, metal tool, and green velvet pouch, sits neatly arranged on a shelf."
+          ]
+        },
+        {
+          "round": "SCENE_S8:R8",
+          "user": "Good. Which room so far gives the strongest candidate location for the missing left side object from the fossil case?",
+          "assistant": "The restoration table is the strongest candidate, because it includes a small brass item matching the earlier missing one in key structural features rather than only color."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S9",
+      "date": "2025-06-25",
+      "dialogues": [
+        {
+          "round": "SCENE_S9:R1",
+          "user": "I'm going to ask some things in a vague way now. First, though, here's another fossil room shot from the next morning.",
+          "assistant": "Got it. The fossil room is stable except for the continued absence of the earlier missing metal object.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S9-IMG1.png"
+          ],
+          "image_caption": [
+            "A trilobite fossil and a small blue fish figurine are displayed together in a museum case."
+          ]
+        },
+        {
+          "round": "SCENE_S9:R2",
+          "user": "Now a later restoration room image.",
+          "assistant": "Got it. The restoration table still contains the brass object, silver tool, pale filled vial, and intact corner card, while the red handled object is no longer present.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S9-IMG2.png"
+          ],
+          "image_caption": [
+            "A vintage brass compass rests on a workbench beside a vial of sand and a metal tool."
+          ]
+        },
+        {
+          "round": "SCENE_S9:R3",
+          "user": "Here comes a vague question: not the round brass thing without a glass top, but the other brass one that had a directional feature under glass. Which object is that?",
+          "assistant": "That refers to the small brass compass with a glass top and a visible needle, not the solid brass medallion in the maritime gallery."
+        },
+        {
+          "round": "SCENE_S9:R4",
+          "user": "Good. Another one: not the blue thing shaped like an animal. I mean the other blue item with ridges that stayed by the fossil slab. What is it?",
+          "assistant": "That is the blue shell shaped token in the fossil room, not the blue fish shaped token in the maritime gallery."
+        },
+        {
+          "round": "SCENE_S9:R5",
+          "user": "Now a close up from the storage prep room.",
+          "assistant": "Got it. The prep room close up makes the distinctions between these similar items much clearer.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S9-IMG3.png"
+          ],
+          "image_caption": [
+            "A small metal spatula, red sealing wax stick, jar of gray powder, and folded green pouch are neatly arranged on a shelf."
+          ]
+        },
+        {
+          "round": "SCENE_S9:R6",
+          "user": "Another vague one: not the short broad silver implement, but the longer narrow one whose tip pointed diagonally. Which is that?",
+          "assistant": "That is the thin silver pointer tool from the restoration table, not the short silver spatula from the storage prep room."
+        },
+        {
+          "round": "SCENE_S9:R7",
+          "user": "Last image: a maritime gallery close up.",
+          "assistant": "Got it. The maritime close up confirms intact label edges, the pointed tail blue item, the solid brass object, and a differently placed tag.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S9-IMG4.png"
+          ],
+          "image_caption": [
+            "A small museum display case labeled A-209 presents a brass lid and a blue ceramic fish beside a blank description card."
+          ]
+        },
+        {
+          "round": "SCENE_S9:R8",
+          "user": "Final recap: give me two examples where someone could easily answer wrong if they relied only on color or rough category instead of the visual details.",
+          "assistant": "One example is the brass compass versus the brass medallion. Another is the blue shell shaped token versus the blue fish shaped token. A third is the torn corner fossil label card versus the intact corner labels in the other rooms. A fourth is the thin silver pointer versus the short silver spatula."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S10",
+      "date": "2025-06-30",
+      "dialogues": [
+        {
+          "round": "SCENE_S10:R1",
+          "user": "I need help documenting a sample tracking sequence across several lab areas. Please pay attention to the small visual details because I'm going to ask about them later in a vague way.",
+          "assistant": "Understood. I'll track sample locations, container identity cues, and any small distinguishing features across the images."
+        },
+        {
+          "round": "SCENE_S10:R2",
+          "user": "Here is the first image from the main bench.",
+          "assistant": "Got it. The main bench contains a central yellow rack, several small containers, a damaged label freezer box, and a metal tool with a distinct shape cue.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S10-IMG1.png"
+          ],
+          "image_caption": [
+            "Laboratory tubes and tools arranged on a bench for scientific experiments."
+          ]
+        },
+        {
+          "round": "SCENE_S10:R3",
+          "user": "Good. I care especially about the identity cues, not just the container categories.",
+          "assistant": "Understood. I'll keep track of cap color, label markings, sticker damage, liquid appearance, and tool shape."
+        },
+        {
+          "round": "SCENE_S10:R4",
+          "user": "Here is a closer crop of the front part of the bench.",
+          "assistant": "Got it. The close up confirms the label marking pattern on the front left red capped tube and the shape of the metal tool tip.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S10-IMG2.png"
+          ],
+          "image_caption": [
+            "Laboratory vials in a yellow rack sit beside a pair of metal tweezers on a workbench."
+          ]
+        },
+        {
+          "round": "SCENE_S10:R5",
+          "user": "Now a later bench image taken after some routine handling.",
+          "assistant": "Got it. The bench remains mostly stable, but one front positioned red capped tube is now absent from the rack, and the distinctive metal tool is also no longer in its earlier place.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S10-IMG3.png"
+          ],
+          "image_caption": [
+            "Colorful lab vials and containers arranged on a bench for scientific experiments."
+          ]
+        },
+        {
+          "round": "SCENE_S10:R6",
+          "user": "I'm not going to describe the missing front tube explicitly later, so keep its visual signature in memory.",
+          "assistant": "Got it. I'll remember the specific cap and label combination rather than just 'a microtube.'"
+        },
+        {
+          "round": "SCENE_S10:R7",
+          "user": "Here is the pipette area image from the same period.",
+          "assistant": "Got it. The pipette area introduces visually similar items, including a clipped black tag, a red capped tube with a different label pattern, and a shorter straight tipped metal tool.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S10-IMG4.png"
+          ],
+          "image_caption": [
+            "Sterile lab equipment, including micropipettes, sample vials, and tweezers, arranged on a metal tray in a clinical setting."
+          ]
+        },
+        {
+          "round": "SCENE_S10:R8",
+          "user": "Exactly. Some of these are distractors, so don't merge them just because they look roughly similar.",
+          "assistant": "Understood. I'll keep the earlier front rack tube distinct from the similar red capped tube on the staging tray, and I'll separate the two metal tools by tip shape and length."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S11",
+      "date": "2025-08-23",
+      "dialogues": [
+        {
+          "round": "SCENE_S11:R1",
+          "user": "Now I'm moving to the cold room prep shelf. Some earlier missing things may show up there, mixed with similar looking items.",
+          "assistant": "Understood. I'll compare carefully and avoid identity claims based only on broad similarity."
+        },
+        {
+          "round": "SCENE_S11:R2",
+          "user": "Here is the first cold room shelf image.",
+          "assistant": "Got it. The cold room shelf includes a strong candidate reappearance of the missing red capped tube, plus several similar but distinct distractors such as a clear green capped vial, a different yellow rack, an intact sticker box, and a loose black label.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S11-IMG1.png"
+          ],
+          "image_caption": [
+            "Labeled sample vials and containers are organized on a stainless steel laboratory shelf."
+          ]
+        },
+        {
+          "round": "SCENE_S11:R3",
+          "user": "Good. I also care about how the black tag like things differ across areas.",
+          "assistant": "Understood. I'm tracking whether a black label is clipped to a tray or lying loose on a shelf."
+        },
+        {
+          "round": "SCENE_S11:R4",
+          "user": "Here is a closer crop of the cold room shelf.",
+          "assistant": "Got it. The close up confirms the marking pattern of the red capped tube and the material/color distinction of the green capped vial.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S11-IMG2.png"
+          ],
+          "image_caption": [
+            "Labeled sample vials rest on a lab bench beside a barcode and tissue stack, ready for analysis."
+          ]
+        },
+        {
+          "round": "SCENE_S11:R5",
+          "user": "Now a lower shelf image.",
+          "assistant": "Got it. The lower shelf contains another reappearance candidate for the earlier metal tool, along with a conical tube and a similar but not identical PCR strip.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S11-IMG3.png"
+          ],
+          "image_caption": [
+            "Laboratory setup with a sample vial, microtubes, and tweezers on a stainless steel surface."
+          ]
+        },
+        {
+          "round": "SCENE_S11:R6",
+          "user": "Keep in mind that the strip here is similar but not the same as the one on the main bench.",
+          "assistant": "Understood. I'll distinguish them by the liquid pattern rather than just calling both of them PCR strips."
+        },
+        {
+          "round": "SCENE_S11:R7",
+          "user": "Here is another cold room image from a slightly wider angle.",
+          "assistant": "Got it. The cold room state appears stable across its local views.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S11-IMG4.png"
+          ],
+          "image_caption": [
+            "Laboratory shelves hold various sample containers, test tubes, and tools arranged for scientific analysis."
+          ]
+        },
+        {
+          "round": "SCENE_S11:R8",
+          "user": "Quick recap: which earlier missing objects now have strong candidate matches in the cold room?",
+          "assistant": "The strongest cold room matches are the two stripe red capped microtube from the main bench and the bent tip forceps that disappeared from the lower edge of the bench. The other cold room items are mostly confusable distractors rather than clean matches to the earlier bench objects."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S12",
+      "date": "2025-08-29",
+      "dialogues": [
+        {
+          "round": "SCENE_S12:R1",
+          "user": "Now I'm showing the centrifuge station. After that I'll start asking vague questions.",
+          "assistant": "Understood. I'll keep the earlier identity cues active and compare them with the centrifuge area items."
+        },
+        {
+          "round": "SCENE_S12:R2",
+          "user": "Here is the centrifuge station image.",
+          "assistant": "Got it. The centrifuge area includes another green capped vial, another black clipped tag, a PCR strip with a distinctive well pattern, a colored conical tube, and a short straight metal tool.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S12-IMG1.png"
+          ],
+          "image_caption": [
+            "Labeled test tubes and vials sit beside a centrifuge on a laboratory workstation."
+          ]
+        },
+        {
+          "round": "SCENE_S12:R3",
+          "user": "Good. Notice that some things here match the main bench more closely than the cold room shelf, and others don't.",
+          "assistant": "Understood. I'll separate true matches from partial look alikes by liquid color, container opacity, and attachment style."
+        },
+        {
+          "round": "SCENE_S12:R4",
+          "user": "Here is a close up of the right side of the centrifuge station.",
+          "assistant": "Got it. The close up confirms the well pattern on the strip and the shape distinction between the short tool here and the longer bent tool seen earlier.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S12-IMG2.png"
+          ],
+          "image_caption": [
+            "A strip of microtubes with a blue sample and metal tweezers rest on a laboratory bench."
+          ]
+        },
+        {
+          "round": "SCENE_S12:R5",
+          "user": "Now a vague question: not the red capped tube with only one stripe. I mean the other red capped one that used to be in the front left rack slot and later turned up on a metal shelf. Which item is that?",
+          "assistant": "That is the red capped 1.5 mL microtube with two black diagonal stripes on its white label. It was originally in the front left slot of the main bench yellow rack and later appeared on the cold room prep shelf."
+        },
+        {
+          "round": "SCENE_S12:R6",
+          "user": "Good. Another one: not the green capped vial that was fully clear. I mean the other green capped vial that had a darker body. Which is that?",
+          "assistant": "That is the amber vial with the green cap, not the fully clear green capped vial from the cold room."
+        },
+        {
+          "round": "SCENE_S12:R7",
+          "user": "Now another vague one: not the black label lying loose. I mean the black one that was attached to something in the handling area. Which one is that?",
+          "assistant": "That refers to the black sample tag clipped to the staging tray in the pipette area, not the loose black barcode label on the cold room shelf."
+        },
+        {
+          "round": "SCENE_S12:R8",
+          "user": "One more image: the main bench late at night.",
+          "assistant": "Got it. By late night, the main bench has lost the earlier right side green capped dark vial and no longer shows the earlier patterned strip in its original position.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S12-IMG3.png"
+          ],
+          "image_caption": [
+            "A blue box and a yellow tray with sample containers sit on a metal laboratory shelf."
+          ]
+        },
+        {
+          "round": "SCENE_S12:R9",
+          "user": "Final recap: give me two examples where someone could easily answer wrong if they relied only on color or container category instead of detailed visual cues.",
+          "assistant": "One example is the amber green capped vial versus the clear green capped vial. Another is the two stripe red capped microtube versus the one stripe red capped microtube. A third is the bent tip forceps versus the short straight tip tweezers, and a fourth is the pale blue well PCR strip versus the all clear strip."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S13",
+      "date": "2025-09-02",
+      "dialogues": [
+        {
+          "round": "SCENE_S13:R1",
+          "user": "I need help documenting several backstage images. Please pay close attention to the small details because I'm going to refer to them later without naming them directly.",
+          "assistant": "Understood. I'll track prop locations, identity cues, and any small distinguishing features across the images."
+        },
+        {
+          "round": "SCENE_S13:R2",
+          "user": "Here is the first image from the main prop table.",
+          "assistant": "Got it. The prop table contains a central hat, several handheld accessories, a damaged cream card, a blue bottle, a white jewelry item, and a clipped black tag.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S13-IMG1.png"
+          ],
+          "image_caption": [
+            "A magician’s cluttered worktable is filled with vintage props, from a top hat and pocket watch to a skull and tarot cards."
+          ]
+        },
+        {
+          "round": "SCENE_S13:R3",
+          "user": "Good. I care about the identity cues, not just broad categories like hat or bottle.",
+          "assistant": "Understood. I'll keep track of band color, trim style, engraved markings, corner damage, and material differences."
+        },
+        {
+          "round": "SCENE_S13:R4",
+          "user": "Here is a closer crop of the left half of the table.",
+          "assistant": "Got it. The close up confirms the distinct marking on the gold watch and the specific damage pattern on the cream card.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S13-IMG2.png"
+          ],
+          "image_caption": [
+            "An old, blank parchment lies on a rustic wooden desk beside a vintage pocket watch and string of pearls."
+          ]
+        },
+        {
+          "round": "SCENE_S13:R5",
+          "user": "Now here is a later image of the same prop table after rehearsal traffic.",
+          "assistant": "Got it. Most of the table remains stable, but one distinctive gold accessory that had been on the left is no longer present.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S13-IMG3.png"
+          ],
+          "image_caption": [
+            "A vintage theater dressing table is set with a top hat, fan, pearls, and a blank cue card awaiting the next performance."
+          ]
+        },
+        {
+          "round": "SCENE_S13:R6",
+          "user": "I won't name that missing item directly later, so keep its visual signature in memory.",
+          "assistant": "Got it. I'll remember the specific cue on that missing gold item rather than treating it as just another watch."
+        },
+        {
+          "round": "SCENE_S13:R7",
+          "user": "Here is the wings area near stage left.",
+          "assistant": "Got it. The wings area includes several visually similar but distinct objects, including a different hat band combination and a black tag that is not attached.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S13-IMG4.png"
+          ],
+          "image_caption": [
+            "A black top hat with a gold band rests on a wooden stool in a dimly lit backstage area."
+          ]
+        },
+        {
+          "round": "SCENE_S13:R8",
+          "user": "Exactly. Some of these are distractors. Don't merge them with the main table props just because they share a category or color.",
+          "assistant": "Understood. I'll separate the clipped versus loose tags, the different hat band combinations, and the cane by handle material."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S14",
+      "date": "2025-09-10",
+      "dialogues": [
+        {
+          "round": "SCENE_S14:R1",
+          "user": "Now I'm moving to the quick change station and the costume rack area. Some earlier missing things may show up there, mixed with look alikes.",
+          "assistant": "Understood. I'll compare carefully and avoid assuming identity from rough similarity alone."
+        },
+        {
+          "round": "SCENE_S14:R2",
+          "user": "Here is the quick change station.",
+          "assistant": "Got it. The quick change station contains a strong candidate match for the missing gold item, plus several similar but clearly distinct objects in bottle, jewelry, card, and cane form.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S14-IMG1.png"
+          ],
+          "image_caption": [
+            "Vintage dressing table with a golden locket, pearl necklace, and blue potion bottle glowing under warm vanity lights."
+          ]
+        },
+        {
+          "round": "SCENE_S14:R3",
+          "user": "Good. Some of those are traps if you pay attention only to color.",
+          "assistant": "Understood. I'm tracking engraving, material, coiled versus loose arrangement, corner damage, and handle metal."
+        },
+        {
+          "round": "SCENE_S14:R4",
+          "user": "Here is a closer crop of the counter.",
+          "assistant": "Got it. The close up confirms the match cue on the gold item and clarifies the material and shape differences of the surrounding objects.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S14-IMG2.png"
+          ],
+          "image_caption": [
+            "Vintage vanity items—a pocket watch, pearls, cane, and blank card—are arranged on a rustic wooden dressing table."
+          ]
+        },
+        {
+          "round": "SCENE_S14:R5",
+          "user": "Now the costume rack zone.",
+          "assistant": "Got it. The costume rack zone introduces both reappearance candidates and close distractors, including a similar hat, a red handheld object with a different finish and trim, a clipped tag, and a blue bottle with potentially matching material.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S14-IMG3.png"
+          ],
+          "image_caption": [
+            "A theater dressing room shelf holds a top hat, red fan, and costumes waiting for their cue."
+          ]
+        },
+        {
+          "round": "SCENE_S14:R6",
+          "user": "Notice that one red item there is close in color but not in surface or edge detail.",
+          "assistant": "Understood. I'll separate the two red foldable props by fabric type and trim structure."
+        },
+        {
+          "round": "SCENE_S14:R7",
+          "user": "Here is a wider costume rack image.",
+          "assistant": "Got it. The costume rack state appears locally stable and preserves several detailed distinctions from the original prop table arrangement.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S14-IMG4.png"
+          ],
+          "image_caption": [
+            "A theater costume rack and prop shelf await the next cue, featuring vintage outfits, a top hat, and a red fan."
+          ]
+        },
+        {
+          "round": "SCENE_S14:R8",
+          "user": "Quick recap: which missing prop has the strongest reappearance clue so far, and which red item is a look alike rather than a direct match?",
+          "assistant": "The strongest reappearance clue is for the missing gold watch with the distinctive lid marking, now at the quick change station. The red look alike is the satin fan with ribbon trim in the costume rack zone, which differs from the earlier fan in material and edge detail."
+        }
+      ]
+    },
+    {
+      "session_id": "SCENE_S15",
+      "date": "2025-09-20",
+      "dialogues": [
+        {
+          "round": "SCENE_S15:R1",
+          "user": "Now I'm going to show the storage cage, and then I'll ask some vague questions.",
+          "assistant": "Understood. I'll keep the earlier identity cues active and compare them with the storage area items."
+        },
+        {
+          "round": "SCENE_S15:R2",
+          "user": "Here is the storage cage image.",
+          "assistant": "Got it. The storage cage contains several items that broadly resemble earlier props, but their detailed features differ in important ways.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S15-IMG1.png"
+          ],
+          "image_caption": [
+            "A vintage top hat, cane, and pocket watch rest neatly on a metal shelf, evoking an old-world elegance."
+          ]
+        },
+        {
+          "round": "SCENE_S15:R3",
+          "user": "Good. Now a vague one: not the gold watch with the plain cover. I mean the other gold one that had a mark on its lid and vanished from the prop table. Which item is that?",
+          "assistant": "That is the gold pocket watch with the engraved star on the lid, which disappeared from the prop table and later appeared at the quick change station."
+        },
+        {
+          "round": "SCENE_S15:R4",
+          "user": "Another one: not the red folded prop with the smoother fabric and ribbon like edge. I mean the other red one from the original table. Which is that?",
+          "assistant": "That is the red velvet hand fan with black lace trim from the original prop table, not the red satin fan with ribbon trim in the costume rack zone."
+        },
+        {
+          "round": "SCENE_S15:R5",
+          "user": "Here is a close up from the costume rack zone.",
+          "assistant": "Got it. The close up clarifies the material of the blue bottle, the band color of the hat, and the attachment state of the black tag.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S15-IMG2.png"
+          ],
+          "image_caption": [
+            "A top hat, red fan, and blue bottle sit on a theater costume shelf labeled \"CUE.\""
+          ]
+        },
+        {
+          "round": "SCENE_S15:R6",
+          "user": "Now a final prop table image taken near curtain call.",
+          "assistant": "Got it. By the final table image, the central hat, damaged card, necklace, and clipped tag remain, while the earlier red fan and blue bottle are no longer in their original table positions.",
+          "input_image": [
+            "Multi-Scene_Visual_Case_Archive_Assistant/S15-IMG3.png"
+          ],
+          "image_caption": [
+            "A vintage magician’s table is set with a top hat, pocket watch, pearls, and a blank, scorched card marked as the next cue."
+          ]
+        },
+        {
+          "round": "SCENE_S15:R7",
+          "user": "Another vague one: not the loose black tag on the floor or shelf. I mean the black one that stayed attached in the main handling area and later in the rack zone. Which item is that?",
+          "assistant": "That is the black cue tag clipped to the prop table and also seen clipped in the costume rack zone, not the loose paper tags seen elsewhere."
+        },
+        {
+          "round": "SCENE_S15:R8",
+          "user": "Final recap: give me two examples where someone would likely answer incorrectly if they relied only on color or broad object category instead of exact visual cues.",
+          "assistant": "One example is the star engraved gold watch versus the plain lid gold watch. Another is the velvet fan with black lace trim versus the satin fan with black ribbon trim. A third is the blue glass perfume bottle versus the blue plastic bottle, and a fourth is the clipped black cue tag versus the loose black paper tag."
+        }
+      ]
+    }
+  ],
+  "human-annotated QAs": [
+    {
+      "question_id": "Q2",
+      "question": "Imagine a model is trying to recognize a backpack across different views, relying mainly on its dark color and its location near the floor. Consider these possibilities: (1) the silver star-shaped zipper charm stays attached to the backpack, (2) an umbrella is leaning beside it, (3) a low cardboard box nearby is open, and (4) there is a white adhesive label close by. Which of these features would provide the strongest evidence that it is the same backpack moved across views, rather than just another dark object near the door?",
+      "session_id": [
+        "SCENE_S1",
+        "SCENE_S2",
+        "SCENE_S3"
+      ],
+      "clue": [
+        "SCENE_S1:R2",
+        "SCENE_S2:R2",
+        "SCENE_S3:R3"
+      ],
+      "answer": "The silver star-shaped zipper charm remaining attached",
+      "explanation": "The attached silver star-shaped zipper charm provides a much stronger identity cue than shared darkness or approximate location alone.",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "question": "Imagine a model that only tracks 'small thing near papers or labels' and ignores both material and object function. Consider these four pairs: (1) the red paper clip in the meeting room and the small red USB drive, (2) the rolled yellow sticky note and the yellow note pad under the monitor stand, (3) the folded receipt in the tray and the cream wall card, and (4) the white adhesive label by the door and the cream wall card. Which pair would be the worst over-merge in this scenario?",
+      "session_id": [
+        "SCENE_S1",
+        "SCENE_S2"
+      ],
+      "clue": [
+        "SCENE_S1:R2",
+        "SCENE_S2:R3",
+        "SCENE_S2:R4"
+      ],
+      "answer": "The red paper clip in the meeting room and the small red USB drive",
+      "explanation": "The red paper clip and the red USB drive are highly confusable if the model reduces them to 'small red item,' but they differ in function, shape, and later movement pattern.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q4",
+      "question": "Consider the following scenarios: (1) Deciding if the blue notebook on the box lid is the same as the original dark blue desk notebook; (2) Deciding if the backpack by the door is the same as the one seen near the desk leg earlier; (3) Deciding if the red USB drive in the cabinet is the same as the missing red desk item; (4) Deciding if the transparent plastic bag on the desk is related to the earlier cabinet bag. In which scenario is a careless model most likely to overconfidently answer 'same object' when the evidence only shows 'visually similar and possibly related'?",
+      "session_id": [
+        "SCENE_S1",
+        "SCENE_S2",
+        "SCENE_S3"
+      ],
+      "clue": [
+        "SCENE_S1:R2",
+        "SCENE_S2:R2",
+        "SCENE_S2:R4",
+        "SCENE_S3:R2",
+        "SCENE_S3:R3"
+      ],
+      "answer": "Whether the blue notebook on the box lid is the same as the original dark blue desk notebook",
+      "explanation": "The blue notebook on the box lid is visually similar to the original desk notebook, but the available evidence does not justify a definite identity claim in the way it more strongly does for some other tracked items.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q5",
+      "question": "Which object is most clearly identified by a combination of color, shape, and attachment state rather than by location alone?",
+      "session_id": [
+        "SCENE_S1",
+        "SCENE_S2",
+        "SCENE_S3"
+      ],
+      "clue": [
+        "SCENE_S1:R2",
+        "SCENE_S2:R2",
+        "SCENE_S3:R3"
+      ],
+      "answer": "The silver star-shaped zipper charm on the backpack",
+      "explanation": "The backpack charm is not only silver but specifically star-shaped and attached to the zipper, making it identifiable by multiple bound attributes.",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which object is best described as remaining in the archive but becoming harder to see because of position and occlusion rather than fully disappearing?",
+      "session_id": [
+        "SCENE_S2",
+        "SCENE_S3"
+      ],
+      "clue": [
+        "SCENE_S2:R4",
+        "SCENE_S2:R6",
+        "SCENE_S3:R4"
+      ],
+      "answer": "The rolled yellow sticky note in the storage cabinet",
+      "explanation": "The rolled yellow sticky note remains in the cabinet but is pushed farther back and becomes partly shadowed, making it harder to see rather than gone.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y3"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q7",
+      "question": "Which object is best supported as having changed from 'not visible in the later desk close-up' to 'present elsewhere nearby' WITHOUT relying on any assumption that two similar blue objects are identical?",
+      "session_id": [
+        "SCENE_S1",
+        "SCENE_S2",
+        "SCENE_S3"
+      ],
+      "clue": [
+        "SCENE_S1:R5",
+        "SCENE_S2:R2",
+        "SCENE_S3:R3"
+      ],
+      "answer": "The black backpack with the attached silver star charm",
+      "explanation": "The black backpack disappears from the desk-area floor and later appears near the doorway, still carrying the attached silver star charm. This conclusion does not depend on any uncertain notebook identity judgment.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y3"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q8",
+      "question": "Consider the following possibilities about the transparent plastic bag: (1) It was on the cabinet's lower shelf earlier and later appeared on the desk near the keyring; (2) It first appeared on the meeting-room table and later moved under the monitor stand; (3) It was attached to the cream wall card and later fell into the doorway box; (4) It remained on the lower cabinet shelf throughout all later images. Based on the images, which scenario accurately describes what happened to the transparent plastic bag?",
+      "session_id": [
+        "SCENE_S2",
+        "SCENE_S3"
+      ],
+      "clue": [
+        "SCENE_S2:R4",
+        "SCENE_S3:R2",
+        "SCENE_S3:R4"
+      ],
+      "answer": "It was on the cabinet's lower shelf earlier and later appeared on the desk near the keyring",
+      "explanation": "The transparent plastic bag appeared earlier on the lower shelf of the cabinet and later appeared on the desk next to the keyring.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y3"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q10",
+      "question": "In the first living-room image, which of the three objects on the coffee table was closest to the front-right corner of the table surface?",
+      "session_id": [
+        "SCENE_S4"
+      ],
+      "clue": [
+        "SCENE_S4:R2"
+      ],
+      "answer": "The small plastic-wrapped item",
+      "explanation": "The caption for S4:R2 lists the three objects on the coffee table but does not specify their exact relative placement on the table, so the nearest one to the front-right corner cannot be inferred from text alone.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q12",
+      "question": "Between the first and next-morning living-room images, which exact seat or side of the dining setup had the gray hoodie in the earlier image?",
+      "session_id": [
+        "SCENE_S4"
+      ],
+      "clue": [
+        "SCENE_S4:R2",
+        "SCENE_S4:R6"
+      ],
+      "answer": "The chair nearest the front door",
+      "explanation": "The caption for S4:R2 only says there was a gray hoodie on a chair at the dining table. It does not specify which chair or precise side relative to the room layout.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q13",
+      "question": "In the bedroom-desk image, which item sat immediately to the right of the closed black laptop?",
+      "session_id": [
+        "SCENE_S5"
+      ],
+      "clue": [
+        "SCENE_S5:R2"
+      ],
+      "answer": "The brown leather wallet",
+      "explanation": "The caption for S5:R2 says the items are arranged in a row, but it does not specify the exact left-to-right order among the mug, earphones, and wallet relative to the laptop.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q14",
+      "question": "On the hallway-closet middle shelf, which item was nearest to the green rectangular card?",
+      "session_id": [
+        "SCENE_S5"
+      ],
+      "clue": [
+        "SCENE_S5:R4",
+        "SCENE_S5:R6"
+      ],
+      "answer": "The plaid textile",
+      "explanation": "Although S5:R4 and S5:R6 mention the green card and nearby middle-shelf items, the captions do not specify exact nearest-neighbor placement among those items.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q15",
+      "question": "In the later kitchen image from the afternoon, was the faint circular stain located left of the pill container, right of it, directly in front of it or directly behind of it.?",
+      "session_id": [
+        "SCENE_S5"
+      ],
+      "clue": [
+        "SCENE_S5:R7"
+      ],
+      "answer": "Right of the pill container",
+      "explanation": "The caption for S5:R7 notes the existence of a faint circular stain and a pill container, but gives no precise directional relationship between them.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "question": "In the entryway-bench close-up, was the upright blue umbrella leaning closer to the bench frame, the wall, or the nearest pair of shoes?",
+      "session_id": [
+        "SCENE_S6"
+      ],
+      "clue": [
+        "SCENE_S6:R2"
+      ],
+      "answer": "About equally close to the bench frame and the wall",
+      "explanation": "The caption for S6:R2 says the umbrella is standing upright at the left side, but it does not specify whether it is closer to the bench, wall, or shoes.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "question": "In the later living-room image from S6, on which side of the TV remote was the round coaster located?",
+      "session_id": [
+        "SCENE_S6"
+      ],
+      "clue": [
+        "SCENE_S6:R3"
+      ],
+      "answer": "To the right of the remote",
+      "explanation": "The caption for S6:R3 only states that both the TV remote and round coaster are on the coffee table; it does not specify their relative arrangement.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q19",
+      "question": "In the first fossil-room image, which right-side item was closest to the front edge of the display surface: the blue shell-shaped object or the black tag marked “C-1127”?",
+      "session_id": [
+        "SCENE_S7"
+      ],
+      "clue": [
+        "SCENE_S7:R2"
+      ],
+      "answer": "The blue shell-shaped object",
+      "explanation": "The caption says both the blue shell-shaped object and the black tag are on the right, but it does not specify which one is closer to the front edge of the display.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "question": "In the lower-front fossil-room crop, how much of the blue shell-shaped object was visible to the right of the torn label: only a narrow edge, roughly half, most of the object or whole of the object?",
+      "session_id": [
+        "SCENE_S7"
+      ],
+      "clue": [
+        "SCENE_S7:R4"
+      ],
+      "answer": "Most of the object",
+      "explanation": "The caption only states that the blue shell-shaped object is behind the label on the right, not how much of it remains visible.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q21",
+      "question": "Between the first fossil-room image and the later fossil-room image, did the green drawstring pouch appear remained unchanged, centered directly behind the rock, shifted slightly left, or shifted slightly right relative to the fossil slab?",
+      "session_id": [
+        "SCENE_S7"
+      ],
+      "clue": [
+        "SCENE_S7:R2",
+        "SCENE_S7:R5",
+        "SCENE_S7:R7"
+      ],
+      "answer": "Shifted slightly right",
+      "explanation": "The captions mention the pouch behind the rock, but they do not provide enough relative alignment detail to tell whether its position shifted left or right.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q22",
+      "question": "In the maritime gallery case, was the hanging tag “A-209” positioned closer to the blue fish-shaped object or closer to the brass dial instrument?",
+      "session_id": [
+        "SCENE_S8"
+      ],
+      "clue": [
+        "SCENE_S8:R2"
+      ],
+      "answer": "Closer to the brass dial instrument",
+      "explanation": "The caption says the tag is in a corner, but it does not specify exact proximity relative to the fish-shaped object and the brass dial instrument.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q23",
+      "question": "On the restoration table, was the metal tool more horizontally aligned with the compass, slightly above it, or slightly below it?",
+      "session_id": [
+        "SCENE_S8"
+      ],
+      "clue": [
+        "SCENE_S8:R4",
+        "SCENE_S8:R6"
+      ],
+      "answer": "Slightly below the compass",
+      "explanation": "The captions identify the compass, tool, and other objects, but they do not describe their exact vertical alignment relative to each other.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q24",
+      "question": "In the restoration-table right-side close-up, was the red-handled brass seal stamp placed nearer the front edge of the table than the drafting tool, farther back than it, or at roughly the same depth?",
+      "session_id": [
+        "SCENE_S8"
+      ],
+      "clue": [
+        "SCENE_S8:R6"
+      ],
+      "answer": "Farther back",
+      "explanation": "The caption says the seal stamp is on the right and the metal drafting tool is in the center, but it does not provide front-back depth ordering.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q25",
+      "question": "In the storage prep room, was the folded dark green velvet pouch closer to the stacked beige trays, the red wax stick, or the silver knife?",
+      "session_id": [
+        "SCENE_S8"
+      ],
+      "clue": [
+        "SCENE_S8:R7"
+      ],
+      "answer": "Closer to the stacked beige trays",
+      "explanation": "The caption lists the pouch and trays and mentions the trays are on the right, but it does not specify exact spacing or nearest-neighbor distance.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q26",
+      "question": "In the next-morning fossil-room image, was the hanging tag “A-209” vertically higher than the top of the blue fish-shaped object, lower than it, or overlapping its vertical level?",
+      "session_id": [
+        "SCENE_S9"
+      ],
+      "clue": [
+        "SCENE_S9:R1"
+      ],
+      "answer": "Higher than the blue fish-shaped object",
+      "explanation": "The caption says the tag is hanging in the upper left and the blue fish-shaped object is on the right, but it does not provide enough detail for a precise vertical comparison.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q27",
+      "question": "In the later restoration-room image, was the small corked glass jar of sand positioned closer to the compass or closer to the blank rectangular label?",
+      "session_id": [
+        "SCENE_S9"
+      ],
+      "clue": [
+        "SCENE_S9:R2"
+      ],
+      "answer": "Closer to the compass",
+      "explanation": "The caption states that the jar lies with the compass and metal tool on the tabletop, but it does not specify exact distances relative to the blank label.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q28",
+      "question": "In the maritime gallery close-up, did the chipped-corner blank label sit more directly in front of the round brass object, more directly in front of the blue ceramic fish, or between them with no clear front alignment to either?",
+      "session_id": [
+        "SCENE_S9"
+      ],
+      "clue": [
+        "SCENE_S9:R7"
+      ],
+      "answer": "Between them with no clear front alignment to either",
+      "explanation": "The caption says the blank label is in front, but it does not specify whether it aligns more with the brass object, the fish, or the space between them.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q29",
+      "question": "Which room contains the strongest cluster of distractors that could fool a model relying only on rough category labels like 'brass object', 'blue object', and 'blank label'?",
+      "session_id": [
+        "SCENE_S7",
+        "SCENE_S8"
+      ],
+      "clue": [
+        "SCENE_S7:R2",
+        "SCENE_S8:R2",
+        "SCENE_S8:R4",
+        "SCENE_S8:R7"
+      ],
+      "answer": "The maritime gallery",
+      "explanation": "The maritime gallery contains a brass object, a blue fish-shaped object, a green pouch, and a blank rectangular label, making it particularly confusable with the fossil-room setup if the model uses only broad categories.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q30",
+      "question": "In the first main-bench image, which item was closest to the front-left corner of the yellow rack?",
+      "session_id": [
+        "SCENE_S10"
+      ],
+      "clue": [
+        "SCENE_S10:R2",
+        "SCENE_S10:R4"
+      ],
+      "answer": "The red-capped tube",
+      "explanation": "The captions mention the yellow rack, the tweezers, and the blue storage box, but do not specify precise nearest-neighbor placement relative to the front-left corner of the rack.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q31",
+      "question": "In the closer crop of the front bench area, was the missing front-left red-capped tube positioned nearer to the front edge of the bench or nearer to the centerline of the rack?",
+      "session_id": [
+        "SCENE_S10"
+      ],
+      "clue": [
+        "SCENE_S10:R4"
+      ],
+      "answer": "Nearer to the front edge of the bench",
+      "explanation": "The caption says the close-up confirms the front-left red-capped tube and its label pattern, but it does not specify the tube's exact depth or lateral position within the rack.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q32",
+      "question": "In the later main-bench image, was the strip of small clear tubes positioned directly behind the yellow rack, offset to its left, or offset to its right?",
+      "session_id": [
+        "SCENE_S10"
+      ],
+      "clue": [
+        "SCENE_S10:R5"
+      ],
+      "answer": "Directly behind the yellow rack",
+      "explanation": "The caption only says the strip of small clear tubes is in the background. It does not specify whether it is centered behind the rack or offset to one side.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q33",
+      "question": "In the pipette-area image, was the black clipped label closer to which one.",
+      "session_id": [
+        "SCENE_S10"
+      ],
+      "clue": [
+        "SCENE_S10:R7"
+      ],
+      "answer": "Closer to the red-capped vial",
+      "explanation": "The black clipped label sits nearer to the red-capped vial than to the clear microcentrifuge tube or the silver tweezers.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q34",
+      "question": "On the first cold-room shelf image, was the loose barcode label placed more in front of the yellow rack, more beside the folded white towels, or midway between those regions?",
+      "session_id": [
+        "SCENE_S11"
+      ],
+      "clue": [
+        "SCENE_S11:R2",
+        "SCENE_S11:R4"
+      ],
+      "answer": "Midway between those regions",
+      "explanation": "The captions place the barcode label in the center and the red-capped vial on folded towels in the foreground, but they do not specify the label's exact spatial relation to the rack versus the towels.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q35",
+      "question": "In the lower cold-room shelf image, was the strip of five small clear microtubes aligned more closely with the large blue-capped vial on the left or with the metal tweezers on the right?",
+      "session_id": [
+        "SCENE_S11"
+      ],
+      "clue": [
+        "SCENE_S11:R5"
+      ],
+      "answer": "More closely aligned with the metal tweezers",
+      "explanation": "The strip of five small clear microtubes sits closer to the metal tweezers on the right than to the large blue-capped vial on the left.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q36",
+      "question": "In the centrifuge-station wide image, which of the two labeled sample vials in the foam rack sat nearer the strip of microtubes: the amber-liquid vial or the pink-liquid vial?",
+      "session_id": [
+        "SCENE_S12"
+      ],
+      "clue": [
+        "SCENE_S12:R2"
+      ],
+      "answer": "The pink-liquid vial",
+      "explanation": "The caption notes that the foam rack with two labeled sample vials is in the center and the strip is on the right, but it does not specify the internal ordering of the two vials within the rack.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q37",
+      "question": "In the close-up of the right side of the centrifuge station, did the diagonal tweezers point more toward the microtube strip, more toward the sample rack, or more toward the lower edge of the frame?",
+      "session_id": [
+        "SCENE_S12"
+      ],
+      "clue": [
+        "SCENE_S12:R4"
+      ],
+      "answer": "More toward the lower edge of the frame",
+      "explanation": "The diagonal tweezers point downward toward the lower edge of the frame.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q38",
+      "question": "Comparing the main-bench strip and the centrifuge-station strip, was the blue-filled tube in the same ordinal slot position within the strip, or not?",
+      "session_id": [
+        "SCENE_S10",
+        "SCENE_S12"
+      ],
+      "clue": [
+        "SCENE_S10:R2",
+        "SCENE_S10:R5",
+        "SCENE_S12:R2",
+        "SCENE_S12:R4"
+      ],
+      "answer": "Yes, it occupied the same ordinal slot position",
+      "explanation": "Both captions mention a strip with one blue-filled tube, but neither caption specifies which exact slot contains the blue-filled sample.",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q40",
+      "question": "In the first main prop-table image, which item sat closest to the front-right corner of the table surface ?",
+      "session_id": [
+        "SCENE_S13"
+      ],
+      "clue": [
+        "SCENE_S13:R2"
+      ],
+      "answer": "The red lace fan",
+      "explanation": "The caption lists the fan on the right, the bottle, and the necklace, but it does not specify which one is nearest the front-right corner of the table.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q41",
+      "question": "In the left-half prop-table crop, was the brass pocket watch placed closer to the singed-edged parchment or closer to the pearl necklace?",
+      "session_id": [
+        "SCENE_S13"
+      ],
+      "clue": [
+        "SCENE_S13:R4"
+      ],
+      "answer": "Closer to the singed-edged parchment",
+      "explanation": "The watch is positioned closer to the singed-edged parchment than to the pearl necklace.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q42",
+      "question": "In the later prop-table image after rehearsal traffic, was the remaining red fan aligned more closely with the center hat, the front-edge 'CUE' card area, or the perfume-bottle cluster?",
+      "session_id": [
+        "SCENE_S13"
+      ],
+      "clue": [
+        "SCENE_S13:R5"
+      ],
+      "answer": "The remaining red fan sat on the right side between the center hat and the perfume bottles",
+      "explanation": "The caption confirms that the hat, fan, card, bottles, and other items are present, but it does not specify the fan's exact alignment relative to those neighboring regions.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q43",
+      "question": "In the wings-area image, was the gold-banded black hat positioned more toward the front edge of the stool seat, more toward the back edge, or centered on the seat?",
+      "session_id": [
+        "SCENE_S13"
+      ],
+      "clue": [
+        "SCENE_S13:R7"
+      ],
+      "answer": "Centered on the seat",
+      "explanation": "The hat is positioned near the center of the stool seat rather than clearly shifted toward the front or back edge.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q44",
+      "question": "At the quick-change station, was the blue bottle placed nearer to the watch, the mirror light, the blank card, or the pearl necklace?",
+      "session_id": [
+        "SCENE_S14"
+      ],
+      "clue": [
+        "SCENE_S14:R2",
+        "SCENE_S14:R4"
+      ],
+      "answer": "Nearer to the watch",
+      "explanation": "The caption lists all of these items on the quick-change surface, but it does not provide enough spatial detail to determine which one the blue bottle is closest to.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q45",
+      "question": "In the closer quick-change counter crop, was the wooden cane leaning with its handle end nearer the watch side of the counter or nearer the mirror side?",
+      "session_id": [
+        "SCENE_S14"
+      ],
+      "clue": [
+        "SCENE_S14:R4"
+      ],
+      "answer": "Nearer the mirror side",
+      "explanation": "The caption notes the presence of a wooden cane, but does not specify its handle orientation relative to the watch or mirror.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q46",
+      "question": "In the costume-rack zone, was the blue glass bottle placed directly behind the red folding fan, offset to one side of it, or separated from it by the hat?",
+      "session_id": [
+        "SCENE_S14"
+      ],
+      "clue": [
+        "SCENE_S14:R5",
+        "SCENE_S14:R7"
+      ],
+      "answer": "Separated from it by the hat",
+      "explanation": "The caption says the shelf holds a red folding fan, black top hat, blue glass bottle, and CUE label, but not how those items are layered or offset relative to one another.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q49",
+      "question": "In the final prop-table image, was the brass pocket watch positioned more to the left of the hat, more in front of it, or more to the right of it?",
+      "session_id": [
+        "SCENE_S15"
+      ],
+      "clue": [
+        "SCENE_S15:R6"
+      ],
+      "answer": "The brass pocket watch was positioned to the left-front of the hat, primarily on its left side.",
+      "explanation": "The final table caption states that the hat, scorched-edged card, watch, necklace, books, candles, and clipped CUE sign are present, but it does not specify the watch's exact relative position to the hat.",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ]
+    },
+    {
+      "question_id": "Q50",
+      "question": "Where is the small red USB drive in the most recent archive images?",
+      "answer": "On the middle shelf of the storage cabinet, near the front edge",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "SCENE_S1",
+        "SCENE_S2",
+        "SCENE_S3"
+      ],
+      "clue": [
+        "SCENE_S1:R2",
+        "SCENE_S1:R5",
+        "SCENE_S2:R4",
+        "SCENE_S3:R4"
+      ]
+    },
+    {
+      "question_id": "Q51",
+      "question": "In the most recent images, where is the small brass compass that was originally on the left side of the fossil display case?",
+      "answer": "On the restoration table",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "SCENE_S7",
+        "SCENE_S8"
+      ],
+      "clue": [
+        "SCENE_S7:R2",
+        "SCENE_S7:R5",
+        "SCENE_S8:R4"
+      ]
+    },
+    {
+      "question_id": "Q52",
+      "question": "Where is the gold pocket watch with the engraved star lid currently located in the backstage area?",
+      "answer": "At the quick-change station",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "SCENE_S13",
+        "SCENE_S14"
+      ],
+      "clue": [
+        "SCENE_S13:R2",
+        "SCENE_S13:R4",
+        "SCENE_S13:R5",
+        "SCENE_S14:R2",
+        "SCENE_S14:R4"
+      ]
+    },
+    {
+      "question_id": "Q54",
+      "question": "Where are the bent-tip forceps that were originally on the main lab bench?",
+      "answer": "On the lower shelf of the cold-room prep area",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "SCENE_S10",
+        "SCENE_S11"
+      ],
+      "clue": [
+        "SCENE_S10:R2",
+        "SCENE_S10:R5",
+        "SCENE_S11:R5"
+      ]
+    },
+    {
+      "question_id": "Q55",
+      "question": "What identification tag number is currently displayed in the fossil room case?",
+      "answer": "A-209",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "SCENE_S7",
+        "SCENE_S9"
+      ],
+      "clue": [
+        "SCENE_S7:R2",
+        "SCENE_S7:R5",
+        "SCENE_S7:R7",
+        "SCENE_S9:R1"
+      ]
+    },
+    {
+      "question_id": "Q57",
+      "question": "Comparing the storage cabinet's middle shelf between its first appearance and the later rearrangement, in which direction did the gray storage box shift?",
+      "answer": "It shifted slightly to the left",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "SCENE_S2",
+        "SCENE_S3"
+      ],
+      "clue": [
+        "SCENE_S2:R4",
+        "SCENE_S2:R6",
+        "SCENE_S3:R4"
+      ]
+    },
+    {
+      "question_id": "Q58",
+      "question": "How did the spatial arrangement of items on the bedroom desk change between its first and most recent recorded states?",
+      "answer": "Items shifted from a single row to a center-divided layout with the laptop in the middle",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "SCENE_S5",
+        "SCENE_S6"
+      ],
+      "clue": [
+        "SCENE_S5:R2",
+        "SCENE_S6:R6"
+      ]
+    },
+    {
+      "question_id": "Q59",
+      "question": "In the most recent cabinet image, how has the red USB drive's position on the middle shelf changed compared to its initial placement there?",
+      "answer": "It moved closer to the front edge of the shelf",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "SCENE_S2",
+        "SCENE_S3"
+      ],
+      "clue": [
+        "SCENE_S2:R4",
+        "SCENE_S2:R6",
+        "SCENE_S3:R4"
+      ]
+    }
+  ]
+}

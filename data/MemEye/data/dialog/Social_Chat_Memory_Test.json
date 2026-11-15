@@ -1,0 +1,3105 @@
+{
+  "character_profile": {
+    "name": "Sam",
+    "persona_summary": "Sam uses the assistant to remember saved chat screenshots across multiple ongoing conversations.",
+    "traits": [
+      "systematic",
+      "people-oriented",
+      "memory-focused"
+    ],
+    "conversation_style": "Brief and memory-oriented."
+  },
+  "personas": [
+    {
+      "persona_id": "P01",
+      "name": "Marcus",
+      "face_path": "Social_Chat_Memory_Test/faces/P01_marcus.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P01_marcus.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P02",
+      "name": "Priya",
+      "face_path": "Social_Chat_Memory_Test/faces/P02_priya.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P02_priya.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P03",
+      "name": "Daniel",
+      "face_path": "Social_Chat_Memory_Test/faces/P03_daniel.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P03_daniel.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P04",
+      "name": "Tomas",
+      "face_path": "Social_Chat_Memory_Test/faces/P04_tomas.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P04_tomas.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P05",
+      "name": "Helen",
+      "face_path": "Social_Chat_Memory_Test/faces/P05_helen.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P05_helen.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P06",
+      "name": "Jordan",
+      "face_path": "Social_Chat_Memory_Test/faces/P06_jordan.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P06_jordan.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P07",
+      "name": "Sara",
+      "face_path": "Social_Chat_Memory_Test/faces/P07_sara.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P07_sara.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P08",
+      "name": "Owen",
+      "face_path": "Social_Chat_Memory_Test/faces/P08_owen.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P08_owen.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P09",
+      "name": "Mia",
+      "face_path": "Social_Chat_Memory_Test/faces/P09_mia.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P09_mia.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P10",
+      "name": "Ryan",
+      "face_path": "Social_Chat_Memory_Test/faces/P10_ryan.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P10_ryan.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P11",
+      "name": "Kai",
+      "face_path": "Social_Chat_Memory_Test/faces/P11_kai.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P11_kai.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    },
+    {
+      "persona_id": "P12",
+      "name": "Elena",
+      "face_path": "Social_Chat_Memory_Test/faces/P12_elena.jpg",
+      "avatar_path": "Social_Chat_Memory_Test/avatars/P12_elena.png",
+      "bio": "Person appearing in saved chats.",
+      "networks": []
+    }
+  ],
+  "multi_session_dialogues": [
+    {
+      "session_id": "CHAT_S1",
+      "date": "2026-01-09",
+      "network": "CHAT",
+      "title": "Chat Thread 1",
+      "dialogues": [
+        {
+          "round": "CHAT_S1:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/F1_1.png"
+          ],
+          "image_id": [
+            "F1:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Helen: Tomas — your science project is due Monday.\n  - Tomas: I know mom.\n  - Helen: Have you started?\n  - Tomas: Tonight, I promise."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S2",
+      "date": "2026-01-12",
+      "network": "CHAT",
+      "title": "Chat Thread 2",
+      "dialogues": [
+        {
+          "round": "CHAT_S2:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B1_1.png"
+          ],
+          "image_id": [
+            "B1:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Marcus: Quick sync before sprint kickoff. Daniel starts next week.\n  - Priya: Right. Are we pairing him with anyone?\n  - Marcus: Yes — I'd like you to mentor him through onboarding.\n  - Priya: Happy to. I'll get him into our shared repo on day one."
+          ]
+        },
+        {
+          "round": "CHAT_S2:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B1_2.png"
+          ],
+          "image_id": [
+            "B1:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Marcus: One more thing — don't put him on the legacy module first.\n  - Priya: Got it. I'll start him on the new feature so he ships something fast.\n  - Marcus: Perfect. Two-week check-in?\n  - Priya: Sounds good."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S3",
+      "date": "2026-01-18",
+      "network": "CHAT",
+      "title": "Chat Thread 3",
+      "dialogues": [
+        {
+          "round": "CHAT_S3:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T1_1.png"
+          ],
+          "image_id": [
+            "T1:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Elena: Six months Tuesday. Where do you want to go?\n  - Ryan: That place where we first met. Same booth?\n  - Elena: You remembered.\n  - Ryan: Of course."
+          ]
+        },
+        {
+          "round": "CHAT_S3:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T1_2.png"
+          ],
+          "image_id": [
+            "T1:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Elena: I'll book the table.\n  - Ryan: Let me know if anything changes.\n  - Elena: Nothing's changing 💛"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S4",
+      "date": "2026-01-22",
+      "network": "CHAT",
+      "title": "Chat Thread 4",
+      "dialogues": [
+        {
+          "round": "CHAT_S4:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B2_1.png"
+          ],
+          "image_id": [
+            "B2:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Marcus: Team — please welcome Daniel, joining us this week.\n  - Priya: Welcome Daniel! I'm your mentor for onboarding.\n  - Daniel: Thanks both. Excited to start.\n  - Marcus: Priya will get you set up. Sprint planning is Wednesday at 10am."
+          ]
+        },
+        {
+          "round": "CHAT_S4:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B2_2.png"
+          ],
+          "image_id": [
+            "B2:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Daniel: Quick question — where do I find the design specs?\n  - Priya: I'll DM you the link. Marcus shared it last quarter.\n  - Marcus: Daniel — just listen in this week. No need to ship.\n  - Daniel: Understood, thanks."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S5",
+      "date": "2026-01-25",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S5:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S6",
+      "date": "2026-01-26",
+      "network": "CHAT",
+      "title": "Chat Thread 6",
+      "dialogues": [
+        {
+          "round": "CHAT_S6:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/R1_1.png"
+          ],
+          "image_id": [
+            "R1:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Priya: Sara — rent went up $40 this month. Splitting still 50/50?\n  - Sara: Yeah. I'll Venmo my half by Friday.\n  - Priya: Cool. Also we need to put utilities in someone's name.\n  - Sara: Mine — I'm freelancing from the apartment, makes sense."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S7",
+      "date": "2026-01-30",
+      "network": "CHAT",
+      "title": "Chat Thread 7",
+      "dialogues": [
+        {
+          "round": "CHAT_S7:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/F2_1.png"
+          ],
+          "image_id": [
+            "F2:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Helen: Mia honey — pickup is at 3:15 today not 3:30.\n  - Mia: ok mommy\n  - Helen: Be at the front gate.\n  - Mia: 🌸"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S8",
+      "date": "2026-02-02",
+      "network": "CHAT",
+      "title": "Chat Thread 8",
+      "dialogues": [
+        {
+          "round": "CHAT_S8:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T2_1.png"
+          ],
+          "image_id": [
+            "T2:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Elena: Why is Jordan messaging you at 1am?\n  - Ryan: It's nothing. She's stuck on something at work.\n  - Elena: At ONE in the morning?\n  - Ryan: I'll tell her to stop."
+          ]
+        },
+        {
+          "round": "CHAT_S8:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T2_2.png"
+          ],
+          "image_id": [
+            "T2:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Elena: Do you still have feelings for her?\n  - Ryan: No. We've been broken up for over a year.\n  - Elena: Then set the boundary.\n  - Ryan: I will. Tonight."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S9",
+      "date": "2026-02-05",
+      "network": "CHAT",
+      "title": "Chat Thread 9",
+      "dialogues": [
+        {
+          "round": "CHAT_S9:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B3_1.png"
+          ],
+          "image_id": [
+            "B3:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Daniel: How do I write a good PR description here?\n  - Priya: Three sections: what changed, why, how to test. Keep it short.\n  - Daniel: Got it. Anything I should NOT do?\n  - Priya: Don't paste full stack traces. Link to the issue instead."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S10",
+      "date": "2026-02-08",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S10:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S11",
+      "date": "2026-02-14",
+      "network": "CHAT",
+      "title": "Chat Thread 11",
+      "dialogues": [
+        {
+          "round": "CHAT_S11:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/F3_1.png"
+          ],
+          "image_id": [
+            "F3:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Tomas: Mom can I sign up for driving lessons?\n  - Helen: Driving lessons? In February?\n  - Tomas: All my friends are starting.\n  - Helen: Wait until summer. Not before."
+          ]
+        },
+        {
+          "round": "CHAT_S11:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/F3_2.png"
+          ],
+          "image_id": [
+            "F3:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Tomas: ok\n  - Helen: We can talk about it again in May.\n  - Tomas: fine"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S12",
+      "date": "2026-02-16",
+      "network": "CHAT",
+      "title": "Chat Thread 12",
+      "dialogues": [
+        {
+          "round": "CHAT_S12:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T3_1.png"
+          ],
+          "image_id": [
+            "T3:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Ryan: Jordan — I need you to stop texting me late at night.\n  - Jordan: ??? It was about the work brief.\n  - Ryan: Elena saw your name on my screen. It's a problem for us.\n  - Jordan: Got it. I won't. Sorry — I didn't think about it."
+          ]
+        },
+        {
+          "round": "CHAT_S12:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T3_2.png"
+          ],
+          "image_id": [
+            "T3:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Jordan: For what it's worth — I'm not trying to mess things up for you.\n  - Ryan: I know. But Elena needs to feel safe.\n  - Jordan: Understood."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S13",
+      "date": "2026-02-19",
+      "network": "CHAT",
+      "title": "Chat Thread 13",
+      "dialogues": [
+        {
+          "round": "CHAT_S13:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B4_1.png"
+          ],
+          "image_id": [
+            "B4:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Marcus: How are you settling in?\n  - Daniel: Good. Priya has been incredibly helpful.\n  - Marcus: Glad to hear it. By the way — PTO requests go through me directly.\n  - Daniel: Noted. I won't need any soon but good to know."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S14",
+      "date": "2026-02-21",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S14:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S15",
+      "date": "2026-02-23",
+      "network": "CHAT",
+      "title": "Chat Thread 15",
+      "dialogues": [
+        {
+          "round": "CHAT_S15:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/R2_1.png"
+          ],
+          "image_id": [
+            "R2:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Sara: Your laptop pings ALL NIGHT. The Slack notifications are killing me.\n  - Priya: Sorry — I'll mute it after 10.\n  - Sara: Please. The wall is thin.\n  - Priya: Done. Promise."
+          ]
+        },
+        {
+          "round": "CHAT_S15:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/R2_2.png"
+          ],
+          "image_id": [
+            "R2:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Priya: Did you know I work for a manager who messages at midnight sometimes?\n  - Sara: Marcus? I thought he was supposed to be the calm one.\n  - Priya: He is. Just sometimes."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S16",
+      "date": "2026-03-02",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S16:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S17",
+      "date": "2026-03-04",
+      "network": "CHAT",
+      "title": "Chat Thread 17",
+      "dialogues": [
+        {
+          "round": "CHAT_S17:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B5_1.png"
+          ],
+          "image_id": [
+            "B5:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Priya: Marcus, requesting PTO for May 18-22. Family trip.\n  - Marcus: Approved. Anything sprint-critical that week?\n  - Priya: No — Daniel will be solo on the new feature, he's ready.\n  - Marcus: Perfect. Have fun."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S18",
+      "date": "2026-03-08",
+      "network": "CHAT",
+      "title": "Chat Thread 18",
+      "dialogues": [
+        {
+          "round": "CHAT_S18:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/F4_1.png"
+          ],
+          "image_id": [
+            "F4:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Helen: Family chat — what's everyone doing Saturday?\n  - Tomas: Can I stay at Marco's house?\n  - Mia: I want ice cream!!!\n  - Helen: Tomas — yes if his parents are home. Mia — after lunch."
+          ]
+        },
+        {
+          "round": "CHAT_S18:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/F4_2.png"
+          ],
+          "image_id": [
+            "F4:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Mia: yay 🍦\n  - Tomas: thanks mom\n  - Helen: ok loves"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S19",
+      "date": "2026-03-11",
+      "network": "CHAT",
+      "title": "Chat Thread 19",
+      "dialogues": [
+        {
+          "round": "CHAT_S19:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T4_1.png"
+          ],
+          "image_id": [
+            "T4:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Jordan: Hey Elena. I know this is unusual but I want to apologize directly.\n  - Elena: Ok.\n  - Jordan: I shouldn't have been texting Ryan late. It put both of you in a bad spot.\n  - Elena: Thanks for saying that. I appreciate it."
+          ]
+        },
+        {
+          "round": "CHAT_S19:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T4_2.png"
+          ],
+          "image_id": [
+            "T4:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Jordan: If we ever cross paths at parties etc., let's just be normal.\n  - Elena: Yes. That works."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S20",
+      "date": "2026-03-13",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S20:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S21",
+      "date": "2026-03-15",
+      "network": "CHAT",
+      "title": "Chat Thread 21",
+      "dialogues": [
+        {
+          "round": "CHAT_S21:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/R3_1.png"
+          ],
+          "image_id": [
+            "R3:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Sara: My gallery opening is next Saturday. Will you come?\n  - Priya: Of course! Where?\n  - Sara: Hayes Valley. 6pm. Bring a friend if you want.\n  - Priya: I'll be there."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S22",
+      "date": "2026-03-18",
+      "network": "CHAT",
+      "title": "Chat Thread 22",
+      "dialogues": [
+        {
+          "round": "CHAT_S22:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B6_1.png"
+          ],
+          "image_id": [
+            "B6:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Daniel: Hi Jordan — I'm Daniel, your engineering co-lead for the marketing site refresh.\n  - Jordan: Hey! Glad to meet. I've been pushing this project for months.\n  - Daniel: Marcus told me to just dive in. Where do you want me to start?\n  - Jordan: Pull the design tokens from Figma. I'll send the link."
+          ]
+        },
+        {
+          "round": "CHAT_S22:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B6_2.png"
+          ],
+          "image_id": [
+            "B6:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Jordan: Also — we should sync weekly. Mondays work for you?\n  - Daniel: Mondays work. I'll add it to my calendar.\n  - Jordan: Cool. Looking forward."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S23",
+      "date": "2026-03-19",
+      "network": "CHAT",
+      "title": "Chat Thread 23",
+      "dialogues": [
+        {
+          "round": "CHAT_S23:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/R3b_1.png"
+          ],
+          "image_id": [
+            "R3b:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Sara: Bad news on the gallery — venue had a flood, opening pushed to April 4.\n  - Priya: Oh no. Same time, just different date?\n  - Sara: Yeah — 6pm Hayes Valley still, just April 4 not the original Saturday.\n  - Priya: Got it, updated my calendar."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S24",
+      "date": "2026-03-22",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S24:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S25",
+      "date": "2026-03-25",
+      "network": "CHAT",
+      "title": "Chat Thread 25",
+      "dialogues": [
+        {
+          "round": "CHAT_S25:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/F3b_1.png"
+          ],
+          "image_id": [
+            "F3b:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Helen: Tomas — I changed my mind on driving lessons.\n  - Tomas: wait what??\n  - Helen: If your grades stay solid, you can start in April. First lesson Saturday the 4th.\n  - Tomas: OMG THANK YOU"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S26",
+      "date": "2026-03-29",
+      "network": "CHAT",
+      "title": "Chat Thread 26",
+      "dialogues": [
+        {
+          "round": "CHAT_S26:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T5_1.png"
+          ],
+          "image_id": [
+            "T5:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Elena: You'll find this funny — Jordan is Daniel's design partner now.\n  - Ryan: Daniel as in your friend Daniel? At your office?\n  - Elena: Yes. Apparently they're co-leads on some marketing project.\n  - Ryan: Small world."
+          ]
+        },
+        {
+          "round": "CHAT_S26:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T5_2.png"
+          ],
+          "image_id": [
+            "T5:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Elena: It's fine. I'm not worried.\n  - Ryan: Good. I'm not either."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S27",
+      "date": "2026-03-30",
+      "network": "CHAT",
+      "title": "Chat Thread 27",
+      "dialogues": [
+        {
+          "round": "CHAT_S27:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B6b_1.png"
+          ],
+          "image_id": [
+            "B6b:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Marcus: Daniel — heads up, since the marketing project is heating up I'm asking Jordan to take over your weekly 1:1s for now.\n  - Daniel: Is Priya not going to mentor me anymore?\n  - Marcus: She still mentors you informally on engineering, but for the project Jordan's your primary check-in.\n  - Daniel: Got it. Thanks for the heads up."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S28",
+      "date": "2026-04-02",
+      "network": "CHAT",
+      "title": "Chat Thread 28",
+      "dialogues": [
+        {
+          "round": "CHAT_S28:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B7_1.png"
+          ],
+          "image_id": [
+            "B7:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Marcus: Status check on the marketing refresh — where are we?\n  - Daniel: Design tokens migrated. Component library 60% done.\n  - Jordan: Hero section ships next week. Jordan's review.\n  - Marcus: Good pace. Daniel — anything blocking you?"
+          ]
+        },
+        {
+          "round": "CHAT_S28:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B7_2.png"
+          ],
+          "image_id": [
+            "B7:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Daniel: No blockers. Just need to verify the colors with Jordan once more.\n  - Jordan: Tomorrow afternoon works.\n  - Marcus: Great. Next review in two weeks."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S29",
+      "date": "2026-04-05",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S29:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S30",
+      "date": "2026-04-09",
+      "network": "CHAT",
+      "title": "Chat Thread 30",
+      "dialogues": [
+        {
+          "round": "CHAT_S30:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B7b_1.png"
+          ],
+          "image_id": [
+            "B7b:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Daniel: Marcus, Jordan — bad news. Critical bug surfaced in the component library.\n  - Jordan: Confirming. The hero section can't ship next week as planned.\n  - Marcus: Damage estimate?\n  - Daniel: Realistically two extra weeks. New ship date May 15."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S31",
+      "date": "2026-04-10",
+      "network": "CHAT",
+      "title": "Chat Thread 31",
+      "dialogues": [
+        {
+          "round": "CHAT_S31:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/F5_1.png"
+          ],
+          "image_id": [
+            "F5:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Tomas: MOM I PASSED THE PERMIT TEST\n  - Helen: Tomas!! Congratulations!!\n  - Tomas: Can I drive your car?\n  - Helen: Hold up. Driving lessons first. We talked about this."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S32",
+      "date": "2026-04-12",
+      "network": "CHAT",
+      "title": "Chat Thread 32",
+      "dialogues": [
+        {
+          "round": "CHAT_S32:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B5b_1.png"
+          ],
+          "image_id": [
+            "B5b:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Priya: Marcus, quick update on the May trip — flights canceled, family rescheduled to August.\n  - Marcus: Oh no, sorry to hear. So no PTO May 18-22 anymore?\n  - Priya: Right, withdrawing the request. I'll re-submit for August later.\n  - Marcus: Got it, no problem."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S33",
+      "date": "2026-04-13",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S33:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S34",
+      "date": "2026-04-15",
+      "network": "CHAT",
+      "title": "Chat Thread 34",
+      "dialogues": [
+        {
+          "round": "CHAT_S34:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/B8_1.png"
+          ],
+          "image_id": [
+            "B8:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Daniel: Got harsh feedback on a PR. How do I respond without sounding defensive?\n  - Priya: Acknowledge the point first. Then ask for the smallest change you can ship.\n  - Daniel: Even if I disagree?\n  - Priya: Especially then. Be precise about what you'd change instead."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S35",
+      "date": "2026-04-19",
+      "network": "CHAT",
+      "title": "Chat Thread 35",
+      "dialogues": [
+        {
+          "round": "CHAT_S35:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/R4_1.png"
+          ],
+          "image_id": [
+            "R4:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Sara: Landlord wants to know about renewal. I want to renew.\n  - Priya: I'm not 100% sure yet. Can I have until end of month?\n  - Sara: Yeah but don't ghost me on it.\n  - Priya: I won't. Promise."
+          ]
+        },
+        {
+          "round": "CHAT_S35:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/R4_2.png"
+          ],
+          "image_id": [
+            "R4:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Priya: Honestly I might want my own place.\n  - Sara: I figured. Just let me know in time to find someone else.\n  - Priya: Promise."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S36",
+      "date": "2026-04-22",
+      "network": "CHAT",
+      "title": "Chat Thread 36",
+      "dialogues": [
+        {
+          "round": "CHAT_S36:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T6_1.png"
+          ],
+          "image_id": [
+            "T6:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Elena: All — Sam's birthday Saturday. Bar at 8?\n  - Ryan: I'm in.\n  - Jordan: I'm in too. Bringing a small gift.\n  - Elena: Cool. See you both."
+          ]
+        },
+        {
+          "round": "CHAT_S36:R2",
+          "user": "Here is another screenshot from the same chat.",
+          "assistant": "I'll treat this as part of the same chat.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/T6_2.png"
+          ],
+          "image_id": [
+            "T6:2"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Jordan: Should we coordinate gifts so we're not duplicates?\n  - Elena: Good call. I'm doing the book.\n  - Ryan: I'll do the wine.\n  - Jordan: Then I'll do the cake."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S37",
+      "date": "2026-04-23",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S37:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S38",
+      "date": "2026-04-26",
+      "network": "CHAT",
+      "title": "Chat Thread 38",
+      "dialogues": [
+        {
+          "round": "CHAT_S38:R1",
+          "user": "Please save this chat screenshot.",
+          "assistant": "I'll keep this chat screenshot for you.",
+          "input_image": [
+            "Social_Chat_Memory_Test/screenshots/R4b_1.png"
+          ],
+          "image_id": [
+            "R4b:1"
+          ],
+          "image_caption": [
+            "Chat screenshot. Messages in order:\n  - Priya: OK Sara — I've decided. Let's renew.\n  - Sara: Wait really??\n  - Priya: Yeah, the apartment hunt was depressing and I like living with you.\n  - Sara: YAY 🎉 sending the lease tonight"
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "CHAT_S39",
+      "date": "2026-04-28",
+      "network": "CHAT",
+      "dialogues": [
+        {
+          "round": "CHAT_S39:R1",
+          "user": "I might be mixing up that detail.",
+          "assistant": "Please do not rely on that until we check the saved chats."
+        }
+      ]
+    }
+  ],
+  "human-annotated QAs": [
+    {
+      "question_id": "Q1",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Who is this person in my chats? Pick the option whose role and recent activity matches them.",
+      "options": [
+        {
+          "A": "An engineering manager who chairs sprint planning and personally approves PTO requests",
+          "B": "A new hire on the engineering team paired with a designer on a marketing site refresh",
+          "C": "A freelance illustrator who invited her apartment roommate to a gallery opening in Hayes Valley",
+          "D": "A mother of two who pushed her teenage son's driving lessons to summer",
+          "answer": "A"
+        },
+        {
+          "A": "A freelance illustrator who invited her apartment roommate to a gallery opening in Hayes Valley",
+          "B": "An engineering manager who chairs sprint planning and personally approves PTO requests",
+          "C": "A mother of two who pushed her teenage son's driving lessons to summer",
+          "D": "A new hire on the engineering team paired with a designer on a marketing site refresh",
+          "answer": "B"
+        },
+        {
+          "A": "A mother of two who pushed her teenage son's driving lessons to summer",
+          "B": "A new hire on the engineering team paired with a designer on a marketing site refresh",
+          "C": "An engineering manager who chairs sprint planning and personally approves PTO requests",
+          "D": "A freelance illustrator who invited her apartment roommate to a gallery opening in Hayes Valley",
+          "answer": "C"
+        },
+        {
+          "A": "A new hire on the engineering team paired with a designer on a marketing site refresh",
+          "B": "A freelance illustrator who invited her apartment roommate to a gallery opening in Hayes Valley",
+          "C": "A mother of two who pushed her teenage son's driving lessons to summer",
+          "D": "An engineering manager who chairs sprint planning and personally approves PTO requests",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2",
+        "CHAT_S17"
+      ],
+      "clue": [
+        "CHAT_S2:R1",
+        "CHAT_S17:R1"
+      ],
+      "question_image": "Social_Chat_Memory_Test/avatars/P01_marcus.png"
+    },
+    {
+      "question_id": "Q2",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Who is this person in my chats? Pick the option whose role and recent activity matches them.",
+      "options": [
+        {
+          "A": "An engineer who mentors a new hire AND shares an apartment with a freelance illustrator",
+          "B": "An older engineering manager who chairs sprint planning",
+          "C": "A designer co-leading the marketing site refresh, also someone's ex from a love triangle",
+          "D": "A teenage son who just passed his learner's permit test",
+          "answer": "A"
+        },
+        {
+          "A": "A designer co-leading the marketing site refresh, also someone's ex from a love triangle",
+          "B": "An engineer who mentors a new hire AND shares an apartment with a freelance illustrator",
+          "C": "A teenage son who just passed his learner's permit test",
+          "D": "An older engineering manager who chairs sprint planning",
+          "answer": "B"
+        },
+        {
+          "A": "A teenage son who just passed his learner's permit test",
+          "B": "An older engineering manager who chairs sprint planning",
+          "C": "An engineer who mentors a new hire AND shares an apartment with a freelance illustrator",
+          "D": "A designer co-leading the marketing site refresh, also someone's ex from a love triangle",
+          "answer": "C"
+        },
+        {
+          "A": "An older engineering manager who chairs sprint planning",
+          "B": "A designer co-leading the marketing site refresh, also someone's ex from a love triangle",
+          "C": "A teenage son who just passed his learner's permit test",
+          "D": "An engineer who mentors a new hire AND shares an apartment with a freelance illustrator",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2",
+        "CHAT_S6",
+        "CHAT_S15"
+      ],
+      "clue": [
+        "CHAT_S2:R1",
+        "CHAT_S6:R1"
+      ],
+      "question_image": "Social_Chat_Memory_Test/avatars/P02_priya.png"
+    },
+    {
+      "question_id": "Q4",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Who is this person in my chats? Pick the option whose role and recent activity matches them.",
+      "options": [
+        {
+          "A": "A young child of elementary-school age who messages her mother about pickup time and ice cream",
+          "B": "A teenage son who just got his learner's permit",
+          "C": "A freelance illustrator who lives with an engineer",
+          "D": "An engineer who requested PTO for May 18-22",
+          "answer": "A"
+        },
+        {
+          "A": "A freelance illustrator who lives with an engineer",
+          "B": "A young child of elementary-school age who messages her mother about pickup time and ice cream",
+          "C": "An engineer who requested PTO for May 18-22",
+          "D": "A teenage son who just got his learner's permit",
+          "answer": "B"
+        },
+        {
+          "A": "An engineer who requested PTO for May 18-22",
+          "B": "A teenage son who just got his learner's permit",
+          "C": "A young child of elementary-school age who messages her mother about pickup time and ice cream",
+          "D": "A freelance illustrator who lives with an engineer",
+          "answer": "C"
+        },
+        {
+          "A": "A teenage son who just got his learner's permit",
+          "B": "A freelance illustrator who lives with an engineer",
+          "C": "An engineer who requested PTO for May 18-22",
+          "D": "A young child of elementary-school age who messages her mother about pickup time and ice cream",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S7",
+        "CHAT_S18"
+      ],
+      "clue": [
+        "CHAT_S7:R1",
+        "CHAT_S18:R1"
+      ],
+      "question_image": "Social_Chat_Memory_Test/avatars/P09_mia.png"
+    },
+    {
+      "question_id": "Q8",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Who is this person in my chats? Pick the option whose role and recent activity matches them.",
+      "options": [
+        {
+          "A": "A man who, alongside his current partner and his ex, coordinated a friend's birthday party in late April and offered to bring wine",
+          "B": "An older engineering manager",
+          "C": "A mother of two who pushed driving lessons to summer",
+          "D": "An engineer who shares an apartment with a freelance illustrator",
+          "answer": "A"
+        },
+        {
+          "A": "A mother of two who pushed driving lessons to summer",
+          "B": "A man who, alongside his current partner and his ex, coordinated a friend's birthday party in late April and offered to bring wine",
+          "C": "An engineer who shares an apartment with a freelance illustrator",
+          "D": "An older engineering manager",
+          "answer": "B"
+        },
+        {
+          "A": "An engineer who shares an apartment with a freelance illustrator",
+          "B": "An older engineering manager",
+          "C": "A man who, alongside his current partner and his ex, coordinated a friend's birthday party in late April and offered to bring wine",
+          "D": "A mother of two who pushed driving lessons to summer",
+          "answer": "C"
+        },
+        {
+          "A": "An older engineering manager",
+          "B": "A mother of two who pushed driving lessons to summer",
+          "C": "An engineer who shares an apartment with a freelance illustrator",
+          "D": "A man who, alongside his current partner and his ex, coordinated a friend's birthday party in late April and offered to bring wine",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S36"
+      ],
+      "clue": [
+        "CHAT_S36:R1"
+      ],
+      "question_image": "Social_Chat_Memory_Test/avatars/P10_ryan.png"
+    },
+    {
+      "question_id": "Q9",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Which session came first chronologically?",
+      "options": [
+        {
+          "A": "Helen reminding Tomas about his school project",
+          "B": "Priya and Sara's rent split chat",
+          "C": "Elena and Ryan's six-month anniversary chat",
+          "D": "Marcus's first sprint planning chat with Priya",
+          "answer": "A"
+        },
+        {
+          "A": "Elena and Ryan's six-month anniversary chat",
+          "B": "Helen reminding Tomas about his school project",
+          "C": "Marcus's first sprint planning chat with Priya",
+          "D": "Priya and Sara's rent split chat",
+          "answer": "B"
+        },
+        {
+          "A": "Marcus's first sprint planning chat with Priya",
+          "B": "Priya and Sara's rent split chat",
+          "C": "Helen reminding Tomas about his school project",
+          "D": "Elena and Ryan's six-month anniversary chat",
+          "answer": "C"
+        },
+        {
+          "A": "Priya and Sara's rent split chat",
+          "B": "Elena and Ryan's six-month anniversary chat",
+          "C": "Marcus's first sprint planning chat with Priya",
+          "D": "Helen reminding Tomas about his school project",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S1",
+        "CHAT_S2",
+        "CHAT_S3",
+        "CHAT_S6"
+      ],
+      "clue": [
+        "CHAT_S1:R1"
+      ]
+    },
+    {
+      "question_id": "Q11",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Of the BOSS chats, which was the LAST one shown chronologically?",
+      "options": [
+        {
+          "A": "Daniel + Priya PR review coaching",
+          "B": "Marcus + Priya sprint planning",
+          "C": "Marcus + Daniel + Jordan project review",
+          "D": "Daniel + Jordan project kickoff",
+          "answer": "A"
+        },
+        {
+          "A": "Marcus + Daniel + Jordan project review",
+          "B": "Daniel + Priya PR review coaching",
+          "C": "Daniel + Jordan project kickoff",
+          "D": "Marcus + Priya sprint planning",
+          "answer": "B"
+        },
+        {
+          "A": "Daniel + Jordan project kickoff",
+          "B": "Marcus + Priya sprint planning",
+          "C": "Daniel + Priya PR review coaching",
+          "D": "Marcus + Daniel + Jordan project review",
+          "answer": "C"
+        },
+        {
+          "A": "Marcus + Priya sprint planning",
+          "B": "Marcus + Daniel + Jordan project review",
+          "C": "Daniel + Jordan project kickoff",
+          "D": "Daniel + Priya PR review coaching",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S34"
+      ],
+      "clue": [
+        "CHAT_S34:R1"
+      ]
+    },
+    {
+      "question_id": "Q12",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Did the family group chat about weekend plans come BEFORE or AFTER Sara complained about Priya's late-night Slack notifications?",
+      "options": [
+        {
+          "A": "After the Slack complaint",
+          "B": "Neither happened",
+          "C": "On the same day",
+          "D": "Before the Slack complaint",
+          "answer": "A"
+        },
+        {
+          "A": "On the same day",
+          "B": "After the Slack complaint",
+          "C": "Before the Slack complaint",
+          "D": "Neither happened",
+          "answer": "B"
+        },
+        {
+          "A": "Before the Slack complaint",
+          "B": "Neither happened",
+          "C": "After the Slack complaint",
+          "D": "On the same day",
+          "answer": "C"
+        },
+        {
+          "A": "Neither happened",
+          "B": "On the same day",
+          "C": "Before the Slack complaint",
+          "D": "After the Slack complaint",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S18",
+        "CHAT_S15"
+      ],
+      "clue": [
+        "CHAT_S18:R1",
+        "CHAT_S15:R1"
+      ]
+    },
+    {
+      "question_id": "Q13",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "How many distinct people appear across all BOSS work chats (not counting CX distractors)?",
+      "options": [
+        {
+          "A": "4",
+          "B": "5",
+          "C": "3",
+          "D": "6",
+          "answer": "A"
+        },
+        {
+          "A": "3",
+          "B": "4",
+          "C": "6",
+          "D": "5",
+          "answer": "B"
+        },
+        {
+          "A": "6",
+          "B": "5",
+          "C": "4",
+          "D": "3",
+          "answer": "C"
+        },
+        {
+          "A": "5",
+          "B": "3",
+          "C": "6",
+          "D": "4",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2",
+        "CHAT_S4",
+        "CHAT_S22",
+        "CHAT_S28"
+      ],
+      "clue": [
+        "CHAT_S2:R1",
+        "CHAT_S4:R1",
+        "CHAT_S22:R1",
+        "CHAT_S28:R1"
+      ]
+    },
+    {
+      "question_id": "Q14",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Of the 5 FAM family chats, in how many does Mia (the young daughter) actually appear?",
+      "options": [
+        {
+          "A": "2",
+          "B": "1",
+          "C": "4",
+          "D": "3",
+          "answer": "A"
+        },
+        {
+          "A": "4",
+          "B": "2",
+          "C": "3",
+          "D": "1",
+          "answer": "B"
+        },
+        {
+          "A": "3",
+          "B": "1",
+          "C": "2",
+          "D": "4",
+          "answer": "C"
+        },
+        {
+          "A": "1",
+          "B": "4",
+          "C": "3",
+          "D": "2",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S7",
+        "CHAT_S18"
+      ],
+      "clue": [
+        "CHAT_S7:R1",
+        "CHAT_S18:R1"
+      ]
+    },
+    {
+      "question_id": "Q15",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Of the 6 TRI love-triangle chats, in how many does Jordan appear?",
+      "options": [
+        {
+          "A": "3",
+          "B": "5",
+          "C": "2",
+          "D": "4",
+          "answer": "A"
+        },
+        {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5",
+          "answer": "B"
+        },
+        {
+          "A": "4",
+          "B": "5",
+          "C": "3",
+          "D": "2",
+          "answer": "C"
+        },
+        {
+          "A": "5",
+          "B": "2",
+          "C": "4",
+          "D": "3",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S12",
+        "CHAT_S19",
+        "CHAT_S36"
+      ],
+      "clue": [
+        "CHAT_S12:R1",
+        "CHAT_S19:R1",
+        "CHAT_S36:R1"
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "How many ROOM (apartment) chats are there in total?",
+      "options": [
+        {
+          "A": "4",
+          "B": "3",
+          "C": "6",
+          "D": "5",
+          "answer": "A"
+        },
+        {
+          "A": "6",
+          "B": "4",
+          "C": "5",
+          "D": "3",
+          "answer": "B"
+        },
+        {
+          "A": "5",
+          "B": "3",
+          "C": "4",
+          "D": "6",
+          "answer": "C"
+        },
+        {
+          "A": "3",
+          "B": "6",
+          "C": "5",
+          "D": "4",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S6",
+        "CHAT_S15",
+        "CHAT_S21",
+        "CHAT_S35"
+      ],
+      "clue": [
+        "CHAT_S6:R1",
+        "CHAT_S15:R1",
+        "CHAT_S21:R1",
+        "CHAT_S35:R1"
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Across the 8 BOSS work chats, in how many does Daniel appear?",
+      "options": [
+        {
+          "A": "6",
+          "B": "4",
+          "C": "5",
+          "D": "7",
+          "answer": "A"
+        },
+        {
+          "A": "5",
+          "B": "6",
+          "C": "7",
+          "D": "4",
+          "answer": "B"
+        },
+        {
+          "A": "7",
+          "B": "4",
+          "C": "6",
+          "D": "5",
+          "answer": "C"
+        },
+        {
+          "A": "4",
+          "B": "5",
+          "C": "7",
+          "D": "6",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2",
+        "CHAT_S4",
+        "CHAT_S9",
+        "CHAT_S13",
+        "CHAT_S17",
+        "CHAT_S22",
+        "CHAT_S28",
+        "CHAT_S34"
+      ],
+      "clue": [
+        "CHAT_S2:R1",
+        "CHAT_S4:R1",
+        "CHAT_S9:R1",
+        "CHAT_S13:R1",
+        "CHAT_S17:R1",
+        "CHAT_S22:R1",
+        "CHAT_S28:R1",
+        "CHAT_S34:R1"
+      ]
+    },
+    {
+      "question_id": "Q18",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "How many distinct relationship networks does Priya appear in?",
+      "options": [
+        {
+          "A": "2",
+          "B": "1",
+          "C": "3",
+          "D": "4",
+          "answer": "A"
+        },
+        {
+          "A": "3",
+          "B": "2",
+          "C": "4",
+          "D": "1",
+          "answer": "B"
+        },
+        {
+          "A": "4",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "answer": "C"
+        },
+        {
+          "A": "1",
+          "B": "3",
+          "C": "4",
+          "D": "2",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2",
+        "CHAT_S6"
+      ],
+      "clue": [
+        "CHAT_S2:R1",
+        "CHAT_S6:R1"
+      ]
+    },
+    {
+      "question_id": "Q19",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Of the 5 FAM chats, only ONE features Helen, Tomas, AND Mia all in the same chat. Which one?",
+      "options": [
+        {
+          "A": "The weekend plans family group chat (F4)",
+          "B": "Helen messaging Mia about pickup time (F2)",
+          "C": "Helen reminding Tomas about the science project (F1)",
+          "D": "Tomas asking for driving lessons (F3)",
+          "answer": "A"
+        },
+        {
+          "A": "Helen reminding Tomas about the science project (F1)",
+          "B": "The weekend plans family group chat (F4)",
+          "C": "Tomas asking for driving lessons (F3)",
+          "D": "Helen messaging Mia about pickup time (F2)",
+          "answer": "B"
+        },
+        {
+          "A": "Tomas asking for driving lessons (F3)",
+          "B": "Helen messaging Mia about pickup time (F2)",
+          "C": "The weekend plans family group chat (F4)",
+          "D": "Helen reminding Tomas about the science project (F1)",
+          "answer": "C"
+        },
+        {
+          "A": "Helen messaging Mia about pickup time (F2)",
+          "B": "Helen reminding Tomas about the science project (F1)",
+          "C": "Tomas asking for driving lessons (F3)",
+          "D": "The weekend plans family group chat (F4)",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S18"
+      ],
+      "clue": [
+        "CHAT_S18:R1"
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Of the 6 TRI chats, only ONE is a three-way group chat with all three corners present. Which?",
+      "options": [
+        {
+          "A": "Friend birthday coordination (T6)",
+          "B": "Late-text fight (T2)",
+          "C": "Elena + Ryan anniversary (T1)",
+          "D": "Jordan + Elena truce (T4)",
+          "answer": "A"
+        },
+        {
+          "A": "Elena + Ryan anniversary (T1)",
+          "B": "Friend birthday coordination (T6)",
+          "C": "Jordan + Elena truce (T4)",
+          "D": "Late-text fight (T2)",
+          "answer": "B"
+        },
+        {
+          "A": "Jordan + Elena truce (T4)",
+          "B": "Late-text fight (T2)",
+          "C": "Friend birthday coordination (T6)",
+          "D": "Elena + Ryan anniversary (T1)",
+          "answer": "C"
+        },
+        {
+          "A": "Late-text fight (T2)",
+          "B": "Elena + Ryan anniversary (T1)",
+          "C": "Jordan + Elena truce (T4)",
+          "D": "Friend birthday coordination (T6)",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S36"
+      ],
+      "clue": [
+        "CHAT_S36:R1"
+      ]
+    },
+    {
+      "question_id": "Q21",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "question": "When is Sara's gallery opening? I need to put it on my calendar.",
+      "options": [
+        {
+          "A": "It was rescheduled to April 4 due to a venue flood — still 6pm Hayes Valley",
+          "B": "It was canceled entirely",
+          "C": "It already happened and I missed it",
+          "D": "Next Saturday after March 15 — she said 6pm Hayes Valley",
+          "answer": "A"
+        },
+        {
+          "A": "It already happened and I missed it",
+          "B": "It was rescheduled to April 4 due to a venue flood — still 6pm Hayes Valley",
+          "C": "Next Saturday after March 15 — she said 6pm Hayes Valley",
+          "D": "It was canceled entirely",
+          "answer": "B"
+        },
+        {
+          "A": "Next Saturday after March 15 — she said 6pm Hayes Valley",
+          "B": "It was canceled entirely",
+          "C": "It was rescheduled to April 4 due to a venue flood — still 6pm Hayes Valley",
+          "D": "It already happened and I missed it",
+          "answer": "C"
+        },
+        {
+          "A": "It was canceled entirely",
+          "B": "It already happened and I missed it",
+          "C": "Next Saturday after March 15 — she said 6pm Hayes Valley",
+          "D": "It was rescheduled to April 4 due to a venue flood — still 6pm Hayes Valley",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S21",
+        "CHAT_S23"
+      ],
+      "clue": [
+        "CHAT_S21:R1",
+        "CHAT_S23:R1"
+      ],
+      "latest_clue_round": "CHAT_S23:R1",
+      "stale_clue_rounds": [
+        "CHAT_S21:R1"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Temporal updates are conveyed by text inside screenshots, not evolving native visual states."
+    },
+    {
+      "question_id": "Q22",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "question": "Priya was supposed to be out of office in May so Daniel could solo the sprint. Is that still the plan?",
+      "options": [
+        {
+          "A": "No — Priya canceled her May PTO, so she'll be around after all",
+          "B": "Yes — she's on PTO May 18-22 and Daniel will solo it",
+          "C": "Daniel is the one going on PTO now",
+          "D": "The sprint was canceled",
+          "answer": "A"
+        },
+        {
+          "A": "Daniel is the one going on PTO now",
+          "B": "No — Priya canceled her May PTO, so she'll be around after all",
+          "C": "The sprint was canceled",
+          "D": "Yes — she's on PTO May 18-22 and Daniel will solo it",
+          "answer": "B"
+        },
+        {
+          "A": "The sprint was canceled",
+          "B": "Yes — she's on PTO May 18-22 and Daniel will solo it",
+          "C": "No — Priya canceled her May PTO, so she'll be around after all",
+          "D": "Daniel is the one going on PTO now",
+          "answer": "C"
+        },
+        {
+          "A": "Yes — she's on PTO May 18-22 and Daniel will solo it",
+          "B": "Daniel is the one going on PTO now",
+          "C": "The sprint was canceled",
+          "D": "No — Priya canceled her May PTO, so she'll be around after all",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S17",
+        "CHAT_S32"
+      ],
+      "clue": [
+        "CHAT_S17:R1",
+        "CHAT_S32:R1"
+      ],
+      "latest_clue_round": "CHAT_S32:R1",
+      "stale_clue_rounds": [
+        "CHAT_S17:R1"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Temporal updates are conveyed by text inside screenshots, not evolving native visual states."
+    },
+    {
+      "question_id": "Q23",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "question": "Tomas wanted driving lessons and his mom kept saying summer. Did she ever budge on that or is he still waiting?",
+      "options": [
+        {
+          "A": "She relented and said April was fine if grades stay up",
+          "B": "She said spring after the learner's permit",
+          "C": "Still waiting — she was firm about summer",
+          "D": "Tomas gave up asking",
+          "answer": "A"
+        },
+        {
+          "A": "Still waiting — she was firm about summer",
+          "B": "She relented and said April was fine if grades stay up",
+          "C": "Tomas gave up asking",
+          "D": "She said spring after the learner's permit",
+          "answer": "B"
+        },
+        {
+          "A": "Tomas gave up asking",
+          "B": "She said spring after the learner's permit",
+          "C": "She relented and said April was fine if grades stay up",
+          "D": "Still waiting — she was firm about summer",
+          "answer": "C"
+        },
+        {
+          "A": "She said spring after the learner's permit",
+          "B": "Still waiting — she was firm about summer",
+          "C": "Tomas gave up asking",
+          "D": "She relented and said April was fine if grades stay up",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S11",
+        "CHAT_S25",
+        "CHAT_S31"
+      ],
+      "clue": [
+        "CHAT_S11:R1",
+        "CHAT_S11:R2",
+        "CHAT_S25:R1"
+      ],
+      "latest_clue_round": "CHAT_S25:R1",
+      "stale_clue_rounds": [
+        "CHAT_S11:R1",
+        "CHAT_S11:R2"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Temporal updates are conveyed by text inside screenshots, not evolving native visual states."
+    },
+    {
+      "question_id": "Q24",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "question": "Hey, the woman in this picture — I remember she said something to her boss about a vacation request. Do you know what she said about her teammate while she was at it?",
+      "options": [
+        {
+          "A": "She said her teammate could solo the new feature that week",
+          "B": "She said her teammate needed more onboarding before she left",
+          "C": "She didn't mention any teammate",
+          "D": "She said her teammate would also be on PTO",
+          "answer": "A"
+        },
+        {
+          "A": "She didn't mention any teammate",
+          "B": "She said her teammate could solo the new feature that week",
+          "C": "She said her teammate would also be on PTO",
+          "D": "She said her teammate needed more onboarding before she left",
+          "answer": "B"
+        },
+        {
+          "A": "She said her teammate would also be on PTO",
+          "B": "She said her teammate needed more onboarding before she left",
+          "C": "She said her teammate could solo the new feature that week",
+          "D": "She didn't mention any teammate",
+          "answer": "C"
+        },
+        {
+          "A": "She said her teammate needed more onboarding before she left",
+          "B": "She didn't mention any teammate",
+          "C": "She said her teammate would also be on PTO",
+          "D": "She said her teammate could solo the new feature that week",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S17"
+      ],
+      "clue": [
+        "CHAT_S17:R1"
+      ],
+      "question_image": "Social_Chat_Memory_Test/avatars/P02_priya.png"
+    },
+    {
+      "question_id": "Q25",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "This guy in the photo — I want to message him about a birthday party. Across all the chats I've seen him in, who else has actually talked TO him directly (in the same screenshot)?",
+      "options": [
+        {
+          "A": "His current partner and his ex (the designer)",
+          "B": "Only his current partner",
+          "C": "Nobody — he's only in 1:1 chats with one person",
+          "D": "His current partner, his ex, and someone from her family",
+          "answer": "A"
+        },
+        {
+          "A": "Nobody — he's only in 1:1 chats with one person",
+          "B": "His current partner and his ex (the designer)",
+          "C": "His current partner, his ex, and someone from her family",
+          "D": "Only his current partner",
+          "answer": "B"
+        },
+        {
+          "A": "His current partner, his ex, and someone from her family",
+          "B": "Only his current partner",
+          "C": "His current partner and his ex (the designer)",
+          "D": "Nobody — he's only in 1:1 chats with one person",
+          "answer": "C"
+        },
+        {
+          "A": "Only his current partner",
+          "B": "Nobody — he's only in 1:1 chats with one person",
+          "C": "His current partner, his ex, and someone from her family",
+          "D": "His current partner and his ex (the designer)",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S3",
+        "CHAT_S8",
+        "CHAT_S12",
+        "CHAT_S36"
+      ],
+      "clue": [
+        "CHAT_S36:R1"
+      ],
+      "question_image": "Social_Chat_Memory_Test/avatars/P10_ryan.png"
+    },
+    {
+      "question_id": "Q26",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Of Helen, Mia, and Sara — they're all women I have chats with. Who among them is actually a mom (not just a daughter or single)?",
+      "options": [
+        {
+          "A": "Just Helen",
+          "B": "All three",
+          "C": "None of them",
+          "D": "Helen and Mia (Mia has a child too)",
+          "answer": "A"
+        },
+        {
+          "A": "None of them",
+          "B": "Just Helen",
+          "C": "Helen and Mia (Mia has a child too)",
+          "D": "All three",
+          "answer": "B"
+        },
+        {
+          "A": "Helen and Mia (Mia has a child too)",
+          "B": "All three",
+          "C": "Just Helen",
+          "D": "None of them",
+          "answer": "C"
+        },
+        {
+          "A": "All three",
+          "B": "None of them",
+          "C": "Helen and Mia (Mia has a child too)",
+          "D": "Just Helen",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S1",
+        "CHAT_S7",
+        "CHAT_S18"
+      ],
+      "clue": [
+        "CHAT_S18:R1"
+      ]
+    },
+    {
+      "question_id": "Q27",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "question": "Wait, didn't Priya book May 15-19 off for a wedding? I want to make sure I have the dates right before I plan around her.",
+      "options": [
+        {
+          "A": "No — it was originally May 18-22 for a family trip, and she has since cancelled the PTO entirely",
+          "B": "Yes — May 15-19 for a wedding, still on the calendar",
+          "C": "You have the wedding right, but the dates were May 18-22",
+          "D": "No — it was May 18-22 for a family trip, and she is still taking it",
+          "answer": "A"
+        },
+        {
+          "A": "You have the wedding right, but the dates were May 18-22",
+          "B": "No — it was originally May 18-22 for a family trip, and she has since cancelled the PTO entirely",
+          "C": "No — it was May 18-22 for a family trip, and she is still taking it",
+          "D": "Yes — May 15-19 for a wedding, still on the calendar",
+          "answer": "B"
+        },
+        {
+          "A": "No — it was May 18-22 for a family trip, and she is still taking it",
+          "B": "Yes — May 15-19 for a wedding, still on the calendar",
+          "C": "No — it was originally May 18-22 for a family trip, and she has since cancelled the PTO entirely",
+          "D": "You have the wedding right, but the dates were May 18-22",
+          "answer": "C"
+        },
+        {
+          "A": "Yes — May 15-19 for a wedding, still on the calendar",
+          "B": "You have the wedding right, but the dates were May 18-22",
+          "C": "No — it was May 18-22 for a family trip, and she is still taking it",
+          "D": "No — it was originally May 18-22 for a family trip, and she has since cancelled the PTO entirely",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S17",
+        "CHAT_S32"
+      ],
+      "clue": [
+        "CHAT_S17:R1",
+        "CHAT_S32:R1"
+      ],
+      "latest_clue_round": "CHAT_S32:R1",
+      "stale_clue_rounds": [
+        "CHAT_S17:R1"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Temporal updates are conveyed by text inside screenshots, not evolving native visual states."
+    },
+    {
+      "question_id": "Q28",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "How much earlier did I begin texting Helen about family matters than the next saved chat with another contact?",
+      "options": [
+        {
+          "A": "About three days earlier",
+          "B": "About a week earlier",
+          "C": "Around the same time",
+          "D": "Long after most other chats started",
+          "answer": "A"
+        },
+        {
+          "A": "Around the same time",
+          "B": "About three days earlier",
+          "C": "Long after most other chats started",
+          "D": "About a week earlier",
+          "answer": "B"
+        },
+        {
+          "A": "Long after most other chats started",
+          "B": "About a week earlier",
+          "C": "About three days earlier",
+          "D": "Around the same time",
+          "answer": "C"
+        },
+        {
+          "A": "About a week earlier",
+          "B": "Around the same time",
+          "C": "Long after most other chats started",
+          "D": "About three days earlier",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S1",
+        "CHAT_S2"
+      ],
+      "clue": [
+        "CHAT_S1:R1",
+        "CHAT_S2:R1"
+      ]
+    },
+    {
+      "question_id": "Q31",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "question": "On what date was the family chat in which Helen's daughter was promised ice cream?",
+      "options": [
+        {
+          "A": "March 8, 2026",
+          "B": "January 30, 2026",
+          "C": "March 25, 2026",
+          "D": "April 26, 2026",
+          "answer": "A"
+        },
+        {
+          "A": "March 25, 2026",
+          "B": "March 8, 2026",
+          "C": "April 26, 2026",
+          "D": "January 30, 2026",
+          "answer": "B"
+        },
+        {
+          "A": "April 26, 2026",
+          "B": "January 30, 2026",
+          "C": "March 8, 2026",
+          "D": "March 25, 2026",
+          "answer": "C"
+        },
+        {
+          "A": "January 30, 2026",
+          "B": "March 25, 2026",
+          "C": "April 26, 2026",
+          "D": "March 8, 2026",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S18"
+      ],
+      "clue": [
+        "CHAT_S18:R1"
+      ]
+    },
+    {
+      "question_id": "Q32",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Has Daniel ever had one-on-one work chats without Marcus present, and if so, with whom?",
+      "options": [
+        {
+          "A": "Yes — with both Priya and Jordan",
+          "B": "Yes — with Priya only",
+          "C": "Yes — with Jordan only",
+          "D": "No, every Daniel chat includes Marcus",
+          "answer": "A"
+        },
+        {
+          "A": "Yes — with Jordan only",
+          "B": "Yes — with both Priya and Jordan",
+          "C": "No, every Daniel chat includes Marcus",
+          "D": "Yes — with Priya only",
+          "answer": "B"
+        },
+        {
+          "A": "No, every Daniel chat includes Marcus",
+          "B": "Yes — with Priya only",
+          "C": "Yes — with both Priya and Jordan",
+          "D": "Yes — with Jordan only",
+          "answer": "C"
+        },
+        {
+          "A": "Yes — with Priya only",
+          "B": "Yes — with Jordan only",
+          "C": "No, every Daniel chat includes Marcus",
+          "D": "Yes — with both Priya and Jordan",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S9",
+        "CHAT_S22",
+        "CHAT_S34"
+      ],
+      "clue": [
+        "CHAT_S9:R1",
+        "CHAT_S22:R1",
+        "CHAT_S34:R1"
+      ]
+    },
+    {
+      "question_id": "Q33",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "I'm looking at how many different people I've actually been chatting with across all my conversations — not counting any names that only came up secondhand or in correction chats. About how many real distinct people is that?",
+      "options": [
+        {
+          "A": "Around 10",
+          "B": "Around 20",
+          "C": "Around 14",
+          "D": "Around 6",
+          "answer": "A"
+        },
+        {
+          "A": "Around 14",
+          "B": "Around 10",
+          "C": "Around 6",
+          "D": "Around 20",
+          "answer": "B"
+        },
+        {
+          "A": "Around 6",
+          "B": "Around 20",
+          "C": "Around 10",
+          "D": "Around 14",
+          "answer": "C"
+        },
+        {
+          "A": "Around 20",
+          "B": "Around 14",
+          "C": "Around 6",
+          "D": "Around 10",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2",
+        "CHAT_S4",
+        "CHAT_S1",
+        "CHAT_S7",
+        "CHAT_S6",
+        "CHAT_S26",
+        "CHAT_S22"
+      ],
+      "clue": [
+        "CHAT_S2:R1",
+        "CHAT_S4:R1",
+        "CHAT_S1:R1",
+        "CHAT_S7:R1",
+        "CHAT_S6:R1",
+        "CHAT_S26:R1",
+        "CHAT_S22:R1"
+      ]
+    },
+    {
+      "question_id": "Q34",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "question": "Does Elena know that Jordan is tied to Ryan's past and Daniel's work, and how was that overlap described later?",
+      "options": [
+        {
+          "A": "Yes — Elena knew Jordan was tied to Ryan, later mentioned Jordan was Daniel's design partner, and Ryan called it a small world",
+          "B": "No, Elena doesn't know about Jordan",
+          "C": "Ryan told Elena privately, but she did not react",
+          "D": "Elena knew and was upset about the work overlap",
+          "answer": "A"
+        },
+        {
+          "A": "Ryan told Elena privately, but she did not react",
+          "B": "Yes — Elena knew Jordan was tied to Ryan, later mentioned Jordan was Daniel's design partner, and Ryan called it a small world",
+          "C": "Elena knew and was upset about the work overlap",
+          "D": "No, Elena doesn't know about Jordan",
+          "answer": "B"
+        },
+        {
+          "A": "Elena knew and was upset about the work overlap",
+          "B": "No, Elena doesn't know about Jordan",
+          "C": "Yes — Elena knew Jordan was tied to Ryan, later mentioned Jordan was Daniel's design partner, and Ryan called it a small world",
+          "D": "Ryan told Elena privately, but she did not react",
+          "answer": "C"
+        },
+        {
+          "A": "No, Elena doesn't know about Jordan",
+          "B": "Ryan told Elena privately, but she did not react",
+          "C": "Elena knew and was upset about the work overlap",
+          "D": "Yes — Elena knew Jordan was tied to Ryan, later mentioned Jordan was Daniel's design partner, and Ryan called it a small world",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S8",
+        "CHAT_S26"
+      ],
+      "clue": [
+        "CHAT_S8:R1",
+        "CHAT_S8:R2",
+        "CHAT_S26:R1"
+      ]
+    },
+    {
+      "question_id": "Q35",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Of all my friends, who connects the most different parts of my life — like work, home, family, dating circles?",
+      "options": [
+        {
+          "A": "Priya — she's the bridge between work and my apartment life",
+          "B": "Nobody really crosses circles",
+          "C": "Marcus — he knows everyone",
+          "D": "Helen — she connects family and work",
+          "answer": "A"
+        },
+        {
+          "A": "Marcus — he knows everyone",
+          "B": "Priya — she's the bridge between work and my apartment life",
+          "C": "Helen — she connects family and work",
+          "D": "Nobody really crosses circles",
+          "answer": "B"
+        },
+        {
+          "A": "Helen — she connects family and work",
+          "B": "Nobody really crosses circles",
+          "C": "Priya — she's the bridge between work and my apartment life",
+          "D": "Marcus — he knows everyone",
+          "answer": "C"
+        },
+        {
+          "A": "Nobody really crosses circles",
+          "B": "Marcus — he knows everyone",
+          "C": "Helen — she connects family and work",
+          "D": "Priya — she's the bridge between work and my apartment life",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2",
+        "CHAT_S6",
+        "CHAT_S1"
+      ],
+      "clue": [
+        "CHAT_S2:R1",
+        "CHAT_S6:R1",
+        "CHAT_S1:R1"
+      ]
+    },
+    {
+      "question_id": "Q36",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Looking at the work chats — was there one where Marcus wasn't actually in the chat himself, even though it was about his team?",
+      "options": [
+        {
+          "A": "Yes — there are 2 chats just between Priya and Daniel without Marcus",
+          "B": "No, Marcus is in every BOSS chat",
+          "C": "Yes, but only 1 such chat",
+          "D": "Yes — there are at least 3 such chats",
+          "answer": "A"
+        },
+        {
+          "A": "Yes, but only 1 such chat",
+          "B": "Yes — there are 2 chats just between Priya and Daniel without Marcus",
+          "C": "Yes — there are at least 3 such chats",
+          "D": "No, Marcus is in every BOSS chat",
+          "answer": "B"
+        },
+        {
+          "A": "Yes — there are at least 3 such chats",
+          "B": "No, Marcus is in every BOSS chat",
+          "C": "Yes — there are 2 chats just between Priya and Daniel without Marcus",
+          "D": "Yes, but only 1 such chat",
+          "answer": "C"
+        },
+        {
+          "A": "No, Marcus is in every BOSS chat",
+          "B": "Yes, but only 1 such chat",
+          "C": "Yes — there are at least 3 such chats",
+          "D": "Yes — there are 2 chats just between Priya and Daniel without Marcus",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S9",
+        "CHAT_S34"
+      ],
+      "clue": [
+        "CHAT_S9:R1",
+        "CHAT_S34:R1"
+      ]
+    },
+    {
+      "question_id": "Q37",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "question": "Look at this chat screenshot. Is this a work conversation, a family chat, or a personal / relationship chat?",
+      "options": [
+        {
+          "A": "Work conversation",
+          "B": "Personal / relationship",
+          "C": "Apartment / roommate chat",
+          "D": "Family chat",
+          "answer": "A"
+        },
+        {
+          "A": "Apartment / roommate chat",
+          "B": "Work conversation",
+          "C": "Family chat",
+          "D": "Personal / relationship",
+          "answer": "B"
+        },
+        {
+          "A": "Family chat",
+          "B": "Personal / relationship",
+          "C": "Work conversation",
+          "D": "Apartment / roommate chat",
+          "answer": "C"
+        },
+        {
+          "A": "Personal / relationship",
+          "B": "Apartment / roommate chat",
+          "C": "Family chat",
+          "D": "Work conversation",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S4"
+      ],
+      "clue": [
+        "CHAT_S4:R1"
+      ],
+      "question_image": "Social_Chat_Memory_Test/screenshots/B2_1.png"
+    },
+    {
+      "question_id": "Q38",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "question": "What kind of conversation does this screenshot show?",
+      "options": [
+        {
+          "A": "A family with a parent and children discussing weekend plans",
+          "B": "A work team discussing sprint planning",
+          "C": "Friends planning a birthday party",
+          "D": "Roommates discussing rent",
+          "answer": "A"
+        },
+        {
+          "A": "Friends planning a birthday party",
+          "B": "A family with a parent and children discussing weekend plans",
+          "C": "Roommates discussing rent",
+          "D": "A work team discussing sprint planning",
+          "answer": "B"
+        },
+        {
+          "A": "Roommates discussing rent",
+          "B": "A work team discussing sprint planning",
+          "C": "A family with a parent and children discussing weekend plans",
+          "D": "Friends planning a birthday party",
+          "answer": "C"
+        },
+        {
+          "A": "A work team discussing sprint planning",
+          "B": "Friends planning a birthday party",
+          "C": "Roommates discussing rent",
+          "D": "A family with a parent and children discussing weekend plans",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S18"
+      ],
+      "clue": [
+        "CHAT_S18:R1"
+      ],
+      "question_image": "Social_Chat_Memory_Test/screenshots/F4_1.png"
+    },
+    {
+      "question_id": "Q39",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Across all the chat screenshots I've saved, roughly how many are work-related conversations vs personal / family ones?",
+      "options": [
+        {
+          "A": "More personal than work-related",
+          "B": "About half and half",
+          "C": "More work-related than personal",
+          "D": "Almost all are work-related",
+          "answer": "A"
+        },
+        {
+          "A": "More work-related than personal",
+          "B": "More personal than work-related",
+          "C": "Almost all are work-related",
+          "D": "About half and half",
+          "answer": "B"
+        },
+        {
+          "A": "Almost all are work-related",
+          "B": "About half and half",
+          "C": "More personal than work-related",
+          "D": "More work-related than personal",
+          "answer": "C"
+        },
+        {
+          "A": "About half and half",
+          "B": "More work-related than personal",
+          "C": "Almost all are work-related",
+          "D": "More personal than work-related",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S1",
+        "CHAT_S2",
+        "CHAT_S3",
+        "CHAT_S4",
+        "CHAT_S6",
+        "CHAT_S7",
+        "CHAT_S8",
+        "CHAT_S11",
+        "CHAT_S12",
+        "CHAT_S9",
+        "CHAT_S13",
+        "CHAT_S15",
+        "CHAT_S17",
+        "CHAT_S18",
+        "CHAT_S19",
+        "CHAT_S21",
+        "CHAT_S22",
+        "CHAT_S23",
+        "CHAT_S25",
+        "CHAT_S26",
+        "CHAT_S27",
+        "CHAT_S28",
+        "CHAT_S30",
+        "CHAT_S31",
+        "CHAT_S32",
+        "CHAT_S34",
+        "CHAT_S35",
+        "CHAT_S36",
+        "CHAT_S38"
+      ],
+      "clue": [
+        "CHAT_S1:R1",
+        "CHAT_S2:R1",
+        "CHAT_S2:R2",
+        "CHAT_S3:R1",
+        "CHAT_S3:R2",
+        "CHAT_S4:R1",
+        "CHAT_S4:R2",
+        "CHAT_S6:R1",
+        "CHAT_S7:R1",
+        "CHAT_S8:R1",
+        "CHAT_S8:R2",
+        "CHAT_S11:R1",
+        "CHAT_S11:R2",
+        "CHAT_S12:R1",
+        "CHAT_S12:R2",
+        "CHAT_S9:R1",
+        "CHAT_S13:R1",
+        "CHAT_S15:R1",
+        "CHAT_S15:R2",
+        "CHAT_S17:R1",
+        "CHAT_S18:R1",
+        "CHAT_S18:R2",
+        "CHAT_S19:R1",
+        "CHAT_S19:R2",
+        "CHAT_S21:R1",
+        "CHAT_S22:R1",
+        "CHAT_S22:R2",
+        "CHAT_S23:R1",
+        "CHAT_S25:R1",
+        "CHAT_S26:R1",
+        "CHAT_S26:R2",
+        "CHAT_S27:R1",
+        "CHAT_S28:R1",
+        "CHAT_S28:R2",
+        "CHAT_S30:R1",
+        "CHAT_S31:R1",
+        "CHAT_S32:R1",
+        "CHAT_S34:R1",
+        "CHAT_S35:R1",
+        "CHAT_S35:R2",
+        "CHAT_S36:R1",
+        "CHAT_S36:R2",
+        "CHAT_S38:R1"
+      ]
+    },
+    {
+      "question_id": "Q40",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "question": "In the sprint planning chat between Marcus and Priya, are Marcus's message bubbles on the left side or the right side?",
+      "options": [
+        {
+          "A": "Left side",
+          "B": "Marcus doesn't appear in that chat",
+          "C": "Right side",
+          "D": "They alternate sides",
+          "answer": "A"
+        },
+        {
+          "A": "Right side",
+          "B": "Left side",
+          "C": "They alternate sides",
+          "D": "Marcus doesn't appear in that chat",
+          "answer": "B"
+        },
+        {
+          "A": "They alternate sides",
+          "B": "Marcus doesn't appear in that chat",
+          "C": "Left side",
+          "D": "Right side",
+          "answer": "C"
+        },
+        {
+          "A": "Marcus doesn't appear in that chat",
+          "B": "Right side",
+          "C": "They alternate sides",
+          "D": "Left side",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2"
+      ],
+      "clue": [
+        "CHAT_S2:R1"
+      ]
+    },
+    {
+      "question_id": "Q41",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Looking across all chats Priya appears in — is she always on the same side (left or right), or does she switch sides in different conversations?",
+      "options": [
+        {
+          "A": "Always on the right",
+          "B": "She switches sides depending on the chat",
+          "C": "Priya only appears in one chat",
+          "D": "Always on the left",
+          "answer": "A"
+        },
+        {
+          "A": "Priya only appears in one chat",
+          "B": "Always on the right",
+          "C": "Always on the left",
+          "D": "She switches sides depending on the chat",
+          "answer": "B"
+        },
+        {
+          "A": "Always on the left",
+          "B": "She switches sides depending on the chat",
+          "C": "Always on the right",
+          "D": "Priya only appears in one chat",
+          "answer": "C"
+        },
+        {
+          "A": "She switches sides depending on the chat",
+          "B": "Priya only appears in one chat",
+          "C": "Always on the left",
+          "D": "Always on the right",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2",
+        "CHAT_S4",
+        "CHAT_S6"
+      ],
+      "clue": [
+        "CHAT_S2:R1",
+        "CHAT_S6:R1"
+      ]
+    },
+    {
+      "question_id": "Q42",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "question": "Do the chat screenshots for the sprint planning (B1) and the PTO request (B5) share the same subtitle style, or do they have different subtitles?",
+      "options": [
+        {
+          "A": "Both say 'work · 1:1'",
+          "B": "Both have no subtitle",
+          "C": "B1 says 'work · 1:1' and B5 says 'work · group'",
+          "D": "B1 says 'Sprint Planning' and B5 says 'PTO Request'",
+          "answer": "A"
+        },
+        {
+          "A": "B1 says 'work · 1:1' and B5 says 'work · group'",
+          "B": "Both say 'work · 1:1'",
+          "C": "B1 says 'Sprint Planning' and B5 says 'PTO Request'",
+          "D": "Both have no subtitle",
+          "answer": "B"
+        },
+        {
+          "A": "B1 says 'Sprint Planning' and B5 says 'PTO Request'",
+          "B": "Both have no subtitle",
+          "C": "Both say 'work · 1:1'",
+          "D": "B1 says 'work · 1:1' and B5 says 'work · group'",
+          "answer": "C"
+        },
+        {
+          "A": "Both have no subtitle",
+          "B": "B1 says 'work · 1:1' and B5 says 'work · group'",
+          "C": "B1 says 'Sprint Planning' and B5 says 'PTO Request'",
+          "D": "Both say 'work · 1:1'",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "session_id": [
+        "CHAT_S2",
+        "CHAT_S17"
+      ],
+      "clue": [
+        "CHAT_S2:R1",
+        "CHAT_S17:R1"
+      ]
+    },
+    {
+      "question_id": "Q43",
+      "question": "What is the current status of the marketing site refresh project that Daniel and Jordan are working on?",
+      "options": [
+        {
+          "A": "Delayed — a critical bug in the component library pushed the ship date to May 15",
+          "B": "Still in early stages — Daniel and Jordan just kicked off their first weekly sync",
+          "C": "On track — the hero section shipped last week as planned",
+          "D": "Completed — Marcus confirmed the project shipped during the last review",
+          "answer": "A"
+        },
+        {
+          "A": "On track — the hero section shipped last week as planned",
+          "B": "Delayed — a critical bug in the component library pushed the ship date to May 15",
+          "C": "Completed — Marcus confirmed the project shipped during the last review",
+          "D": "Still in early stages — Daniel and Jordan just kicked off their first weekly sync",
+          "answer": "B"
+        },
+        {
+          "A": "Completed — Marcus confirmed the project shipped during the last review",
+          "B": "Still in early stages — Daniel and Jordan just kicked off their first weekly sync",
+          "C": "Delayed — a critical bug in the component library pushed the ship date to May 15",
+          "D": "On track — the hero section shipped last week as planned",
+          "answer": "C"
+        },
+        {
+          "A": "Still in early stages — Daniel and Jordan just kicked off their first weekly sync",
+          "B": "On track — the hero section shipped last week as planned",
+          "C": "Completed — Marcus confirmed the project shipped during the last review",
+          "D": "Delayed — a critical bug in the component library pushed the ship date to May 15",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "CHAT_S22",
+        "CHAT_S28",
+        "CHAT_S30"
+      ],
+      "clue": [
+        "CHAT_S22:R1",
+        "CHAT_S22:R2",
+        "CHAT_S28:R1",
+        "CHAT_S28:R2",
+        "CHAT_S30:R1"
+      ],
+      "latest_clue_round": "CHAT_S30:R1",
+      "stale_clue_rounds": [
+        "CHAT_S22:R1",
+        "CHAT_S22:R2",
+        "CHAT_S28:R1",
+        "CHAT_S28:R2"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Temporal updates are conveyed by text inside screenshots, not evolving native visual states."
+    },
+    {
+      "question_id": "Q44",
+      "question": "What is the current living arrangement plan for Priya and Sara?",
+      "options": [
+        {
+          "A": "They are renewing the lease together — Priya decided to stay",
+          "B": "Sara is the one leaving — she found a cheaper apartment",
+          "C": "They haven't discussed the lease renewal yet",
+          "D": "Priya is moving out — she told Sara she wants her own place",
+          "answer": "A"
+        },
+        {
+          "A": "They haven't discussed the lease renewal yet",
+          "B": "They are renewing the lease together — Priya decided to stay",
+          "C": "Priya is moving out — she told Sara she wants her own place",
+          "D": "Sara is the one leaving — she found a cheaper apartment",
+          "answer": "B"
+        },
+        {
+          "A": "Priya is moving out — she told Sara she wants her own place",
+          "B": "Sara is the one leaving — she found a cheaper apartment",
+          "C": "They are renewing the lease together — Priya decided to stay",
+          "D": "They haven't discussed the lease renewal yet",
+          "answer": "C"
+        },
+        {
+          "A": "Sara is the one leaving — she found a cheaper apartment",
+          "B": "They haven't discussed the lease renewal yet",
+          "C": "Priya is moving out — she told Sara she wants her own place",
+          "D": "They are renewing the lease together — Priya decided to stay",
+          "answer": "D"
+        }
+      ],
+      "answer": "D",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "CHAT_S6",
+        "CHAT_S35",
+        "CHAT_S38"
+      ],
+      "clue": [
+        "CHAT_S6:R1",
+        "CHAT_S35:R1",
+        "CHAT_S35:R2",
+        "CHAT_S38:R1"
+      ],
+      "latest_clue_round": "CHAT_S38:R1",
+      "stale_clue_rounds": [
+        "CHAT_S6:R1",
+        "CHAT_S35:R1",
+        "CHAT_S35:R2"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Temporal updates are conveyed by text inside screenshots, not evolving native visual states."
+    }
+  ]
+}

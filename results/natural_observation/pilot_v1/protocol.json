@@ -1,0 +1,105 @@
+{
+  "study": "MemEye natural observation of cue sharing and caption retrieval",
+  "provenance": {
+    "dataset": {
+      "repo": "MemEyeBench/MemEye",
+      "revision": "f139f89d08bf0f66986153b5ff010cac24ba383d"
+    },
+    "caption_model": {
+      "repo": "Qwen/Qwen3-VL-8B-Instruct",
+      "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+    }
+  },
+  "source_files": [
+    {
+      "path": "data/MemEye/data/dialog/Brand_Memory_Test_Open.json",
+      "sha256": "159b45bd2a787460a35bdc43747bd357df253ee561581bbe7d5ffef52951574f"
+    },
+    {
+      "path": "data/MemEye/data/dialog/Card_Playlog_Test_Open.json",
+      "sha256": "270a742236303b3724602cb84b22fc23710b7a9311f66fd71eb306a51a3dba40"
+    },
+    {
+      "path": "data/MemEye/data/dialog/Cartoon_Entertainment_Companion_Open.json",
+      "sha256": "6723fbc18a2b228f8580d9a8d487d4f89443be8a9aa8f9e3d684c0baa5f3105e"
+    },
+    {
+      "path": "data/MemEye/data/dialog/Home_Renovation_Interior_Design_Open.json",
+      "sha256": "00ed233fe3945567ae95108545dd122ad425d80d0ca29936520ea5d223340e16"
+    },
+    {
+      "path": "data/MemEye/data/dialog/Multi-Scene_Visual_Case_Archive_Assistant_Open.json",
+      "sha256": "bc5d9cd70eaf3dc8d8df187b87e783f1497cd7a32186a87a142ab0d4c5fee4e6"
+    },
+    {
+      "path": "data/MemEye/data/dialog/Outdoor_Navigation_Route_Memory_Assistant_Open.json",
+      "sha256": "2b92d0f7eab4a6fb6aef12d53b3bbd77db561bf7c490b05ae64d6f13751dd0c0"
+    },
+    {
+      "path": "data/MemEye/data/dialog/Personal_Health_Dashboard_Assistant_Open.json",
+      "sha256": "b1e6fe88887229237e82d984692959e2e0066ec363508d84351ec3fab9716593"
+    },
+    {
+      "path": "data/MemEye/data/dialog/Social_Chat_Memory_Test_Open.json",
+      "sha256": "c17a8a988be5009a04ff79a45ad71272e383b31f627d331a8fe8560ae000b7e6"
+    }
+  ],
+  "caption_model_path": "/storage/hewenwen/VisualMemory/models/Qwen3-VL-8B-Instruct",
+  "retriever_model_path": "/storage/hewenwen/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "retriever": "BAAI/bge-small-en-v1.5",
+  "retriever_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "seed": 42,
+  "do_sample": false,
+  "dtype": "bfloat16",
+  "image_max_pixels": 1638400,
+  "caption_max_new_tokens": 256,
+  "cue_max_new_tokens": 768,
+  "batch_size": 4,
+  "caption_prompt": "Describe this image in one factual English paragraph of about 80 to 120 words. Describe the main scene, visible people and objects, and notable visible details. State only what is visible; do not guess identities, intentions, or facts outside the image. Output only the description.",
+  "cue_prompt": "Extract retrieval cues explicitly present in the following input. Return JSON only: {\"cues\":[{\"category\":\"scene|person|object|attribute|time\",\"text\":\"EXACT contiguous span from the input\"}]}. Use at most 12 cues. Scene means a named place or activity setting. Person means a person name, role or visible person category; preserve labels such as Player 0. Object means an object category or explicitly named product, extracting the head noun without color/size adjectives when possible. Attribute means an explicitly stated color, pattern, number or visible text value, not an unknown value asked for by the question. Time means an explicit date or temporal reference. Do not infer unstated entities. Do not include generic words such as image, photo, picture, screenshot, question, information, detail or thing. Prefer short phrases; avoid overlapping duplicates. Do not answer the question.\nINPUT:\n",
+  "memory_unit": "one image-bearing dialogue round; concatenate captions if multiple images",
+  "indexed_text": "newly generated image captions only; no original dialogue, supplied captions, dates, IDs, gold answers or explanations",
+  "retrieval_scope": "complete history of the same original task; session_id in QA is NOT a query timestamp",
+  "query_image_policy": "append the ordinary caption of the provided query image; flag and report text-only subset separately",
+  "counting": {
+    "matcher": "deterministic normalized lexical phrase matching, independent of retrieval scores",
+    "primary_categories": [
+      "scene",
+      "person",
+      "object"
+    ],
+    "secondary_categories": [
+      "attribute",
+      "time"
+    ],
+    "exclude_from_competitors": "all annotated clue memories for that question",
+    "all_cue_load": "mean number of other memories matching each primary query cue",
+    "supported_cue_load": "same mean restricted to query cues found in at least one gold caption; undefined if none",
+    "gold_coverage": "fraction of primary query cues found in at least one gold caption; not answer-detail coverage",
+    "zero_cue_policy": "retain question in retrieval results; cue-load correlation undefined"
+  },
+  "metrics": [
+    "per_gold_rank",
+    "first_gold_rank",
+    "mean_gold_rank",
+    "mean_gold_rank_fraction",
+    "recall@1",
+    "recall@5",
+    "recall@10",
+    "all_annotated_hit@5",
+    "all_annotated_hit@10"
+  ],
+  "interpretation": "annotated-evidence retrieval only; all_annotated_hit is coverage, not a guarantee of answering or Y3 reasoning",
+  "groupings": [
+    "all",
+    "X",
+    "Y",
+    "X_by_Y",
+    "task",
+    "text_only_queries"
+  ],
+  "associations": "descriptive Spearman; partial rank correlation controls task, X, Y, gold count, primary cue count, gold caption length and cue coverage",
+  "uncertainty": "bootstrap whole task histories; only 8 task clusters; no causal claim or hypothesis-test p values",
+  "small_cell_rule": "report n and estimates; n<10 flagged exploratory"
+}

@@ -1,0 +1,4412 @@
+{
+  "dataset_name": "Concat: concat_health_home_open",
+  "task_name": "concat_health_home_open",
+  "character_profile": {
+    "persona_summary": "A practical, health-conscious professional using a personal health dashboard assistant to remember screenshots, meals, and clinician follow-up over time. She uses the assistant to track day-to-day patterns without turning the task into diagnosis.",
+    "traits": [
+      "organized",
+      "consistent with tracking",
+      "not medically technical",
+      "often compares current choices with earlier screenshots",
+      "borderline glucose management",
+      "long-running follow-up context"
+    ],
+    "conversation_style": "Short uploads, natural follow-up questions, and explicit requests to remember visual evidence for later."
+  },
+  "multi_session_dialogues": [
+    {
+      "session_id": "HEALTH_S1",
+      "date": "2025-04-01",
+      "dialogues": [
+        {
+          "round": "HEALTH_S1:R1",
+          "user": "Please keep track of what I upload across these sessions.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S1:R2",
+          "user": "Here's the first item from today.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D1_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard showing stable glucose trends, strong time-in-range, and moderate progress on movement and late eating goals."
+          ]
+        },
+        {
+          "round": "HEALTH_S1:R3",
+          "user": "Here's another screen from today.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D1_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard summarizes time in range, variability, trends, and activity-related metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S1:R4",
+          "user": "This is my baseline week. I mostly want to watch the pattern.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S1:R5",
+          "user": "Here's another item from today.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D1_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A patient views a follow-up nutrition message from their doctor in the Northline Health Portal."
+          ]
+        },
+        {
+          "round": "HEALTH_S1:R6",
+          "user": "Here's the evening dashboard card view.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D1_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Daily Glucose Dashboard showing stable glucose trends, high time in range, and key metrics for meals, movement, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S1:R7",
+          "user": "Today's note felt more specific than the earlier guidance.",
+          "assistant": "Got it, I'll keep it with today's context."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S2",
+      "date": "2025-04-03",
+      "dialogues": [
+        {
+          "round": "HEALTH_S2:R1",
+          "user": "Keep the visual record precise while I start logging meals.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S2:R2",
+          "user": "I'm logging breakfast.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A bowl of creamy yogurt topped with fresh blueberries, raspberries, banana slices, and crunchy granola."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R3",
+          "user": "I'm logging lunch.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Grilled chicken rice bowl with fresh cucumber, arugula, and a creamy dipping sauce."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R4",
+          "user": "I also took a short walk after lunch, so I want to remember that with the dashboard.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S2:R5",
+          "user": "Here's the post-lunch dashboard card.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard summarizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R6",
+          "user": "And here's the evening trend.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R7",
+          "user": "This is the activity summary.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D2_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing Maya Patel’s glucose trends, time in range, and lifestyle metrics for April 3, 2025."
+          ]
+        },
+        {
+          "round": "HEALTH_S2:R8",
+          "user": "Still early, but I want to remember which meals felt steadier.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S3",
+      "date": "2025-04-05",
+      "dialogues": [
+        {
+          "round": "HEALTH_S3:R1",
+          "user": "Please keep the record image-grounded.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S3:R2",
+          "user": "Here's the message inbox.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A health portal message from a doctor advises the patient to keep pairing carbs with protein or fiber and notes the guidance has been reviewed with dashboard data."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R3",
+          "user": "I'm opening the message detail.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A health portal message shows a doctor advising a patient to keep pairing carbohydrates with protein or fiber and noting the guidance has been reviewed with dashboard data."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R4",
+          "user": "Dr. Elena Ramirez sent guidance I want to keep with these screens.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S3:R5",
+          "user": "Here's the related trend screen.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R6",
+          "user": "This was that breakfast.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A fresh yogurt bowl topped with blueberries, orange slices, banana, and crunchy granola."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R7",
+          "user": "Here's the nightly summary.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D3_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard summarizes time in range, variability, and activity-related metrics with a stable glucose trend line."
+          ]
+        },
+        {
+          "round": "HEALTH_S3:R8",
+          "user": "I want to remember this note with the screenshots.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S4",
+      "date": "2025-04-08",
+      "dialogues": [
+        {
+          "round": "HEALTH_S4:R1",
+          "user": "Workout day today. Keep the snack and timing with the dashboard.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S4:R2",
+          "user": "Here's the pre-workout dashboard.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R3",
+          "user": "And the post-workout dashboard.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Daily glucose dashboard showing stable trends, 80% time in range, and key metrics for meals, activity, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R4",
+          "user": "This is the movement card.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, meal variability, evening drift, and related health metrics."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R5",
+          "user": "I'm not sure whether the snack helped or whether I'm overreading one day.",
+          "assistant": "Got it."
+        },
+        {
+          "round": "HEALTH_S4:R6",
+          "user": "I'm logging the pre-workout snack.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A simple packed snack of a banana, crackers, and a peanut butter packet rests on a gray lunch bag."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R7",
+          "user": "Here's the end-of-day trend.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D4_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard summarizes time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S4:R8",
+          "user": "Please keep this open for later.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S5",
+      "date": "2025-04-10",
+      "dialogues": [
+        {
+          "round": "HEALTH_S5:R1",
+          "user": "I want to compare these lunches with the earlier screens.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S5:R2",
+          "user": "Here's the first lunch option.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A fresh sandwich with a side salad of mixed greens and cherry tomatoes sits ready to eat on a white plate."
+          ]
+        },
+        {
+          "round": "HEALTH_S5:R3",
+          "user": "Here's the second lunch option.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Fresh veggie wrap with a side of crisp cucumber slices on a simple white plate."
+          ]
+        },
+        {
+          "round": "HEALTH_S5:R4",
+          "user": "Here's the comparison card.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S5:R5",
+          "user": "I mainly want to remember which one looked calmer later.",
+          "assistant": "Got it."
+        },
+        {
+          "round": "HEALTH_S5:R6",
+          "user": "And the follow-up trend.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S5:R7",
+          "user": "This is the recap dashboard.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D5_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S6",
+      "date": "2025-04-12",
+      "dialogues": [
+        {
+          "round": "HEALTH_S6:R1",
+          "user": "There's a new note today. Please keep it with the earlier one.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S6:R2",
+          "user": "This is the updated message.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A health portal message shows a doctor advising a patient on managing small carb snacks around workouts."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R3",
+          "user": "The note feels a little different, so I want to be careful with it.",
+          "assistant": "Okay, I've got this too."
+        },
+        {
+          "round": "HEALTH_S6:R4",
+          "user": "Here's the supporting trend.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily dashboard visualizing glucose trends, time in range, and recovery metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R5",
+          "user": "This is the daily card grid.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard showing stable glucose trends with 90% time in range and key metrics for meals, activity, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R6",
+          "user": "This was the snack from that day.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A peeled banana beside a cup of creamy yogurt on a light countertop."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R7",
+          "user": "And here's the later-night trend.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D6_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "Daily glucose dashboard showing stable trends, strong time-in-range, and key metrics for meals, movement, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S6:R8",
+          "user": "Please keep this with today's screens.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S7",
+      "date": "2025-04-15",
+      "dialogues": [
+        {
+          "round": "HEALTH_S7:R1",
+          "user": "Weekly comparison time. These screens are easy to confuse.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S7:R2",
+          "user": "Here's the weekly overview.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizing time in range, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R3",
+          "user": "Here's the comparison trend plot.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing Maya Patel’s glucose trends, time in range, and lifestyle metrics for April 15, 2025."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R4",
+          "user": "This is the ring summary.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R5",
+          "user": "This weekend breakfast felt closer to what I've been trying to do.",
+          "assistant": "Got it."
+        },
+        {
+          "round": "HEALTH_S7:R6",
+          "user": "Here's the weekend breakfast.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A hearty breakfast plate with sunny-side-up eggs, toast, fresh fruit, and a cup of coffee."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R7",
+          "user": "Here's the weekend dashboard.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, meal variability, evening drift, and activity metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R8",
+          "user": "And the weekly scorecard.",
+          "assistant": "Okay, I'll keep that in mind.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D7_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S7:R9",
+          "user": "I mostly want to remember which weekly screen had which layout.",
+          "assistant": "Got it, I've got this one too."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S8",
+      "date": "2025-04-17",
+      "dialogues": [
+        {
+          "round": "HEALTH_S8:R1",
+          "user": "Busy day. I thought this snack might fit, but I'm not fully sure.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S8:R2",
+          "user": "This is what I grabbed that day.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "Granola bar and fruit cup make a simple, quick snack."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R3",
+          "user": "Here's the same-day dashboard.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R4",
+          "user": "I was being a little looser today because of the earlier note.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S8:R5",
+          "user": "Here's the current trend screen.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and key response windows for personalized health monitoring."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R6",
+          "user": "This is the summary card.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A digital daily glucose dashboard visualizes time in range, variability, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R7",
+          "user": "And here's the nightly recap.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D8_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard shows stable blood sugar trends with 90% time in range and key metrics for meals, activity, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S8:R8",
+          "user": "Please keep this separate from the longer-term note.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S9",
+      "date": "2025-04-19",
+      "dialogues": [
+        {
+          "round": "HEALTH_S9:R1",
+          "user": "The later screens make yesterday look a little different.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S9:R2",
+          "user": "Here's the later dashboard.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, variability, trends, and activity-related metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R3",
+          "user": "And the comparison trend after that.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R4",
+          "user": "Yesterday's read may have been a little loose once I compare it with the later screens.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S9:R5",
+          "user": "This was the breakfast that went with it.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A bowl of creamy yogurt topped with fresh strawberries, blueberries, and banana slices sits beside a silver spoon."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R6",
+          "user": "This is the summary card from that day.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle impacts throughout the day."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R7",
+          "user": "Here's the evening glucose screen.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D9_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S9:R8",
+          "user": "Please keep this with yesterday, but not as the same takeaway.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S10",
+      "date": "2025-04-22",
+      "dialogues": [
+        {
+          "round": "HEALTH_S10:R1",
+          "user": "I had to make another real-world decision today. Please keep these options with the earlier notes.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S10:R2",
+          "user": "This is one snack option.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A packaged nut and rice snack bar sits beside a bottle of iced tea on a countertop."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R3",
+          "user": "This is the dinner option.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A simple, hearty dinner of grilled chicken breast with mashed potatoes and steamed broccoli."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R4",
+          "user": "I'm trying to remember which option fits better with the earlier context.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S10:R5",
+          "user": "Here's the dashboard after the snack.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, variability, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R6",
+          "user": "Here's the dashboard after dinner.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard summarizes Maya Patel’s blood sugar trends, time in range, and lifestyle metrics for April 22, 2025."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R7",
+          "user": "This is the choice comparison card.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D10_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S10:R8",
+          "user": "Please keep this with the earlier notes and screens.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S11",
+      "date": "2025-04-24",
+      "dialogues": [
+        {
+          "round": "HEALTH_S11:R1",
+          "user": "There's another follow-up today. Please keep it with the recent notes.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S11:R2",
+          "user": "Here's the follow-up message inbox.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A patient views a follow-up nutrition message from their doctor in the Northline Health Portal."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R3",
+          "user": "I'm opening the follow-up note.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A patient views a follow-up nutrition message from their doctor in the Northline Health Portal."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R4",
+          "user": "There's another follow-up note, and I want to remember it with the earlier one.",
+          "assistant": "Got it, I'll keep that in context."
+        },
+        {
+          "round": "HEALTH_S11:R5",
+          "user": "Here's the follow-up dashboard.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard summarizes time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R6",
+          "user": "This is the compact summary screen.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle responses for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R7",
+          "user": "I'm logging the latest snack.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D11_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A bowl of creamy yogurt topped with fresh berries sits ready to eat on the countertop."
+          ]
+        },
+        {
+          "round": "HEALTH_S11:R8",
+          "user": "Please keep this with the follow-up note.",
+          "assistant": "Okay, I'll keep that in mind."
+        }
+      ]
+    },
+    {
+      "session_id": "HEALTH_S12",
+      "date": "2025-04-28",
+      "dialogues": [
+        {
+          "round": "HEALTH_S12:R1",
+          "user": "This is the month wrap-up. Please keep it with the newer notes and screens.",
+          "assistant": "Okay, I'll keep track as we go."
+        },
+        {
+          "round": "HEALTH_S12:R2",
+          "user": "Here's the month summary dashboard.",
+          "assistant": "Got it, I've got this one.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R3",
+          "user": "This is the multi-day comparison trend.",
+          "assistant": "Okay, I've got this too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Daily Glucose Dashboard showing stable glucose trends, high time-in-range, and key metrics for meals, activity, and evening patterns."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R4",
+          "user": "Here's the metric panel grid.",
+          "assistant": "Got it, I'll keep that in context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Daily dashboard visualizing glucose trends, time in range, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R5",
+          "user": "I want the final summary to reflect what still seems current.",
+          "assistant": "Got it."
+        },
+        {
+          "round": "HEALTH_S12:R6",
+          "user": "This is the callback lunch.",
+          "assistant": "Okay, I'll keep this with the rest.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A balanced plate of grilled chicken, brown rice, broccoli, and sliced carrots."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R7",
+          "user": "Here's the final overview screen.",
+          "assistant": "Got it, I'll keep it with today's context.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek daily glucose dashboard visualizes time in range, trends, and lifestyle metrics for personalized health tracking."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R8",
+          "user": "This is the timeline summary.",
+          "assistant": "Okay, I'll keep that in mind.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, variability, trends, and lifestyle metrics for personalized blood sugar management."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R9",
+          "user": "And the final ring/card screen.",
+          "assistant": "Got it, I've got this one too.",
+          "input_image": [
+            "Personal_Health_Dashboard_Assistant/D12_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "A daily glucose dashboard visualizing time in range, meal variability, activity, and overall blood sugar trends."
+          ]
+        },
+        {
+          "round": "HEALTH_S12:R10",
+          "user": "This should help tie things together.",
+          "assistant": "That makes sense. I'll keep it tied together."
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S1",
+      "date": "2025-03-01",
+      "dialogues": [
+        {
+          "round": "HOME_S1:R1",
+          "user": "I just bought a new apartment! I want you to help me while I design my new home!",
+          "assistant": "Congratulations! I'd be happy to help you keep track of the renovation and design decisions as they come together."
+        },
+        {
+          "round": "HOME_S1:R2",
+          "user": "Got the keys today. Here is the first room.",
+          "assistant": "This looks like a great space to work with!",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D1_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "Bright, empty room with light wood flooring and large sliding glass doors opening to a balcony."
+          ]
+        },
+        {
+          "round": "HOME_S1:R3",
+          "user": "This is the next room.",
+          "assistant": "Looks clean!",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D1_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A clean, compact kitchen with wooden cabinets and white appliances."
+          ]
+        },
+        {
+          "round": "HOME_S1:R4",
+          "user": "Here is the next. I just want to keep track of the current state of each room before I start demo and design.",
+          "assistant": "Got it!",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D1_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Bright, empty bedroom with light wood floors and a large window framed by sheer curtains."
+          ]
+        },
+        {
+          "round": "HOME_S1:R5",
+          "user": "This smaller room. I am planning to use it as a workspace eventually.",
+          "assistant": "Got you! This looks like a great spot for a home office.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D1_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Bright, empty bedroom with wood flooring, a ceiling fan, and a double-door closet."
+          ]
+        },
+        {
+          "round": "HOME_S1:R6",
+          "user": "And this one.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D1_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A small, clean bathroom with a pedestal sink, toilet, and a bathtub with sliding glass doors."
+          ]
+        },
+        {
+          "round": "HOME_S1:R7",
+          "user": "This is the hallway connecting everything.",
+          "assistant": "This looks bright.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D1_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A bright, modern hallway with light wood floors and white doors leads to a distant room."
+          ]
+        },
+        {
+          "round": "HOME_S1:R8",
+          "user": "My total budget is $30K.",
+          "assistant": "Great budget! We can plan from here."
+        },
+        {
+          "round": "HOME_S1:R9",
+          "user": "We'll compare these later.",
+          "assistant": "Great! Looking forward to it."
+        },
+        {
+          "round": "HOME_S1:R10",
+          "user": "Another angle of the future living room.",
+          "assistant": "Great to see different perspectives.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D1_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "An empty, newly renovated room with wooden floors and a single window letting in soft daylight."
+          ]
+        },
+        {
+          "round": "HOME_S1:R11",
+          "user": "Closer view of that room from the window side.",
+          "assistant": "This will be helpful for tracking the design progress.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D1_IMG_008.jpg"
+          ],
+          "image_caption": [
+            "Sunlit empty room with wooden floors and neutral walls leading into an adjoining space."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S2",
+      "date": "2025-03-10",
+      "dialogues": [
+        {
+          "round": "HOME_S2:R1",
+          "user": "I have new updates and design options.",
+          "assistant": "I am excited to see them!"
+        },
+        {
+          "round": "HOME_S2:R2",
+          "user": "Here is the first option.",
+          "assistant": "Looks great!",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D2_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A modern light blue sofa with sleek wooden legs is displayed in a stylish furniture showroom."
+          ]
+        },
+        {
+          "round": "HOME_S2:R3",
+          "user": "Second option.",
+          "assistant": "It is a different style.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D2_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A modern dark gray sectional sofa with white and black accent pillows sits in a minimalist room."
+          ]
+        },
+        {
+          "round": "HOME_S2:R4",
+          "user": "Third one.",
+          "assistant": "We got a row of different choices here.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D2_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A modern tan leather sofa with wooden frame is displayed in a bright showroom."
+          ]
+        },
+        {
+          "round": "HOME_S2:R5",
+          "user": "Fourth.",
+          "assistant": "Great collection.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D2_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A modern green sofa with matching cushions stands in a minimalist, neutral-toned living space."
+          ]
+        },
+        {
+          "round": "HOME_S2:R6",
+          "user": "And the last one.",
+          "assistant": "We got a diverse set of options here.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D2_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A modern navy velvet sofa with wooden legs stands in a bright showroom, accented by a single mustard-yellow throw pillow."
+          ]
+        },
+        {
+          "round": "HOME_S2:R7",
+          "user": "I may want to come back later for these choices.",
+          "assistant": "No problem! I'll keep track of all the options for you."
+        },
+        {
+          "round": "HOME_S2:R8",
+          "user": "Another sectional option from the showroom.",
+          "assistant": "This looks great too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D2_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A modern beige sectional sofa with matching ottoman is displayed in a contemporary furniture showroom."
+          ]
+        },
+        {
+          "round": "HOME_S2:R9",
+          "user": "Here are the options to pair with.",
+          "assistant": "Got it.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D2_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "A modern showroom displays a variety of minimalist wooden coffee tables on a tiled floor."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S3",
+      "date": "2025-03-20",
+      "dialogues": [
+        {
+          "round": "HOME_S3:R1",
+          "user": "I have got more updates!",
+          "assistant": "Can't wait to see them."
+        },
+        {
+          "round": "HOME_S3:R2",
+          "user": "Found this living room inspiration.",
+          "assistant": "This looks great.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D3_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A minimalist living room with neutral tones features a cream sofa, wooden coffee table, and simple wall art creating a calm, cozy atmosphere."
+          ]
+        },
+        {
+          "round": "HOME_S3:R3",
+          "user": "I have picked up this first swatch card!",
+          "assistant": "This is a nice color choice.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D3_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A hand holds a paint swatch card displaying a gradient of green shades against a neutral background."
+          ]
+        },
+        {
+          "round": "HOME_S3:R4",
+          "user": "Tested it on the wall.",
+          "assistant": "Looks good.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D3_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Empty room with wood flooring and sliding glass doors overlooking a fenced backyard."
+          ]
+        },
+        {
+          "round": "HOME_S3:R5",
+          "user": "Here is a close-up of the first paint test in daylight.",
+          "assistant": "It is always good to see the color in different lighting conditions.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D3_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A fresh swatch of sage green paint is being tested on a neutral wall above the baseboard."
+          ]
+        },
+        {
+          "round": "HOME_S3:R6",
+          "user": "Same spot under evening light from a slightly different angle.",
+          "assistant": "This is useful for comparison.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D3_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A fresh paint swatch dries on the wall beside a roller tray and painter’s tape on the floor."
+          ]
+        },
+        {
+          "round": "HOME_S3:R7",
+          "user": "I will have more updates!",
+          "assistant": "Got it!"
+        },
+        {
+          "round": "HOME_S3:R8",
+          "user": "I got one more wider shot of the first paint setup.",
+          "assistant": "This gives a good context for the test.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D3_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A fresh green paint sample is tested on a beige wall beside a ladder and painting supplies."
+          ]
+        },
+        {
+          "round": "HOME_S3:R9",
+          "user": "I have also got another close-up after I set the tray back down.",
+          "assistant": "Great details.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D3_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "Neutral paint samples, a brush, and a tray of white paint sit ready for a fresh coat on the wall."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S4",
+      "date": "2025-04-05",
+      "dialogues": [
+        {
+          "round": "HOME_S4:R1",
+          "user": "I want to compare these later.",
+          "assistant": "Sure, I'll keep them together."
+        },
+        {
+          "round": "HOME_S4:R2",
+          "user": "This is the direction I really don't want.",
+          "assistant": "Got it, that's helpful to know.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D4_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A warmly lit, traditional living room features rich wood paneling, classic furniture, and a patterned rug creating a cozy, elegant ambiance."
+          ]
+        },
+        {
+          "round": "HOME_S4:R3",
+          "user": "This is much closer to the direction I have in mind.",
+          "assistant": "That makes sense.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D4_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A bright, minimalist living room with light wood floors, a simple sofa, and a potted plant by the window."
+          ]
+        },
+        {
+          "round": "HOME_S4:R4",
+          "user": "I picked up a few samples today.",
+          "assistant": "Nice, I'll keep track of them.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D4_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Four wooden planks display a gradient of finishes from light to dark on a white background."
+          ]
+        },
+        {
+          "round": "HOME_S4:R5",
+          "user": "I also grabbed these.",
+          "assistant": "Got it, adding them to the same set.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D4_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Three square marble tiles in white, gray-veined, and beige tones are arranged in a row on a light background."
+          ]
+        },
+        {
+          "round": "HOME_S4:R6",
+          "user": "Demo has started. Here's where things are now.",
+          "assistant": "Got it, I'll keep track of the progress.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D4_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "Partially removed hardwood flooring exposes the subfloor in an empty room under renovation."
+          ]
+        },
+        {
+          "round": "HOME_S4:R7",
+          "user": "Ryan is going to chip in $4K for the renovation since he is moving in. Budget is now $34K.",
+          "assistant": "Updated. I'll use $34K going forward."
+        },
+        {
+          "round": "HOME_S4:R8",
+          "user": "Please keep the details precise.",
+          "assistant": "Will do. I'll stay careful with the details."
+        },
+        {
+          "round": "HOME_S4:R9",
+          "user": "Here's another update from today.",
+          "assistant": "Got it, I'll keep it with this stage.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D4_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "Stacks of wooden floorboards and a tool bag sit ready for renovation in a worn, unfinished room."
+          ]
+        },
+        {
+          "round": "HOME_S4:R10",
+          "user": "Same area from another angle.",
+          "assistant": "Thanks, that helps for comparison later.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D4_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "A red tool bag sits on the floor of a bare, partially renovated room beside a stack of wooden planks."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S5",
+      "date": "2025-04-15",
+      "dialogues": [
+        {
+          "round": "HOME_S5:R1",
+          "user": "I have more kitchen updates today.",
+          "assistant": "Great, send them over."
+        },
+        {
+          "round": "HOME_S5:R2",
+          "user": "Here are three options to compare.",
+          "assistant": "Got it, I'll keep them together.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D5_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "Three cabinet door samples in white, natural wood, and sage green lean against a wall for color comparison."
+          ]
+        },
+        {
+          "round": "HOME_S5:R3",
+          "user": "Here's a closer look.",
+          "assistant": "Thanks, that will help later.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D5_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Minimalist color and material swatches in white, natural wood, and muted green."
+          ]
+        },
+        {
+          "round": "HOME_S5:R4",
+          "user": "Here are the hardware samples.",
+          "assistant": "Got it, I'll keep these in the set.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D5_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A neutral display board showcases labeled cabinet hardware styles, including bar pulls, a knob, and a cup pull."
+          ]
+        },
+        {
+          "round": "HOME_S5:R5",
+          "user": "The work is underway now.",
+          "assistant": "Got it, I'll track this stage.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D5_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A stripped-down kitchen under renovation, with only an old stove and dishwasher left in the unfinished space."
+          ]
+        },
+        {
+          "round": "HOME_S5:R6",
+          "user": "Here are the counter samples.",
+          "assistant": "Thanks, I'll keep these for comparison.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D5_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "Three rectangular marble samples in varying veined patterns are neatly arranged on a neutral surface."
+          ]
+        },
+        {
+          "round": "HOME_S5:R7",
+          "user": "And here are the tile options.",
+          "assistant": "Got it, adding those too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D5_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "Tile samples display three minimalist patterns in white and gray on neutral boards."
+          ]
+        },
+        {
+          "round": "HOME_S5:R8",
+          "user": "Please keep this grounded. I'll ask about details later.",
+          "assistant": "Understood. I'll stick to what is shown."
+        },
+        {
+          "round": "HOME_S5:R9",
+          "user": "Here's another planning detail.",
+          "assistant": "Got it, I'll keep it with the kitchen notes.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D5_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "A neatly organized wooden tray holds labeled compartments of screws, anchors, hardware, and brass."
+          ]
+        },
+        {
+          "round": "HOME_S5:R10",
+          "user": "This is for the counter decision too.",
+          "assistant": "Thanks, I'll keep it with the rest.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D5_IMG_008.jpg"
+          ],
+          "image_caption": [
+            "A wooden display shows three countertop edge profiles labeled Rounded, Beveled, and Squared."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S6",
+      "date": "2025-04-28",
+      "dialogues": [
+        {
+          "round": "HOME_S6:R1",
+          "user": "I have another round of updates.",
+          "assistant": "I'm ready."
+        },
+        {
+          "round": "HOME_S6:R2",
+          "user": "Here's new inspiration after the color pivot.",
+          "assistant": "Got it, this marks the new direction.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D6_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A warm, minimalist living room with earthy tones and natural textures creates a cozy, inviting atmosphere."
+          ]
+        },
+        {
+          "round": "HOME_S6:R3",
+          "user": "Here are the warmer options.",
+          "assistant": "Thanks, I'll keep these together.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D6_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A yellow sticky note sits on a neatly divided, terracotta-colored grid background."
+          ]
+        },
+        {
+          "round": "HOME_S6:R4",
+          "user": "Here's where the space stands now.",
+          "assistant": "Thanks, I'll keep this as the current state.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D6_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Bright, empty room with light wood floors and large sliding glass doors opening to a fenced backyard."
+          ]
+        },
+        {
+          "round": "HOME_S6:R5",
+          "user": "I'm testing the new direction.",
+          "assistant": "That helps. I'll keep this for comparison.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D6_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A fresh terracotta paint swatch is tested on a wall beside a roller tray and matching color card."
+          ]
+        },
+        {
+          "round": "HOME_S6:R6",
+          "user": "I'm checking how this choice works with the floor.",
+          "assistant": "Got it, I'll keep track of that.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D6_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A wooden cabinet door sample is laid on the floor between a tape measure and a pencil for planning installation."
+          ]
+        },
+        {
+          "round": "HOME_S6:R7",
+          "user": "We'll compare these later too.",
+          "assistant": "No problem, I'll keep them organized."
+        },
+        {
+          "round": "HOME_S6:R8",
+          "user": "Here's a wider view of the same test.",
+          "assistant": "Thanks, that gives more context.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D6_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "Testing a warm terracotta paint color on a living room wall."
+          ]
+        },
+        {
+          "round": "HOME_S6:R9",
+          "user": "Here's another comparison.",
+          "assistant": "Thanks, I'll keep this comparison too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D6_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "Wood cabinet door and material samples arranged on a hardwood floor for interior design planning."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S7",
+      "date": "2025-06-06",
+      "dialogues": [
+        {
+          "round": "HOME_S7:R1",
+          "user": "Ryan and I are figuring out the shared workspace now.",
+          "assistant": "Got it. I'll track the options."
+        },
+        {
+          "round": "HOME_S7:R2",
+          "user": "Here's the first option.",
+          "assistant": "Thanks, I'll keep it in the set.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D7_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "Minimalist wooden floating shelves mounted on a plain wall."
+          ]
+        },
+        {
+          "round": "HOME_S7:R3",
+          "user": "Second option.",
+          "assistant": "Thanks, I'll keep the second option too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D7_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A modern white L-shaped desk stands in a minimalist office space."
+          ]
+        },
+        {
+          "round": "HOME_S7:R4",
+          "user": "Here's another divider option.",
+          "assistant": "Thanks, adding it to the comparison.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D7_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A minimalist wooden bookshelf holds a few neatly arranged books, a white storage box, and a small potted plant."
+          ]
+        },
+        {
+          "round": "HOME_S7:R5",
+          "user": "And another divider option.",
+          "assistant": "Thanks, I'll add this one to the divider options.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D7_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A three-panel wooden room divider with beige fabric stands in a minimalist interior."
+          ]
+        },
+        {
+          "round": "HOME_S7:R6",
+          "user": "I tested the setup with both workstations in place.",
+          "assistant": "That helps. I'll remember this layout.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D7_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A small, minimalist home office with two desks, a computer monitor, and a bookshelf by the window."
+          ]
+        },
+        {
+          "round": "HOME_S7:R7",
+          "user": "I'll probably ask you to recall the small details later.",
+          "assistant": "No problem. I'll pay attention to the details."
+        },
+        {
+          "round": "HOME_S7:R8",
+          "user": "Same test from another corner.",
+          "assistant": "Thanks, that helps for comparison.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D7_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A small, shared home office features two minimalist computer workstations beside a bookshelf under natural light from a central window."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S8",
+      "date": "2025-06-18",
+      "dialogues": [
+        {
+          "round": "HOME_S8:R1",
+          "user": "The kitchen is finally coming together.",
+          "assistant": "Great, I'll keep tracking the finished updates."
+        },
+        {
+          "round": "HOME_S8:R2",
+          "user": "Here's the first full update.",
+          "assistant": "Thanks, I'll keep this first full update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D8_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A modern kitchen with warm wood cabinets and stainless steel appliances."
+          ]
+        },
+        {
+          "round": "HOME_S8:R3",
+          "user": "Here's a detail from that same area.",
+          "assistant": "Thanks, I'll keep it with the set.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D8_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Neatly organized pantry shelves display dry goods stored in clear glass jars and containers."
+          ]
+        },
+        {
+          "round": "HOME_S8:R4",
+          "user": "Another detail shot.",
+          "assistant": "Thanks, I'll keep this detail shot too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D8_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A modern stainless steel kitchen sink with a soap dispenser and sponge on a wooden countertop."
+          ]
+        },
+        {
+          "round": "HOME_S8:R5",
+          "user": "Here's a closer look.",
+          "assistant": "Thanks, that will help later.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D8_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A clean, light-colored quartz countertop with subtle veining sits beneath a white subway tile backsplash."
+          ]
+        },
+        {
+          "round": "HOME_S8:R6",
+          "user": "Here's the fixture update.",
+          "assistant": "Thanks, I'll keep this fixture update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D8_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A sleek brass pendant light hangs over a modern kitchen with wood cabinets and white subway tile."
+          ]
+        },
+        {
+          "round": "HOME_S8:R7",
+          "user": "Same finished area from the opposite side.",
+          "assistant": "Thanks, I'll keep this angle too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D8_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A compact, tidy kitchen features wooden cabinets, a stainless steel gas stove, and a white refrigerator beside the sink."
+          ]
+        },
+        {
+          "round": "HOME_S8:R8",
+          "user": "Please keep track of what you see across these images.",
+          "assistant": "Understood. I'll keep track carefully."
+        },
+        {
+          "round": "HOME_S8:R9",
+          "user": "One more angle of the finished area.",
+          "assistant": "Thanks, I'll keep this final angle too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D8_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "A bright, modern kitchen with wooden cabinets and a clean, white countertop surrounding a stainless steel sink."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S9",
+      "date": "2025-07-18",
+      "dialogues": [
+        {
+          "round": "HOME_S9:R1",
+          "user": "I have a few more progress updates to compare later.",
+          "assistant": "Sounds good. I'll keep them organized."
+        },
+        {
+          "round": "HOME_S9:R2",
+          "user": "Here's a progress update.",
+          "assistant": "Thanks, I'll keep this progress update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D9_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A clean, modern bathroom with marble-patterned floor tiles and white fixtures."
+          ]
+        },
+        {
+          "round": "HOME_S9:R3",
+          "user": "I'm shopping for a new fixture. Option A.",
+          "assistant": "Thanks, I'll keep option A in the set.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D9_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Minimalist bathroom vanity with a round vessel sink, black faucet, and wooden cabinet beneath a circular mirror."
+          ]
+        },
+        {
+          "round": "HOME_S9:R4",
+          "user": "Option B.",
+          "assistant": "Got it, option B too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D9_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "Sleek modern bathroom vanity with a floating white cabinet and integrated sink beneath a backlit mirror."
+          ]
+        },
+        {
+          "round": "HOME_S9:R5",
+          "user": "Another update, this time for a different space.",
+          "assistant": "Thanks, I'll keep that separate.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D9_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Bright empty room with light wood flooring, an orange accent wall, and large sliding glass doors."
+          ]
+        },
+        {
+          "round": "HOME_S9:R6",
+          "user": "I placed the furniture to see how it feels.",
+          "assistant": "Got it, this helps with the comparison.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D9_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A minimalist living room features a tan leather sofa against a warm terracotta wall beside large glass doors."
+          ]
+        },
+        {
+          "round": "HOME_S9:R7",
+          "user": "Here's the update after installation.",
+          "assistant": "Thanks, I'll keep this as the later state.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D9_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A modern, minimalist bathroom vanity with a large mirror and sleek lighting fixtures."
+          ]
+        },
+        {
+          "round": "HOME_S9:R8",
+          "user": "Please keep the details precise here too.",
+          "assistant": "Will do."
+        },
+        {
+          "round": "HOME_S9:R9",
+          "user": "Here's the styling before the final cleanup.",
+          "assistant": "Thanks, I'll keep this pre-cleanup update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D9_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "Minimalist bathroom shelf with neatly folded towels, an amber pump bottle, and a small jar of cream."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S10",
+      "date": "2025-08-10",
+      "dialogues": [
+        {
+          "round": "HOME_S10:R1",
+          "user": "I have some final-room updates now.",
+          "assistant": "Great, I'm ready."
+        },
+        {
+          "round": "HOME_S10:R2",
+          "user": "Here's the finished room after furnishing.",
+          "assistant": "Thanks, I'll keep this finished-room update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D10_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A warm, minimalist living room features neutral furniture against a terracotta accent wall."
+          ]
+        },
+        {
+          "round": "HOME_S10:R3",
+          "user": "Option A for the next piece.",
+          "assistant": "Thanks, I'll keep option A.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D10_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A minimalist round wooden coffee table with tapered legs stands on a light tiled floor."
+          ]
+        },
+        {
+          "round": "HOME_S10:R4",
+          "user": "Option B.",
+          "assistant": "Got it, option B too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D10_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A modern rectangular coffee table with a dark wood top and shelf supported by a minimalist black metal frame."
+          ]
+        },
+        {
+          "round": "HOME_S10:R5",
+          "user": "Option C.",
+          "assistant": "And option C as well.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D10_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A modern round coffee table with a white marble top and a gold pedestal base stands in a minimalist living space."
+          ]
+        },
+        {
+          "round": "HOME_S10:R6",
+          "user": "Here's the room after move-in.",
+          "assistant": "Thanks, I'll keep this move-in update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D10_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A tidy home office features two minimalist desks with ergonomic chairs, a bookshelf full of books, and a window bringing in natural light."
+          ]
+        },
+        {
+          "round": "HOME_S10:R7",
+          "user": "And the last room is finally furnished.",
+          "assistant": "Nice, I'll keep this as the finished update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D10_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A bright, minimalist bedroom features a wooden bed with white linens and warm orange accent pillows."
+          ]
+        },
+        {
+          "round": "HOME_S10:R8",
+          "user": "Please keep this grounded for later comparisons.",
+          "assistant": "Understood. I'll stay precise."
+        },
+        {
+          "round": "HOME_S10:R9",
+          "user": "The bedroom is finally furnished too.",
+          "assistant": "Thanks, I'll keep this bedroom update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D10_IMG_007.jpg"
+          ],
+          "image_caption": [
+            "A bright, minimalist bedroom features a neatly made bed with neutral linens and matching wooden nightstands."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S11",
+      "date": "2025-08-28",
+      "dialogues": [
+        {
+          "round": "HOME_S11:R1",
+          "user": "I'm focusing on the kitchen and dining area today.",
+          "assistant": "Got it. I'll keep those updates together."
+        },
+        {
+          "round": "HOME_S11:R2",
+          "user": "Here's the morning setup.",
+          "assistant": "Thanks, I'll keep it for comparison.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D11_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "Morning light spills over a small wooden table set with a bowl of fresh fruit and a coffee mug by the window."
+          ]
+        },
+        {
+          "round": "HOME_S11:R3",
+          "user": "Same area later from the other side.",
+          "assistant": "Thanks, I'll keep this later view too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D11_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "Warm evening light fills a quiet dining nook with a bowl of oranges on the table."
+          ]
+        },
+        {
+          "round": "HOME_S11:R4",
+          "user": "Here's another styling update.",
+          "assistant": "Thanks, I'll keep it with this set.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D11_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A cozy countertop coffee setup with a grinder, jar of beans, and two mugs ready for brewing."
+          ]
+        },
+        {
+          "round": "HOME_S11:R5",
+          "user": "Here's the update after the grocery run.",
+          "assistant": "Thanks, I'll keep this grocery-run update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D11_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "Neatly labeled jars and containers of oats, chickpeas, pasta, and lentils create an organized pantry shelf."
+          ]
+        },
+        {
+          "round": "HOME_S11:R6",
+          "user": "Here are two fabric options side by side.",
+          "assistant": "Thanks, I'll keep both options.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D11_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "Two beige upholstered chairs stand side by side, one with a small wooden sample resting on its seat."
+          ]
+        },
+        {
+          "round": "HOME_S11:R7",
+          "user": "Here's the corner after we installed everything.",
+          "assistant": "Got it, I'll treat this as the installed state.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D11_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A minimalist breakfast nook features a round wooden table, built-in beige seating, and soft natural light from a nearby window."
+          ]
+        },
+        {
+          "round": "HOME_S11:R8",
+          "user": "My parents may stay over sometimes, so I need this area flexible.",
+          "assistant": "That makes sense. I'll keep that in mind."
+        },
+        {
+          "round": "HOME_S11:R9",
+          "user": "I'll probably quiz you on the little details later.",
+          "assistant": "Understood. I'll pay attention to the small stuff."
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S12",
+      "date": "2025-09-12",
+      "dialogues": [
+        {
+          "round": "HOME_S12:R1",
+          "user": "Now I'm sorting out the bedroom and entry.",
+          "assistant": "Got it. I'll track both areas."
+        },
+        {
+          "round": "HOME_S12:R2",
+          "user": "Bed option A.",
+          "assistant": "Thanks, I'll keep option A.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D12_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A minimalist beige bedroom with a neatly made bed and simple wooden furniture."
+          ]
+        },
+        {
+          "round": "HOME_S12:R3",
+          "user": "Bed option B.",
+          "assistant": "Got it, option B too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D12_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A serene, neutral-toned bedroom features a neatly made bed flanked by matching wooden nightstands and lamps."
+          ]
+        },
+        {
+          "round": "HOME_S12:R4",
+          "user": "Here's a styling test.",
+          "assistant": "Thanks, I'll keep this for later.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D12_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A cozy bedside table holds stacked books, glasses, a lamp, and a charging cable ready for the night."
+          ]
+        },
+        {
+          "round": "HOME_S12:R5",
+          "user": "Here's the entry setup.",
+          "assistant": "Thanks, I'll keep this entry setup.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D12_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A tidy entryway features a wooden console table with storage baskets, a hanging leather tote, and a round wall mirror."
+          ]
+        },
+        {
+          "round": "HOME_S12:R6",
+          "user": "Here's the bedroom after the larger pieces arrived.",
+          "assistant": "Thanks, I'll keep this as the later state.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D12_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A bright, minimalist bedroom with neutral tones and wooden furniture creates a calm, inviting retreat."
+          ]
+        },
+        {
+          "round": "HOME_S12:R7",
+          "user": "Here's the entry area after move-in.",
+          "assistant": "Thanks, I'll keep this move-in version.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D12_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "A neatly organized entryway features minimalist hooks, a slim console table, and everyday essentials ready to grab and go."
+          ]
+        },
+        {
+          "round": "HOME_S12:R8",
+          "user": "I still lose track of tiny things by the door.",
+          "assistant": "Understandable. I'll keep an eye on those details."
+        },
+        {
+          "round": "HOME_S12:R9",
+          "user": "Please remember the visual details, not just the broad furniture.",
+          "assistant": "Understood. I'll focus on the specifics too."
+        }
+      ]
+    },
+    {
+      "session_id": "HOME_S13",
+      "date": "2025-10-05",
+      "dialogues": [
+        {
+          "round": "HOME_S13:R1",
+          "user": "Final revisit after living here a bit.",
+          "assistant": "Got it. I'll treat this as a later-state update."
+        },
+        {
+          "round": "HOME_S13:R2",
+          "user": "Here's the desk after a week of actual use.",
+          "assistant": "Thanks, I'll keep this current version.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D13_IMG_001.jpg"
+          ],
+          "image_caption": [
+            "A tidy modern workspace with a computer, laptop, notebook, and coffee cup on a wooden desk by the window."
+          ]
+        },
+        {
+          "round": "HOME_S13:R3",
+          "user": "Same room from the other side.",
+          "assistant": "Thanks, I'll keep the other side too.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D13_IMG_002.jpg"
+          ],
+          "image_caption": [
+            "A modern, minimalist office workspace with wooden desks, bookshelves, and large windows overlooking the city."
+          ]
+        },
+        {
+          "round": "HOME_S13:R4",
+          "user": "I restyled it.",
+          "assistant": "Thanks, I'll keep this update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D13_IMG_003.jpg"
+          ],
+          "image_caption": [
+            "A neatly arranged minimalist bathroom shelf with neutral-toned toiletries and folded towels."
+          ]
+        },
+        {
+          "round": "HOME_S13:R5",
+          "user": "Here's the living room with a few seasonal swaps.",
+          "assistant": "Thanks, I'll keep this seasonal update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D13_IMG_004.jpg"
+          ],
+          "image_caption": [
+            "A cozy, light-filled living room features neutral tones, natural wood accents, and lush greenery for a calm, inviting atmosphere."
+          ]
+        },
+        {
+          "round": "HOME_S13:R6",
+          "user": "Same living room from the side.",
+          "assistant": "Thanks, that helps for comparison.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D13_IMG_005.jpg"
+          ],
+          "image_caption": [
+            "A cozy living room decorated with autumn colors and a pumpkin centerpiece."
+          ]
+        },
+        {
+          "round": "HOME_S13:R7",
+          "user": "Here's the catch-all area after a maintenance run.",
+          "assistant": "Thanks, I'll keep this maintenance-run update.",
+          "input_image": [
+            "Home_Renovation_Interior_Design/D13_IMG_006.jpg"
+          ],
+          "image_caption": [
+            "Cleaning supplies, keys, and mail are neatly arranged on a hallway ledge."
+          ]
+        },
+        {
+          "round": "HOME_S13:R8",
+          "user": "Nothing major changed structurally.",
+          "assistant": "Got it, so this is mainly about the smaller changes."
+        },
+        {
+          "round": "HOME_S13:R9",
+          "user": "I mainly care about what moved, what is hidden, and what is actually gone.",
+          "assistant": "Understood. I'll track those visibility changes carefully."
+        }
+      ]
+    }
+  ],
+  "human-annotated QAs": [
+    {
+      "question_id": "Q1",
+      "question": "Which screen places Focus Window in the lower middle card instead of Trend Recovery when compared to the updated-note screen?",
+      "answer": "The provisional busy-day trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5"
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "question": "Which trend shows a clearer rebound hump around the middle before dropping again when comparing the provisional busy-day trend with the later reinterpretation trend?",
+      "answer": "The provisional busy-day trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S8",
+        "HEALTH_S9"
+      ],
+      "clue": [
+        "HEALTH_S8:R5",
+        "HEALTH_S9:R3"
+      ],
+      "latest_clue_round": "HEALTH_S8:R5",
+      "stale_clue_rounds": [
+        "HEALTH_S9:R3"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which dashboard among the baseline overview, the updated-note dashboard, and the provisional trend screen has Session Match as the lower-left card label?",
+      "answer": "The updated-note dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5"
+      ]
+    },
+    {
+      "question_id": "Q10",
+      "question": "Which screen has a separate KPI card placed on a second row when comparing the baseline overview, the updated-note dashboard, and the provisional busy-day trend?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5"
+      ]
+    },
+    {
+      "question_id": "Q11",
+      "question": "Which dashboard stacks an extra KPI on a second line instead of keeping four cards across the top row, the baseline overview or the updated-note dashboard?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4"
+      ]
+    },
+    {
+      "question_id": "Q12",
+      "question": "Which screen has the lowest Evening Drift among the baseline overview, baseline trend, baseline evening card view, and first guidance-anchor dashboard?",
+      "answer": "The first guidance-anchor dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S3"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S1:R3",
+        "HEALTH_S1:R6",
+        "HEALTH_S3:R5"
+      ]
+    },
+    {
+      "question_id": "Q13",
+      "question": "Among the weekly overview, weekly comparison trend, weekend dashboard, and weekly scorecard screens, which one shows the lowest Meal Variability?",
+      "answer": "The weekly comparison trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7"
+      ],
+      "clue": [
+        "HEALTH_S7:R2",
+        "HEALTH_S7:R3",
+        "HEALTH_S7:R7",
+        "HEALTH_S7:R8"
+      ]
+    },
+    {
+      "question_id": "Q15",
+      "question": "Which among the weekly overview, weekly comparison trend, weekend dashboard, and weekly scorecard has the highest Evening Drift?",
+      "answer": "The weekly comparison trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7"
+      ],
+      "clue": [
+        "HEALTH_S7:R2",
+        "HEALTH_S7:R3",
+        "HEALTH_S7:R7",
+        "HEALTH_S7:R8"
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "question": "Which raises both Meal Variability and Evening Drift relative to the other between the D5 comparison card and the D5 follow-up trend?",
+      "answer": "Neither does",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S5"
+      ],
+      "clue": [
+        "HEALTH_S5:R4",
+        "HEALTH_S5:R6"
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "question": "Which version among the baseline evening card view, the first guidance-anchor dashboard, and the final ring/card screen exhibits the lowest Evening Drift?",
+      "answer": "The final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S3",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R6",
+        "HEALTH_S3:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q18",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, and the final ring/card screen has four KPI cards arranged across two rows instead of one?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "question": "On April 22, which screen, if any, shows both the highest Time In Range and the lowest Meal Variability when comparing the after-snack dashboard, after-dinner dashboard, and choice-comparison card?",
+      "answer": "None of the three",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S10"
+      ],
+      "clue": [
+        "HEALTH_S10:R5",
+        "HEALTH_S10:R6",
+        "HEALTH_S10:R7"
+      ]
+    },
+    {
+      "question_id": "Q21",
+      "question": "Among the screens in the April 22 trio, which one has the lowest Evening Drift despite not having the highest Time In Range?",
+      "answer": "The after-dinner dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S10"
+      ],
+      "clue": [
+        "HEALTH_S10:R5",
+        "HEALTH_S10:R6",
+        "HEALTH_S10:R7"
+      ]
+    },
+    {
+      "question_id": "Q23",
+      "question": "Among the first guidance-anchor dashboard, the D5 compact recap, and the bedtime subtle summary, which screen has the lowest Evening Drift when considering only those with Meal Variability of at most 11 points?",
+      "answer": "The first guidance-anchor dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S3",
+        "HEALTH_S5",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S3:R5",
+        "HEALTH_S5:R7",
+        "HEALTH_S11:R6"
+      ]
+    },
+    {
+      "question_id": "Q24",
+      "question": "Among the reinterpretation dashboard, the bedtime subtle summary, and the metric panel grid, which screen has the lowest Evening Drift while maintaining at least 80% Time In Range?",
+      "answer": "The bedtime subtle summary",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S9",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S9:R2",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q27",
+      "question": "Between the April 22 choice-comparison card and the final ring/card screen, which one has the lower Evening Drift?",
+      "answer": "The final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S10",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S10:R7",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q28",
+      "question": "Which card has the lowest Evening Drift while tying for the lowest Meal Variability among the updated-note daily card grid, the reinterpretation summary card, and the bedtime subtle summary?",
+      "answer": "The reinterpretation summary card",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S9",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S6:R5",
+        "HEALTH_S9:R6",
+        "HEALTH_S11:R6"
+      ]
+    },
+    {
+      "question_id": "Q29",
+      "question": "Which screen has the lowest lower-right ring percentage among the baseline overview, the updated-note dashboard, and the final ring/card screen?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q30",
+      "question": "Which dashboard has the lower Time In Range while also keeping Meal Variability under 20 points: the D8 same-day overview or the D9 reinterpretation dashboard?",
+      "answer": "The D8 same-day overview",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S8",
+        "HEALTH_S9"
+      ],
+      "clue": [
+        "HEALTH_S8:R3",
+        "HEALTH_S9:R2"
+      ]
+    },
+    {
+      "question_id": "Q31",
+      "question": "Among the weekly comparison trend, the D9 comparison trend, and the final multi-day comparison trend, which one has the lowest Evening Drift and finishes higher than it starts?",
+      "answer": "The final multi-day comparison trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R3",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q32",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, the provisional threshold-band trend, and the final ring/card screen includes Recovery Notes as a KPI card?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q33",
+      "question": "Which screen among the post-lunch metric card, evening trend screen, first guidance-anchor dashboard, and D5 compact recap has the lowest Evening Drift while maintaining Meal Variability at 12 points or below?",
+      "answer": "The first guidance-anchor dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S2",
+        "HEALTH_S3",
+        "HEALTH_S5"
+      ],
+      "clue": [
+        "HEALTH_S2:R5",
+        "HEALTH_S2:R6",
+        "HEALTH_S3:R5",
+        "HEALTH_S5:R7"
+      ]
+    },
+    {
+      "question_id": "Q34",
+      "question": "On the workout day, which dashboard reduces Meal Variability the most compared to the pre-exercise dashboard without being the lowest-drift screen of that day?",
+      "answer": "The end-of-day trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S4"
+      ],
+      "clue": [
+        "HEALTH_S4:R2",
+        "HEALTH_S4:R3",
+        "HEALTH_S4:R4",
+        "HEALTH_S4:R7"
+      ]
+    },
+    {
+      "question_id": "Q35",
+      "question": "Between the weekly scorecard and the metric panel grid, which one keeps Evening Drift under 2 hours with lower Meal Variability?",
+      "answer": "Neither stays under 2 hours",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R8",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q36",
+      "question": "Which screen shows both the highest Meal Variability and the lowest Evening Drift when comparing the weekly comparison trend, the D9 comparison trend, and the final multi-day comparison trend?",
+      "answer": "The final multi-day comparison trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R3",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q37",
+      "question": "Which screen has the lowest Evening Drift overall among the D5 comparison card, the reinterpretation dashboard, the bedtime subtle summary, and the metric panel grid?",
+      "answer": "The D5 comparison card",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S5",
+        "HEALTH_S9",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S5:R4",
+        "HEALTH_S9:R2",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q38",
+      "question": "Which screen maintains Time In Range at least 89% while minimizing Meal Variability when comparing the D5 comparison card, the after-snack dashboard, and the April 22 choice-comparison card?",
+      "answer": "The after-snack dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S5",
+        "HEALTH_S10"
+      ],
+      "clue": [
+        "HEALTH_S5:R4",
+        "HEALTH_S10:R5",
+        "HEALTH_S10:R7"
+      ]
+    },
+    {
+      "question_id": "Q39",
+      "question": "Which screen has the lowest Evening Drift among the baseline trend screen, the workout-day end-of-day trend, the D5 compact recap, and the bedtime subtle summary, within the subset that keeps Meal Variability under 20 points?",
+      "answer": "The workout-day end-of-day trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S4",
+        "HEALTH_S5",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S1:R3",
+        "HEALTH_S4:R7",
+        "HEALTH_S5:R7",
+        "HEALTH_S11:R6"
+      ]
+    },
+    {
+      "question_id": "Q40",
+      "question": "Which screen among the updated-note supporting trend, the provisional threshold-band trend, the later D9 comparison trend, and the month-wrap comparison trend has a nonstandard lower-middle panel label and an Evening Drift above 3 hours?",
+      "answer": "The updated-note supporting trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q41",
+      "question": "Among the baseline trend screen, the updated-note supporting trend, the D9 comparison trend, and the month-wrap comparison trend, which chart exhibits the highest Evening Drift while still finishing lower than it starts?",
+      "answer": "The baseline trend screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R3",
+        "HEALTH_S6:R4",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q42",
+      "question": "Among the baseline trend screen, the first guidance-anchor dashboard, the weekly comparison trend, and the month-wrap comparison trend, which chart shows the greatest drop from start to finish while maintaining Evening Drift above 4 hours?",
+      "answer": "The baseline trend screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S3",
+        "HEALTH_S7",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R3",
+        "HEALTH_S3:R5",
+        "HEALTH_S7:R3",
+        "HEALTH_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q43",
+      "question": "Which screen among the updated-note supporting trend, the provisional threshold-band trend, the month-wrap comparison trend, and the timeline summary has a nonstandard lower-middle panel label and a chart that ends higher than it starts?",
+      "answer": "The updated-note supporting trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R3",
+        "HEALTH_S12:R8"
+      ]
+    },
+    {
+      "question_id": "Q44",
+      "question": "Which chart finishes lower than it starts while also keeping Evening Drift above 4 hours when comparing the weekly ring summary, the D8 nightly recap, the D9 comparison trend, and the final overview screen?",
+      "answer": "The weekly ring summary",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S8",
+        "HEALTH_S9",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R4",
+        "HEALTH_S8:R7",
+        "HEALTH_S9:R3",
+        "HEALTH_S12:R7"
+      ]
+    },
+    {
+      "question_id": "Q45",
+      "question": "Which screen among the updated-note supporting trend, the provisional threshold-band trend, and the final ring/card screen has a nonstandard middle panel and a lower-right ring above 50%?",
+      "answer": "The updated-note supporting trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q46",
+      "question": "Which pair of screens share the same 47% lower-right ring despite having different overall layouts and different middle-panel labels?",
+      "answer": "The baseline overview and the provisional threshold-band trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S8"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S8:R5"
+      ]
+    },
+    {
+      "question_id": "Q47",
+      "question": "Which later screen beats both the D9 summary and the D11 compact summary on Meal Variability and Evening Drift?",
+      "answer": "The D12 final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S9",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S9:R6",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R9"
+      ],
+      "latest_clue_round": "HEALTH_S11:R6",
+      "stale_clue_rounds": [
+        "HEALTH_S9:R6",
+        "HEALTH_S12:R9"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q48",
+      "question": "Which screen has the lowest Evening Drift while also staying below 80% Time In Range among the reinterpretation dashboard, the bedtime subtle summary, the metric panel grid, and the after-dinner dashboard?",
+      "answer": "The after-dinner dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S9",
+        "HEALTH_S10",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S9:R2",
+        "HEALTH_S10:R6",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q49",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, and the final ring/card screen has four KPI cards arranged across two rows and a lower-right ring under 50%?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q50",
+      "question": "Which screen among the updated-note dashboard, the provisional threshold-band trend, the final ring/card screen, and the bedtime subtle summary has both a nonstandard lower-middle panel label and the highest Evening Drift in that set?",
+      "answer": "The updated-note dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q51",
+      "question": "After the D11 follow-up arrives, which earlier D6 screen shares the same Time In Range as the D11 follow-up dashboard?",
+      "answer": "The updated-note supporting trend",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S6",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S6:R4",
+        "HEALTH_S6:R5",
+        "HEALTH_S6:R7",
+        "HEALTH_S11:R5"
+      ],
+      "latest_clue_round": "HEALTH_S6:R4",
+      "stale_clue_rounds": [
+        "HEALTH_S6:R5",
+        "HEALTH_S6:R7",
+        "HEALTH_S11:R5"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q52",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, the provisional threshold-band trend, and the final ring/card screen has a lower-left panel that is not Morning Response?",
+      "answer": "The updated-note dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q53",
+      "question": "Which screen among the weekly ring summary, the D8 same-day overview, the follow-up dashboard, and the metric panel grid maintains Meal Variability under 20 points while also having the highest Evening Drift?",
+      "answer": "The weekly ring summary",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S8",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R4",
+        "HEALTH_S8:R3",
+        "HEALTH_S11:R5",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q54",
+      "question": "Which screen among the first guidance-anchor dashboard, the follow-up dashboard, the timeline summary, and the final ring/card screen has the lowest Evening Drift among those that end above where they start?",
+      "answer": "The final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S3",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S3:R5",
+        "HEALTH_S11:R5",
+        "HEALTH_S12:R8",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q56",
+      "question": "Which screen combines the highest Time In Range with Evening Drift still above 4 hours among the weekly comparison trend, the provisional summary card, the bedtime subtle summary, and the month summary dashboard?",
+      "answer": "The provisional summary card",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S7",
+        "HEALTH_S8",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S7:R3",
+        "HEALTH_S8:R6",
+        "HEALTH_S11:R6",
+        "HEALTH_S12:R2"
+      ]
+    },
+    {
+      "question_id": "Q57",
+      "question": "Which screen among the post-lunch metric card, the D5 compact recap, the April 22 choice-comparison card, and the metric panel grid maintains Meal Variability at 12 points or below and, within that subset, has the lower Time In Range while tying for the highest Evening Drift?",
+      "answer": "The D5 compact recap",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S2",
+        "HEALTH_S5",
+        "HEALTH_S10",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S2:R5",
+        "HEALTH_S5:R7",
+        "HEALTH_S10:R7",
+        "HEALTH_S12:R4"
+      ]
+    },
+    {
+      "question_id": "Q58",
+      "question": "Which candidate's KPI row includes Recovery Notes instead of Activity Match or a standard three-card set among the baseline overview, the updated-note dashboard, and the final ring/card screen?",
+      "answer": "The baseline overview",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q59",
+      "question": "Which later screen improves on both the D9 summary and the D11 follow-up dashboard in Meal Variability while also having the lowest Evening Drift among the later candidates?",
+      "answer": "The D12 final ring/card screen",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S9",
+        "HEALTH_S11",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S9:R6",
+        "HEALTH_S11:R5",
+        "HEALTH_S12:R4",
+        "HEALTH_S12:R8",
+        "HEALTH_S12:R9"
+      ],
+      "latest_clue_round": "HEALTH_S12:R4",
+      "stale_clue_rounds": [
+        "HEALTH_S9:R6",
+        "HEALTH_S11:R5",
+        "HEALTH_S12:R8",
+        "HEALTH_S12:R9"
+      ],
+      "visual_state_probe_include": false,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q60",
+      "question": "Which screen among the baseline overview, the updated-note dashboard, the provisional threshold-band trend, and the final ring/card screen shares 81% Time In Range with another candidate and is the only one whose lower-middle panel is Trend Recovery?",
+      "answer": "The updated-note dashboard",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1",
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S12"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S6:R4",
+        "HEALTH_S8:R5",
+        "HEALTH_S12:R9"
+      ]
+    },
+    {
+      "question_id": "Q61",
+      "question": "What is the focus of the most recent guidance from Dr. Ramirez in the doctor portal messages Maya received during the month?",
+      "answer": "Continue pairing carbs with protein or fiber",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S3",
+        "HEALTH_S6",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S3:R2",
+        "HEALTH_S3:R3",
+        "HEALTH_S6:R2",
+        "HEALTH_S11:R2",
+        "HEALTH_S11:R3"
+      ],
+      "latest_clue_round": "HEALTH_S11:R3",
+      "stale_clue_rounds": [
+        "HEALTH_S3:R2",
+        "HEALTH_S3:R3",
+        "HEALTH_S6:R2",
+        "HEALTH_S11:R2"
+      ],
+      "visual_state_probe_include": true,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q62",
+      "question": "What type of snack does Maya show in her most recent upload after her snack choices evolved by month-end?",
+      "answer": "Yogurt with fresh berries",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S4",
+        "HEALTH_S6",
+        "HEALTH_S8",
+        "HEALTH_S11"
+      ],
+      "clue": [
+        "HEALTH_S4:R6",
+        "HEALTH_S6:R6",
+        "HEALTH_S8:R2",
+        "HEALTH_S11:R7"
+      ],
+      "latest_clue_round": "HEALTH_S11:R7",
+      "stale_clue_rounds": [
+        "HEALTH_S4:R6",
+        "HEALTH_S6:R6",
+        "HEALTH_S8:R2"
+      ],
+      "visual_state_probe_include": true,
+      "visual_state_probe_note": "Only the doctor-portal and snack-upload questions have decisive latest visual evidence after earlier visual states."
+    },
+    {
+      "question_id": "Q63",
+      "question": "What type of content did Maya upload during the very first session (D1)?",
+      "answer": "Dashboard screenshots and a portal message",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HEALTH_S1"
+      ],
+      "clue": [
+        "HEALTH_S1:R2",
+        "HEALTH_S1:R3",
+        "HEALTH_S1:R5"
+      ]
+    },
+    {
+      "question_id": "Q1",
+      "question": "Which part of the green swatch card best matches the tested wall color in the later daylight wall test?",
+      "answer": "One of the three lightest strips on the right side",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S3"
+      ],
+      "clue": [
+        "HOME_S3:R3",
+        "HOME_S3:R5"
+      ]
+    },
+    {
+      "question_id": "Q2",
+      "question": "In the two close-up wall-test images, beside which painted patch does the loose blue tape strip appear?",
+      "answer": "It appears beside only the terracotta test patch",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S3",
+        "HOME_S6"
+      ],
+      "clue": [
+        "HOME_S3:R5",
+        "HOME_S6:R5"
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "question": "In the terracotta inspiration image, where is the woven chair positioned relative to the coffee table?",
+      "answer": "To the left of the coffee table",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S6"
+      ],
+      "clue": [
+        "HOME_S6:R2"
+      ]
+    },
+    {
+      "question_id": "Q4",
+      "question": "Which cabinet sample is closest to the brass hardware piece lying on the floor?",
+      "answer": "B",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S5"
+      ],
+      "clue": [
+        "HOME_S5:R2"
+      ]
+    },
+    {
+      "question_id": "Q5",
+      "question": "In the three-sample cabinet comparison, which labeled sample is the same one that later appears laid on the floor beside the tape measure and pencil?",
+      "answer": "The sample labeled B",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S5",
+        "HOME_S6"
+      ],
+      "clue": [
+        "HOME_S5:R2",
+        "HOME_S6:R6"
+      ]
+    },
+    {
+      "question_id": "Q6",
+      "question": "Which backsplash sample sits between the white subway tile and the gray herringbone sample?",
+      "answer": "The cream square tile sample",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S5"
+      ],
+      "clue": [
+        "HOME_S5:R7"
+      ]
+    },
+    {
+      "question_id": "Q8",
+      "question": "In the workspace layout test, where is the tall dark divider panel positioned relative to the window desk?",
+      "answer": "To the left of the window desk",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S7"
+      ],
+      "clue": [
+        "HOME_S7:R6"
+      ]
+    },
+    {
+      "question_id": "Q10",
+      "question": "In the workspace layout test image, which desk already has a monitor on it?",
+      "answer": "The window desk",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S7"
+      ],
+      "clue": [
+        "HOME_S7:R6"
+      ]
+    },
+    {
+      "question_id": "Q11",
+      "question": "In the first full kitchen view, where is the soap dispenser relative to the faucet?",
+      "answer": "To the right of the faucet",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S8"
+      ],
+      "clue": [
+        "HOME_S8:R2"
+      ]
+    },
+    {
+      "question_id": "Q12",
+      "question": "On the right-side kitchen counter in that same view, which item sits closer to the refrigerator?",
+      "answer": "The small bowl",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S8"
+      ],
+      "clue": [
+        "HOME_S8:R2"
+      ]
+    },
+    {
+      "question_id": "Q13",
+      "question": "Inside the pull-out pantry, which jar on the third shelf from the top is closer to the front edge?",
+      "answer": "The jar of pasta",
+      "point": [
+        [
+          "X2"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S8"
+      ],
+      "clue": [
+        "HOME_S8:R3"
+      ]
+    },
+    {
+      "question_id": "Q14",
+      "question": "Comparing the early pull-out pantry with the later grocery-restock shelf, which item becomes visible tucked behind a front jar only after the restock?",
+      "answer": "A tall paper bag",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S8",
+        "HOME_S11"
+      ],
+      "clue": [
+        "HOME_S8:R3",
+        "HOME_S11:R5"
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "question": "On the open shelf beneath the installed vanity, where is the woven basket relative to the sink drain pipe?",
+      "answer": "To the right of the drain pipe",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S9"
+      ],
+      "clue": [
+        "HOME_S9:R7"
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "question": "In the final living room, where is the remote on the coffee table?",
+      "answer": "Near the front-right edge",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S10"
+      ],
+      "clue": [
+        "HOME_S10:R2"
+      ]
+    },
+    {
+      "question_id": "Q18",
+      "question": "Compared with the terracotta inspiration image, which small tabletop item is present in the inspiration but not in the final living room?",
+      "answer": "The amber candle",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S6",
+        "HOME_S10"
+      ],
+      "clue": [
+        "HOME_S6:R2",
+        "HOME_S10:R2"
+      ]
+    },
+    {
+      "question_id": "Q19",
+      "question": "Compared with the workspace layout test, what stands between the window desk and the camera in the final shared office?",
+      "answer": "The wooden bookshelf divider",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S7",
+        "HOME_S10"
+      ],
+      "clue": [
+        "HOME_S7:R6",
+        "HOME_S10:R6"
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "question": "In the final shared office, what small item is placed on the window desk to the right of the monitor?",
+      "answer": "A small potted plant",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S10"
+      ],
+      "clue": [
+        "HOME_S10:R6"
+      ]
+    },
+    {
+      "question_id": "Q22",
+      "question": "In the wider first-paint setup, where is the drop cloth relative to the tray?",
+      "answer": "In front of the tray",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S3"
+      ],
+      "clue": [
+        "HOME_S3:R8"
+      ]
+    },
+    {
+      "question_id": "Q23",
+      "question": "Across the demo staging photo and the doorway angle of the same room, which earlier material is still in the space but drops out of view because the later angle crops away the back-wall staging area?",
+      "answer": "The tile sample leaning on the wall",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S4"
+      ],
+      "clue": [
+        "HOME_S4:R9",
+        "HOME_S4:R10"
+      ]
+    },
+    {
+      "question_id": "Q24",
+      "question": "Comparing the demo staging photo with the doorway angle of the same demo zone, which object changes from showing two separated stacks in the earlier view to appearing as one long stack in the doorway view?",
+      "answer": "The wooden floorboards",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S4"
+      ],
+      "clue": [
+        "HOME_S4:R9",
+        "HOME_S4:R10"
+      ]
+    },
+    {
+      "question_id": "Q25",
+      "question": "In the drawer insert, which of the two similar matte black screw packets is closer to the front-right corner?",
+      "answer": "The shorter packet",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S5"
+      ],
+      "clue": [
+        "HOME_S5:R9"
+      ]
+    },
+    {
+      "question_id": "Q26",
+      "question": "Compared with the earlier close-up terracotta wall test, where has the sample card been moved in the wider wall view?",
+      "answer": "Onto the stool seat to the right of the painted patch",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S6"
+      ],
+      "clue": [
+        "HOME_S6:R5",
+        "HOME_S6:R8"
+      ]
+    },
+    {
+      "question_id": "Q27",
+      "question": "In the office photo from the other corner, where are the headphones hanging?",
+      "answer": "On the aisle-facing side of the bookshelf",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S7"
+      ],
+      "clue": [
+        "HOME_S7:R8"
+      ]
+    },
+    {
+      "question_id": "Q28",
+      "question": "In the third kitchen angle, what, if anything, appears on the windowsill?",
+      "answer": "Nothing appears on the windowsill",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S8"
+      ],
+      "clue": [
+        "HOME_S8:R9"
+      ]
+    },
+    {
+      "question_id": "Q29",
+      "question": "On the bathroom shelf before the final cleanup, what sits directly behind the amber bottle?",
+      "answer": "A folded washcloth",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S9"
+      ],
+      "clue": [
+        "HOME_S9:R9"
+      ]
+    },
+    {
+      "question_id": "Q32",
+      "question": "In the pantry restock close-up, among the two similar oat jars, which one is closer to the front edge?",
+      "answer": "The shorter oat jar",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S11"
+      ],
+      "clue": [
+        "HOME_S11:R5"
+      ]
+    },
+    {
+      "question_id": "Q37",
+      "question": "In the seasonal living-room refresh, what slightly overlaps the lower part of the side-table lamp?",
+      "answer": "A large potted plant",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S13"
+      ],
+      "clue": [
+        "HOME_S13:R5"
+      ]
+    },
+    {
+      "question_id": "Q38",
+      "question": "From the side-angle living-room revisit, what partly hides the lamp from view?",
+      "answer": "The chair",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S13"
+      ],
+      "clue": [
+        "HOME_S13:R5",
+        "HOME_S13:R6"
+      ]
+    },
+    {
+      "question_id": "Q40",
+      "question": "In the installed dining corner, where is the small black bowl placed on the table?",
+      "answer": "Near the right edge",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S11"
+      ],
+      "clue": [
+        "HOME_S11:R7"
+      ]
+    },
+    {
+      "question_id": "Q41",
+      "question": "In the closer window-side angle of the empty room, where is the loose outlet cover visible?",
+      "answer": "Near the baseboard by the doorway",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S1"
+      ],
+      "clue": [
+        "HOME_S1:R11"
+      ]
+    },
+    {
+      "question_id": "Q42",
+      "question": "In that same multi-table showroom shot, which table sits farther back on the right side?",
+      "answer": "The darker oval table",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S2"
+      ],
+      "clue": [
+        "HOME_S2:R9"
+      ]
+    },
+    {
+      "question_id": "Q43",
+      "question": "In the wider first-paint setup, where is the ladder positioned relative to the sage patch?",
+      "answer": "To the left of the patch",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S3"
+      ],
+      "clue": [
+        "HOME_S3:R8"
+      ]
+    },
+    {
+      "question_id": "Q44",
+      "question": "In the wider first-paint setup, where is the small sample card placed?",
+      "answer": "Near the front edge of the drop cloth",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S3"
+      ],
+      "clue": [
+        "HOME_S3:R8"
+      ]
+    },
+    {
+      "question_id": "Q45",
+      "question": "In the tray close-up after cleanup, which of the two similar off-white sample cards is tucked under the tray lip?",
+      "answer": "The card nearest the viewer",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S3"
+      ],
+      "clue": [
+        "HOME_S3:R9"
+      ]
+    },
+    {
+      "question_id": "Q46",
+      "question": "In the demo staging photo, where is the tile sample located relative to the red tool bag and plank stack?",
+      "answer": "Leaning against the wall farther back",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S4"
+      ],
+      "clue": [
+        "HOME_S4:R9"
+      ]
+    },
+    {
+      "question_id": "Q47",
+      "question": "In the drawer insert with hardware packets, what extra metallic piece appears in a separate compartment besides the two matte black packets?",
+      "answer": "A brass sample piece",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S5"
+      ],
+      "clue": [
+        "HOME_S5:R9"
+      ]
+    },
+    {
+      "question_id": "Q48",
+      "question": "On the countertop edge-profile board, which profile has the small gray note clipped to it?",
+      "answer": "The squared profile on the right",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S5"
+      ],
+      "clue": [
+        "HOME_S5:R10"
+      ]
+    },
+    {
+      "question_id": "Q49",
+      "question": "In the wider terracotta wall-test view, where is the stool positioned relative to the painted patch?",
+      "answer": "To the right of the patch",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S6"
+      ],
+      "clue": [
+        "HOME_S6:R8"
+      ]
+    },
+    {
+      "question_id": "Q50",
+      "question": "In that wider terracotta wall-test view, where is the tray positioned relative to the patch?",
+      "answer": "Below the patch",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S6"
+      ],
+      "clue": [
+        "HOME_S6:R8"
+      ]
+    },
+    {
+      "question_id": "Q51",
+      "question": "In the second floor-to-cabinet comparison shot, where is the thin white cable loop?",
+      "answer": "Near the back edge of the frame",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S6"
+      ],
+      "clue": [
+        "HOME_S6:R9"
+      ]
+    },
+    {
+      "question_id": "Q53",
+      "question": "In the office photo from the other corner, where is the bookshelf divider in the frame?",
+      "answer": "On the left side of the frame",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S7"
+      ],
+      "clue": [
+        "HOME_S7:R8"
+      ]
+    },
+    {
+      "question_id": "Q54",
+      "question": "Comparing the two office-layout views, which small object becomes newly noticeable hanging from the shelf in the opposite-corner angle?",
+      "answer": "A pair of black headphones",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S7"
+      ],
+      "clue": [
+        "HOME_S7:R6",
+        "HOME_S7:R8"
+      ]
+    },
+    {
+      "question_id": "Q55",
+      "question": "On the bathroom shelf before the final cleanup, where is the small jar placed?",
+      "answer": "Near the right edge",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S9"
+      ],
+      "clue": [
+        "HOME_S9:R9"
+      ]
+    },
+    {
+      "question_id": "Q56",
+      "question": "In the evening breakfast-nook view, what is true about the folded note from the morning setup?",
+      "answer": "It is still visible near the far side of the table",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "HOME_S11"
+      ],
+      "clue": [
+        "HOME_S11:R2",
+        "HOME_S11:R3"
+      ]
+    },
+    {
+      "question_id": "Q57",
+      "question": "In that same coffee-setup photo, where is the small metal scoop?",
+      "answer": "In front of the grinder",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S11"
+      ],
+      "clue": [
+        "HOME_S11:R4"
+      ]
+    },
+    {
+      "question_id": "Q58",
+      "question": "How many clipped receipts are visible near the backsplash in the coffee-setup photo?",
+      "answer": "Two",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S11"
+      ],
+      "clue": [
+        "HOME_S11:R4"
+      ]
+    },
+    {
+      "question_id": "Q60",
+      "question": "In bedroom option B, where is the tray placed?",
+      "answer": "On the right nightstand",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S12"
+      ],
+      "clue": [
+        "HOME_S12:R3"
+      ]
+    },
+    {
+      "question_id": "Q61",
+      "question": "On the entry-console setup, where is the key bowl placed on the tabletop?",
+      "answer": "Near the center",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S12"
+      ],
+      "clue": [
+        "HOME_S12:R5"
+      ]
+    },
+    {
+      "question_id": "Q62",
+      "question": "In the bathroom shelf restyle, where is the amber jar relative to the folded towel?",
+      "answer": "To the left of the folded towel",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S13"
+      ],
+      "clue": [
+        "HOME_S13:R4"
+      ]
+    },
+    {
+      "question_id": "Q63",
+      "question": "In that same bathroom shelf restyle, where is the small label card placed?",
+      "answer": "Behind the toothbrush cup",
+      "point": [
+        [
+          "X3"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S13"
+      ],
+      "clue": [
+        "HOME_S13:R4"
+      ]
+    },
+    {
+      "question_id": "Q64",
+      "question": "During the renovation, Hannah tested multiple wall paint colors across different sessions. Which tested color was ultimately not used in the finished living room?",
+      "answer": "Sage green",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "HOME_S3",
+        "HOME_S6",
+        "HOME_S9",
+        "HOME_S10"
+      ],
+      "clue": [
+        "HOME_S3:R5",
+        "HOME_S6:R2",
+        "HOME_S6:R5",
+        "HOME_S9:R6",
+        "HOME_S10:R2"
+      ],
+      "latest_clue_round": "HOME_S10:R2",
+      "stale_clue_rounds": [
+        "HOME_S3:R5",
+        "HOME_S6:R2",
+        "HOME_S6:R5",
+        "HOME_S9:R6"
+      ],
+      "visual_state_probe_include": true,
+      "visual_state_probe_note": "Paint/design choice evolves across visual room states; final room resolves current state."
+    },
+    {
+      "question_id": "Q65",
+      "question": "What type of room did Hannah show as the very first image on move-in day?",
+      "answer": "A bright, empty room with sliding glass doors opening to a balcony",
+      "point": [
+        [
+          "X1"
+        ],
+        [
+          "Y1"
+        ]
+      ],
+      "session_id": [
+        "HOME_S1"
+      ],
+      "clue": [
+        "HOME_S1:R2"
+      ]
+    }
+  ]
+}

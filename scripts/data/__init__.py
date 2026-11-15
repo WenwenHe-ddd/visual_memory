@@ -1,0 +1,1 @@
+"""VisualMemory data components."""

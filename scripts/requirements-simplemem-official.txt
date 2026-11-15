@@ -1,0 +1,16 @@
+# Project-local overlay; reuse the existing Qwen / torch / MiniLM environment.
+# python3 -m pip install --no-deps --target .vendor/simplemem_official_runtime \
+#   -r scripts/requirements-simplemem-official.txt
+# Official TEXT pipeline, pinned independently from the historical MemEye Omni core.
+simplemem @ https://github.com/aiming-lab/SimpleMem/archive/db80b6a7c591e0ea730a058e9f5fc4eb06572299.zip
+# Later LanceDB releases removed the Tantivy API used by this upstream commit.
+lancedb==0.30.2
+pylance==4.0.2
+tantivy==0.27.0
+dateparser==1.4.3
+pyarrow==26.0.0
+deprecation==2.1.0
+lance-namespace==0.6.0
+lance-namespace-urllib3-client==0.6.0
+pytz==2026.5
+tzlocal==5.4.5

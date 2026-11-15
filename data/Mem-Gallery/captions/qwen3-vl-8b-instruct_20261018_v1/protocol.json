@@ -1,0 +1,256 @@
+{
+  "dataset_repo": "Ethan-Bei/Mem-Gallery",
+  "dataset_revision": "af912daba984e896e253016b7c7e334ef92c2a6f",
+  "model": {
+    "repo": "Qwen/Qwen3-VL-8B-Instruct",
+    "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+  },
+  "model_path": "/storage/hewenwen/VisualMemory/models/Qwen3-VL-8B-Instruct",
+  "caption_prompt": "Describe this image in one factual English paragraph of about 80 to 120 words. Describe the main scene, visible people and objects, and notable visible details. State only what is visible; do not guess identities, intentions, or facts outside the image. Output only the description.",
+  "seed": 42,
+  "do_sample": false,
+  "dtype": "bfloat16",
+  "attn_implementation": "sdpa",
+  "batch_size": 4,
+  "image_processor_size": {
+    "shortest_edge": 65536,
+    "longest_edge": 1638400
+  },
+  "initial_max_new_tokens": 256,
+  "retry_max_new_tokens": [
+    512,
+    1024
+  ],
+  "retry_policy": "only empty or EOS-missing capped outputs; identical image and prompt; record every attempt",
+  "workers": 2,
+  "physical_gpus": [
+    0,
+    1
+  ],
+  "image_policy": "PIL first frame converted to RGB, matching existing generator; GIF/MPO first frame only",
+  "deduplication": "exact image-file SHA256; one new caption reused across all identical files",
+  "prompt_inputs": "image plus generic caption instruction only; no question, answer, supplied caption or dialogue",
+  "source_input_hashes": {
+    "data/Mem-Gallery/data/dialog/AI_Robotics_Automation_Future_Tech.json": "fb51fad8a80b3610d90eaced0bf01bb2250a7f486a8dc67e8e9eee88a4e55b8e",
+    "data/Mem-Gallery/data/dialog/Academic_Animal_Pet_Research_Life.json": "9289425b20c81b25a217ad1a76009c88ddf02a784881b719f8b7e5b25911b948",
+    "data/Mem-Gallery/data/dialog/Architecture_Art_Culture_Exhibition_Technology.json": "1d1c336cb1412ef866d3d6b7efddeb5dadc1f6ef1fd2678b79239722ae285bd4",
+    "data/Mem-Gallery/data/dialog/Astronomy_Physics_Scientific_Experiments_Cosmology.json": "38e1820504b88845f001c2820fdb53e0db8d0a4b9dc59083e5e60f376b864b97",
+    "data/Mem-Gallery/data/dialog/Baking_Dessert_Daily_Life_Skill.json": "7b0169375ef20cfa9ddf67433ca78139f82ce30449e7813bb748ea29610ea859",
+    "data/Mem-Gallery/data/dialog/Dog_Behavior_Research_Academic_Life.json": "d825f7e3798514144230bb9edc9c8811604c92f8ad16584ad24d1fc18029898b",
+    "data/Mem-Gallery/data/dialog/Education_Career_Research_Lifestyle.json": "6e8c712397dc41ae0da623250c36250f5b71a85a4f86199159d729337136cc8b",
+    "data/Mem-Gallery/data/dialog/Entrepreneurship_Blockchain_Economics_Logistics_Nature.json": "c869195883d786b12c1ec984ca12a2b061c0aea2b5feb7f1d19cc0070392bf5b",
+    "data/Mem-Gallery/data/dialog/Fashion_Personal_Care_Lifestyle_Shopping.json": "7c4d3a48758429280a9e0b55fce2ae1af1f1d7e05b27800240f15e2a45a2751a",
+    "data/Mem-Gallery/data/dialog/Global_Travel_Cultural_Sightseeing.json": "775871b984df79969ac9e50d0497642d49eaa203ab09937127d6358dc7a17037",
+    "data/Mem-Gallery/data/dialog/Global_Travel_Sustainable_Fashion_Design.json": "e8c5e8c36d559a25172204af98a1a012db580115061f5b1609e9d4b7b850b5d8",
+    "data/Mem-Gallery/data/dialog/Home_Health_Lifestyle_Product.json": "bcc786c056738d5163ad0a132ba67caae2df82303ac7b99065471721484caf1b",
+    "data/Mem-Gallery/data/dialog/Home_Repair_Maintenance_Cleaning.json": "6c10293e51b5a9fa567eb8fd56bd9af52429b19a9aa945abd26f5cea6ed9f91c",
+    "data/Mem-Gallery/data/dialog/Landscape_Travel_Architecture_Nature.json": "883d8fc1ea325fa7abf3bad5213e2f192323c71dc4209b6b24dfd0edcc66615a",
+    "data/Mem-Gallery/data/dialog/Music_Dance_Theater_Performance_Learning.json": "c536c4091c463a7cb0a71db9628f1fbf744389b049b74945b505b6f73f91569f",
+    "data/Mem-Gallery/data/dialog/Nature_Economics_Programming_Student_Life.json": "3978b59ff7beeb1d64c50c8393127b70504130139cd90c198c2bb9e1533dc6b0",
+    "data/Mem-Gallery/data/dialog/Parenting_Commuting_Hobbies_Travel_Gear.json": "88824a01e9a25ef49a7af63436651ec323910a81f3139be3796d398d101a892e",
+    "data/Mem-Gallery/data/dialog/Python_Botany_AI_Student_Life.json": "d5bd84226e1dd48ade2d37683f91ed3a55d7f230d89bb6414ef68782b5103a7b",
+    "data/Mem-Gallery/data/dialog/Real_Estate_Home_Decor_DIY_Lifestyle.json": "ace411b22e74f80f9e25e5bf12279133b9895e2f38c9347581ae45541b740fcd",
+    "data/Mem-Gallery/data/dialog/Technology_Ethics_Future_Society.json": "11d931289ddd6bd9bd59a5564ccf6494d4ef59a10cdc5f320fbcf4a863c27fa2",
+    "data/Mem-Gallery/source_manifest.json": "e41d9c5d626a98588f6c0ab6a240e7da87ecae9d5a347944b7f1dd89e7c0fdb8",
+    "data/Mem-Gallery/image_manifest.json": "1f23c0f391fac83c798ddaf7554c91846679161cad834afb7075bf3414c7806f"
+  },
+  "model_files_before": {
+    ".cache/huggingface/.gitignore": {
+      "bytes": 1,
+      "mtime_ns": 1791207281678525768
+    },
+    ".cache/huggingface/CACHEDIR.TAG": {
+      "bytes": 191,
+      "mtime_ns": 1791207281572447726
+    },
+    ".cache/huggingface/download/README.md.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207282301243575
+    },
+    ".cache/huggingface/download/README.md.metadata": {
+      "bytes": 100,
+      "mtime_ns": 1791207282301784955
+    },
+    ".cache/huggingface/download/chat_template.json.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207282408352390
+    },
+    ".cache/huggingface/download/chat_template.json.metadata": {
+      "bytes": 100,
+      "mtime_ns": 1791207282408793156
+    },
+    ".cache/huggingface/download/config.json.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207282433446115
+    },
+    ".cache/huggingface/download/config.json.metadata": {
+      "bytes": 101,
+      "mtime_ns": 1791207282435446111
+    },
+    ".cache/huggingface/download/generation_config.json.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207282360802558
+    },
+    ".cache/huggingface/download/generation_config.json.metadata": {
+      "bytes": 101,
+      "mtime_ns": 1791207282361942576
+    },
+    ".cache/huggingface/download/merges.txt.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207283134398484
+    },
+    ".cache/huggingface/download/merges.txt.metadata": {
+      "bytes": 101,
+      "mtime_ns": 1791207283134759024
+    },
+    ".cache/huggingface/download/model-00001-of-00004.safetensors.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207444220143220
+    },
+    ".cache/huggingface/download/model-00001-of-00004.safetensors.metadata": {
+      "bytes": 124,
+      "mtime_ns": 1791207444221754194
+    },
+    ".cache/huggingface/download/model-00002-of-00004.safetensors.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207441392144778
+    },
+    ".cache/huggingface/download/model-00002-of-00004.safetensors.metadata": {
+      "bytes": 125,
+      "mtime_ns": 1791207441392408411
+    },
+    ".cache/huggingface/download/model-00003-of-00004.safetensors.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207444438142812
+    },
+    ".cache/huggingface/download/model-00003-of-00004.safetensors.metadata": {
+      "bytes": 125,
+      "mtime_ns": 1791207444440323981
+    },
+    ".cache/huggingface/download/model-00004-of-00004.safetensors.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207389973370220
+    },
+    ".cache/huggingface/download/model-00004-of-00004.safetensors.metadata": {
+      "bytes": 125,
+      "mtime_ns": 1791207389974187575
+    },
+    ".cache/huggingface/download/model.safetensors.index.json.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207390719559363
+    },
+    ".cache/huggingface/download/model.safetensors.index.json.metadata": {
+      "bytes": 101,
+      "mtime_ns": 1791207390720163335
+    },
+    ".cache/huggingface/download/preprocessor_config.json.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207391422242067
+    },
+    ".cache/huggingface/download/preprocessor_config.json.metadata": {
+      "bytes": 101,
+      "mtime_ns": 1791207391422804594
+    },
+    ".cache/huggingface/download/tokenizer.json.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207392744239592
+    },
+    ".cache/huggingface/download/tokenizer.json.metadata": {
+      "bytes": 101,
+      "mtime_ns": 1791207392744917241
+    },
+    ".cache/huggingface/download/tokenizer_config.json.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207393475984900
+    },
+    ".cache/huggingface/download/tokenizer_config.json.metadata": {
+      "bytes": 101,
+      "mtime_ns": 1791207393476480032
+    },
+    ".cache/huggingface/download/video_preprocessor_config.json.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207394189273080
+    },
+    ".cache/huggingface/download/video_preprocessor_config.json.metadata": {
+      "bytes": 101,
+      "mtime_ns": 1791207394189805002
+    },
+    ".cache/huggingface/download/vocab.json.lock": {
+      "bytes": 0,
+      "mtime_ns": 1791207395057932494
+    },
+    ".cache/huggingface/download/vocab.json.metadata": {
+      "bytes": 101,
+      "mtime_ns": 1791207395058362450
+    },
+    ".cache/huggingface/trees/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b.json": {
+      "bytes": 2582,
+      "mtime_ns": 1791207281569651372
+    },
+    "README.md": {
+      "bytes": 7133,
+      "mtime_ns": 1791207282299446365
+    },
+    "chat_template.json": {
+      "bytes": 5499,
+      "mtime_ns": 1791207282406446165
+    },
+    "config.json": {
+      "bytes": 1474,
+      "mtime_ns": 1791207282394446188
+    },
+    "generation_config.json": {
+      "bytes": 269,
+      "mtime_ns": 1791207282358446255
+    },
+    "merges.txt": {
+      "bytes": 1671839,
+      "mtime_ns": 1791207283132444806
+    },
+    "model-00001-of-00004.safetensors": {
+      "bytes": 4902275944,
+      "mtime_ns": 1791207416131195808
+    },
+    "model-00002-of-00004.safetensors": {
+      "bytes": 4915962496,
+      "mtime_ns": 1791207415865196306
+    },
+    "model-00003-of-00004.safetensors": {
+      "bytes": 4999831048,
+      "mtime_ns": 1791207415599196804
+    },
+    "model-00004-of-00004.safetensors": {
+      "bytes": 2716270024,
+      "mtime_ns": 1791207383429257032
+    },
+    "model.safetensors.index.json": {
+      "bytes": 67759,
+      "mtime_ns": 1791207390718243385
+    },
+    "preprocessor_config.json": {
+      "bytes": 390,
+      "mtime_ns": 1791207391420242071
+    },
+    "tokenizer.json": {
+      "bytes": 7032403,
+      "mtime_ns": 1791207392741239598
+    },
+    "tokenizer_config.json": {
+      "bytes": 10868,
+      "mtime_ns": 1791207393475238224
+    },
+    "video_preprocessor_config.json": {
+      "bytes": 385,
+      "mtime_ns": 1791207394188236889
+    },
+    "vocab.json": {
+      "bytes": 2776833,
+      "mtime_ns": 1791207395056235264
+    }
+  },
+  "source_image_count": 1490,
+  "unique_image_count": 1393,
+  "derived_caption_field": "image_caption_qwen3_vl_8b_instruct",
+  "script_sha256": "f6255316ba083af612761cdec5c25ac5769c94cc6fee2e0fa79649203fec5a03",
+  "protocol_signature": "433d1431e433d130201250f1fbe3bb2d5722d883f1012f382816130805e1b9dc"
+}

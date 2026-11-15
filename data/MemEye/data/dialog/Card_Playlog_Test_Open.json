@@ -1,0 +1,1352 @@
+{
+  "character_profile": {
+    "name": "Card_Playlog_Test",
+    "task_family": "card_game_memory",
+    "source_games": [
+      "uno"
+    ],
+    "player_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "num_sessions": 4,
+    "num_qas": 48
+  },
+  "multi_session_dialogues": [
+    {
+      "session_id": "PLAY_S1",
+      "date": "2026-03-30",
+      "dialogues": [
+        {
+          "round": "PLAY_S1:R1",
+          "user": "Deck initialized and shuffled.\nInitial card is red-4-number.",
+          "assistant": "Got it, I'll keep this in mind.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0000.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a red 4 card on the discard pile, and Player 0’s hand with green 7, yellow 4, blue 1, yellow Reverse, wild Draw 4, and green Reverse cards."
+          ]
+        },
+        {
+          "round": "PLAY_S1:R2",
+          "user": "Player 0 decides to: play-(card_idx: 1)\nPlayer 0 plays yellow-4-number.\n---------- End of Player 0's turn ----------\nPlayer 1 decides to: play-(card_idx: 4)\nPlayer 1 plays green-4-number.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 1)\nPlayer 2 plays green-3-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 4)\nPlayer 3 plays green-7-number.\n---------- End of Player 3's turn ----------",
+          "assistant": "Thanks, I'll remember this for later.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0004.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a green 7 target card, recent played cards, and Player 0’s hand at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S1:R3",
+          "user": "Player 0 decides to: play-(card_idx: 0)\nPlayer 0 plays green-7-number.\n---------- End of Player 0's turn ----------\nPlayer 1 decides to: play-(card_idx: 3)\nPlayer 1 plays green-2-number.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 1)\nPlayer 2 plays green-6-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 5, chosen_color: green)\nPlayer 3 plays black-wild-wild.\nPlayer 3 chose the color green.\n---------- End of Player 3's turn ----------",
+          "assistant": "Understood, I'll keep track of this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0008.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a central row of played cards, and Player 0’s visible hand at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S1:R4",
+          "user": "Player 0 decides to: play-(card_idx: 4)\nPlayer 0 plays green-reverse-action.\n---------- End of Player 0's turn ----------\nPlayer 3 decides to: draw\nPlayer 3 draws a card.\n---------- End of Player 3's turn ----------\nPlayer 2 decides to: draw\nPlayer 2 draws a card.\n---------- End of Player 2's turn ----------\nPlayer 1 decides to: play-(card_idx: 1)\nPlayer 1 plays yellow-reverse-action.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 0)\nPlayer 2 plays yellow-5-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 1)\nPlayer 3 plays yellow-3-number.\n---------- End of Player 3's turn ----------",
+          "assistant": "Okay, I'll hold onto this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0014.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a central row of played cards, and Player 0’s hand with blue, yellow, and wild cards at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S1:R5",
+          "user": "Player 0 decides to: play-(card_idx: 2)\nPlayer 0 plays yellow-0-number.\n---------- End of Player 0's turn ----------\nPlayer 1 decides to: draw\nPlayer 1 draws a card.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 3)\nPlayer 2 plays yellow-7-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 0)\nPlayer 3 plays yellow-4-number.\n---------- End of Player 3's turn ----------",
+          "assistant": "Got it, I'll remember that.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0018.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four players, a yellow 4 target card, a stack of played cards, and a large remaining draw deck on a wooden background."
+          ]
+        },
+        {
+          "round": "PLAY_S1:R6",
+          "user": "Player 0 decides to: play-(card_idx: 2, chosen_color: blue)\nPlayer 0 plays black-wild_draw_4-wild.\nPlayer 0 chose the color blue.\n---------- End of Player 0's turn ----------\nPlayer 2 decides to: draw\nPlayer 2 draws a card.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 0)\nPlayer 3 plays blue-2-number.\n---------- End of Player 3's turn ----------",
+          "assistant": "Thanks, I'll keep that in mind.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0021.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game showing four players, a blue 2 as the target card, and Player 0 holding a single blue Reverse card."
+          ]
+        },
+        {
+          "round": "PLAY_S1:R7",
+          "user": "Player 0 decides to: play-(card_idx: 1)\nPlayer 0 plays blue-reverse-action.\n---------- End of Player 0's turn ----------\nPlayer 3 decides to: draw\nPlayer 3 draws a card.\n---------- End of Player 3's turn ----------\nPlayer 2 decides to: play-(card_idx: 4)\nPlayer 2 plays blue-1-number.\n---------- End of Player 2's turn ----------\nPlayer 1 decides to: play-(card_idx: 3)\nPlayer 1 plays blue-2-number.\n---------- End of Player 1's turn ----------",
+          "assistant": "Understood, I'll remember this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0025.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing Player 0 with one blue card, Player 1 and Player 3 with larger hands, and a blue 2 as the current target card."
+          ]
+        },
+        {
+          "round": "PLAY_S1:R8",
+          "user": "Player 0 decides to: play-(card_idx: 0)\nPlayer 0 plays blue-1-number.\nPlayer 0 has no cards left and wins the game!\n---------- End of Player 0's turn ----------\nCalculating payoffs. Winner is Player 0.\nPlayer 1 has a score of -108.\nPlayer 2 has a score of -13.\nPlayer 3 has a score of -35.\nGame over. Payoffs for each player: [0, -108, -13, -35]",
+          "assistant": "Okay, I'll keep track of that.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0027.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players’ hands, played cards in the center, and a blue 1 as the current target card."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "PLAY_S2",
+      "date": "2026-03-30",
+      "dialogues": [
+        {
+          "round": "PLAY_S2:R1",
+          "user": "Deck initialized and shuffled.\nInitial card is red-4-number.\nPlayer 0 decides to: play-(card_idx: 1)\nPlayer 0 plays yellow-4-number.\n---------- End of Player 0's turn ----------",
+          "assistant": "Got it, I'll keep this in mind.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0001.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a yellow 4 as the target card, and Player 1’s visible hand at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S2:R2",
+          "user": "Player 1 decides to: play-(card_idx: 4)\nPlayer 1 plays green-4-number.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 1)\nPlayer 2 plays green-3-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 4)\nPlayer 3 plays green-7-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 0)\nPlayer 0 plays green-7-number.\n---------- End of Player 0's turn ----------",
+          "assistant": "Thanks, I'll remember this for later.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0005.jpg"
+          ],
+          "image_caption": [
+            "Digital Uno game interface showing four players, a green 7 target card, and Player 1 holding red 5, yellow reverse, blue 5, blue 2, and blue skip cards."
+          ]
+        },
+        {
+          "round": "PLAY_S2:R3",
+          "user": "Player 1 decides to: play-(card_idx: 3)\nPlayer 1 plays green-2-number.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 1)\nPlayer 2 plays green-6-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 5, chosen_color: green)\nPlayer 3 plays black-wild-wild.\nPlayer 3 chose the color green.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 4)\nPlayer 0 plays green-reverse-action.\n---------- End of Player 0's turn ----------\nPlayer 3 decides to: draw\nPlayer 3 draws a card.\n---------- End of Player 3's turn ----------\nPlayer 2 decides to: draw\nPlayer 2 draws a card.\n---------- End of Player 2's turn ----------",
+          "assistant": "Understood, I'll keep track of this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0011.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four AI players, a central pile of played green cards with a green Reverse as the target card, and Player 1 holding red 5, yellow Reverse, blue 5, and blue Skip 2."
+          ]
+        },
+        {
+          "round": "PLAY_S2:R4",
+          "user": "Player 1 decides to: play-(card_idx: 1)\nPlayer 1 plays yellow-reverse-action.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 0)\nPlayer 2 plays yellow-5-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 1)\nPlayer 3 plays yellow-3-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 2)\nPlayer 0 plays yellow-0-number.\n---------- End of Player 0's turn ----------",
+          "assistant": "Okay, I'll hold onto this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0015.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four AI players, a yellow target card, and Player 1 holding red 5, blue 5, and blue skip cards."
+          ]
+        },
+        {
+          "round": "PLAY_S2:R5",
+          "user": "Player 1 decides to: draw\nPlayer 1 draws a card.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 3)\nPlayer 2 plays yellow-7-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 0)\nPlayer 3 plays yellow-4-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 2, chosen_color: blue)\nPlayer 0 plays black-wild_draw_4-wild.\nPlayer 0 chose the color blue.\n---------- End of Player 0's turn ----------\nPlayer 2 decides to: draw\nPlayer 2 draws a card.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 0)\nPlayer 3 plays blue-2-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 1)\nPlayer 0 plays blue-reverse-action.\n---------- End of Player 0's turn ----------\nPlayer 3 decides to: draw\nPlayer 3 draws a card.\n---------- End of Player 3's turn ----------\nPlayer 2 decides to: play-(card_idx: 4)\nPlayer 2 plays blue-1-number.\n---------- End of Player 2's turn ----------",
+          "assistant": "Got it, I'll remember that.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0024.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a central pile of played cards, and a blue 1 as the current target card."
+          ]
+        },
+        {
+          "round": "PLAY_S2:R6",
+          "user": "Player 1 decides to: play-(card_idx: 3)\nPlayer 1 plays blue-2-number.\n---------- End of Player 1's turn ----------\nPlayer 0 decides to: play-(card_idx: 0)\nPlayer 0 plays blue-1-number.\nPlayer 0 has no cards left and wins the game!\n---------- End of Player 0's turn ----------\nCalculating payoffs. Winner is Player 0.\nPlayer 1 has a score of -108.\nPlayer 2 has a score of -13.\nPlayer 3 has a score of -35.\nGame over. Payoffs for each player: [0, -108, -13, -35]",
+          "assistant": "Thanks, I'll keep that in mind.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0027_1.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players’ hands, played cards in the center, and a blue 1 as the current target card."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "PLAY_S3",
+      "date": "2026-03-30",
+      "dialogues": [
+        {
+          "round": "PLAY_S3:R1",
+          "user": "Deck initialized and shuffled.\nInitial card is red-4-number.\nPlayer 0 decides to: play-(card_idx: 1)\nPlayer 0 plays yellow-4-number.\n---------- End of Player 0's turn ----------\nPlayer 1 decides to: play-(card_idx: 4)\nPlayer 1 plays green-4-number.\n---------- End of Player 1's turn ----------",
+          "assistant": "Understood, I'll remember this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0002.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a central pile with red, yellow, and green 4 cards, and Player 2’s visible hand at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S3:R2",
+          "user": "Player 2 decides to: play-(card_idx: 1)\nPlayer 2 plays green-3-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 4)\nPlayer 3 plays green-7-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 0)\nPlayer 0 plays green-7-number.\n---------- End of Player 0's turn ----------\nPlayer 1 decides to: play-(card_idx: 3)\nPlayer 1 plays green-2-number.\n---------- End of Player 1's turn ----------",
+          "assistant": "Okay, I'll keep track of that.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0006.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a central row of played cards with a green 2 as the target card, and Player 2’s visible hand at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S3:R3",
+          "user": "Player 2 decides to: play-(card_idx: 1)\nPlayer 2 plays green-6-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 5, chosen_color: green)\nPlayer 3 plays black-wild-wild.\nPlayer 3 chose the color green.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 4)\nPlayer 0 plays green-reverse-action.\n---------- End of Player 0's turn ----------\nPlayer 3 decides to: draw\nPlayer 3 draws a card.\n---------- End of Player 3's turn ----------",
+          "assistant": "Got it, I'll keep this in mind.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0010.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four players, a green reverse card as the current target, and Player 2’s yellow and red cards visible at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S3:R4",
+          "user": "Player 2 decides to: draw\nPlayer 2 draws a card.\n---------- End of Player 2's turn ----------\nPlayer 1 decides to: play-(card_idx: 1)\nPlayer 1 plays yellow-reverse-action.\n---------- End of Player 1's turn ----------",
+          "assistant": "Thanks, I'll remember this for later.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0012.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four AI players, a central pile of played cards, a yellow Reverse as the target card, and Player 2’s visible yellow and red hand at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S3:R5",
+          "user": "Player 2 decides to: play-(card_idx: 0)\nPlayer 2 plays yellow-5-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 1)\nPlayer 3 plays yellow-3-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 2)\nPlayer 0 plays yellow-0-number.\n---------- End of Player 0's turn ----------\nPlayer 1 decides to: draw\nPlayer 1 draws a card.\n---------- End of Player 1's turn ----------",
+          "assistant": "Understood, I'll keep track of this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0016.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a central pile of played cards, a yellow target card, and a large remaining deck on a wooden background."
+          ]
+        },
+        {
+          "round": "PLAY_S3:R6",
+          "user": "Player 2 decides to: play-(card_idx: 3)\nPlayer 2 plays yellow-7-number.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 0)\nPlayer 3 plays yellow-4-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 2, chosen_color: blue)\nPlayer 0 plays black-wild_draw_4-wild.\nPlayer 0 chose the color blue.\n---------- End of Player 0's turn ----------",
+          "assistant": "Okay, I'll hold onto this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0019.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four players, a central pile of played cards, and Player 2’s visible hand of four red and yellow cards."
+          ]
+        },
+        {
+          "round": "PLAY_S3:R7",
+          "user": "Player 2 decides to: draw\nPlayer 2 draws a card.\n---------- End of Player 2's turn ----------\nPlayer 3 decides to: play-(card_idx: 0)\nPlayer 3 plays blue-2-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 1)\nPlayer 0 plays blue-reverse-action.\n---------- End of Player 0's turn ----------\nPlayer 3 decides to: draw\nPlayer 3 draws a card.\n---------- End of Player 3's turn ----------",
+          "assistant": "Got it, I'll remember that.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0023.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four AI players, a central pile of played cards with a blue Reverse as the target card, and Player 2’s visible hand of five cards."
+          ]
+        },
+        {
+          "round": "PLAY_S3:R8",
+          "user": "Player 2 decides to: play-(card_idx: 4)\nPlayer 2 plays blue-1-number.\n---------- End of Player 2's turn ----------\nPlayer 1 decides to: play-(card_idx: 3)\nPlayer 1 plays blue-2-number.\n---------- End of Player 1's turn ----------\nPlayer 0 decides to: play-(card_idx: 0)\nPlayer 0 plays blue-1-number.\nPlayer 0 has no cards left and wins the game!\n---------- End of Player 0's turn ----------\nCalculating payoffs. Winner is Player 0.\nPlayer 1 has a score of -108.\nPlayer 2 has a score of -13.\nPlayer 3 has a score of -35.\nGame over. Payoffs for each player: [0, -108, -13, -35]",
+          "assistant": "Thanks, I'll keep that in mind.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0027_2.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players’ hands, played cards in the center, and a blue 1 as the current target card."
+          ]
+        }
+      ]
+    },
+    {
+      "session_id": "PLAY_S4",
+      "date": "2026-03-30",
+      "dialogues": [
+        {
+          "round": "PLAY_S4:R1",
+          "user": "Deck initialized and shuffled.\nInitial card is red-4-number.\nPlayer 0 decides to: play-(card_idx: 1)\nPlayer 0 plays yellow-4-number.\n---------- End of Player 0's turn ----------\nPlayer 1 decides to: play-(card_idx: 4)\nPlayer 1 plays green-4-number.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 1)\nPlayer 2 plays green-3-number.\n---------- End of Player 2's turn ----------",
+          "assistant": "Understood, I'll remember this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0003.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a central discard pile with a green 3 target card, and Player 3’s visible hand at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S4:R2",
+          "user": "Player 3 decides to: play-(card_idx: 4)\nPlayer 3 plays green-7-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 0)\nPlayer 0 plays green-7-number.\n---------- End of Player 0's turn ----------\nPlayer 1 decides to: play-(card_idx: 3)\nPlayer 1 plays green-2-number.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 1)\nPlayer 2 plays green-6-number.\n---------- End of Player 2's turn ----------",
+          "assistant": "Okay, I'll keep track of that.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0007.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, played green cards, a green 6 target card, and Player 3’s visible hand at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S4:R3",
+          "user": "Player 3 decides to: play-(card_idx: 5, chosen_color: green)\nPlayer 3 plays black-wild-wild.\nPlayer 3 chose the color green.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 4)\nPlayer 0 plays green-reverse-action.\n---------- End of Player 0's turn ----------",
+          "assistant": "Got it, I'll keep this in mind.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0009.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four players, a central pile of played green cards with a green Reverse on top, and Player 3’s visible hand at the bottom."
+          ]
+        },
+        {
+          "round": "PLAY_S4:R4",
+          "user": "Player 3 decides to: draw\nPlayer 3 draws a card.\n---------- End of Player 3's turn ----------\nPlayer 2 decides to: draw\nPlayer 2 draws a card.\n---------- End of Player 2's turn ----------\nPlayer 1 decides to: play-(card_idx: 1)\nPlayer 1 plays yellow-reverse-action.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 0)\nPlayer 2 plays yellow-5-number.\n---------- End of Player 2's turn ----------",
+          "assistant": "Thanks, I'll remember this for later.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0013.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four players, a yellow 5 target card, a stack of played cards, and a large remaining draw deck on a wooden background."
+          ]
+        },
+        {
+          "round": "PLAY_S4:R5",
+          "user": "Player 3 decides to: play-(card_idx: 1)\nPlayer 3 plays yellow-3-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 2)\nPlayer 0 plays yellow-0-number.\n---------- End of Player 0's turn ----------\nPlayer 1 decides to: draw\nPlayer 1 draws a card.\n---------- End of Player 1's turn ----------\nPlayer 2 decides to: play-(card_idx: 3)\nPlayer 2 plays yellow-7-number.\n---------- End of Player 2's turn ----------",
+          "assistant": "Understood, I'll keep track of this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0017.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four AI players, a yellow 7 as the target card, and Player 3’s visible hand with yellow 4, blue 2, blue 5, red 9, and red 0 cards."
+          ]
+        },
+        {
+          "round": "PLAY_S4:R6",
+          "user": "Player 3 decides to: play-(card_idx: 0)\nPlayer 3 plays yellow-4-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 2, chosen_color: blue)\nPlayer 0 plays black-wild_draw_4-wild.\nPlayer 0 chose the color blue.\n---------- End of Player 0's turn ----------\nPlayer 2 decides to: draw\nPlayer 2 draws a card.\n---------- End of Player 2's turn ----------",
+          "assistant": "Okay, I'll hold onto this.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0020.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players, a central discard pile, and Player 3’s visible hand with blue 2 and red 9 and Skip cards."
+          ]
+        },
+        {
+          "round": "PLAY_S4:R7",
+          "user": "Player 3 decides to: play-(card_idx: 0)\nPlayer 3 plays blue-2-number.\n---------- End of Player 3's turn ----------\nPlayer 0 decides to: play-(card_idx: 1)\nPlayer 0 plays blue-reverse-action.\n---------- End of Player 0's turn ----------",
+          "assistant": "Got it, I'll remember that.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0022.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game board showing four players, a central pile of played cards, a blue Reverse as the current target card, and Player 3 holding a red 9 and a red Skip."
+          ]
+        },
+        {
+          "round": "PLAY_S4:R8",
+          "user": "Player 3 decides to: draw\nPlayer 3 draws a card.\n---------- End of Player 3's turn ----------\nPlayer 2 decides to: play-(card_idx: 4)\nPlayer 2 plays blue-1-number.\n---------- End of Player 2's turn ----------\nPlayer 1 decides to: play-(card_idx: 3)\nPlayer 1 plays blue-2-number.\n---------- End of Player 1's turn ----------\nPlayer 0 decides to: play-(card_idx: 0)\nPlayer 0 plays blue-1-number.\nPlayer 0 has no cards left and wins the game!\n---------- End of Player 0's turn ----------\nCalculating payoffs. Winner is Player 0.\nPlayer 1 has a score of -108.\nPlayer 2 has a score of -13.\nPlayer 3 has a score of -35.\nGame over. Payoffs for each player: [0, -108, -13, -35]",
+          "assistant": "Thanks, I'll keep that in mind.",
+          "input_image": [
+            "Card_Playlog_Test/uno_44/state_0027_3.jpg"
+          ],
+          "image_caption": [
+            "Digital UNO game interface showing four players’ hands, played cards in the center, and a blue 1 as the current target card."
+          ]
+        }
+      ]
+    }
+  ],
+  "human-annotated QAs": [
+    {
+      "question_id": "Q1",
+      "question": "How many black cards does Player 0 hold at the moment of their third play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R2",
+        "PLAY_S1:R3",
+        "PLAY_S1:R4"
+      ]
+    },
+    {
+      "question_id": "Q2",
+      "question": "How many green cards has Player 2 played immediately after Player 0's visible hand size decreases from 3 to 2 for the first time?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R6",
+        "PLAY_S1:R2",
+        "PLAY_S1:R3",
+        "PLAY_S1:R7"
+      ]
+    },
+    {
+      "question_id": "Q3",
+      "question": "How many yellow cards has Player 1 played by the time of their 4th play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R2",
+        "PLAY_S1:R3",
+        "PLAY_S1:R4",
+        "PLAY_S1:R7"
+      ]
+    },
+    {
+      "question_id": "Q4",
+      "question": "How many yellow cards has Player 2 played by the time of their third play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R4"
+      ]
+    },
+    {
+      "question_id": "Q5",
+      "question": "When Player 1's visible hand size decreases from 9 to 8 for the first time, how many yellow cards has Player 3 played up to that point?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R7",
+        "PLAY_S1:R4",
+        "PLAY_S1:R5"
+      ]
+    },
+    {
+      "question_id": "Q6",
+      "question": "How many yellow cards has Player 0 played by the time of their 4th play action?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R2",
+        "PLAY_S1:R5"
+      ]
+    },
+    {
+      "question_id": "Q7",
+      "question": "How many green cards has Player 2 played immediately after their first play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R2",
+        "PLAY_S1:R3"
+      ]
+    },
+    {
+      "question_id": "Q8",
+      "question": "How many yellow cards has Player 2 played immediately after the public played cards size changes from 5 to 9 for the first time?",
+      "answer": "0",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R2",
+        "PLAY_S1:R3"
+      ]
+    },
+    {
+      "question_id": "Q9",
+      "question": "How many black cards has Player 0 played by the time of their 6th play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R6"
+      ]
+    },
+    {
+      "question_id": "Q10",
+      "question": "How many yellow cards has Player 1 played immediately after the public played cards size changes from 5 to 9 for the first time?",
+      "answer": "0",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R2",
+        "PLAY_S1:R3"
+      ]
+    },
+    {
+      "question_id": "Q11",
+      "question": "How many blue cards does Player 0 have immediately after their second play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R2",
+        "PLAY_S1:R3"
+      ]
+    },
+    {
+      "question_id": "Q12",
+      "question": "How many green cards has Player 2 played by the time Player 3's visible hand size first decreases from 7 to 6?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S1"
+      ],
+      "clue": [
+        "PLAY_S1:R2",
+        "PLAY_S1:R3"
+      ]
+    },
+    {
+      "question_id": "Q13",
+      "question": "How many red cards does Player 1 hold immediately after their visible hand size changes from 5 to 4 for the first time?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R3",
+        "PLAY_S2:R4"
+      ]
+    },
+    {
+      "question_id": "Q14",
+      "question": "How many blue cards does Player 1 hold immediately after their visible hand size changes from 6 to 5 for the first time?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R2",
+        "PLAY_S2:R3"
+      ]
+    },
+    {
+      "question_id": "Q15",
+      "question": "When Player 1's visible hand size decreases from 6 to 5 for the first time, how many red cards does Player 1 have?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R2",
+        "PLAY_S2:R3"
+      ]
+    },
+    {
+      "question_id": "Q16",
+      "question": "When the public deck size first decreases from 77 to 70, how many blue cards has Player 3 played up to that point?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R5"
+      ]
+    },
+    {
+      "question_id": "Q17",
+      "question": "How many yellow cards has Player 0 played by the time of their 4th play action?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R1",
+        "PLAY_S2:R4"
+      ]
+    },
+    {
+      "question_id": "Q18",
+      "question": "How many green cards has Player 2 played immediately after their first play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R2",
+        "PLAY_S2:R3"
+      ]
+    },
+    {
+      "question_id": "Q19",
+      "question": "How many green cards has Player 2 played immediately after Player 1's visible hand size decreases from 7 to 6 for the first time?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R2",
+        "PLAY_S2:R3"
+      ]
+    },
+    {
+      "question_id": "Q20",
+      "question": "How many blue cards does Player 1 have immediately after their first play action?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R1",
+        "PLAY_S2:R2"
+      ]
+    },
+    {
+      "question_id": "Q21",
+      "question": "How many yellow cards has Player 2 played by the time of their 5th play action?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R4",
+        "PLAY_S2:R5"
+      ]
+    },
+    {
+      "question_id": "Q22",
+      "question": "How many red cards does Player 1 have immediately after their second play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R2",
+        "PLAY_S2:R3"
+      ]
+    },
+    {
+      "question_id": "Q23",
+      "question": "When the public deck size first decreases from 79 to 77, how many green cards has Player 0 played up to that point?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R3",
+        "PLAY_S2:R2"
+      ]
+    },
+    {
+      "question_id": "Q24",
+      "question": "How many green cards has Player 0 played by the time the public played cards size changes from 6 to 10 for the first time?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S2"
+      ],
+      "clue": [
+        "PLAY_S2:R3",
+        "PLAY_S2:R2"
+      ]
+    },
+    {
+      "question_id": "Q25",
+      "question": "How many red cards does Player 2 hold immediately after Player 3's visible hand size decreases from 5 to 4 for the first time?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R5",
+        "PLAY_S3:R6"
+      ]
+    },
+    {
+      "question_id": "Q26",
+      "question": "How many yellow cards does Player 2 have immediately after their visible hand size decreases from 6 to 5 for the second time?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R2",
+        "PLAY_S3:R3",
+        "PLAY_S3:R4",
+        "PLAY_S3:R5"
+      ]
+    },
+    {
+      "question_id": "Q27",
+      "question": "When Player 1's visible hand size increases from 4 to 5 for the first time, how many red cards does Player 2 have?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R4",
+        "PLAY_S3:R5"
+      ]
+    },
+    {
+      "question_id": "Q28",
+      "question": "When Player 2's visible hand size decreases from 6 to 5 for the second time, how many red cards does Player 2 have?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R2",
+        "PLAY_S3:R3",
+        "PLAY_S3:R4",
+        "PLAY_S3:R5"
+      ]
+    },
+    {
+      "question_id": "Q29",
+      "question": "How many green cards has Player 2 played immediately after the public deck size changes from 79 to 78 for the first time?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R3",
+        "PLAY_S3:R2",
+        "PLAY_S3:R4"
+      ]
+    },
+    {
+      "question_id": "Q30",
+      "question": "How many yellow cards does Player 2 have immediately after their first play action?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R1",
+        "PLAY_S3:R2"
+      ]
+    },
+    {
+      "question_id": "Q31",
+      "question": "How many yellow cards does Player 2 hold immediately after their 4th play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R2",
+        "PLAY_S3:R3",
+        "PLAY_S3:R5",
+        "PLAY_S3:R6"
+      ]
+    },
+    {
+      "question_id": "Q32",
+      "question": "How many green cards has Player 2 played by the time of their second play action?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R2",
+        "PLAY_S3:R3"
+      ]
+    },
+    {
+      "question_id": "Q33",
+      "question": "How many green cards has Player 2 played by the time of their first play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R2"
+      ]
+    },
+    {
+      "question_id": "Q34",
+      "question": "How many blue cards has Player 2 drawn by the time of their second draw action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R7"
+      ]
+    },
+    {
+      "question_id": "Q35",
+      "question": "How many green cards has Player 0 played immediately after the public direction changes from 1 to -1 for the first time?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R3",
+        "PLAY_S3:R2",
+        "PLAY_S3:R4"
+      ]
+    },
+    {
+      "question_id": "Q36",
+      "question": "How many yellow cards does Player 2 have immediately after their second play action?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S3"
+      ],
+      "clue": [
+        "PLAY_S3:R2",
+        "PLAY_S3:R3"
+      ]
+    },
+    {
+      "question_id": "Q37",
+      "question": "How many red cards does Player 3 hold immediately after Player 2's visible hand size changes from 4 to 5 for the first time?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R5",
+        "PLAY_S4:R6"
+      ]
+    },
+    {
+      "question_id": "Q38",
+      "question": "How many red cards does Player 3 have immediately after their third play action?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R2",
+        "PLAY_S4:R3",
+        "PLAY_S4:R5"
+      ]
+    },
+    {
+      "question_id": "Q39",
+      "question": "How many yellow cards does Player 3 have immediately after their second play action?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R2",
+        "PLAY_S4:R3"
+      ]
+    },
+    {
+      "question_id": "Q40",
+      "question": "How many red cards does Player 3 have immediately after their first play action?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R1",
+        "PLAY_S4:R2"
+      ]
+    },
+    {
+      "question_id": "Q41",
+      "question": "How many black cards has Player 3 played immediately after Player 1's visible hand size changes from 4 to 5 for the first time?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R5",
+        "PLAY_S4:R3",
+        "PLAY_S4:R6"
+      ]
+    },
+    {
+      "question_id": "Q42",
+      "question": "How many green cards has Player 0 played immediately after the public deck size changes from 77 to 76 for the first time?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R5",
+        "PLAY_S4:R2",
+        "PLAY_S4:R3",
+        "PLAY_S4:R6"
+      ]
+    },
+    {
+      "question_id": "Q43",
+      "question": "How many yellow cards has Player 3 played by the time of their third play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R5"
+      ]
+    },
+    {
+      "question_id": "Q44",
+      "question": "How many black cards has Player 3 played immediately after their second play action?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R3",
+        "PLAY_S4:R4"
+      ]
+    },
+    {
+      "question_id": "Q45",
+      "question": "After Player 0's next play action following the first time Player 3's visible hand size decreases from 5 to 4, how many black cards has Player 0 played so far?",
+      "answer": "1",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R5",
+        "PLAY_S4:R6"
+      ]
+    },
+    {
+      "question_id": "Q46",
+      "question": "How many green cards has Player 0 played immediately after their 5th play action?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R2",
+        "PLAY_S4:R3",
+        "PLAY_S4:R5",
+        "PLAY_S4:R6"
+      ]
+    },
+    {
+      "question_id": "Q47",
+      "question": "How many yellow cards has Player 3 played by the time of their 5th play action?",
+      "answer": "2",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y2"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R2",
+        "PLAY_S4:R3",
+        "PLAY_S4:R5",
+        "PLAY_S4:R6",
+        "PLAY_S4:R7"
+      ]
+    },
+    {
+      "question_id": "Q48",
+      "question": "How many red cards does Player 3 hold immediately after the public deck size changes from 79 to 77 for the first time?",
+      "answer": "3",
+      "point": [
+        [
+          "X4"
+        ],
+        [
+          "Y3"
+        ]
+      ],
+      "session_id": [
+        "PLAY_S4"
+      ],
+      "clue": [
+        "PLAY_S4:R3",
+        "PLAY_S4:R4"
+      ]
+    }
+  ]
+}

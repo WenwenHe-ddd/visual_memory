@@ -1,0 +1,55 @@
+VAMO 引理与附录证明：接入说明
+
+1. 正文插入位置
+在原文件 Case ③: Cluster Splitting and Reassignment 的重建公式和解释之后，
+Unified Anchor Updating 之前（原附件第 109 行之后）。
+3_methodology_with_lemma.tex 已插入完整引理，可替换原 method 文件。
+它包含引理全文，因此使用该文件时不要再 input vamo_reconstruction_lemma.tex。
+
+2. 单独插入
+如保留自己的原 method 文件，可在上述位置粘贴 vamo_reconstruction_lemma.tex。
+同时给原重建公式添加 \label{eq:vamo-leaf-reconstruction}，
+给 Unified Anchor Updating 公式添加 \label{eq:vamo-unified-update}。
+还需同步 methodology_changes.diff 中关于 anchor 初始化与后续维护、
+以及完整簇合并不引入额外近似的措辞修正（见下文第 6 项）。
+
+3. 导言区依赖
+如模板尚未提供对应宏包和环境，添加：
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+若论文已有这些环境，沿用现有定义，不要重复定义；编号可按模板调整。
+原 method 的 \pca、\pcaabbrv、\ding 和 PCA_RSTA16 引用继续由原论文提供。
+
+4. 附录
+在主文档已有的 \appendix 之后，按实际文件路径加入：
+\input{appendix_vamo_reconstruction.tex}
+不要在已经切换到附录后再次调用 \appendix。
+附录文件包含自己的 section；不需要另套一个同名 section。
+
+5. 文件内容
+vamo_reconstruction_lemma.tex：正文引理和附录引用。
+appendix_vamo_reconstruction.tex：引理证明、动态更新一致性、共同残差最小二乘、
+以及簇级补偿误差分解（最后一个 subsection 可按篇幅删去，不影响正文引理）。
+3_methodology_with_lemma.tex：对原附件作最小修改的完整 method。
+methodology_changes.diff：全部正文改动的差异文件。
+reconstruction_preview.tex：可单独编译的引理与附录预览入口。
+
+6. 原文修改范围
+增加引理与两个公式标签；将 anchor 的精确均值公式限定为可获得完整向量时的初始化；
+明确后续 a_k 指维护的 anchor；将合并的精确性表述为不引入额外近似。
+保留原来的外域 PCA 基底构造，未替换为随机基底。
+未调整 SMPR、评分公式或其他正文段落。
+
+7. 证明中的符号
+a_k：实际维护的 anchor；bar(v)_k：仅用于分析的真实成员均值。
+主引理对满足投影一致性的维护 anchor 成立。
+共同残差对原始向量的最小重建误差命题使用真实均值；附录也给出维护 anchor 的误差分解。
+不需要假设外域 PCA 对目标簇最优，也不使用条件期望或高斯分布假设。
+聚合前不对单个重建向量做 L2 归一化。
+
+8. 预览编译
+在此目录执行两次：pdflatex reconstruction_preview.tex
+预览使用 article 类；实际投稿沿用论文模板。
+本次环境未安装 LaTeX 编译器；已进行公式数值核验、环境/花括号/交叉引用检查，
+未声称完成 PDF 编译。
