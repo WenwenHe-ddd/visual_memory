@@ -4,8 +4,8 @@
   "repository": "https://github.com/WenwenHe-ddd/visual_memory",
   "scope": "Source code, documentation, text inputs and caption caches. Excludes evaluation outputs, binary data/models, credentials and runtime caches.",
   "summary": {
-    "files_excluding_this_manifest": 1216,
-    "bytes_excluding_this_manifest": 44990029,
+    "files_excluding_this_manifest": 1220,
+    "bytes_excluding_this_manifest": 44992447,
     "python_files": 1053,
     "caption_jsonl_files": 20,
     "caption_records_sum_not_deduplicated": 11998
@@ -127,8 +127,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 16726,
-      "sha256": "39efad760c4ac1303f92b7874646845f015db1e1844d394bee74f117689f6782",
+      "bytes": 17175,
+      "sha256": "d506740b7870757cef1fbedc4e8ce93aee802147cc7b3f7cde7e5af29d6c4a65",
       "origin": "release_metadata"
     },
     {
@@ -1082,6 +1082,18 @@
       "origin": "workspace"
     },
     {
+      "path": "reports/home_pair_residual_svd_20261020/D7_IMG_005.caption.txt",
+      "bytes": 470,
+      "sha256": "44a218ac502c3b6c105b671035981709a5b37d8a36ff61a990fc135670c8b2dc",
+      "origin": "workspace"
+    },
+    {
+      "path": "reports/home_pair_residual_svd_20261020/D7_IMG_006.caption.txt",
+      "bytes": 536,
+      "sha256": "5bbbfe4795975a20a15943590f17d9cb3788a9ce39f203c520d7ce75e2233399",
+      "origin": "workspace"
+    },
+    {
       "path": "reports/home_pair_residual_svd_20261020/audit_results.py",
       "bytes": 17711,
       "sha256": "0c45b5fee680b17774eedb48669802db066cb5fa6942b0196fd5e4f4980c8070",
@@ -1139,6 +1151,18 @@
       "path": "reports/home_q10_residual_pca_20261020/analyze.py",
       "bytes": 12722,
       "sha256": "d47ee5130e130628d185f7d23aae2058d64bb808a2653f6e1b7a96d5c649e1b8",
+      "origin": "workspace"
+    },
+    {
+      "path": "reports/home_q10_top2_similarity_20261020/D13_IMG_001.caption_190.txt",
+      "bytes": 479,
+      "sha256": "ca3a19b9e3a388268c2f06f8fb54d1e34e2afd33c0abe49a63e3d35125d6c68a",
+      "origin": "workspace"
+    },
+    {
+      "path": "reports/home_q10_top2_similarity_20261020/D7_IMG_005.caption_190.txt",
+      "bytes": 484,
+      "sha256": "03d0d5007be0f67ab8cce52f8b37293251d9144dce6d885f13382cded3808d63",
       "origin": "workspace"
     },
     {
